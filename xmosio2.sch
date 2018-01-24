@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19738,7 +19738,7 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="VCC19" library="supply1" deviceset="VCCINT" device=""/>
 <part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="SparkFun" deviceset="TAC_SWITCH" device="PTH" value="MANUAL_RESET"/>
+<part name="RESET_SW" library="SparkFun" deviceset="TAC_SWITCH" device="PTH" value="MANUAL_RESET"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device="" value="BUS I/O"/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device="" value="POWER"/>
@@ -19760,7 +19760,7 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="VCC21" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="X2" library="con-hirose" deviceset="MINI-USB-" device="UX60-MB-5S8"/>
+<part name="USBPOWER" library="con-hirose" deviceset="MINI-USB-" device="UX60-MB-5S8"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="1K"/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0603" value="1K"/>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="1K"/>
@@ -19775,10 +19775,10 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
 <part name="R27" library="rcl" deviceset="R-EU_" device="R0603" value="47K"/>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="LED6" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
+<part name="DBG0" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
+<part name="DBG1" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
+<part name="DBG2" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
+<part name="DBG3" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
 <part name="U$13" library="sjg-power" deviceset="+4.3V" device=""/>
 <part name="U$14" library="sjg-power" deviceset="+4.3V" device=""/>
 <part name="U$15" library="sjg-power" deviceset="+4.3V" device=""/>
@@ -19787,7 +19787,7 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="U$18" library="sjg-power" deviceset="+4.3V" device=""/>
 <part name="VCC23" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC24" library="supply1" deviceset="VCCIO" device=""/>
-<part name="S2" library="SparkFun" deviceset="TAC_SWITCH" device="PTH" value="FLASH_MODE"/>
+<part name="BOOT_SW" library="SparkFun" deviceset="TAC_SWITCH" device="PTH" value="FLASH_MODE"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="VCC25" library="supply1" deviceset="VCCIO" device=""/>
@@ -21111,7 +21111,7 @@ from the 5v supply for QS</text>
 <instance part="FRAME2" gate="G$1" x="-55.88" y="-142.24"/>
 <instance part="GND45" gate="1" x="-17.78" y="58.42"/>
 <instance part="P+4" gate="1" x="-17.78" y="81.28"/>
-<instance part="X2" gate="G$1" x="-7.62" y="68.58"/>
+<instance part="USBPOWER" gate="G$1" x="-7.62" y="68.58"/>
 <instance part="GND48" gate="1" x="281.94" y="-63.5"/>
 <instance part="R27" gate="G$1" x="302.26" y="-50.8" rot="R90"/>
 <instance part="C46" gate="G$1" x="281.94" y="-50.8"/>
@@ -21266,7 +21266,7 @@ from the 5v supply for QS</text>
 <wire x1="274.32" y1="-99.06" x2="274.32" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="5"/>
+<pinref part="USBPOWER" gate="G$1" pin="5"/>
 <pinref part="GND45" gate="1" pin="GND"/>
 <wire x1="-12.7" y1="63.5" x2="-17.78" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="63.5" x2="-17.78" y2="60.96" width="0.1524" layer="91"/>
@@ -21582,7 +21582,7 @@ from the 5v supply for QS</text>
 <wire x1="269.24" y1="-5.08" x2="302.26" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="1"/>
+<pinref part="USBPOWER" gate="G$1" pin="1"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="-12.7" y1="73.66" x2="-17.78" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="73.66" x2="-17.78" y2="78.74" width="0.1524" layer="91"/>
@@ -21750,9 +21750,9 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <attribute name="VALUE" x="0.508" y="-19.812" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME3" gate="G$1" x="-58.42" y="-129.54"/>
-<instance part="S2" gate="S" x="35.56" y="-5.08" smashed="yes">
-<attribute name="NAME" x="34.29" y="0" size="1.778" layer="95"/>
-<attribute name="VALUE" x="27.94" y="3.81" size="2.1844" layer="96"/>
+<instance part="BOOT_SW" gate="S" x="35.56" y="-5.08" smashed="yes">
+<attribute name="NAME" x="31.75" y="0" size="1.778" layer="95"/>
+<attribute name="VALUE" x="30.48" y="-19.05" size="2.1844" layer="96"/>
 </instance>
 <instance part="GND38" gate="1" x="45.72" y="-12.7"/>
 <instance part="R15" gate="G$1" x="20.32" y="2.54" rot="R90"/>
@@ -22319,8 +22319,8 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <wire x1="83.82" y1="-96.52" x2="88.9" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S2" gate="S" pin="3"/>
-<pinref part="S2" gate="S" pin="4"/>
+<pinref part="BOOT_SW" gate="S" pin="3"/>
+<pinref part="BOOT_SW" gate="S" pin="4"/>
 <wire x1="40.64" y1="-5.08" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="GND38" gate="1" pin="GND"/>
 <wire x1="40.64" y1="-7.62" x2="45.72" y2="-7.62" width="0.1524" layer="91"/>
@@ -22570,9 +22570,9 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <net name="N$33" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D39@6"/>
-<pinref part="S2" gate="S" pin="2"/>
+<pinref part="BOOT_SW" gate="S" pin="2"/>
 <wire x1="30.48" y1="-7.62" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="S2" gate="S" pin="1"/>
+<pinref part="BOOT_SW" gate="S" pin="1"/>
 <wire x1="20.32" y1="-7.62" x2="-12.7" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-7.62" x2="30.48" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="30.48" y="-7.62"/>
@@ -22652,9 +22652,9 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </instance>
 <instance part="C44" gate="G$1" x="254" y="101.6" rot="R90"/>
 <instance part="GND36" gate="1" x="246.38" y="93.98"/>
-<instance part="S1" gate="S" x="287.02" y="104.14" smashed="yes">
+<instance part="RESET_SW" gate="S" x="287.02" y="104.14" smashed="yes">
 <attribute name="NAME" x="284.48" y="110.49" size="1.778" layer="95"/>
-<attribute name="VALUE" x="276.86" y="113.03" size="2.1844" layer="96"/>
+<attribute name="VALUE" x="276.86" y="87.63" size="2.1844" layer="96"/>
 </instance>
 <instance part="GND37" gate="1" x="297.18" y="93.98"/>
 <instance part="FRAME4" gate="G$1" x="-12.7" y="-50.8"/>
@@ -22750,11 +22750,11 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <wire x1="246.38" y1="101.6" x2="246.38" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S1" gate="S" pin="4"/>
+<pinref part="RESET_SW" gate="S" pin="4"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 <wire x1="292.1" y1="101.6" x2="297.18" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="101.6" x2="297.18" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="S1" gate="S" pin="3"/>
+<pinref part="RESET_SW" gate="S" pin="3"/>
 <wire x1="292.1" y1="104.14" x2="297.18" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="104.14" x2="297.18" y2="101.6" width="0.1524" layer="91"/>
 <junction x="297.18" y="101.6"/>
@@ -22935,10 +22935,10 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <wire x1="269.24" y1="73.66" x2="269.24" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C44" gate="G$1" pin="2"/>
 <wire x1="269.24" y1="101.6" x2="259.08" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="S1" gate="S" pin="2"/>
+<pinref part="RESET_SW" gate="S" pin="2"/>
 <wire x1="269.24" y1="101.6" x2="276.86" y2="101.6" width="0.1524" layer="91"/>
 <junction x="269.24" y="101.6"/>
-<pinref part="S1" gate="S" pin="1"/>
+<pinref part="RESET_SW" gate="S" pin="1"/>
 <wire x1="276.86" y1="101.6" x2="281.94" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="101.6" x2="276.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="104.14" x2="281.94" y2="104.14" width="0.1524" layer="91"/>
@@ -23019,10 +23019,10 @@ R26 placed so that port will work in SPI mode as a fallback</text>
 <attribute name="NAME" x="264.16" y="81.28" size="1.778" layer="95"/>
 <attribute name="VALUE" x="270.51" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="LED6" gate="G$1" x="91.44" y="106.68" rot="R90"/>
-<instance part="LED2" gate="G$1" x="91.44" y="96.52" rot="R90"/>
-<instance part="LED3" gate="G$1" x="91.44" y="86.36" rot="R90"/>
-<instance part="LED4" gate="G$1" x="91.44" y="76.2" rot="R90"/>
+<instance part="DBG0" gate="G$1" x="91.44" y="106.68" rot="R90"/>
+<instance part="DBG1" gate="G$1" x="91.44" y="96.52" rot="R90"/>
+<instance part="DBG2" gate="G$1" x="91.44" y="86.36" rot="R90"/>
+<instance part="DBG3" gate="G$1" x="91.44" y="76.2" rot="R90"/>
 </instances>
 <busses>
 <bus name="RIN1-,RIN1+,DOUT1-,DOUT1+,RIN2-,RIN2+,DOUT2-,DOUT2+">
@@ -23309,56 +23309,56 @@ R26 placed so that port will work in SPI mode as a fallback</text>
 <segment>
 <wire x1="76.2" y1="109.22" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="106.68" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
+<pinref part="DBG0" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="LED1" class="0">
 <segment>
 <wire x1="76.2" y1="99.06" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="DBG1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="LED2" class="0">
 <segment>
 <wire x1="76.2" y1="88.9" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="DBG2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="LED3" class="0">
 <segment>
 <wire x1="76.2" y1="78.74" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="DBG3" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="DBG3" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="DBG2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="96.52" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="DBG1" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="LED6" gate="G$1" pin="C"/>
+<pinref part="DBG0" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="SDC_D2" class="0">
