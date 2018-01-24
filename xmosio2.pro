@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Volumes/home/simon/Documents/eagle/xlpb/xmosio2.brd
 
-Start at      : 17:02:23 (1/22/18)
-End at        : 18:12:10 (1/22/18)
-Elapsed time  : 01:09:43
+Start at      : 15:42:05 (1/23/18)
+End at        : 15:45:41 (1/23/18)
+Elapsed time  : 00:02:48
 
-Signals       :   167   RoutingGrid: 2.5 mil  Layers: 4
-Connections   :   416   predefined:  37 ( 0 Vias )
+Signals       :   168   RoutingGrid: 6.25 mil  Layers: 4
+Connections   :   417   predefined:  27 ( 9 Vias )
 
-Router memory :   15004960
+Router memory :   2439520
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:59  00:42:48  00:02:06  00:02:13  00:02:12  00:01:59  00:02:01  00:01:58  00:02:22  00:02:18  00:02:13  00:02:12  00:02:10  00:02:12
-Number of Ripups  :         0       528         0         0         0         0         0         0         0         0         0         0         0         0
-max. Level        :         0         8         0         0         0         0         0         0         0         0         0         0         0         0
-max. Total        :         0        93         0         0         0         0         0         0         0         0         0         0         0         0
+Time per pass     :  00:00:01  00:00:39  00:00:33  00:00:36  00:00:29  00:00:30
+Number of Ripups  :         0        14         0         0         0         0
+max. Level        :         0         3         0         0         0         0
+max. Total        :         0        65         0         0         0         0
 
-Routed            :        82       359       359       361       361       361       361       361       361       362       362       362       362       362
-Vias              :         0       291       306       283       273       271       269       269       264       257       259       258       258       257
-Resolution        :    28.6 %    95.2 %    95.2 %    95.7 %    95.7 %    95.7 %    95.7 %    95.7 %    95.7 %    95.9 %    95.9 %    95.9 %    95.9 %    95.9 %
+Routed            :         1       390       390       390       390       390
+Vias              :         0       517       305       285       275       268
+Resolution        :     6.7 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 95.9% finished. Polygons may have fallen apart.
+Final             : 100.0% finished
