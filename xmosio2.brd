@@ -3445,6 +3445,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="17.42375" y1="45.1975" x2="15.535" y2="44.97875" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,77604d684c47764f"/>
+<approved hash="19,1,72d848d04fc775cf"/>
+<approved hash="19,1,f5a4cfaccf45f54d"/>
+<approved hash="19,1,4be043e842c74acf"/>
+<approved hash="19,1,4e5846504147494f"/>
+<approved hash="19,1,c924c12cc1c5c9cd"/>
+<approved hash="19,1,d760cd68cc42d64a"/>
+<approved hash="19,1,55a44fac4f405548"/>
+<approved hash="19,1,d2d8c8d0cfc2d5ca"/>
+</errors>
 </board>
 </drawing>
 </eagle>
