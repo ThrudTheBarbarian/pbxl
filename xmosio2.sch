@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19791,6 +19791,8 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="VCC25" library="supply1" deviceset="VCCIO" device=""/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -21750,14 +21752,22 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <attribute name="VALUE" x="0.508" y="-19.812" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME3" gate="G$1" x="-58.42" y="-129.54"/>
-<instance part="BOOT_SW" gate="S" x="35.56" y="-5.08" smashed="yes">
-<attribute name="NAME" x="31.75" y="0" size="1.778" layer="95"/>
-<attribute name="VALUE" x="30.48" y="-19.05" size="2.1844" layer="96"/>
+<instance part="BOOT_SW" gate="S" x="53.34" y="-5.08" smashed="yes">
+<attribute name="NAME" x="49.53" y="0" size="1.778" layer="95"/>
+<attribute name="VALUE" x="48.26" y="-19.05" size="2.1844" layer="96"/>
 </instance>
-<instance part="GND38" gate="1" x="45.72" y="-12.7"/>
-<instance part="R15" gate="G$1" x="20.32" y="2.54" rot="R90"/>
-<instance part="VCC25" gate="G$1" x="20.32" y="12.7" smashed="yes">
-<attribute name="VALUE" x="24.384" y="15.748" size="1.778" layer="96" rot="R180"/>
+<instance part="GND38" gate="1" x="63.5" y="-12.7"/>
+<instance part="R15" gate="G$1" x="38.1" y="2.54" rot="R90"/>
+<instance part="VCC25" gate="G$1" x="38.1" y="12.7" smashed="yes">
+<attribute name="VALUE" x="42.164" y="15.748" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R16" gate="G$1" x="2.54" y="5.08" smashed="yes">
+<attribute name="NAME" x="5.334" y="2.7686" size="1.778" layer="95"/>
+<attribute name="VALUE" x="5.588" y="5.334" size="1.778" layer="96"/>
+</instance>
+<instance part="R17" gate="G$1" x="2.54" y="27.94" smashed="yes">
+<attribute name="NAME" x="5.334" y="25.6286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="5.588" y="28.194" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -21783,10 +21793,10 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </bus>
 <bus name="LED[0..3]">
 <segment>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="27.94" width="0.762" layer="92"/>
-<wire x1="10.16" y1="27.94" x2="12.7" y2="30.48" width="0.762" layer="92"/>
-<wire x1="12.7" y1="30.48" x2="25.4" y2="30.48" width="0.762" layer="92"/>
-<label x="25.654" y="32.512" size="1.27" layer="95" rot="R180"/>
+<wire x1="30.48" y1="15.24" x2="30.48" y2="27.94" width="0.762" layer="92"/>
+<wire x1="30.48" y1="27.94" x2="33.02" y2="30.48" width="0.762" layer="92"/>
+<wire x1="33.02" y1="30.48" x2="45.72" y2="30.48" width="0.762" layer="92"/>
+<label x="45.974" y="32.512" size="1.27" layer="95" rot="R180"/>
 </segment>
 </bus>
 </busses>
@@ -22226,7 +22236,7 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="VCC25" gate="G$1" pin="VCCIO"/>
-<wire x1="20.32" y1="7.62" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="7.62" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -22321,11 +22331,11 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <segment>
 <pinref part="BOOT_SW" gate="S" pin="3"/>
 <pinref part="BOOT_SW" gate="S" pin="4"/>
-<wire x1="40.64" y1="-5.08" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-5.08" x2="58.42" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="GND38" gate="1" pin="GND"/>
-<wire x1="40.64" y1="-7.62" x2="45.72" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-7.62" x2="45.72" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="40.64" y="-7.62"/>
+<wire x1="58.42" y1="-7.62" x2="63.5" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-7.62" x2="63.5" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="58.42" y="-7.62"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -22513,44 +22523,44 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </net>
 <net name="LNK_OUT0" class="0">
 <segment>
-<pinref part="U$2" gate="TILE0" pin="X0D25@88"/>
-<wire x1="-12.7" y1="27.94" x2="-5.08" y2="27.94" width="0.1524" layer="91"/>
-<label x="-4.572" y="27.432" size="1.27" layer="95"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<label x="13.208" y="27.432" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LNK_OUT1" class="0">
 <segment>
-<pinref part="U$2" gate="TILE0" pin="X0D34@89"/>
-<wire x1="-12.7" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="91"/>
-<label x="-7.112" y="4.572" size="1.27" layer="95"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="5.08" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
+<label x="13.208" y="4.572" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED3" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D31@99"/>
-<wire x1="10.16" y1="15.24" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="12.7" x2="-12.7" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="15.24" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="12.7" x2="-12.7" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED2" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D30@98"/>
-<wire x1="10.16" y1="17.78" x2="7.62" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="15.24" x2="-12.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="17.78" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="15.24" x2="-12.7" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED1" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D29@97"/>
-<wire x1="10.16" y1="20.32" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="17.78" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="20.32" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="17.78" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED0" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D28@95"/>
-<wire x1="10.16" y1="22.86" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="20.32" x2="-12.7" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="22.86" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="20.32" x2="-12.7" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDC_D3" class="0">
@@ -22571,14 +22581,14 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D39@6"/>
 <pinref part="BOOT_SW" gate="S" pin="2"/>
-<wire x1="30.48" y1="-7.62" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-7.62" x2="38.1" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="BOOT_SW" gate="S" pin="1"/>
-<wire x1="20.32" y1="-7.62" x2="-12.7" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-7.62" x2="30.48" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="30.48" y="-7.62"/>
+<wire x1="38.1" y1="-7.62" x2="-12.7" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-7.62" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="48.26" y="-7.62"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="-2.54" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="20.32" y="-7.62"/>
+<wire x1="38.1" y1="-2.54" x2="38.1" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="38.1" y="-7.62"/>
 </segment>
 </net>
 <net name="SDC_D1" class="0">
@@ -22607,6 +22617,20 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <pinref part="U$2" gate="TILE0" pin="X0D33@96"/>
 <wire x1="-12.7" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
 <label x="-7.112" y="7.112" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="U$2" gate="TILE0" pin="X0D25@88"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="27.94" x2="-2.54" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U$2" gate="TILE0" pin="X0D34@89"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
