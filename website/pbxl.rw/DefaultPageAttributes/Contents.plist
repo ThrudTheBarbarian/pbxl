@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Creator</key>
+	<string></string>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict>
+				<key>ColourStyles</key>
+				<dict>
+					<key>Bravo</key>
+					<dict/>
+					<key>Lander</key>
+					<dict>
+						<key>%colour_body_background%</key>
+						<string>#CFD1CD</string>
+						<key>%colour_header_title%</key>
+						<string>#273D4F</string>
+						<key>%colour_nav_background%</key>
+						<string>#FFFFFF</string>
+						<key>%colour_nav_links%</key>
+						<string>#3F5D7C</string>
+						<key>%colour_nav_links_hover%</key>
+						<string>#273D4F</string>
+						<key>%colour_sidebar_background%</key>
+						<string>#7F7F7F</string>
+						<key>%colour_sidebar_text%</key>
+						<string>#EEEEEE</string>
+					</dict>
+				</dict>
+				<key>CreditRapidWeaver</key>
+				<true/>
+				<key>DefaultLinkTarget</key>
+				<string></string>
+				<key>FilenameExtension</key>
+				<string>html</string>
+				<key>HasCustomThemeStyle</key>
+				<false/>
+				<key>ImageFormat</key>
+				<string>Original</string>
+				<key>ImageQuality</key>
+				<string>High</string>
+				<key>IndexFilename</key>
+				<string></string>
+				<key>OutputFormat</key>
+				<string>Default</string>
+				<key>OutputXMLDeclaration</key>
+				<false/>
+				<key>RobotsShouldFollowLinks</key>
+				<true/>
+				<key>RobotsShouldIndexPage</key>
+				<true/>
+				<key>SidebarEnabled</key>
+				<integer>1</integer>
+				<key>TextEncoding</key>
+				<string>utf-8</string>
+				<key>ThemeStyles</key>
+				<dict>
+					<key>Lander</key>
+					<array>
+						<string>[+] combo options.Back to Top Button</string>
+						<string>[+] combo options.Navigation: Uppercase</string>
+						<string>[+] combo options.StyledText+Blog: Fluid image (edge to edge)</string>
+						<string>Banner Image - Parallax.Inactive</string>
+						<string>Banner Image - Vertical masking.MaxHeight 500px</string>
+						<string>BreakPoint: Sidebar.Page full width (Hide Sidebar)</string>
+						<string>Google WebFont: Classes + Titles.Raleway</string>
+						<string>Image - Parallax.Apply Parallax (disable in small devices)</string>
+						<string>Image - vertical masking.MaxHeight 500px</string>
+						<string>Loading page - Effects.Default</string>
+						<string>Max Width.1000 Pixel</string>
+						<string>Navigation Colors.Navigation - Link</string>
+					</array>
+				</dict>
+			</dict>
+			<key>Files</key>
+			<array/>
+			<key>Subsandwiches</key>
+			<array/>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>Page Attributes</string>
+</dict>
+</plist>
