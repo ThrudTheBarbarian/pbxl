@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+</packages>
+<symbols>
+<symbol name="NUCLEO_144">
+<pin name="PC9@CN12_1" x="33.02" y="38.1" length="middle" rot="R180"/>
+<pin name="PC8@CN12_2" x="33.02" y="40.64" length="middle" rot="R180"/>
+<pin name="PB8@CN12_3" x="33.02" y="83.82" length="middle" rot="R180"/>
+<pin name="PC6@CN12_4" x="33.02" y="45.72" length="middle" rot="R180"/>
+<pin name="PB9@CN12_5" x="33.02" y="81.28" length="middle" rot="R180"/>
+<pin name="PC5@CN12_6" x="33.02" y="48.26" length="middle" rot="R180"/>
+<pin name="AVDD@CN12_7" x="-30.48" y="10.16" length="middle"/>
+<pin name="U5V@CN12_8" x="-30.48" y="-7.62" length="middle"/>
+<pin name="GND@CN12_9" x="-30.48" y="-111.76" length="middle"/>
+<pin name="PD8@CN12_10" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="PA5@CN12_11" x="33.02" y="134.62" length="middle" rot="R180"/>
+<pin name="PA12@CN12_12" x="33.02" y="116.84" length="middle" rot="R180"/>
+<pin name="PA6@CN12_13" x="33.02" y="132.08" length="middle" rot="R180"/>
+<pin name="PA11@CN12_14" x="33.02" y="119.38" length="middle" rot="R180"/>
+<pin name="PA7@CN12_15" x="33.02" y="129.54" length="middle" rot="R180"/>
+<pin name="PB12@CN12_16" x="33.02" y="73.66" length="middle" rot="R180"/>
+<pin name="PB6@CN12_17" x="33.02" y="88.9" length="middle" rot="R180"/>
+<pin name="PB11@CN12_18" x="33.02" y="76.2" length="middle" rot="R180"/>
+<pin name="PC7@CN12_19" x="33.02" y="43.18" length="middle" rot="R180"/>
+<pin name="GND@CN12_20" x="-30.48" y="-114.3" length="middle"/>
+<pin name="PA9@CN12_21" x="33.02" y="124.46" length="middle" rot="R180"/>
+<pin name="PB2@CN12_22" x="33.02" y="99.06" length="middle" rot="R180"/>
+<pin name="PA8@CN12_23" x="33.02" y="127" length="middle" rot="R180"/>
+<pin name="PB1@CN12_24" x="33.02" y="101.6" length="middle" rot="R180"/>
+<pin name="PB10@CN12_25" x="33.02" y="78.74" length="middle" rot="R180"/>
+<pin name="PB15@CN12_26" x="33.02" y="66.04" length="middle" rot="R180"/>
+<pin name="PB4@CN12_27" x="33.02" y="93.98" length="middle" rot="R180"/>
+<pin name="PB14@PB12_28" x="33.02" y="68.58" length="middle" rot="R180"/>
+<pin name="PB5@CN12_29" x="33.02" y="91.44" length="middle" rot="R180"/>
+<pin name="PB13@CN12_30" x="33.02" y="71.12" length="middle" rot="R180"/>
+<pin name="PB3@CN12_31" x="33.02" y="96.52" length="middle" rot="R180"/>
+<pin name="AGND@CN12_32" x="-30.48" y="-147.32" length="middle"/>
+<pin name="PA10@CN12_33" x="33.02" y="121.92" length="middle" rot="R180"/>
+<pin name="PC4@CN12_34" x="33.02" y="50.8" length="middle" rot="R180"/>
+<pin name="PA2@CN12_35" x="33.02" y="142.24" length="middle" rot="R180"/>
+<pin name="PF5@CN12_36" x="33.02" y="-81.28" length="middle" rot="R180"/>
+<pin name="PA3@CN12_37" x="33.02" y="139.7" length="middle" rot="R180"/>
+<pin name="PF4@CN12_38" x="33.02" y="-78.74" length="middle" rot="R180"/>
+<pin name="GND@CN12_39" x="-30.48" y="-116.84" length="middle"/>
+<pin name="PE8@CN12_40" x="33.02" y="-45.72" length="middle" rot="R180"/>
+<pin name="PD13@CN12_41" x="33.02" y="-15.24" length="middle" rot="R180"/>
+<pin name="PF10@CN12_42" x="33.02" y="-93.98" length="middle" rot="R180"/>
+<pin name="PD12@CN12_43" x="33.02" y="-12.7" length="middle" rot="R180"/>
+<pin name="PE7@CN12_44" x="33.02" y="-43.18" length="middle" rot="R180"/>
+<pin name="PD11@CN12_45" x="33.02" y="-10.16" length="middle" rot="R180"/>
+<pin name="PD14@CN12_46" x="33.02" y="-17.78" length="middle" rot="R180"/>
+<pin name="PE10@CN12_47" x="33.02" y="-50.8" length="middle" rot="R180"/>
+<pin name="PD15@PE12_48" x="33.02" y="-20.32" length="middle" rot="R180"/>
+<pin name="PE12@CN12_49" x="33.02" y="-55.88" length="middle" rot="R180"/>
+<pin name="PF14@CN12_50" x="33.02" y="-104.14" length="middle" rot="R180"/>
+<pin name="PE14@CN12_51" x="33.02" y="-60.96" length="middle" rot="R180"/>
+<pin name="PE9@CN12_52" x="33.02" y="-48.26" length="middle" rot="R180"/>
+<pin name="PE15@CN12_53" x="33.02" y="-63.5" length="middle" rot="R180"/>
+<pin name="GND@CN12_54" x="-30.48" y="-121.92" length="middle"/>
+<pin name="PE13@CN12_55" x="33.02" y="-58.42" length="middle" rot="R180"/>
+<pin name="PE11@CN12_56" x="33.02" y="-53.34" length="middle" rot="R180"/>
+<pin name="PF13@CN12_57" x="33.02" y="-101.6" length="middle" rot="R180"/>
+<pin name="PF3@CN12_58" x="33.02" y="-76.2" length="middle" rot="R180"/>
+<pin name="PF12@CN12_59" x="33.02" y="-99.06" length="middle" rot="R180"/>
+<pin name="PF15@CN12_60" x="33.02" y="-106.68" length="middle" rot="R180"/>
+<pin name="PG14@CN12_61" x="33.02" y="-147.32" length="middle" rot="R180"/>
+<pin name="PF11@CN12_62" x="33.02" y="-96.52" length="middle" rot="R180"/>
+<pin name="GND@CN12_63" x="-30.48" y="-119.38" length="middle"/>
+<pin name="PE0@CN12_64" x="33.02" y="-25.4" length="middle" rot="R180"/>
+<pin name="PD10@CN12_65" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="PG8@CN12_66" x="33.02" y="-132.08" length="middle" rot="R180"/>
+<pin name="PG7@CN12_67" x="33.02" y="-129.54" length="middle" rot="R180"/>
+<pin name="PG5@CN12_68" x="33.02" y="-124.46" length="middle" rot="R180"/>
+<pin name="PG4@CN12_69" x="33.02" y="-121.92" length="middle" rot="R180"/>
+<pin name="PG6@CN12_70" x="33.02" y="-127" length="middle" rot="R180"/>
+<pin name="PC10@CN11_1" x="33.02" y="35.56" length="middle" rot="R180"/>
+<pin name="PC11@CN11_2" x="33.02" y="33.02" length="middle" rot="R180"/>
+<pin name="PC12@CN11_3" x="33.02" y="30.48" length="middle" rot="R180"/>
+<pin name="PD2@CN11_4" x="33.02" y="12.7" length="middle" rot="R180"/>
+<pin name="VDD@CN11_5" x="-30.48" y="-17.78" length="middle"/>
+<pin name="E5V@CN11_6" x="-30.48" y="-2.54" length="middle"/>
+<pin name="BOOT0@CN11_7" x="-30.48" y="40.64" length="middle"/>
+<pin name="GND@CN11_8" x="-30.48" y="-124.46" length="middle"/>
+<pin name="PF6@CN11_9" x="33.02" y="-83.82" length="middle" rot="R180"/>
+<pin name="NC@CN11_10" x="-30.48" y="58.42" length="middle"/>
+<pin name="PF7@CN11_11" x="33.02" y="-86.36" length="middle" rot="R180"/>
+<pin name="VCC33@CN11_12" x="-30.48" y="17.78" length="middle"/>
+<pin name="PA13@CN11_13" x="33.02" y="114.3" length="middle" rot="R180"/>
+<pin name="NRST@CN11_14" x="-30.48" y="48.26" length="middle"/>
+<pin name="PA14@CN11_15" x="33.02" y="111.76" length="middle" rot="R180"/>
+<pin name="VCC33@CN11_16" x="-30.48" y="15.24" length="middle"/>
+<pin name="PA15@CN11_17" x="33.02" y="109.22" length="middle" rot="R180"/>
+<pin name="VCC5@CN11_18" x="-30.48" y="-5.08" length="middle"/>
+<pin name="GND@CN11_19" x="-30.48" y="-127" length="middle"/>
+<pin name="GND@CN11_20" x="-30.48" y="-129.54" length="middle"/>
+<pin name="PB7@CN11_21" x="33.02" y="86.36" length="middle" rot="R180"/>
+<pin name="GND@CN11_22" x="-30.48" y="-132.08" length="middle"/>
+<pin name="PC13@CN11_23" x="33.02" y="27.94" length="middle" rot="R180"/>
+<pin name="VIN@CN11_24" x="-30.48" y="5.08" length="middle"/>
+<pin name="PC14@CN11_25" x="33.02" y="25.4" length="middle" rot="R180"/>
+<pin name="NC@CN11_26" x="-30.48" y="60.96" length="middle"/>
+<pin name="PC15@CN11_27" x="33.02" y="22.86" length="middle" rot="R180"/>
+<pin name="PA0@CN11_28" x="33.02" y="147.32" length="middle" rot="R180"/>
+<pin name="OSC_I@CN11_29" x="-30.48" y="104.14" length="middle"/>
+<pin name="PA1@CN11_30" x="33.02" y="144.78" length="middle" rot="R180"/>
+<pin name="OSC_O@CN11_31" x="-30.48" y="96.52" length="middle"/>
+<pin name="PA4@CN11_32" x="33.02" y="137.16" length="middle" rot="R180"/>
+<pin name="VBAT@CN11_33" x="-30.48" y="-12.7" length="middle"/>
+<pin name="PB0@CN11_34" x="33.02" y="104.14" length="middle" rot="R180"/>
+<pin name="PC2@CN11_35" x="33.02" y="55.88" length="middle" rot="R180"/>
+<pin name="PC1@CN11_36" x="33.02" y="58.42" length="middle" rot="R180"/>
+<pin name="PC3@CN11_37" x="33.02" y="53.34" length="middle" rot="R180"/>
+<pin name="PC0@CN11_38" x="33.02" y="60.96" length="middle" rot="R180"/>
+<pin name="PD4@CN11_39" x="33.02" y="7.62" length="middle" rot="R180"/>
+<pin name="PG11@CN11_70" x="33.02" y="-139.7" length="middle" rot="R180"/>
+<pin name="PD9@CN11_69" x="33.02" y="-5.08" length="middle" rot="R180"/>
+<pin name="PG13@CN11_68" x="33.02" y="-144.78" length="middle" rot="R180"/>
+<pin name="PH2@CN11_67" x="33.02" y="-154.94" length="middle" rot="R180"/>
+<pin name="PG10@CN11_66" x="33.02" y="-137.16" length="middle" rot="R180"/>
+<pin name="PG12@CN11_65" x="33.02" y="-142.24" length="middle" rot="R180"/>
+<pin name="PG15@CN11_64" x="33.02" y="-149.86" length="middle" rot="R180"/>
+<pin name="PG9@CN11_63" x="33.02" y="-134.62" length="middle" rot="R180"/>
+<pin name="PE6@CN11_62" x="33.02" y="-40.64" length="middle" rot="R180"/>
+<pin name="PE1@CN11_61" x="33.02" y="-27.94" length="middle" rot="R180"/>
+<pin name="GND@CN11_60" x="-30.48" y="-137.16" length="middle"/>
+<pin name="PG0@CN11_59" x="33.02" y="-111.76" length="middle" rot="R180"/>
+<pin name="PG1@CN11_58" x="33.02" y="-114.3" length="middle" rot="R180"/>
+<pin name="PD0@CN11_57" x="33.02" y="17.78" length="middle" rot="R180"/>
+<pin name="PF9@CN11_56" x="33.02" y="-91.44" length="middle" rot="R180"/>
+<pin name="PD1@CN11_55" x="33.02" y="15.24" length="middle" rot="R180"/>
+<pin name="PF8@CN11_54" x="33.02" y="-88.9" length="middle" rot="R180"/>
+<pin name="PF0/PH0@CN11_53" x="33.02" y="-68.58" length="middle" rot="R180"/>
+<pin name="PF2@CN11_52" x="33.02" y="-73.66" length="middle" rot="R180"/>
+<pin name="PF1/PH1@CN11_51" x="33.02" y="-71.12" length="middle" rot="R180"/>
+<pin name="PE5@CN11_50" x="33.02" y="-38.1" length="middle" rot="R180"/>
+<pin name="GND@CN11_49" x="-30.48" y="-134.62" length="middle"/>
+<pin name="PE4@CN11_48" x="33.02" y="-35.56" length="middle" rot="R180"/>
+<pin name="PE3@CN11_47" x="33.02" y="-33.02" length="middle" rot="R180"/>
+<pin name="PE2@CN11_46" x="33.02" y="-30.48" length="middle" rot="R180"/>
+<pin name="PD7@CN11_45" x="33.02" y="0" length="middle" rot="R180"/>
+<pin name="PG3@CN11_44" x="33.02" y="-119.38" length="middle" rot="R180"/>
+<pin name="PD6@CN11_43" x="33.02" y="2.54" length="middle" rot="R180"/>
+<pin name="PG2@CN11_42" x="33.02" y="-116.84" length="middle" rot="R180"/>
+<pin name="PD5@CN11_41" x="33.02" y="5.08" length="middle" rot="R180"/>
+<pin name="PD3@CN11_40" x="33.02" y="10.16" length="middle" rot="R180"/>
+<wire x1="27.94" y1="152.4" x2="-25.4" y2="152.4" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="152.4" x2="-25.4" y2="-160.02" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-160.02" x2="27.94" y2="-160.02" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-160.02" x2="27.94" y2="152.4" width="0.254" layer="94"/>
+<text x="-24.892" y="153.162" size="1.778" layer="94">&gt;NAME</text>
+<text x="27.432" y="-160.528" size="1.778" layer="94" rot="R180">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+</devicesets>
+</library>
+</drawing>
+</eagle>
