@@ -14,7 +14,7 @@
 					<key>default</key>
 					<true/>
 					<key>sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
-					<false/>
+					<true/>
 				</dict>
 				<key>ColourStyles</key>
 				<dict/>
@@ -52,11 +52,15 @@
 				<true/>
 				<key>SidebarEnabled</key>
 				<integer>1</integer>
+				<key>SidebarTitle</key>
+				<string>Links</string>
 				<key>TextEncoding</key>
 				<string>utf-8</string>
 			</dict>
 			<key>Files</key>
-			<array/>
+			<array>
+				<string>Sidebar.as</string>
+			</array>
 			<key>Subsandwiches</key>
 			<array/>
 		</dict>

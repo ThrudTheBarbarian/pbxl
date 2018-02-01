@@ -14,7 +14,7 @@
 					<key>default</key>
 					<true/>
 					<key>sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
-					<false/>
+					<true/>
 				</dict>
 				<key>ColourStyles</key>
 				<dict/>
