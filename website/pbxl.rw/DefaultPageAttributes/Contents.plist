@@ -62,8 +62,10 @@
 					<key>Lander</key>
 					<array>
 						<string>[+] combo options.Back to Top Button</string>
+						<string>[+] combo options.Banner Image: Show dots grid</string>
 						<string>[+] combo options.Navigation: Uppercase</string>
 						<string>[+] combo options.StyledText+Blog: Fluid image (edge to edge)</string>
+						<string>[+] combo options.Text justified</string>
 						<string>Banner Image - Parallax.Inactive</string>
 						<string>Banner Image - Vertical masking.MaxHeight 500px</string>
 						<string>BreakPoint: Sidebar.Page full width (Hide Sidebar)</string>
