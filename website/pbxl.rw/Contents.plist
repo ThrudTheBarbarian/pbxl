@@ -23,7 +23,7 @@
 					<key>page0 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-02T04:24:49Z</date>
+						<date>2018-02-05T05:44:52Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -52,11 +52,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								BxGoamQ7J5VN
-								n1JsCIaQ1g==
+								DBIvqSszAnzF
+								5vObU8AGUw==
 								</data>
 								<key>Size</key>
-								<integer>8984</integer>
+								<integer>8976</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -69,7 +69,7 @@
 					<key>page1 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-02T04:24:49Z</date>
+						<date>2018-02-05T05:44:52Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -78,11 +78,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								FbKVrgfRMi4U
-								QRLO5QYCTQ==
+								iJ5bUuVahZ6W
+								9xoKBW8I6A==
 								</data>
 								<key>Size</key>
-								<integer>117106</integer>
+								<integer>117272</integer>
 							</dict>
 							<key>files/stacks_page_page1.js</key>
 							<dict>
@@ -98,11 +98,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								WvrCpL/IKLe4
-								p/ZzU604Yg==
+								pidGnXFQ37gw
+								3ngq4IUd5g==
 								</data>
 								<key>Size</key>
-								<integer>9721</integer>
+								<integer>11348</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -115,7 +115,7 @@
 					<key>page2 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-02T04:24:49Z</date>
+						<date>2018-02-05T05:44:52Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -144,11 +144,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								xuQM3170UDOv
-								zL8A7oLGZA==
+								V0oSGRliuFJ6
+								jedTSo463g==
 								</data>
 								<key>Size</key>
-								<integer>131782</integer>
+								<integer>131948</integer>
 							</dict>
 							<key>files/stacks_page_page2.js</key>
 							<dict>
@@ -164,11 +164,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								Hwu+heyuY1mO
-								tJUYjyWToQ==
+								sQ//gjAA9N1X
+								pS0421Y4mg==
 								</data>
 								<key>Size</key>
-								<integer>17047</integer>
+								<integer>19147</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -181,7 +181,7 @@
 					<key>page3 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-02T04:24:49Z</date>
+						<date>2018-02-05T05:44:52Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -210,11 +210,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								XJqkYDs1RXEj
-								n1vjxD5dAg==
+								FZsMGkQGiMqr
+								Gu1sD4I9lQ==
 								</data>
 								<key>Size</key>
-								<integer>13096</integer>
+								<integer>13088</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -227,7 +227,7 @@
 					<key>page4 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-02T04:24:49Z</date>
+						<date>2018-02-05T05:44:52Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -396,11 +396,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								F0v8Pa1C+6lH
-								WqGYqP4W9A==
+								dQxncan/NxDj
+								s3LLxTSwvw==
 								</data>
 								<key>Size</key>
-								<integer>14604</integer>
+								<integer>14786</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -10947,7 +10947,7 @@
 					<key>BannerUsed</key>
 					<true/>
 					<key>BaseURL</key>
-					<string>http://oobergeek.net/</string>
+					<string>http://oobergeek.net/pbxl/</string>
 					<key>ConsolidateCSSFiles</key>
 					<true/>
 					<key>ConsolidateCommonFilesMode</key>
@@ -11022,7 +11022,7 @@
 					<key>ShowBreadcrumbTrail</key>
 					<false/>
 					<key>SloganText</key>
-					<string>PBXE / PBXL  ... Because it's about time</string>
+					<string>PBIO  ... Because it's about time</string>
 					<key>SloganUsed</key>
 					<true/>
 					<key>ThemeName</key>

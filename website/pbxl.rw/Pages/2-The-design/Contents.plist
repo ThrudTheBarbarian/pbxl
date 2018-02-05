@@ -33,7 +33,7 @@
 					<key>sftp://xanadu.gornall.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-02T04:24:49Z</date>
+						<date>2018-02-05T05:44:52Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -42,11 +42,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								FbKVrgfRMi4U
-								QRLO5QYCTQ==
+								iJ5bUuVahZ6W
+								9xoKBW8I6A==
 								</data>
 								<key>Size</key>
-								<integer>117106</integer>
+								<integer>117272</integer>
 							</dict>
 							<key>files/stacks_page_page1.js</key>
 							<dict>
@@ -62,11 +62,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								WvrCpL/IKLe4
-								p/ZzU604Yg==
+								pidGnXFQ37gw
+								3ngq4IUd5g==
 								</data>
 								<key>Size</key>
-								<integer>9721</integer>
+								<integer>11348</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>

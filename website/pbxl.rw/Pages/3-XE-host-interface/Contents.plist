@@ -18,7 +18,7 @@
 				<key>MostRecentlySelectedStyleName</key>
 				<string>Light</string>
 				<key>PageTitle</key>
-				<string>The host interface</string>
+				<string>XE host interface</string>
 				<key>PluginClassName</key>
 				<string>YHStacksPlugin</string>
 				<key>PluginMetadata</key>
@@ -35,7 +35,7 @@
 					<key>sftp://xanadu.gornall.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-02T04:24:49Z</date>
+						<date>2018-02-05T05:44:52Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -64,11 +64,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								xuQM3170UDOv
-								zL8A7oLGZA==
+								V0oSGRliuFJ6
+								jedTSo463g==
 								</data>
 								<key>Size</key>
-								<integer>131782</integer>
+								<integer>131948</integer>
 							</dict>
 							<key>files/stacks_page_page2.js</key>
 							<dict>
@@ -84,11 +84,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								Hwu+heyuY1mO
-								tJUYjyWToQ==
+								sQ//gjAA9N1X
+								pS0421Y4mg==
 								</data>
 								<key>Size</key>
-								<integer>17047</integer>
+								<integer>19147</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
