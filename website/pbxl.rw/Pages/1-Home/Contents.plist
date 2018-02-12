@@ -11,10 +11,12 @@
 			<dict>
 				<key>CreatedDate</key>
 				<date>2018-01-29T00:34:54Z</date>
+				<key>CustomThemeName</key>
+				<string>Lander</string>
 				<key>ID</key>
 				<string>page0</string>
 				<key>MostRecentlySelectedStyleName</key>
-				<string>Theme Default</string>
+				<string>Light</string>
 				<key>PageTitle</key>
 				<string>Home</string>
 				<key>PluginClassName</key>
@@ -33,7 +35,7 @@
 					<key>sftp://xanadu.gornall.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-05T05:44:52Z</date>
+						<date>2018-02-05T16:12:00Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -62,11 +64,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								DBIvqSszAnzF
-								5vObU8AGUw==
+								EJrYSSw2mmXf
+								OohgUuXkdg==
 								</data>
 								<key>Size</key>
-								<integer>8976</integer>
+								<integer>9102</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
