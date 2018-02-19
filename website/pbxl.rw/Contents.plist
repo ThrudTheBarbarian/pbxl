@@ -23,7 +23,7 @@
 					<key>page0 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-05T16:12:00Z</date>
+						<date>2018-02-19T01:15:27Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -52,11 +52,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								EJrYSSw2mmXf
-								OohgUuXkdg==
+								vX+pGaNryf4w
+								+FKxnu8JYA==
 								</data>
 								<key>Size</key>
-								<integer>9102</integer>
+								<integer>9334</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -69,7 +69,7 @@
 					<key>page1 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-05T16:12:00Z</date>
+						<date>2018-02-19T01:18:47Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -98,11 +98,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								o/F/Abtinjp4
-								NS/wDZnMhA==
+								U1uXNywxbOxG
+								CWUMeV1TQg==
 								</data>
 								<key>Size</key>
-								<integer>11417</integer>
+								<integer>11622</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -115,7 +115,7 @@
 					<key>page2 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-05T16:12:00Z</date>
+						<date>2018-02-19T01:15:27Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -164,11 +164,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								sQ//gjAA9N1X
-								pS0421Y4mg==
+								I8I6JuLDfd9f
+								YwJjPU8ajw==
 								</data>
 								<key>Size</key>
-								<integer>19147</integer>
+								<integer>19274</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -181,7 +181,7 @@
 					<key>page3 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-05T16:12:00Z</date>
+						<date>2018-02-19T01:15:27Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -210,8 +210,8 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								FZsMGkQGiMqr
-								Gu1sD4I9lQ==
+								Ecq8VkdXyARF
+								7Np3LqWbnA==
 								</data>
 								<key>Size</key>
 								<integer>13088</integer>
@@ -227,7 +227,7 @@
 					<key>page4 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-05T16:12:00Z</date>
+						<date>2018-02-19T01:15:27Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -396,11 +396,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								Q/6x+M/d0XHW
-								7Zjdw12gbg==
+								h8a+tFS+Kvyg
+								gIn+Zrev1w==
 								</data>
 								<key>Size</key>
-								<integer>15331</integer>
+								<integer>15623</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -413,7 +413,7 @@
 					<key>rw:document:extrafiles - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-01T22:01:53Z</date>
+						<date>2018-02-19T01:18:47Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -442,11 +442,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								47FyYte0ykyB
-								0xg1wGW2bg==
+								Lio5qID8Wo4M
+								/a3QdWPQdg==
 								</data>
 								<key>Size</key>
-								<integer>436</integer>
+								<integer>596</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
