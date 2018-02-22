@@ -13,6 +13,8 @@
 				<dict>
 					<key>default</key>
 					<true/>
+					<key>sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
+					<false/>
 					<key>sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<false/>
 				</dict>
@@ -31,7 +33,7 @@
 				<key>FilenameExtension</key>
 				<string>html</string>
 				<key>FolderName</key>
-				<string>page-3</string>
+				<string>page</string>
 				<key>HasCustomThemeStyle</key>
 				<false/>
 				<key>ImageFormat</key>

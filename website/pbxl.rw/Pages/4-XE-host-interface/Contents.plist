@@ -32,10 +32,10 @@
 				</dict>
 				<key>PublishingManifests</key>
 				<dict>
-					<key>sftp://xanadu.gornall.net</key>
+					<key>sftp://stage.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-19T01:15:27Z</date>
+						<date>2018-02-22T16:15:40Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -84,11 +84,77 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								I8I6JuLDfd9f
-								YwJjPU8ajw==
+								9dUyIxGx2C9F
+								DD0nTZH3nw==
 								</data>
 								<key>Size</key>
-								<integer>19274</integer>
+								<integer>19325</integer>
+							</dict>
+						</dict>
+						<key>PageID</key>
+						<string>page2</string>
+						<key>SiteRoot</key>
+						<string>page-2</string>
+						<key>Version</key>
+						<integer>3</integer>
+					</dict>
+					<key>sftp://xanadu.gornall.net</key>
+					<dict>
+						<key>CreationDate</key>
+						<date>2018-02-22T18:47:17Z</date>
+						<key>DigestAlgorithm</key>
+						<string>MD5</string>
+						<key>PageDigests</key>
+						<dict>
+							<key>files/image_filler.png</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								LIl7nKmldC10
+								3/oCS0cIhg==
+								</data>
+								<key>Size</key>
+								<integer>2885</integer>
+							</dict>
+							<key>files/image_stack_img_11.png</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								Hyw+OKAB+wHI
+								PPByM3gd6Q==
+								</data>
+								<key>Size</key>
+								<integer>176542</integer>
+							</dict>
+							<key>files/stacks_page_page2.css</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								l7PjdjPdbntd
+								4ErhnLjzkg==
+								</data>
+								<key>Size</key>
+								<integer>132207</integer>
+							</dict>
+							<key>files/stacks_page_page2.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								fNPCtOmKt9FB
+								CZC4cMAssw==
+								</data>
+								<key>Size</key>
+								<integer>10788</integer>
+							</dict>
+							<key>index.html</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								YH6FB2VdXzIZ
+								bdix3QSgGw==
+								</data>
+								<key>Size</key>
+								<integer>19319</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>

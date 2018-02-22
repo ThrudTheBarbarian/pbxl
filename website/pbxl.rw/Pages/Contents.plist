@@ -17,10 +17,11 @@
 			<key>Subsandwiches</key>
 			<array>
 				<string>1-Home</string>
-				<string>2-The-design</string>
-				<string>3-XE-host-interface</string>
-				<string>4-The-device-interface</string>
-				<string>5-The-enclosure</string>
+				<string>2-Blog</string>
+				<string>3-The-design</string>
+				<string>4-XE-host-interface</string>
+				<string>5-The-device-interface</string>
+				<string>6-The-enclosure</string>
 			</array>
 		</dict>
 	</array>
