@@ -8,24 +8,24 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -43,17 +43,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -19607,15 +19607,15 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="IC3" library="IDTQS_3245QG" deviceset="IDTQS3245" device="QSOP20"/>
 <part name="IC5" library="IDTQS_3245QG" deviceset="IDTQS3245" device="QSOP20"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -19627,44 +19627,44 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="VCC3" library="supply1" deviceset="VCCINT" device=""/>
 <part name="U$2" library="Eagle_XMOS_Lib_COMPLETE" deviceset="XL216-512-TQ128" device=""/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C12" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C21" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C14" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C18" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C19" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C21" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="VCC1" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC2" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC4" library="supply1" deviceset="VCCINT" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="4R7"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="4R7"/>
 <part name="VCC5" library="supply1" deviceset="VCCINT" device=""/>
-<part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="C23" library="rcl" deviceset="C-EU" device="C0603" value="10uF"/>
-<part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="10uF"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
+<part name="C24" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun" deviceset="OSCILLATOR" device="5X3-PIN1-INDICATED" value="24 MHz Osc. (F535L-24)"/>
 <part name="VCC6" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="XTAG" library="pinhead" deviceset="PINHD-2X10" device="/90" value="1175-1618-ND"/>
-<part name="C25" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C1206" value="10nF"/>
 <part name="U$3" library="sjg-logic" deviceset="74LVC1G07SE-7" device=""/>
 <part name="VCC7" library="supply1" deviceset="VCCIO" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="47K"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="47K"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="C26" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C26" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="VCC8" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NC"/>
@@ -19673,12 +19673,12 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="C27" library="rcl" deviceset="CPOL-EU" device="C" value="22uF"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="L1" library="rcl" deviceset="L-EU" device="L1812" value="2.2uH"/>
-<part name="C28" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="34K"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="34K"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="C29" library="rcl" deviceset="CPOL-EU" device="D" value="47uF"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="180R"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R1206" value="180R"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
 <part name="VCC9" library="supply1" deviceset="VCCIO" device=""/>
 <part name="U$5" library="sjg-power" deviceset="TPS561208DDCR" device=""/>
@@ -19686,31 +19686,31 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="C30" library="rcl" deviceset="CPOL-EU" device="C" value="22uF"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="L2" library="rcl" deviceset="L-EU" device="L1812" value="2.2uH"/>
-<part name="C31" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="5K1"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="16K"/>
+<part name="C31" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R1206" value="5K1"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R1206" value="16K"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="C32" library="rcl" deviceset="CPOL-EU" device="D" value="47uF"/>
 <part name="U$6" library="sjg-power" deviceset="TPS3808G33DBVR" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="C34" library="rcl" deviceset="C-EU" device="C0603" value="120pF"/>
+<part name="C34" library="rcl" deviceset="C-EU" device="C1206" value="120pF"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="sjg-sdram" deviceset="W9852G6KH" device=""/>
 <part name="U$8" library="sjg-logic" deviceset="SN74LVC1G02" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="VCC11" library="supply1" deviceset="VCCIO" device=""/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="C35" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C35" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="VCC12" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
-<part name="C36" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C37" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C38" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C39" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C40" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="C41" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C36" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C37" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C38" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C39" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C40" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="C41" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="VCC13" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
@@ -19718,25 +19718,25 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="U$9" library="sjg-logic" deviceset="SN74CBTLV3257" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="VCC15" library="supply1" deviceset="VCCIO" device=""/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="VCC16" library="supply1" deviceset="VCCIO" device=""/>
 <part name="U$10" library="sjg-qspi" deviceset="IS25LP080D-JNLE" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="VCC17" library="supply1" deviceset="VCCIO" device=""/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="33R"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="33R"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R1206" value="33R"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R1206" value="33R"/>
 <part name="U$11" library="sjg-power" deviceset="TPS3808G09DBVR" device=""/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="47K"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R1206" value="47K"/>
 <part name="VCC18" library="supply1" deviceset="VCCIO" device=""/>
-<part name="C42" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C42" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
-<part name="C43" library="rcl" deviceset="C-EU" device="C0603" value="120pF"/>
+<part name="C43" library="rcl" deviceset="C-EU" device="C1206" value="120pF"/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="VCC10" library="supply1" deviceset="VCCINT" device=""/>
 <part name="VCC19" library="supply1" deviceset="VCCINT" device=""/>
-<part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
+<part name="C44" library="rcl" deviceset="C-EU" device="C1206" value="10nF"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="RESET_SW" library="SparkFun" deviceset="TAC_SWITCH" device="PTH" value="MANUAL_RESET"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
@@ -19747,12 +19747,12 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="FRAME5" library="frames" deviceset="A3L-LOC" device="" value="HS LINK"/>
 <part name="X1" library="con-molex" deviceset="0446200002" device=""/>
 <part name="U$12" library="sjg-isolation" deviceset="FIN1049MTCX" device=""/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="47K"/>
-<part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="47K"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R1206" value="47K"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R1206" value="47K"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
-<part name="C45" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C45" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
@@ -19761,20 +19761,20 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="USBPOWER" library="con-hirose" deviceset="MINI-USB-" device="UX60-MB-5S8"/>
-<part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="1K"/>
-<part name="R21" library="rcl" deviceset="R-EU_" device="R0603" value="1K"/>
-<part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="1K"/>
-<part name="R23" library="rcl" deviceset="R-EU_" device="R0603" value="1K"/>
+<part name="R20" library="rcl" deviceset="R-EU_" device="R1206" value="1K"/>
+<part name="R21" library="rcl" deviceset="R-EU_" device="R1206" value="1K"/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R1206" value="1K"/>
+<part name="R23" library="rcl" deviceset="R-EU_" device="R1206" value="1K"/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun-Connectors" deviceset="USD-SOCKET" device="NEW"/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="VCC22" library="supply1" deviceset="VCCIO" device=""/>
-<part name="R24" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
-<part name="R25" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
-<part name="R26" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R24" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
+<part name="R25" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
+<part name="R26" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
-<part name="R27" library="rcl" deviceset="R-EU_" device="R0603" value="47K"/>
-<part name="C46" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="R27" library="rcl" deviceset="R-EU_" device="R1206" value="47K"/>
+<part name="C46" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="DBG0" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
 <part name="DBG1" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
 <part name="DBG2" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
@@ -19789,11 +19789,15 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <part name="VCC24" library="supply1" deviceset="VCCIO" device=""/>
 <part name="BOOT_SW" library="SparkFun" deviceset="TAC_SWITCH" device="PTH" value="FLASH_MODE"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
-<part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="VCC25" library="supply1" deviceset="VCCIO" device=""/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R1206" value="0R"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R1206" value="0R"/>
 <part name="VCC26" library="supply1" deviceset="VCCIO" device=""/>
+<part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="ok33"/>
+<part name="R28" library="rcl" deviceset="R-EU_" device="R1206" value="47R"/>
+<part name="SJ3" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
 </parts>
 <sheets>
 <sheet>
@@ -21024,7 +21028,7 @@ from the 5v supply for QS</text>
 <wire x1="154.94" y1="86.36" x2="154.94" y2="17.78" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="314.96" y1="17.78" x2="314.96" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="314.96" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
-<text x="157.48" y="81.28" size="2.1844" layer="97">3.3v from 5v supply</text>
+<text x="276.86" y="81.28" size="2.1844" layer="97">3.3v from 5v supply</text>
 <text x="304.292" y="-16.764" size="0.8128" layer="97">EEEFK1V220R</text>
 <text x="198.628" y="-1.016" size="0.8128" layer="97">LQH43PN2R2M26L</text>
 <text x="180.086" y="-26.416" size="0.8128" layer="97">EEEFK1470P</text>
@@ -21032,7 +21036,7 @@ from the 5v supply for QS</text>
 <wire x1="154.94" y1="-106.68" x2="314.96" y2="-106.68" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="314.96" y1="-106.68" x2="314.96" y2="17.78" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="314.96" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="97" style="shortdash"/>
-<text x="157.48" y="12.7" size="2.1844" layer="97">1v from 5v supply</text>
+<text x="279.4" y="12.7" size="2.1844" layer="97">1v from 5v supply</text>
 <text x="278.892" y="-95.504" size="0.8128" layer="97">t(Delay) = 1.2ms</text>
 <text x="288.29" y="-121.92" size="1.778" layer="94">POWER</text>
 <wire x1="-45.72" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="97" style="longdash"/>
@@ -21040,6 +21044,10 @@ from the 5v supply for QS</text>
 <wire x1="12.7" y1="45.72" x2="-45.72" y2="45.72" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-45.72" y1="45.72" x2="-45.72" y2="109.22" width="0.1524" layer="97" style="longdash"/>
 <text x="-43.18" y="104.14" size="2.1844" layer="97">Alterative power from mini-USB B</text>
+<text x="177.8" y="76.2" size="1.778" layer="97">Isolate the PSU from the rest of the
+circuit until tested</text>
+<text x="177.8" y="5.08" size="1.778" layer="97">Isolate the PSU from the rest of the
+circuit until tested</text>
 </plain>
 <instances>
 <instance part="GND12" gate="1" x="53.34" y="-33.02"/>
@@ -21090,8 +21098,8 @@ from the 5v supply for QS</text>
 <instance part="C29" gate="G$1" x="177.8" y="48.26"/>
 <instance part="R5" gate="G$1" x="167.64" y="38.1" rot="R90"/>
 <instance part="LED1" gate="G$1" x="167.64" y="55.88"/>
-<instance part="VCC9" gate="G$1" x="167.64" y="71.12" smashed="yes">
-<attribute name="VALUE" x="163.83" y="73.152" size="1.778" layer="96"/>
+<instance part="VCC9" gate="G$1" x="167.64" y="81.28" smashed="yes">
+<attribute name="VALUE" x="163.83" y="83.312" size="1.778" layer="96"/>
 </instance>
 <instance part="U$5" gate="G$1" x="251.46" y="-10.16"/>
 <instance part="GND22" gate="1" x="302.26" y="-27.94"/>
@@ -21108,8 +21116,8 @@ from the 5v supply for QS</text>
 <instance part="C34" gate="G$1" x="274.32" y="-88.9"/>
 <instance part="GND25" gate="1" x="274.32" y="-101.6"/>
 <instance part="GND26" gate="1" x="208.28" y="-88.9"/>
-<instance part="VCC10" gate="G$1" x="167.64" y="5.08" smashed="yes">
-<attribute name="VALUE" x="171.958" y="8.636" size="1.778" layer="96" rot="R180"/>
+<instance part="VCC10" gate="G$1" x="167.64" y="10.16" smashed="yes">
+<attribute name="VALUE" x="171.958" y="13.716" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="FRAME2" gate="G$1" x="-55.88" y="-142.24"/>
 <instance part="GND45" gate="1" x="-17.78" y="58.42"/>
@@ -21127,6 +21135,10 @@ from the 5v supply for QS</text>
 <instance part="VCC26" gate="G$1" x="208.28" y="-60.96" smashed="yes">
 <attribute name="VALUE" x="204.47" y="-58.928" size="1.778" layer="96"/>
 </instance>
+<instance part="SJ2" gate="1" x="180.34" y="71.12" rot="R180"/>
+<instance part="LED2" gate="G$1" x="167.64" y="-15.24"/>
+<instance part="R28" gate="G$1" x="167.64" y="-30.48" rot="R90"/>
+<instance part="SJ3" gate="1" x="177.8" y="0" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -21253,6 +21265,10 @@ from the 5v supply for QS</text>
 <wire x1="193.04" y1="-38.1" x2="177.8" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="-38.1" x2="177.8" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="193.04" y="-38.1"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="-35.56" x2="167.64" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-38.1" x2="177.8" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="177.8" y="-38.1"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="GND@1"/>
@@ -21397,18 +21413,10 @@ from the 5v supply for QS</text>
 <wire x1="121.92" y1="38.1" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="-5.08" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="-7.62" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="193.04" y="-5.08"/>
-<pinref part="C32" gate="G$1" pin="+"/>
-<wire x1="177.8" y1="-17.78" x2="177.8" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="-5.08" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="-5.08" x2="177.8" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="177.8" y="-5.08"/>
+<pinref part="SJ3" gate="1" pin="2"/>
 <pinref part="VCC10" gate="G$1" pin="VCCINT"/>
-<wire x1="167.64" y1="2.54" x2="167.64" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="0" x2="167.64" y2="0" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="0" x2="167.64" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCCIO" class="0">
@@ -21504,23 +21512,6 @@ from the 5v supply for QS</text>
 <junction x="116.84" y="-58.42"/>
 </segment>
 <segment>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="60.96" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
-<junction x="193.04" y="63.5"/>
-<pinref part="C29" gate="G$1" pin="+"/>
-<wire x1="177.8" y1="50.8" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
-<junction x="177.8" y="63.5"/>
-<pinref part="VCC9" gate="G$1" pin="VCCIO"/>
-<wire x1="167.64" y1="63.5" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="167.64" y1="58.42" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
-<junction x="167.64" y="63.5"/>
-</segment>
-<segment>
 <wire x1="281.94" y1="-40.64" x2="281.94" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="VCC@6"/>
 <wire x1="281.94" y1="-45.72" x2="281.94" y2="-48.26" width="0.1524" layer="91"/>
@@ -21541,6 +21532,12 @@ from the 5v supply for QS</text>
 <pinref part="VCC26" gate="G$1" pin="VCCIO"/>
 <wire x1="218.44" y1="-68.58" x2="208.28" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="-68.58" x2="208.28" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SJ2" gate="1" pin="2"/>
+<pinref part="VCC9" gate="G$1" pin="VCCIO"/>
+<wire x1="175.26" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="71.12" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -21683,6 +21680,51 @@ from the 5v supply for QS</text>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="167.64" y1="43.18" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="60.96" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+<junction x="193.04" y="63.5"/>
+<pinref part="C29" gate="G$1" pin="+"/>
+<wire x1="177.8" y1="50.8" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<junction x="177.8" y="63.5"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="167.64" y1="58.42" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="1" pin="1"/>
+<wire x1="185.42" y1="71.12" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="71.12" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="-20.32" x2="167.64" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="L2" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="-5.08" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="-7.62" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="193.04" y="-5.08"/>
+<pinref part="C32" gate="G$1" pin="+"/>
+<wire x1="177.8" y1="-17.78" x2="177.8" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-5.08" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-5.08" x2="177.8" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="177.8" y="-5.08"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="167.64" y1="-12.7" x2="167.64" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="SJ3" gate="1" pin="1"/>
+<wire x1="182.88" y1="0" x2="193.04" y2="0" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="0" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -22981,7 +23023,7 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <sheet>
 <description>HS Link</description>
 <plain>
-<text x="33.02" y="162.56" size="2.1844" layer="97">Resistors ensure link is grounded at
+<text x="20.32" y="162.56" size="2.1844" layer="97">Resistors ensure link is grounded at
 boot time when no connection at
 other end of the line</text>
 <text x="50.8" y="223.52" size="2.1844" layer="97">Note that the bits are inverted for the
