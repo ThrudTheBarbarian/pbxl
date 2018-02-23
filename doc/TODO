@@ -1,18 +1,20 @@
 Next revision board changes:
 
- - Screw holes for mounting in a case
+ * Screw holes for mounting in a case
  - Test points for anything useful
- - Isolate power-supply areas with 0-ohm resistors or solder bridges
+ * Isolate power-supply areas with 0-ohm resistors or solder bridges
  - Bring out any remaining GPIO inputs to pin headers for debugging
- - Add a cartridge slot header
- - PBI device-selection switch, maybe rotary, maybe just pin-header
- - Default memory-mapping rotary switch or pin-header
- - More 'power-good' LEDs for quick once-over 
- - Move to 1206 size for ease of soldering, maybe use the back as well
- - Elongate the card-edge connector because of 130XE tabs
- - Move to a 10cm^2 board and use SeeedStudio's fusion service rules for layout
+ * Add a cartridge slot header
+ * PBI device-selection switch, maybe rotary, maybe just pin-header [dip switch]
+ * Default memory-mapping rotary switch or pin-header [dip-switch]
+ * More 'power-good' LEDs for quick once-over 
+ * Move to 1206 size for ease of soldering, maybe use the back as well
+ * Elongate the card-edge connector because of 130XE tabs
+ * Move to a 10cm^2 board and use SeeedStudio's fusion service rules for layout
  - Will do a board-shrink later
-
+ * prevent signals going under the oscillator
+ * replace the thermal vias in the xmos core
+ 
 
 Debugging
 
@@ -20,4 +22,5 @@ Debugging
  	- Make sure U$11 and U$6 are correct
  	- Also make sure U$5 is correct
  	- Make sure pull-up R27 is correct
+ 	--> design error in supervisor circuit
  	
