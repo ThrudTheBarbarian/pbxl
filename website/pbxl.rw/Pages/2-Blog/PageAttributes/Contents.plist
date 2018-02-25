@@ -47,7 +47,7 @@
 				<key>OutputXMLDeclaration</key>
 				<false/>
 				<key>PluginExtension</key>
-				<string>html</string>
+				<string>php</string>
 				<key>PluginHasPerformedMigrationToSharedData</key>
 				<true/>
 				<key>RobotsShouldFollowLinks</key>

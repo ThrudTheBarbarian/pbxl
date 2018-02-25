@@ -20,56 +20,10 @@
 				<string>7.1</string>
 				<key>PublishingManifests</key>
 				<dict>
-					<key>page0 - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T16:15:40Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>files/stacks_page_page0.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								H9c6bc2JifxD
-								M5zVG4/NMg==
-								</data>
-								<key>Size</key>
-								<integer>116889</integer>
-							</dict>
-							<key>files/stacks_page_page0.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								EeNYTfHGNP9q
-								5lvmJBCP+Q==
-								</data>
-								<key>Size</key>
-								<integer>14138</integer>
-							</dict>
-							<key>index.html</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								3VYOuIxF/NNp
-								HxIVVveC7g==
-								</data>
-								<key>Size</key>
-								<integer>9382</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>page0</string>
-						<key>SiteRoot</key>
-						<string></string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
 					<key>page0 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T18:47:17Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -98,70 +52,24 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								b0LXqx5odo+7
-								TFkvOcbATA==
+								YMdngpWwLmjz
+								TMNc20YIzQ==
 								</data>
 								<key>Size</key>
-								<integer>9480</integer>
+								<integer>8755</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>page0</string>
 						<key>SiteRoot</key>
 						<string></string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
-					<key>page1 - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T16:15:40Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>files/stacks_page_page1.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								7zLmcL/ZoHEK
-								Tjq6pO1QJg==
-								</data>
-								<key>Size</key>
-								<integer>117376</integer>
-							</dict>
-							<key>files/stacks_page_page1.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								N9ODBn5vX0eI
-								GowyHiIppA==
-								</data>
-								<key>Size</key>
-								<integer>14138</integer>
-							</dict>
-							<key>index.html</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								VSBJrPBlOwXe
-								8ukmTumHFg==
-								</data>
-								<key>Size</key>
-								<integer>11673</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>page1</string>
-						<key>SiteRoot</key>
-						<string>page</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>page1 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T18:47:17Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -190,11 +98,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								8EfS/uONYBnH
-								dDuFyjSakg==
+								esH8wuLpsNQM
+								FP+izoF7Lg==
 								</data>
 								<key>Size</key>
-								<integer>11667</integer>
+								<integer>10942</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -204,76 +112,10 @@
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
-					<key>page2 - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T16:15:40Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>files/image_filler.png</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								LIl7nKmldC10
-								3/oCS0cIhg==
-								</data>
-								<key>Size</key>
-								<integer>2885</integer>
-							</dict>
-							<key>files/image_stack_img_11.png</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								Hyw+OKAB+wHI
-								PPByM3gd6Q==
-								</data>
-								<key>Size</key>
-								<integer>176542</integer>
-							</dict>
-							<key>files/stacks_page_page2.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								l7PjdjPdbntd
-								4ErhnLjzkg==
-								</data>
-								<key>Size</key>
-								<integer>132207</integer>
-							</dict>
-							<key>files/stacks_page_page2.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								fNPCtOmKt9FB
-								CZC4cMAssw==
-								</data>
-								<key>Size</key>
-								<integer>10788</integer>
-							</dict>
-							<key>index.html</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								9dUyIxGx2C9F
-								DD0nTZH3nw==
-								</data>
-								<key>Size</key>
-								<integer>19325</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>page2</string>
-						<key>SiteRoot</key>
-						<string>page-2</string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
 					<key>page2 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T18:47:17Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -322,70 +164,24 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								YH6FB2VdXzIZ
-								bdix3QSgGw==
+								3jMpZlOXeC/U
+								eqI3NJRdtA==
 								</data>
 								<key>Size</key>
-								<integer>19319</integer>
+								<integer>18594</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>page2</string>
 						<key>SiteRoot</key>
 						<string>page-2</string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
-					<key>page3 - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T16:15:40Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>files/stacks_page_page3.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								nxtpa4KmMROn
-								xvgh+7RGWw==
-								</data>
-								<key>Size</key>
-								<integer>117460</integer>
-							</dict>
-							<key>files/stacks_page_page3.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								t1MnfUEs1SZY
-								hKDwGSSRbA==
-								</data>
-								<key>Size</key>
-								<integer>14138</integer>
-							</dict>
-							<key>index.html</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								IRmRhavSW7zw
-								Qw4u4m8g0w==
-								</data>
-								<key>Size</key>
-								<integer>13139</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>page3</string>
-						<key>SiteRoot</key>
-						<string>page-3</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>page3 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T18:47:17Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -414,11 +210,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								W0XhZa3cHZYf
-								xQ4Q24NHsA==
+								0JMEuBo8mMgy
+								m+g2J3hhTg==
 								</data>
 								<key>Size</key>
-								<integer>13133</integer>
+								<integer>12408</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -428,196 +224,10 @@
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
-					<key>page4 - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T16:15:40Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>files/image_filler.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								m+6bbauvXr8J
-								PaMurpVVQA==
-								</data>
-								<key>Size</key>
-								<integer>16447</integer>
-							</dict>
-							<key>files/slide_image_12.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								rFjCrZBZJfnL
-								4/pt6np20A==
-								</data>
-								<key>Size</key>
-								<integer>156518</integer>
-							</dict>
-							<key>files/slide_image_15.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								Kp0GglXFqNKr
-								vGqM3egjFg==
-								</data>
-								<key>Size</key>
-								<integer>153158</integer>
-							</dict>
-							<key>files/slide_image_16.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								Rwwc/vHi4/hR
-								iJYd61cU4Q==
-								</data>
-								<key>Size</key>
-								<integer>126061</integer>
-							</dict>
-							<key>files/slide_image_17.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								vHzp8mK9wH2N
-								mJ/qRWbh5g==
-								</data>
-								<key>Size</key>
-								<integer>383232</integer>
-							</dict>
-							<key>files/slide_thumbnail_12.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								rFjCrZBZJfnL
-								4/pt6np20A==
-								</data>
-								<key>Size</key>
-								<integer>156518</integer>
-							</dict>
-							<key>files/slide_thumbnail_15.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								Kp0GglXFqNKr
-								vGqM3egjFg==
-								</data>
-								<key>Size</key>
-								<integer>153158</integer>
-							</dict>
-							<key>files/slide_thumbnail_16.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								Rwwc/vHi4/hR
-								iJYd61cU4Q==
-								</data>
-								<key>Size</key>
-								<integer>126061</integer>
-							</dict>
-							<key>files/slide_thumbnail_17.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								vHzp8mK9wH2N
-								mJ/qRWbh5g==
-								</data>
-								<key>Size</key>
-								<integer>383232</integer>
-							</dict>
-							<key>files/stacks_page_page4.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								xBkmJGRpincD
-								7wi8tauf+Q==
-								</data>
-								<key>Size</key>
-								<integer>134889</integer>
-							</dict>
-							<key>files/stacks_page_page4.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								f5ysNcG52zwu
-								y+St+yrV/w==
-								</data>
-								<key>Size</key>
-								<integer>75340</integer>
-							</dict>
-							<key>files/thumbnail_128_12.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								4LI+cw8PFzIU
-								L+k4QwyFlA==
-								</data>
-								<key>Size</key>
-								<integer>28388</integer>
-							</dict>
-							<key>files/thumbnail_128_15.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								t9YA9l//BBiQ
-								lQRisNRnuQ==
-								</data>
-								<key>Size</key>
-								<integer>25679</integer>
-							</dict>
-							<key>files/thumbnail_128_16.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								9FMqoa+tn+gv
-								RDTUfMNyKA==
-								</data>
-								<key>Size</key>
-								<integer>16773</integer>
-							</dict>
-							<key>files/thumbnail_128_17.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								vFSCk1nIE8ad
-								A3NxSc+b5w==
-								</data>
-								<key>Size</key>
-								<integer>23903</integer>
-							</dict>
-							<key>files/thumbnail_filler.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								SyNx8h/vF7L1
-								d2SnvwMT9g==
-								</data>
-								<key>Size</key>
-								<integer>16971</integer>
-							</dict>
-							<key>index.html</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								V2dfRLG5dxSO
-								0o9ZGc7m8A==
-								</data>
-								<key>Size</key>
-								<integer>15674</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>page4</string>
-						<key>SiteRoot</key>
-						<string>page-4</string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
 					<key>page4 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T18:47:17Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -786,90 +396,24 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								NgbEwXuOo0WJ
-								69E2TgI99Q==
+								TGuxf/je6hKX
+								AscB8vR7MA==
 								</data>
 								<key>Size</key>
-								<integer>15668</integer>
+								<integer>14943</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>page4</string>
 						<key>SiteRoot</key>
 						<string>page-4</string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
-					<key>page5 - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T18:21:46Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>files/ical_small.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								cHlWAQof57i2
-								KodHxdwX7w==
-								</data>
-								<key>Size</key>
-								<integer>4166</integer>
-							</dict>
-							<key>files/stacks-image-a6dd7ac.png</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								Dt76V3k5eumo
-								IUJ8yf3TpQ==
-								</data>
-								<key>Size</key>
-								<integer>34403</integer>
-							</dict>
-							<key>files/stacks_page_page5.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								cHT/kvajy6Xx
-								69KdCugjgQ==
-								</data>
-								<key>Size</key>
-								<integer>120332</integer>
-							</dict>
-							<key>files/stacks_page_page5.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								niTdftJBfRMU
-								3Z5jvL88VA==
-								</data>
-								<key>Size</key>
-								<integer>19025</integer>
-							</dict>
-							<key>index.html</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								R528+WtV1MRf
-								hqi99eHhKA==
-								</data>
-								<key>Size</key>
-								<integer>12207</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>page5</string>
-						<key>SiteRoot</key>
-						<string>page-5</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>page5 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T18:51:31Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -898,31 +442,41 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								ukU5x6r1tGk1
-								ng7Fv7XYdQ==
+								KsYhMwbuqFLD
+								Ci3Vw5coKw==
 								</data>
 								<key>Size</key>
-								<integer>123909</integer>
+								<integer>129392</integer>
 							</dict>
 							<key>files/stacks_page_page5.js</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								jivMZASUY3Wv
-								wLEUcjqsAQ==
+								LqUqLLzmen23
+								yFjvtcsfFA==
 								</data>
 								<key>Size</key>
-								<integer>20666</integer>
+								<integer>42042</integer>
 							</dict>
-							<key>index.html</key>
+							<key>files/stacks_page_page5.php</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								H6nb6bL5ex+B
-								y+b7ItLtyQ==
+								fL5jbTuHiQSj
+								3alpSYk1ow==
 								</data>
 								<key>Size</key>
-								<integer>12806</integer>
+								<integer>20</integer>
+							</dict>
+							<key>index.php</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								gptVdeXcXPbo
+								FLIeiBvJtg==
+								</data>
+								<key>Size</key>
+								<integer>51738</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -932,56 +486,10 @@
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
-					<key>rw:document:extrafiles - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T18:21:46Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>rw_common/images/xl-banner 2.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								Di5LN7rsX7Z6
-								sGlKYJmHPQ==
-								</data>
-								<key>Size</key>
-								<integer>276442</integer>
-							</dict>
-							<key>rw_common/version.txt</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								faFLeaGqn2Gi
-								jw+XIpD0IA==
-								</data>
-								<key>Size</key>
-								<integer>5</integer>
-							</dict>
-							<key>sitemap.xml</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								ibSEeZlFBwMh
-								Rez+5q7SUg==
-								</data>
-								<key>Size</key>
-								<integer>539</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>rw:document:extrafiles</string>
-						<key>SiteRoot</key>
-						<string></string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
 					<key>rw:document:extrafiles - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T18:50:16Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -1010,150 +518,24 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								mZmv/geaF4Y/
-								98/wtGQ/GQ==
+								MB7WnQ1E0+gY
+								BO3lwR4CzA==
 								</data>
 								<key>Size</key>
-								<integer>695</integer>
+								<integer>724</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>rw:document:extrafiles</string>
 						<key>SiteRoot</key>
 						<string></string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
-					<key>rw:plugin:stacks - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T16:15:40Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>FontAwesome.otf</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								DScXzV2FPlx2
-								XKAy39QaTQ==
-								</data>
-								<key>Size</key>
-								<integer>134808</integer>
-							</dict>
-							<key>cloud.php</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								HooeGOe7KZ79
-								r9MK1f85yQ==
-								</data>
-								<key>Size</key>
-								<integer>9287</integer>
-							</dict>
-							<key>font-awesome.min.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								UzsCZj80o/K9
-								UV/i4V98Pw==
-								</data>
-								<key>Size</key>
-								<integer>30957</integer>
-							</dict>
-							<key>fontawesome-webfont.eot</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								Z09Q0oeoxI3B
-								m6QE0g/nEw==
-								</data>
-								<key>Size</key>
-								<integer>165742</integer>
-							</dict>
-							<key>fontawesome-webfont.svg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								kS7GbXVy/4IX
-								STGTlkcL3g==
-								</data>
-								<key>Size</key>
-								<integer>444379</integer>
-							</dict>
-							<key>fontawesome-webfont.ttf</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								sGhx8oH+5rJB
-								1gWCrpNpuQ==
-								</data>
-								<key>Size</key>
-								<integer>165548</integer>
-							</dict>
-							<key>fontawesome-webfont.woff</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								/uZucSqKCO71
-								gFpGiSkyrQ==
-								</data>
-								<key>Size</key>
-								<integer>98024</integer>
-							</dict>
-							<key>fontawesome-webfont.woff2</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								r3rlBanu1QP4
-								uOaYIDaHPg==
-								</data>
-								<key>Size</key>
-								<integer>77160</integer>
-							</dict>
-							<key>jquery-2.2.4.min.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								L2sRp+kUcY4C
-								kEEOhTZv6Q==
-								</data>
-								<key>Size</key>
-								<integer>85578</integer>
-							</dict>
-							<key>jquery.fitvid.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								gKLWj4Ztrclc
-								O1R1dD1Odw==
-								</data>
-								<key>Size</key>
-								<integer>3346</integer>
-							</dict>
-							<key>stacks.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								DgiBkR26Dsgd
-								a/BE4EN7dA==
-								</data>
-								<key>Size</key>
-								<integer>1747</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>rw:plugin:stacks</string>
-						<key>SiteRoot</key>
-						<string>rw_common/plugins/stacks</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>rw:plugin:stacks - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T18:47:17Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -1167,6 +549,26 @@
 								</data>
 								<key>Size</key>
 								<integer>134808</integer>
+							</dict>
+							<key>baguetteBox.min.css</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								yS+V7pV8/mJ9
+								wNFm/uWZhw==
+								</data>
+								<key>Size</key>
+								<integer>3616</integer>
+							</dict>
+							<key>baguetteBox.min.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								syVa1ZtwMbFE
+								uMPuCLjTlA==
+								</data>
+								<key>Size</key>
+								<integer>9080</integer>
 							</dict>
 							<key>cloud.php</key>
 							<dict>
@@ -1258,6 +660,36 @@
 								<key>Size</key>
 								<integer>3346</integer>
 							</dict>
+							<key>jquery.fitvids.min.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								Vt3LxASaB3GT
+								qUJy85Ak7w==
+								</data>
+								<key>Size</key>
+								<integer>2025</integer>
+							</dict>
+							<key>jquery.grid-a-licious.min.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								BdJ4vMRh8rW3
+								WXtSgC9xEQ==
+								</data>
+								<key>Size</key>
+								<integer>5471</integer>
+							</dict>
+							<key>scrollreveal.min.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								F/nw6cuxK6nI
+								vwB5nJwjRg==
+								</data>
+								<key>Size</key>
+								<integer>9053</integer>
+							</dict>
 							<key>stacks.css</key>
 							<dict>
 								<key>Digest</key>
@@ -1276,10 +708,10 @@
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
-					<key>rw:theme:lander - sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
+					<key>rw:theme:Voyager - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-22T16:15:40Z</date>
+						<date>2018-02-25T03:32:32Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -1288,31 +720,21 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								cpX0J2JPSAPH
-								+A2JsLFN5A==
+								REPFrDPgizry
+								hKUDnDkuAA==
 								</data>
 								<key>Size</key>
-								<integer>40617</integer>
+								<integer>155054</integer>
 							</dict>
-							<key>images/editable_images/banner_image.jpg</key>
+							<key>images/banners/default_banner.jpg</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								EPHOrzBV96Ic
-								9najUsk+eQ==
+								dwjwK20IA28M
+								qw+YcCNf/Q==
 								</data>
 								<key>Size</key>
-								<integer>189374</integer>
-							</dict>
-							<key>images/elements/grid.png</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								mizt9o1kUgVx
-								Tp7su+aXGA==
-								</data>
-								<key>Size</key>
-								<integer>72</integer>
+								<integer>198561</integer>
 							</dict>
 							<key>javascript.js</key>
 							<dict>
@@ -1324,127 +746,71 @@
 								<key>Size</key>
 								<integer>10724</integer>
 							</dict>
-							<key>js/box.js</key>
+							<key>js/elixir.js</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								e/JAtlvt7Qmi
-								wgG/O8rT8A==
+								eIIBh122XFQO
+								8R718CuuHA==
 								</data>
 								<key>Size</key>
-								<integer>1076</integer>
+								<integer>2526</integer>
+							</dict>
+							<key>js/fitvids.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								cGG1Dur+zTIp
+								Q22jBY6fbg==
+								</data>
+								<key>Size</key>
+								<integer>2163</integer>
 							</dict>
 							<key>js/jquery.min.js</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								j8JeJ9QndK6u
-								btvAoYtyqg==
+								ensYYGRIve0i
+								zRz0jUcSzA==
 								</data>
 								<key>Size</key>
-								<integer>96381</integer>
+								<integer>84344</integer>
 							</dict>
-							<key>js/multithemes.js</key>
+							<key>js/sidebar/sidebar_hidden.js</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								YX+HUF/tKHPT
-								pOONvJCCHg==
+								SRS4eWVXK9er
+								IP1cgHtLCQ==
 								</data>
 								<key>Size</key>
-								<integer>923</integer>
+								<integer>303</integer>
+							</dict>
+							<key>js/sidebar/sidebar_left.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								InAonBvK0ovn
+								dkNrJR3p+g==
+								</data>
+								<key>Size</key>
+								<integer>332</integer>
+							</dict>
+							<key>js/sidebar/sidebar_right.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								AmCXV6GC9QnL
+								dNZ/i07luw==
+								</data>
+								<key>Size</key>
+								<integer>304</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
-						<string>rw:theme:lander</string>
+						<string>rw:theme:Voyager</string>
 						<key>SiteRoot</key>
-						<string>rw_common/themes/lander</string>
-						<key>Version</key>
-						<integer>3</integer>
-					</dict>
-					<key>rw:theme:lander - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
-					<dict>
-						<key>CreationDate</key>
-						<date>2018-02-22T18:47:17Z</date>
-						<key>DigestAlgorithm</key>
-						<string>MD5</string>
-						<key>PageDigests</key>
-						<dict>
-							<key>consolidated.css</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								cpX0J2JPSAPH
-								+A2JsLFN5A==
-								</data>
-								<key>Size</key>
-								<integer>40617</integer>
-							</dict>
-							<key>images/editable_images/banner_image.jpg</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								EPHOrzBV96Ic
-								9najUsk+eQ==
-								</data>
-								<key>Size</key>
-								<integer>189374</integer>
-							</dict>
-							<key>images/elements/grid.png</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								mizt9o1kUgVx
-								Tp7su+aXGA==
-								</data>
-								<key>Size</key>
-								<integer>72</integer>
-							</dict>
-							<key>javascript.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								iTaGLk0NKrMX
-								hSvOZBMTyw==
-								</data>
-								<key>Size</key>
-								<integer>10724</integer>
-							</dict>
-							<key>js/box.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								e/JAtlvt7Qmi
-								wgG/O8rT8A==
-								</data>
-								<key>Size</key>
-								<integer>1076</integer>
-							</dict>
-							<key>js/jquery.min.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								j8JeJ9QndK6u
-								btvAoYtyqg==
-								</data>
-								<key>Size</key>
-								<integer>96381</integer>
-							</dict>
-							<key>js/multithemes.js</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								YX+HUF/tKHPT
-								pOONvJCCHg==
-								</data>
-								<key>Size</key>
-								<integer>923</integer>
-							</dict>
-						</dict>
-						<key>PageID</key>
-						<string>rw:theme:lander</string>
-						<key>SiteRoot</key>
-						<string>rw_common/themes/lander</string>
+						<string>rw_common/themes/Voyager</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
@@ -1479,7 +845,7 @@
 				<key>SiteAttributes</key>
 				<dict>
 					<key>AddCopyrightMailTo</key>
-					<true/>
+					<false/>
 					<key>Banner</key>
 					<data>
 					/9j/4AAQSkZJRgABAQAASABIAAD/4QD4RXhp
@@ -11790,7 +11156,7 @@
 							<key>user</key>
 							<string>simon</string>
 							<key>websiteAddress</key>
-							<string>http://oobergeek.net/</string>
+							<string>http://pbxl.oobergeek.net/</string>
 						</dict>
 						<dict>
 							<key>anonymous</key>
@@ -11834,13 +11200,13 @@
 					<key>ShowBreadcrumbTrail</key>
 					<false/>
 					<key>SloganText</key>
-					<string>PBIO  ... Because it's about time</string>
+					<string></string>
 					<key>SloganUsed</key>
 					<true/>
 					<key>ThemeName</key>
-					<string>Lander</string>
+					<string>Voyager</string>
 					<key>TitleText</key>
-					<string> &amp;nbsp;</string>
+					<string>PBIO... because it's about time</string>
 					<key>TitleTextUsed</key>
 					<true/>
 					<key>UniqueBackupName</key>
@@ -11852,7 +11218,7 @@
 					<key>WebClipIconUsed</key>
 					<false/>
 					<key>cacheBustingString</key>
-					<string>?rwcache=541008937</string>
+					<string>?rwcache=541222348</string>
 					<key>globalBody</key>
 					<string></string>
 					<key>globalCSS</key>

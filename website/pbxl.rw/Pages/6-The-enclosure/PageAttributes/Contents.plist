@@ -14,7 +14,7 @@
 					<key>default</key>
 					<true/>
 					<key>sftp:/stage.oobergeek.net/www/stage.oobergeek.net</key>
-					<false/>
+					<true/>
 					<key>sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<false/>
 				</dict>

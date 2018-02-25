@@ -11,7 +11,17 @@
 			<dict>
 				<key>ColourStyles</key>
 				<dict>
+					<key>Avantgarde</key>
+					<dict/>
 					<key>Bravo</key>
+					<dict/>
+					<key>Cameo</key>
+					<dict/>
+					<key>Delta</key>
+					<dict/>
+					<key>Japanese Fantasy</key>
+					<dict/>
+					<key>Kiki</key>
 					<dict/>
 					<key>Lander</key>
 					<dict>
@@ -29,6 +39,21 @@
 						<string>#7F7F7F</string>
 						<key>%colour_sidebar_text%</key>
 						<string>#EEEEEE</string>
+					</dict>
+					<key>Manitoba</key>
+					<dict/>
+					<key>Patchy</key>
+					<dict/>
+					<key>Reason</key>
+					<dict/>
+					<key>Split</key>
+					<dict/>
+					<key>Tesla</key>
+					<dict/>
+					<key>Voyager</key>
+					<dict>
+						<key>%colour_body_links%</key>
+						<string>#1667FB</string>
 					</dict>
 				</dict>
 				<key>CreditRapidWeaver</key>
@@ -59,6 +84,52 @@
 				<string>utf-8</string>
 				<key>ThemeStyles</key>
 				<dict>
+					<key>Avantgarde</key>
+					<array>
+						<string>Font Style.San Serif</string>
+						<string>Menu Color.Orange</string>
+						<string>Sidebar.Right</string>
+						<string>Title Background and Blog Mark.Brown</string>
+						<string>Width.900 px</string>
+					</array>
+					<key>Baukraft</key>
+					<array>
+						<string>Breadcrumb position and visibility.top</string>
+						<string>Container Font Size.medium</string>
+						<string>Custom header image.Default</string>
+						<string>Font Style.Liberation Serif Regular</string>
+						<string>Footer Font Size.medium</string>
+						<string>Header Font Size.medium</string>
+						<string>Header image visibility.On</string>
+						<string>Sidebar Font Size.medium</string>
+						<string>Sidebar.Right</string>
+					</array>
+					<key>Cameo</key>
+					<array>
+						<string>Icons.Blue</string>
+						<string>Sidebar.Right</string>
+						<string>Width.800px</string>
+					</array>
+					<key>Delta</key>
+					<array>
+						<string>Icons.Orange</string>
+						<string>Sidebar.Right</string>
+						<string>Width.800px</string>
+					</array>
+					<key>Japanese Fantasy</key>
+					<array>
+						<string>Accent.Red</string>
+						<string>Banner.Image 2</string>
+						<string>Sidebar.Right</string>
+					</array>
+					<key>Kiki</key>
+					<array>
+						<string>Font Family.Georgia</string>
+						<string>Font Size.Small</string>
+						<string>Sidebar.Hidden</string>
+						<string>Site Banner Overlay.Blue overlay</string>
+						<string>Toggle Site Banner.Display Banner</string>
+					</array>
 					<key>Lander</key>
 					<array>
 						<string>[+] combo options.Back to Top Button</string>
@@ -75,6 +146,44 @@
 						<string>Loading page - Effects.Default</string>
 						<string>Max Width.1000 Pixel</string>
 						<string>Navigation Colors.Navigation - Link</string>
+					</array>
+					<key>Magnesium</key>
+					<array>
+						<string>Sidebar.Right</string>
+						<string>Styles.Electric</string>
+						<string>Width.Default Width (780px)</string>
+					</array>
+					<key>Manitoba</key>
+					<array>
+						<string>Header Alignment.Inline</string>
+						<string>Icon Colour.Green</string>
+						<string>Sidebar.Right</string>
+						<string>Width.800px</string>
+					</array>
+					<key>Patchy</key>
+					<array>
+						<string>Font Style.Serif</string>
+						<string>Graphical Elements.Paper Under Site - Bottom</string>
+						<string>Graphical Elements.Paper Under Site - Right</string>
+						<string>Graphical Elements.Tape - Bottom Left and Right</string>
+						<string>Graphical Elements.Tape - Top Right</string>
+						<string>Sidebar.Hidden</string>
+					</array>
+					<key>Voyager</key>
+					<array>
+						<string>Banner Height.440 px</string>
+						<string>Body Text.Open Sans</string>
+						<string>Breadcrumb Trail.Translucent White Presets</string>
+						<string>Content Width.1,170px</string>
+						<string>Headers.Fjalla One</string>
+						<string>Navigation Overlay.Translucent Black</string>
+						<string>Sidebar.Hidden</string>
+						<string>Site Slogan.Fjalla One</string>
+						<string>Site Title Divider.Light</string>
+						<string>Site Title.Fjalla One</string>
+						<string>Theme Toggles.Show Site Title in Navigation Overlay</string>
+						<string>Theme Toggles.Uppercase Site Title</string>
+						<string>Theme Toggles.Uppercase Slogan</string>
 					</array>
 				</dict>
 			</dict>
