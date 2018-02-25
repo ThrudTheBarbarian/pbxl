@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/simon/Documents/eagle/pbxl/boards/xe-interface/xmosio2.brd
+Job           : /Volumes/home/simon/Documents/eagle/pbxl/boards/xe-interface/xmosio2.brd
 
-Start at      : 14:12:54 (23/02/2018)
-End at        : 14:17:40 (23/02/2018)
-Elapsed time  : 00:04:39
+Start at      : 20:23:06 (2/23/18)
+End at        : 20:31:13 (2/23/18)
+Elapsed time  : 00:06:18
 
-Signals       :   178   RoutingGrid: 6.25 mil  Layers: 4
-Connections   :   486   predefined:  40 ( 9 Vias )
+Signals       :   180   RoutingGrid: 6.25 mil  Layers: 4
+Connections   :   490   predefined:  42 ( 9 Vias )
 
-Router memory :   4198728
+Router memory :   4187576
 
-Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:01:26  00:00:52  00:00:47  00:00:43  00:00:51
-Number of Ripups  :        36         0         0         0         0
-max. Level        :         3         0         0         0         0
-max. Total        :        62         0         0         0         0
+Time per pass     :  00:00:03  00:01:27  00:01:17  00:01:12  00:01:10  00:01:09
+Number of Ripups  :         0        28         0         0         0         0
+max. Level        :         0         2         0         0         0         0
+max. Total        :         0        28         0         0         0         0
 
-Routed            :       446       446       446       446       446
-Vias              :       580       352       336       315       313
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         0       448       448       448       448       448
+Vias              :         0       796       420       384       358       343
+Resolution        :     8.6 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 100.0% finished
+Final             : 99.6% finished. Polygons may have fallen apart.
