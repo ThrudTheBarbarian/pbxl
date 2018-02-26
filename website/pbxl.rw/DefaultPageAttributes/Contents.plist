@@ -53,7 +53,13 @@
 					<key>Voyager</key>
 					<dict>
 						<key>%colour_body_links%</key>
-						<string>#1667FB</string>
+						<string>#B3B3B2</string>
+						<key>%colour_footer_bkg%</key>
+						<string>#FEFEFE</string>
+						<key>%colour_nav_toggle_normal_text%</key>
+						<string>#666666</string>
+						<key>%colour_site_title_normal_text%</key>
+						<string>#666666</string>
 					</dict>
 				</dict>
 				<key>CreditRapidWeaver</key>
@@ -172,7 +178,7 @@
 					<key>Voyager</key>
 					<array>
 						<string>Banner Height.440 px</string>
-						<string>Body Text.Open Sans</string>
+						<string>Body Text.Merriweather</string>
 						<string>Breadcrumb Trail.Translucent White Presets</string>
 						<string>Content Width.1,170px</string>
 						<string>Headers.Fjalla One</string>
