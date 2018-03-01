@@ -20723,11 +20723,11 @@ Created 2014-07-09, Karrer Zheng&lt;br&gt;
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
-<part name="MEM_SEL" library="special" deviceset="SW_DIP-2" device=""/>
+<part name="MEM_SEL" library="special" deviceset="SW_DIP-2" device="" value="CT2092MS-ND"/>
 <part name="VCC27" library="supply1" deviceset="VCCIO" device=""/>
 <part name="R29" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="R30" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
-<part name="PBI_ID" library="special" deviceset="SW_DIP-3" device=""/>
+<part name="PBI_ID" library="special" deviceset="SW_DIP-3" device="" value="CT2093MS-ND"/>
 <part name="R31" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="R33" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="R34" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
@@ -20735,15 +20735,15 @@ Created 2014-07-09, Karrer Zheng&lt;br&gt;
 <part name="U$19" library="pbxl" deviceset="XE_SLOT" device=""/>
 <part name="GND49" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="GPIO" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="GPIO" library="pinhead" deviceset="PINHD-1X4" device="" value="UART"/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
 <part name="VCC29" library="supply1" deviceset="VCCIO" device=""/>
-<part name="J1" library="InputOutputIO (rev17e)" deviceset="693063020911" device=""/>
+<part name="J1" library="InputOutputIO (rev17e)" deviceset="693063020911" device="" value="SD_CARD"/>
 <part name="VCC30" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC31" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="JTAG5V" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JTAG5V" library="pinhead" deviceset="PINHD-1X2" device="" value="PSU"/>
 </parts>
 <sheets>
 <sheet>
@@ -20800,8 +20800,7 @@ Created 2014-07-09, Karrer Zheng&lt;br&gt;
 <text x="170.18" y="198.12" size="2.1844" layer="97">3.3v domain</text>
 <text x="35.56" y="175.26" size="2.1844" layer="97">Use diode to get 4.3v
 from the 5v supply for QS</text>
-<text x="226.06" y="121.92" size="1.27" layer="97">CT2092MS-ND</text>
-<text x="220.98" y="86.36" size="1.27" layer="97">Used as UART
+<text x="231.14" y="66.04" size="1.27" layer="97">Used as UART
 during bringup</text>
 </plain>
 <instances>
@@ -20867,7 +20866,10 @@ during bringup</text>
 <instance part="U$18" gate="G$1" x="185.42" y="43.18" smashed="yes">
 <attribute name="VALUE" x="189.23" y="46.482" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="MEM_SEL" gate="G$1" x="233.68" y="129.54"/>
+<instance part="MEM_SEL" gate="G$1" x="233.68" y="129.54" smashed="yes">
+<attribute name="NAME" x="228.6" y="132.715" size="1.778" layer="95"/>
+<attribute name="VALUE" x="223.52" y="121.92" size="1.778" layer="96"/>
+</instance>
 <instance part="VCC27" gate="G$1" x="223.52" y="137.16" smashed="yes">
 <attribute name="VALUE" x="219.71" y="139.192" size="1.778" layer="96"/>
 </instance>
@@ -20876,10 +20878,10 @@ during bringup</text>
 <instance part="U$19" gate="G$1" x="-25.4" y="99.06"/>
 <instance part="GND49" gate="1" x="-2.54" y="22.86"/>
 <instance part="P+5" gate="1" x="-2.54" y="175.26"/>
-<instance part="GPIO" gate="A" x="238.76" y="88.9" rot="R180"/>
-<instance part="GND50" gate="1" x="248.92" y="76.2"/>
-<instance part="VCC29" gate="G$1" x="248.92" y="99.06" smashed="yes">
-<attribute name="VALUE" x="245.11" y="101.092" size="1.778" layer="96"/>
+<instance part="GPIO" gate="A" x="231.14" y="88.9" rot="R180"/>
+<instance part="GND50" gate="1" x="241.3" y="76.2"/>
+<instance part="VCC29" gate="G$1" x="241.3" y="99.06" smashed="yes">
+<attribute name="VALUE" x="237.49" y="101.092" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -21732,8 +21734,8 @@ during bringup</text>
 <segment>
 <pinref part="GND50" gate="1" pin="GND"/>
 <pinref part="GPIO" gate="A" pin="1"/>
-<wire x1="248.92" y1="78.74" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="83.82" x2="241.3" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="78.74" x2="241.3" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="83.82" x2="233.68" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="1">
@@ -22322,22 +22324,24 @@ during bringup</text>
 <segment>
 <pinref part="GPIO" gate="A" pin="4"/>
 <pinref part="VCC29" gate="G$1" pin="VCCIO"/>
-<wire x1="241.3" y1="91.44" x2="248.92" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="91.44" x2="248.92" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="91.44" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="91.44" x2="241.3" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UART_TX" class="0">
 <segment>
 <pinref part="U$2" gate="TILE1" pin="X1D34@12"/>
 <pinref part="GPIO" gate="A" pin="3"/>
-<wire x1="274.32" y1="88.9" x2="241.3" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="88.9" x2="233.68" y2="88.9" width="0.1524" layer="91"/>
+<label x="246.888" y="89.662" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="UART_RX" class="0">
 <segment>
 <pinref part="U$2" gate="TILE1" pin="X1D35@14"/>
 <pinref part="GPIO" gate="A" pin="2"/>
-<wire x1="274.32" y1="86.36" x2="241.3" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="86.36" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
+<label x="255.016" y="85.852" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SDC_CD" class="0">
@@ -23073,7 +23077,6 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <text x="142.24" y="-48.26" size="1.778" layer="97">Note: PCB is arranged so that the MUX does not interfere with the signal trace length to any significant extent</text>
 <text x="142.24" y="-43.18" size="1.778" layer="97">Note: SDRAM byte lanes aren't supported. Do a read/modify/write to write individual bytes </text>
 <text x="127" y="-22.86" size="1.778" layer="97">W9825G6KH</text>
-<text x="199.39" y="34.29" size="1.27" layer="97" rot="R90">CT2093MS-ND</text>
 </plain>
 <instances>
 <instance part="U$2" gate="TILE0" x="-27.94" y="38.1"/>
@@ -23096,8 +23099,8 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </instance>
 <instance part="GND27" gate="1" x="93.98" y="2.54"/>
 <instance part="C35" gate="G$1" x="210.82" y="86.36"/>
-<instance part="VCC12" gate="G$1" x="198.12" y="99.06" smashed="yes">
-<attribute name="VALUE" x="202.184" y="102.108" size="1.778" layer="96" rot="R180"/>
+<instance part="VCC12" gate="G$1" x="198.12" y="104.14" smashed="yes">
+<attribute name="VALUE" x="202.184" y="107.188" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND28" gate="1" x="198.12" y="68.58"/>
 <instance part="C36" gate="G$1" x="233.68" y="86.36"/>
@@ -23158,7 +23161,10 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <attribute name="NAME" x="5.334" y="25.6286" size="1.778" layer="95"/>
 <attribute name="VALUE" x="5.588" y="28.194" size="1.778" layer="96"/>
 </instance>
-<instance part="PBI_ID" gate="A" x="205.74" y="40.64" rot="R270"/>
+<instance part="PBI_ID" gate="A" x="205.74" y="40.64" smashed="yes" rot="R270">
+<attribute name="NAME" x="213.36" y="43.053" size="1.778" layer="95"/>
+<attribute name="VALUE" x="213.36" y="38.1" size="1.778" layer="96"/>
+</instance>
 <instance part="R31" gate="G$1" x="203.2" y="7.62" rot="R90"/>
 <instance part="R33" gate="G$1" x="228.6" y="7.62" rot="R90"/>
 <instance part="R34" gate="G$1" x="215.9" y="7.62" rot="R90"/>
@@ -23553,17 +23559,6 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <wire x1="81.28" y1="-10.16" x2="83.82" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$2" pin="VCC"/>
-<wire x1="198.12" y1="91.44" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="93.98" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="88.9" x2="210.82" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
-<junction x="198.12" y="93.98"/>
-<pinref part="VCC12" gate="G$1" pin="VCCIO"/>
-<wire x1="198.12" y1="96.52" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="VCC13" gate="G$1" pin="VCCIO"/>
 <pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="96.52" x2="233.68" y2="93.98" width="0.1524" layer="91"/>
@@ -23658,6 +23653,16 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <pinref part="PBI_ID" gate="A" pin="6"/>
 <wire x1="205.74" y1="53.34" x2="203.2" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="53.34" x2="203.2" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VCC12" gate="G$1" pin="VCCIO"/>
+<pinref part="U$8" gate="G$2" pin="VCC"/>
+<wire x1="198.12" y1="101.6" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C35" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="96.52" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="88.9" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="96.52" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
+<junction x="198.12" y="96.52"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -24571,13 +24576,14 @@ in source code for SD card driver</text>
 <instance part="GND51" gate="1" x="335.28" y="68.58"/>
 </instances>
 <busses>
-<bus name="RIN1-,RIN1+,DOUT1-,DOUT1+,RIN2-,RIN2+,DOUT2-,DOUT2+">
+<bus name="RIN1_N,RIN1_P,DOUT1_N,DOUT1_P,RIN2_N,RIN2_P,DOUT2_N,DOUT2_P">
 <segment>
 <wire x1="175.26" y1="180.34" x2="175.26" y2="218.44" width="0.762" layer="92"/>
 <wire x1="175.26" y1="218.44" x2="177.8" y2="220.98" width="0.762" layer="92"/>
 <wire x1="177.8" y1="220.98" x2="203.2" y2="220.98" width="0.762" layer="92"/>
 <wire x1="203.2" y1="220.98" x2="205.74" y2="218.44" width="0.762" layer="92"/>
 <wire x1="205.74" y1="218.44" x2="205.74" y2="190.5" width="0.762" layer="92"/>
+<label x="177.8" y="223.52" size="1.27" layer="95"/>
 </segment>
 </bus>
 <bus name="LED[0..3]">
@@ -24958,6 +24964,17 @@ in source code for SD card driver</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,177.8,71.12,IC4,VCC,+4.3V,,,"/>
+<approved hash="104,1,177.8,177.8,IC1,VCC,+4.3V,,,"/>
+<approved hash="104,1,177.8,142.24,IC2,VCC,+4.3V,,,"/>
+<approved hash="104,1,177.8,106.68,IC3,VCC,+4.3V,,,"/>
+<approved hash="104,1,177.8,35.56,IC5,VCC,+4.3V,,,"/>
+<approved hash="104,3,198.12,91.44,U$8G$2,VCC,VCCIO,,,"/>
+<approved hash="202,2,-12.7,71.12,USBPOWER,2,,,,"/>
+<approved hash="202,2,-12.7,68.58,USBPOWER,3,,,,"/>
+<approved hash="202,2,-12.7,66.04,USBPOWER,4,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
