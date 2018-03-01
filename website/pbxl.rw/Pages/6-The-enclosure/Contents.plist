@@ -33,7 +33,7 @@
 					<key>sftp://xanadu.gornall.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-02-26T18:33:56Z</date>
+						<date>2018-03-01T17:46:46Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -202,8 +202,8 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								30Nqk7Y6RXhW
-								lXJYw5GaVg==
+								FuIJLwiT0eIt
+								78QqCIsx/Q==
 								</data>
 								<key>Size</key>
 								<integer>14947</integer>
