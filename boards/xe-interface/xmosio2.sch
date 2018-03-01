@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16433,6 +16433,50 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 <rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="21"/>
 </package>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PINH2X10">
@@ -16474,6 +16518,16 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16562,6 +16616,32 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -20662,6 +20742,8 @@ Created 2014-07-09, Karrer Zheng&lt;br&gt;
 <part name="VCC30" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC31" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="JTAG5V" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20719,6 +20801,8 @@ Created 2014-07-09, Karrer Zheng&lt;br&gt;
 <text x="35.56" y="175.26" size="2.1844" layer="97">Use diode to get 4.3v
 from the 5v supply for QS</text>
 <text x="226.06" y="121.92" size="1.27" layer="97">CT2092MS-ND</text>
+<text x="220.98" y="86.36" size="1.27" layer="97">Used as UART
+during bringup</text>
 </plain>
 <instances>
 <instance part="IC4" gate="G$1" x="165.1" y="60.96"/>
@@ -22242,14 +22326,14 @@ from the 5v supply for QS</text>
 <wire x1="248.92" y1="91.44" x2="248.92" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="UART_TX" class="0">
 <segment>
 <pinref part="U$2" gate="TILE1" pin="X1D34@12"/>
 <pinref part="GPIO" gate="A" pin="3"/>
 <wire x1="274.32" y1="88.9" x2="241.3" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="UART_RX" class="0">
 <segment>
 <pinref part="U$2" gate="TILE1" pin="X1D35@14"/>
 <pinref part="GPIO" gate="A" pin="2"/>
@@ -22978,7 +23062,7 @@ circuit until tested</text>
 <sheet>
 <description>SDRAM / QSPI</description>
 <plain>
-<text x="170.18" y="-50.8" size="2.1844" layer="97">Note: Taking !SD_ENABLE! low causes the SDRAM chip to get access to the muxed data lines.
+<text x="142.24" y="-55.88" size="1.778" layer="97">Note: Taking !SD_ENABLE! low causes the SDRAM chip to get access to the muxed data lines.
 There is a weak pull-up so the QSPI can boot the device</text>
 <text x="285.75" y="-109.22" size="1.778" layer="94">SDRAM, QSPI</text>
 <wire x1="-35.56" y1="-38.1" x2="132.08" y2="-38.1" width="0.1524" layer="97" style="longdash"/>
@@ -22986,8 +23070,8 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <wire x1="132.08" y1="-111.76" x2="-35.56" y2="-111.76" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-35.56" y1="-111.76" x2="-35.56" y2="-38.1" width="0.1524" layer="97" style="longdash"/>
 <text x="-33.02" y="-43.18" size="2.1844" layer="97">MUX to switch between QSPI and SDRAM for 4 data lanes</text>
-<text x="170.18" y="-43.18" size="2.1844" layer="97">Note: PCB is arranged so that the MUX does not interfere with the signal trace length to any significant extent</text>
-<text x="170.18" y="-38.1" size="2.1844" layer="97">Note: SDRAM byte lanes aren't supported. Do a read/modify/write to write individual bytes </text>
+<text x="142.24" y="-48.26" size="1.778" layer="97">Note: PCB is arranged so that the MUX does not interfere with the signal trace length to any significant extent</text>
+<text x="142.24" y="-43.18" size="1.778" layer="97">Note: SDRAM byte lanes aren't supported. Do a read/modify/write to write individual bytes </text>
 <text x="127" y="-22.86" size="1.778" layer="97">W9825G6KH</text>
 <text x="199.39" y="34.29" size="1.27" layer="97" rot="R90">CT2093MS-ND</text>
 </plain>
@@ -22999,11 +23083,17 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <attribute name="VALUE" x="88.9" y="40.64" size="1.778" layer="96"/>
 </instance>
 <instance part="U$8" gate="G$2" x="198.12" y="83.82"/>
-<instance part="R8" gate="G$1" x="88.9" y="-10.16"/>
+<instance part="R8" gate="G$1" x="88.9" y="-10.16" smashed="yes">
+<attribute name="NAME" x="85.09" y="-8.6614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="85.09" y="-13.462" size="1.778" layer="96"/>
+</instance>
 <instance part="VCC11" gate="G$1" x="81.28" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="85.344" y="0.508" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R9" gate="G$1" x="104.14" y="7.62"/>
+<instance part="R9" gate="G$1" x="104.14" y="7.62" smashed="yes">
+<attribute name="NAME" x="100.33" y="9.1186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.33" y="4.318" size="1.778" layer="96"/>
+</instance>
 <instance part="GND27" gate="1" x="93.98" y="2.54"/>
 <instance part="C35" gate="G$1" x="210.82" y="86.36"/>
 <instance part="VCC12" gate="G$1" x="198.12" y="99.06" smashed="yes">
@@ -23039,23 +23129,26 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <attribute name="VALUE" x="87.884" y="-50.292" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R11" gate="G$1" x="78.74" y="-66.04" rot="R270"/>
-<instance part="R12" gate="G$1" x="-2.54" y="-15.24" smashed="yes">
-<attribute name="NAME" x="-9.906" y="-15.0114" size="1.778" layer="95"/>
-<attribute name="VALUE" x="0.508" y="-14.986" size="1.778" layer="96"/>
+<instance part="R12" gate="G$1" x="5.08" y="-15.24" smashed="yes">
+<attribute name="NAME" x="-8.128" y="-15.0114" size="1.27" layer="95"/>
+<attribute name="VALUE" x="3.556" y="-16.002" size="1.27" layer="96"/>
 </instance>
-<instance part="R13" gate="G$1" x="-2.54" y="-17.78" smashed="yes">
-<attribute name="NAME" x="-9.906" y="-19.8374" size="1.778" layer="95"/>
-<attribute name="VALUE" x="0.508" y="-19.812" size="1.778" layer="96"/>
+<instance part="R13" gate="G$1" x="5.08" y="-17.78" smashed="yes">
+<attribute name="NAME" x="0" y="-20.5994" size="1.27" layer="95"/>
+<attribute name="VALUE" x="3.81" y="-18.542" size="1.27" layer="96"/>
 </instance>
 <instance part="FRAME3" gate="G$1" x="-58.42" y="-129.54"/>
 <instance part="BOOT_SW" gate="S" x="53.34" y="-5.08" smashed="yes">
-<attribute name="NAME" x="49.53" y="0" size="1.778" layer="95"/>
+<attribute name="NAME" x="49.53" y="0" size="1.27" layer="95"/>
 <attribute name="VALUE" x="48.26" y="-19.05" size="2.1844" layer="96"/>
 </instance>
 <instance part="GND38" gate="1" x="63.5" y="-12.7"/>
-<instance part="R15" gate="G$1" x="38.1" y="2.54" rot="R90"/>
+<instance part="R15" gate="G$1" x="38.1" y="2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.148" y="3.0226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="41.148" y="0.508" size="1.778" layer="96"/>
+</instance>
 <instance part="VCC25" gate="G$1" x="38.1" y="12.7" smashed="yes">
-<attribute name="VALUE" x="42.164" y="15.748" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="42.164" y="15.748" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="R16" gate="G$1" x="2.54" y="5.08" smashed="yes">
 <attribute name="NAME" x="5.334" y="2.7686" size="1.778" layer="95"/>
@@ -23106,7 +23199,7 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <segment>
 <wire x1="7.62" y1="60.96" x2="7.62" y2="66.04" width="0.762" layer="92"/>
 <wire x1="7.62" y1="66.04" x2="20.32" y2="66.04" width="0.762" layer="92"/>
-<label x="10.16" y="63.5" size="1.778" layer="95"/>
+<label x="10.16" y="63.5" size="1.27" layer="95"/>
 </segment>
 <segment>
 <wire x1="200.66" y1="22.86" x2="226.06" y2="22.86" width="0.762" layer="92"/>
@@ -23814,43 +23907,43 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <net name="JTAG_DN1" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D40@7"/>
-<wire x1="-12.7" y1="-10.16" x2="10.16" y2="-10.16" width="0.1524" layer="91"/>
-<label x="10.668" y="-10.668" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
+<label x="18.288" y="-10.668" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="JTAG_DN0" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D41@8"/>
-<wire x1="-12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.1524" layer="91"/>
-<label x="10.668" y="-13.208" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="-12.7" x2="17.78" y2="-12.7" width="0.1524" layer="91"/>
+<label x="18.288" y="-13.208" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D42@10"/>
-<wire x1="-12.7" y1="-15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="U$2" gate="TILE0" pin="X0D43@11"/>
-<wire x1="-12.7" y1="-17.78" x2="-7.62" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-17.78" x2="0" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="JTAG_UP0" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="-15.24" x2="10.16" y2="-15.24" width="0.1524" layer="91"/>
-<label x="10.668" y="-15.748" size="1.778" layer="95"/>
+<wire x1="10.16" y1="-15.24" x2="17.78" y2="-15.24" width="0.1524" layer="91"/>
+<label x="18.288" y="-15.748" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="JTAG_UP1" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="-17.78" x2="10.16" y2="-17.78" width="0.1524" layer="91"/>
-<label x="10.668" y="-18.288" size="1.778" layer="95"/>
+<wire x1="10.16" y1="-17.78" x2="17.78" y2="-17.78" width="0.1524" layer="91"/>
+<label x="18.288" y="-18.288" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="LNK_IN0" class="0">
@@ -23864,14 +23957,14 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
-<label x="13.208" y="27.432" size="1.778" layer="95"/>
+<label x="13.208" y="27.432" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="LNK_OUT1" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="5.08" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
-<label x="13.208" y="4.572" size="1.778" layer="95"/>
+<label x="13.208" y="4.572" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="LED3" class="0">
@@ -24038,7 +24131,7 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <attribute name="VALUE" x="87.884" y="46.99" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND17" gate="1" x="124.46" y="15.24"/>
-<instance part="XTAG" gate="A" x="187.96" y="139.7"/>
+<instance part="XTAG" gate="A" x="210.82" y="139.7"/>
 <instance part="C25" gate="G$1" x="88.9" y="25.4" rot="R180"/>
 <instance part="U$3" gate="G$1" x="144.78" y="93.98" rot="MR0"/>
 <instance part="VCC7" gate="G$1" x="160.02" y="119.38" smashed="yes">
@@ -24050,7 +24143,7 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <instance part="VCC8" gate="G$1" x="187.96" y="106.68" smashed="yes">
 <attribute name="VALUE" x="192.024" y="109.728" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND19" gate="1" x="201.93" y="119.38"/>
+<instance part="GND19" gate="1" x="224.79" y="119.38"/>
 <instance part="U$11" gate="G$1" x="241.3" y="68.58"/>
 <instance part="R14" gate="G$1" x="203.2" y="81.28" rot="R90"/>
 <instance part="VCC18" gate="G$1" x="203.2" y="106.68" smashed="yes">
@@ -24076,16 +24169,18 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <instance part="H2" gate="G$1" x="7.62" y="182.88"/>
 <instance part="H3" gate="G$1" x="7.62" y="175.26"/>
 <instance part="H4" gate="G$1" x="7.62" y="167.64"/>
+<instance part="P+6" gate="1" x="200.66" y="175.26"/>
+<instance part="JTAG5V" gate="G$1" x="210.82" y="162.56"/>
 </instances>
 <busses>
 <bus name="TDI,TMS,TCK,TDO">
 <segment>
 <wire x1="127" y1="101.6" x2="127" y2="147.32" width="0.762" layer="92"/>
 <wire x1="127" y1="147.32" x2="129.54" y2="149.86" width="0.762" layer="92"/>
-<wire x1="129.54" y1="149.86" x2="172.72" y2="149.86" width="0.762" layer="92"/>
-<wire x1="172.72" y1="149.86" x2="175.26" y2="147.32" width="0.762" layer="92"/>
+<wire x1="129.54" y1="149.86" x2="160.02" y2="149.86" width="0.762" layer="92"/>
+<wire x1="160.02" y1="149.86" x2="162.56" y2="147.32" width="0.762" layer="92"/>
 <label x="130.302" y="150.622" size="1.778" layer="95"/>
-<wire x1="175.26" y1="147.32" x2="175.26" y2="137.16" width="0.762" layer="92"/>
+<wire x1="162.56" y1="147.32" x2="162.56" y2="137.16" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -24123,26 +24218,26 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </segment>
 <segment>
 <pinref part="XTAG" gate="A" pin="4"/>
-<wire x1="193.04" y1="147.32" x2="189.23" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="189.23" y1="147.32" x2="189.23" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="147.32" x2="212.09" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="147.32" x2="212.09" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="XTAG" gate="A" pin="8"/>
-<wire x1="189.23" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="189.23" y1="142.24" x2="189.23" y2="137.16" width="0.1524" layer="91"/>
-<junction x="189.23" y="142.24"/>
+<wire x1="212.09" y1="142.24" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="142.24" x2="212.09" y2="137.16" width="0.1524" layer="91"/>
+<junction x="212.09" y="142.24"/>
 <pinref part="XTAG" gate="A" pin="12"/>
-<wire x1="189.23" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="189.23" y1="137.16" x2="189.23" y2="132.08" width="0.1524" layer="91"/>
-<junction x="189.23" y="137.16"/>
+<wire x1="212.09" y1="137.16" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="137.16" x2="212.09" y2="132.08" width="0.1524" layer="91"/>
+<junction x="212.09" y="137.16"/>
 <pinref part="XTAG" gate="A" pin="16"/>
-<wire x1="189.23" y1="132.08" x2="193.04" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="189.23" y1="132.08" x2="189.23" y2="127" width="0.1524" layer="91"/>
-<junction x="189.23" y="132.08"/>
+<wire x1="212.09" y1="132.08" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="132.08" x2="212.09" y2="127" width="0.1524" layer="91"/>
+<junction x="212.09" y="132.08"/>
 <pinref part="XTAG" gate="A" pin="20"/>
-<wire x1="189.23" y1="127" x2="193.04" y2="127" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="127" x2="215.9" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="193.04" y1="127" x2="201.93" y2="127" width="0.1524" layer="91"/>
-<wire x1="201.93" y1="127" x2="201.93" y2="121.92" width="0.1524" layer="91"/>
-<junction x="193.04" y="127"/>
+<wire x1="215.9" y1="127" x2="224.79" y2="127" width="0.1524" layer="91"/>
+<wire x1="224.79" y1="127" x2="224.79" y2="121.92" width="0.1524" layer="91"/>
+<junction x="215.9" y="127"/>
 </segment>
 <segment>
 <pinref part="C42" gate="G$1" pin="2"/>
@@ -24227,8 +24322,8 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </segment>
 <segment>
 <pinref part="XTAG" gate="A" pin="13"/>
-<wire x1="175.26" y1="137.16" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="134.62" x2="185.42" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="137.16" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TDI" class="0">
@@ -24239,8 +24334,8 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </segment>
 <segment>
 <pinref part="XTAG" gate="A" pin="5"/>
-<wire x1="175.26" y1="147.32" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="144.78" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="147.32" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="144.78" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TCK" class="0">
@@ -24251,8 +24346,8 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </segment>
 <segment>
 <pinref part="XTAG" gate="A" pin="9"/>
-<wire x1="175.26" y1="142.24" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="139.7" x2="185.42" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="142.24" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="139.7" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TMS" class="0">
@@ -24263,8 +24358,8 @@ There is a weak pull-up so the QSPI can boot the device</text>
 </segment>
 <segment>
 <pinref part="XTAG" gate="A" pin="7"/>
-<wire x1="175.26" y1="144.78" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="142.24" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="144.78" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!RESET!" class="0">
@@ -24299,35 +24394,35 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <wire x1="175.26" y1="93.98" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
 <junction x="167.64" y="93.98"/>
 <pinref part="XTAG" gate="A" pin="15"/>
-<wire x1="175.26" y1="132.08" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="JTAG_UP1" class="0">
 <segment>
 <pinref part="XTAG" gate="A" pin="6"/>
-<wire x1="193.04" y1="144.78" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
-<label x="203.708" y="144.272" size="1.778" layer="95"/>
+<wire x1="215.9" y1="144.78" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
+<label x="226.568" y="144.272" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="JTAG_UP0" class="0">
 <segment>
 <pinref part="XTAG" gate="A" pin="10"/>
-<wire x1="193.04" y1="139.7" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
-<label x="203.708" y="139.192" size="1.778" layer="95"/>
+<wire x1="215.9" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
+<label x="226.568" y="139.192" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="JTAG_DN0" class="0">
 <segment>
 <pinref part="XTAG" gate="A" pin="14"/>
-<wire x1="193.04" y1="134.62" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-<label x="203.708" y="134.112" size="1.778" layer="95"/>
+<wire x1="215.9" y1="134.62" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
+<label x="226.568" y="134.112" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="JTAG_DN1" class="0">
 <segment>
 <pinref part="XTAG" gate="A" pin="18"/>
-<wire x1="193.04" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
-<label x="203.708" y="129.032" size="1.778" layer="95"/>
+<wire x1="215.9" y1="129.54" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
+<label x="226.568" y="129.032" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -24346,7 +24441,7 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <wire x1="279.4" y1="68.58" x2="279.4" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="TRST_N" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="!MR!@3"/>
 <wire x1="261.62" y1="73.66" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
@@ -24361,6 +24456,37 @@ There is a weak pull-up so the QSPI can boot the device</text>
 <wire x1="276.86" y1="101.6" x2="276.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="104.14" x2="281.94" y2="104.14" width="0.1524" layer="91"/>
 <junction x="276.86" y="101.6"/>
+</segment>
+</net>
+<net name="+5V" class="1">
+<segment>
+<pinref part="JTAG5V" gate="G$1" pin="1"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="208.28" y1="165.1" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="165.1" x2="200.66" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="1">
+<segment>
+<pinref part="XTAG" gate="A" pin="1"/>
+<wire x1="208.28" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="149.86" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="JTAG5V" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="162.56" x2="208.28" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="UART_TX" class="0">
+<segment>
+<pinref part="XTAG" gate="A" pin="17"/>
+<wire x1="208.28" y1="129.54" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
+<label x="197.612" y="130.048" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="UART_RX" class="0">
+<segment>
+<pinref part="XTAG" gate="A" pin="19"/>
+<wire x1="208.28" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
+<label x="197.612" y="127.508" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
@@ -24664,9 +24790,10 @@ in source code for SD card driver</text>
 <junction x="185.42" y="172.72"/>
 </segment>
 <segment>
-<wire x1="322.58" y1="109.22" x2="284.48" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="109.22" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="VCC22" gate="G$1" pin="VCCIO"/>
+<pinref part="J1" gate="G$1" pin="VDD"/>
+<wire x1="284.48" y1="109.22" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -24771,53 +24898,60 @@ in source code for SD card driver</text>
 <pinref part="DBG0" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="SDC_D2" class="0">
-<segment>
-<wire x1="322.58" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
-<label x="309.372" y="97.028" size="1.27" layer="95" rot="R180"/>
-</segment>
-</net>
 <net name="SDC_D3" class="0">
 <segment>
-<wire x1="322.58" y1="116.84" x2="314.96" y2="116.84" width="0.1524" layer="91"/>
 <label x="309.372" y="117.348" size="1.27" layer="95" rot="R180"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="116.84" x2="309.88" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="127" x2="314.96" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="DAT3"/>
+<wire x1="314.96" y1="116.84" x2="322.58" y2="116.84" width="0.1524" layer="91"/>
 <junction x="314.96" y="116.84"/>
 </segment>
 </net>
 <net name="SDC_CMD" class="0">
 <segment>
-<wire x1="322.58" y1="114.3" x2="297.18" y2="114.3" width="0.1524" layer="91"/>
 <label x="294.132" y="114.808" size="1.27" layer="95" rot="R180"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="114.3" x2="294.64" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="127" x2="297.18" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="CMD"/>
+<wire x1="297.18" y1="114.3" x2="322.58" y2="114.3" width="0.1524" layer="91"/>
 <junction x="297.18" y="114.3"/>
 </segment>
 </net>
 <net name="SDC_CLK" class="0">
 <segment>
+<pinref part="J1" gate="G$1" pin="CLK"/>
 <wire x1="322.58" y1="106.68" x2="309.88" y2="106.68" width="0.1524" layer="91"/>
 <label x="309.372" y="107.188" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SDC_D0" class="0">
 <segment>
+<pinref part="J1" gate="G$1" pin="DAT0"/>
 <wire x1="322.58" y1="101.6" x2="309.88" y2="101.6" width="0.1524" layer="91"/>
 <label x="309.372" y="102.108" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SDC_D1" class="0">
 <segment>
+<pinref part="J1" gate="G$1" pin="DAT1"/>
 <wire x1="322.58" y1="99.06" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
 <label x="309.372" y="99.568" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
+<net name="SDC_D2" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="DAT2"/>
+<wire x1="322.58" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
+<label x="309.372" y="97.028" size="1.27" layer="95" rot="R180"/>
+</segment>
+</net>
 <net name="SDC_CD" class="0">
 <segment>
-<wire x1="309.88" y1="93.98" x2="322.58" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="CD"/>
+<wire x1="322.58" y1="93.98" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
 <label x="309.372" y="94.488" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
