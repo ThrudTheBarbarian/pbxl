@@ -1,3 +1,4 @@
-19:56:25 **** Clean-only build of configuration Debug for project led-blink ****
-make -j7 clean 
-make: *** No rule to make target `clean'.  Stop.
+10:37:22 **** Clean-only build of configuration Debug for project xe-exerciser ****
+make -j23 clean 
+rm -rf *
+ 

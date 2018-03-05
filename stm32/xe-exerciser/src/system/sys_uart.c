@@ -1,472 +1,249 @@
-/******************************************************************************\
-|* Common library code
-|*
-|* Module: uart i/o
-\******************************************************************************/
+/*
+ * sys_uart.c
+ *
+ *  Created on: 5 Mar 2018
+ *      Author: simon
+ */
 
-#include <stdio.h>
+#include <stdbool.h>
 
-#include <sys_lib.h>
+#include "sys_uart.h"
 
-/******************************************************************************\
-|* These are the file descriptors for each possible device  
-\******************************************************************************/
-static FILE _fp[6]= 
-	{
-		{
-		NULL, 0,0,0,0, {NULL,0}, 0,
-		NULL, NULL, NULL, NULL, NULL,
-		{NULL,0}, NULL, 0,
-		{0,0,0},{0},
-		{NULL,0},
-		0,0
-		},
-		{
-		NULL, 0,0,0,0, {NULL,0}, 0,
-		NULL, NULL, NULL, NULL, NULL,
-		{NULL,0}, NULL, 0,
-		{0,0,0},{0},
-		{NULL,0},
-		0,0
-		},
-		{
-		NULL, 0,0,0,0, {NULL,0}, 0,
-		NULL, NULL, NULL, NULL, NULL,
-		{NULL,0}, NULL, 0,
-		{0,0,0},{0},
-		{NULL,0},
-		0,0
-		},
-		{
-		NULL, 0,0,0,0, {NULL,0}, 0,
-		NULL, NULL, NULL, NULL, NULL,
-		{NULL,0}, NULL, 0,
-		{0,0,0},{0},
-		{NULL,0},
-		0,0
-		},
-		{
-		NULL, 0,0,0,0, {NULL,0}, 0,
-		NULL, NULL, NULL, NULL, NULL,
-		{NULL,0}, NULL, 0,
-		{0,0,0},{0},
-		{NULL,0},
-		0,0
-		},
-		{
-		NULL, 0,0,0,0, {NULL,0}, 0,
-		NULL, NULL, NULL, NULL, NULL,
-		{NULL,0}, NULL, 0,
-		{0,0,0},{0},
-		{NULL,0},
-		0,0
-		},
-	};
-	
-/******************************************************************************\
-|* Define the information needed to handle the different i/o ports  
-\******************************************************************************/
-static UartIO _io[] =
-	{
-		{
-		USART1,
-		RCC_APB2Periph_USART1,
-		
-		GPIO_Pin_9,
-		GPIOA,
-		RCC_AHB1Periph_GPIOA,
-		GPIO_PinSource9,
-		GPIO_AF_USART1,
-		
-		GPIO_Pin_10,
-		GPIOA,
-		RCC_AHB1Periph_GPIOA,
-		GPIO_PinSource10,
-		GPIO_AF_USART1,
-		
-		USART1_IRQn,
-		USART1_IRQHandler
-		},
-		
-		{
-		USART2,
-		RCC_APB1Periph_USART2,
-		
-		GPIO_Pin_2,
-		GPIOA,
-		RCC_AHB1Periph_GPIOA,
-		GPIO_PinSource2,
-		GPIO_AF_USART2,
-		
-		GPIO_Pin_3,
-		GPIOA,
-		RCC_AHB1Periph_GPIOA,
-		GPIO_PinSource3,
-		GPIO_AF_USART2,
-		
-		USART2_IRQn,
-		USART2_IRQHandler
-		},
-		
-		{
-		USART3,
-		RCC_APB1Periph_USART3,
-		
-		GPIO_Pin_10,
-		GPIOC,
-		RCC_AHB1Periph_GPIOC,
-		GPIO_PinSource10,
-		GPIO_AF_USART3,
-		
-		GPIO_Pin_11,
-		GPIOC,
-		RCC_AHB1Periph_GPIOC,
-		GPIO_PinSource11,
-		GPIO_AF_USART3,
-		
-		USART3_IRQn,
-		USART3_IRQHandler
-		},
-		
-		{
-		UART4,
-		RCC_APB1Periph_UART4,
-		
-		GPIO_Pin_0,
-		GPIOA,
-		RCC_AHB1Periph_GPIOA,
-		GPIO_PinSource0,
-		GPIO_AF_UART4,
-		
-		GPIO_Pin_1,
-		GPIOA,
-		RCC_AHB1Periph_GPIOA,
-		GPIO_PinSource1,
-		GPIO_AF_UART4,
-		
-		UART4_IRQn,
-		USART4_IRQHandler
-		},
-		
-		{
-		UART5,
-		RCC_APB1Periph_UART5,
-		
-		GPIO_Pin_12,
-		GPIOC,
-		RCC_AHB1Periph_GPIOC,
-		GPIO_PinSource12,
-		GPIO_AF_UART5,
-		
-		GPIO_Pin_2,
-		GPIOD,
-		RCC_AHB1Periph_GPIOD,
-		GPIO_PinSource2,
-		GPIO_AF_UART5,
-		
-		UART5_IRQn,
-		USART5_IRQHandler
-		},
-		
-		{
-		USART6,
-		RCC_APB2Periph_USART6,
-		
-		GPIO_Pin_6,
-		GPIOC,
-		RCC_AHB1Periph_GPIOC,
-		GPIO_PinSource6,
-		GPIO_AF_USART6,
-		
-		GPIO_Pin_7,
-		GPIOC,
-		RCC_AHB1Periph_GPIOC,
-		GPIO_PinSource7,
-		GPIO_AF_USART6,
-		
-		USART6_IRQn,
-		USART6_IRQHandler
-		}
-	};
+static Uart uart3;
 
+/*****************************************************************************\
+|* Generic handler for interrupt-driven traffic
+\*****************************************************************************/
+static void genericUsartHandler(Uart *u)
+	{
+	bool err = false;
+	UART_HandleTypeDef *huart = &(u->huart);
 
-/******************************************************************************\
-|* Define default handlers for interrupt requests. These can be overridden
-|* for input methods
-\******************************************************************************/
-static void defaultUsartIrqHandler(int which)
-	{
-	/**************************************************************************\
-	|* Is this device "open"
-	\**************************************************************************/
-	if (_fp[which]._file != 0)
-		{
-		/**********************************************************************\
-		|* Read the UART until it's empty, buffering as we go
-		\**********************************************************************/
-		UartIO *io = &(_io[which]);
-		if (io && io->rxq)
-			while (USART_GetFlagStatus(io->uart, USART_FLAG_RXNE) != RESET)
-				{
-				uint8_t data = USART_ReceiveData(io->uart);
-				if (!sysQueueIsFull(io->rxq))
-					{
-					//printf("{%x} ", data);
-					sysQueuePut(io->rxq, data);
-					}
-				}
-		}
-	}
+	/*************************************************************************\
+	|* UART parity error interrupt occurred
+	\*************************************************************************/
+ 	 uint32_t tmp1 = __HAL_UART_GET_FLAG(huart, UART_FLAG_PE);
+ 	 uint32_t tmp2 = __HAL_UART_GET_IT_SOURCE(huart, UART_IT_PE);
+ 	 if ((tmp1 != RESET) && (tmp2 != RESET))
+ 	 	 {
+ 		 __HAL_UART_CLEAR_PEFLAG(huart);
+ 		 err = true;
+ 	 	 }
 
-void  USART1_IRQHandler(void)
-	{
-	defaultUsartIrqHandler(0);
-	}
-void  USART2_IRQHandler(void)
-	{
-	defaultUsartIrqHandler(1);
-	}
-void  USART3_IRQHandler(void)
-	{
-	defaultUsartIrqHandler(2);
-	}
-void  USART4_IRQHandler(void)
-	{
-	defaultUsartIrqHandler(3);
-	}
-void  USART5_IRQHandler(void)
-	{
-	defaultUsartIrqHandler(4);
-	}
-void  USART6_IRQHandler(void)
-	{
-	defaultUsartIrqHandler(5);
-	}
+ 	/*************************************************************************\
+ 	|* UART frame error interrupt occurred
+ 	\*************************************************************************/
+ 	 tmp1 = __HAL_UART_GET_FLAG(huart, UART_FLAG_FE);
+ 	 tmp2 = __HAL_UART_GET_IT_SOURCE(huart, UART_IT_ERR);
+ 	 if ((tmp1 != RESET) && (tmp2 != RESET))
+ 	 	 {
+ 		 __HAL_UART_CLEAR_FEFLAG(huart);
+ 		 err = true;
+ 	 	 }
 
-/******************************************************************************\
-|* Define default writer implementations for each of the serial ports
-\******************************************************************************/
-__attribute__((weak)) int USART_Writer(void *f, const char *data, int len) 
-	{
-	FILE *fp = (FILE *)f;
-	
-	int fd = fp->_file-SYS_UART_BASE;
-	if (fd >= 0 && fd < 6)
-		{
-		UartIO *io = &(_io[fd]);
-		
-		while (len--)
+ 	/*************************************************************************\
+ 	|* UART noise error interrupt occurred
+ 	\*************************************************************************/
+ 	 tmp1 = __HAL_UART_GET_FLAG(huart, UART_FLAG_NE);
+ 	 tmp2 = __HAL_UART_GET_IT_SOURCE(huart, UART_IT_ERR);
+ 	 if ((tmp1 != RESET) && (tmp2 != RESET))
+ 	 	 {
+ 		 __HAL_UART_CLEAR_NEFLAG(huart);
+ 		 err = true;
+ 	 	 }
+
+ 	/*************************************************************************\
+ 	|* UART Over-Run interrupt occurred
+ 	\*************************************************************************/
+ 	 tmp1 = __HAL_UART_GET_FLAG(huart, UART_FLAG_ORE);
+ 	 tmp2 = __HAL_UART_GET_IT_SOURCE(huart, UART_IT_ERR);
+ 	 if ((tmp1 != RESET) && (tmp2 != RESET))
+ 	 	 {
+ 		 __HAL_UART_CLEAR_OREFLAG(huart);
+ 		 err = true;
+ 	 	 }
+
+ 	/*************************************************************************\
+ 	|* UART in mode Receiver
+ 	\*************************************************************************/
+ 	 tmp1 = __HAL_UART_GET_FLAG(huart, UART_FLAG_RXNE);
+ 	 tmp2 = __HAL_UART_GET_IT_SOURCE(huart, UART_IT_RXNE);
+ 	 if((tmp1 != RESET) && (tmp2 != RESET))
+ 	 	 {
+ 		 uint16_t val = (uint16_t)(huart->Instance->RDR);
+
+ 		 /* don't put error-data into the FIFO */
+ 		 if (!err)
+ 			FifoPut(&(u->rx), (uint8_t)val);
+ 	 	 }
+
+ 	/*************************************************************************\
+ 	|* UART in mode Transmitter
+ 	\*************************************************************************/
+ 	 tmp1 = __HAL_UART_GET_FLAG(huart, UART_FLAG_TXE);
+ 	 tmp2 = __HAL_UART_GET_IT_SOURCE(huart, UART_IT_TXE);
+ 	 if((tmp1 != RESET) && (tmp2 != RESET))
+ 	 	 {
+ 		/*********************************************************************\
+ 		|* if there's data to send, send it otherwise disable the transmit
+ 		|* empty interrupt
+ 		\*********************************************************************/
+		if (!FifoIsEmpty(&(u->tx)))
 			{
-			while ( !(io->uart->SR & USART_FLAG_TXE))
-				;
-			
-			uint8_t ch = (uint8_t)(*data ++);
-			if (ch == '\n')
-				{
-				io->uart->DR = '\r';
-				while ( !(io->uart->SR & USART_FLAG_TXE))
-					;
-				}	
-			io->uart->DR = ch;
+			int ch = FifoGet(&(u->tx));
+			huart->Instance->TDR = (uint8_t)ch;
+			}
+ 		 else
+ 			 __HAL_UART_DISABLE_IT(huart, UART_IT_TXE);
+ 	 	 }
+	}
+
+/*****************************************************************************\
+|* HW specific IRQ handlers (routes to the generic handler
+\*****************************************************************************/
+void USART3_IRQHandler(void)
+	{
+	genericUsartHandler(&uart3);
+	}
+
+
+
+/*****************************************************************************\
+|* HW-specific UART init, returns augmented uart struct or NULL
+\*****************************************************************************/
+Uart *UartInit(int uartId)
+	{
+	GPIO_InitTypeDef io;
+	Uart *u;
+
+	switch (uartId)
+ 	 	 {
+ 	 	 case 3:
+ 			/*****************************************************************\
+ 			|* Set the pointer up
+ 			\*****************************************************************/
+ 	 		u = &uart3;
+ 	 		u->huart.Instance = USART3;
+
+			/*****************************************************************\
+			|* enable GPIO and UART clocks
+			\*****************************************************************/
+			 __HAL_RCC_GPIOD_CLK_ENABLE();
+			 __HAL_RCC_USART3_CLK_ENABLE();
+
+			/*****************************************************************\
+			|* UART TX GPIO pin configuration
+			\*****************************************************************/
+			 io.Pin = GPIO_PIN_8;
+			 io.Mode = GPIO_MODE_AF_PP;
+			 io.Pull = GPIO_NOPULL;
+			 io.Speed = GPIO_SPEED_FAST;
+			 io.Alternate = GPIO_AF7_USART3;
+			 HAL_GPIO_Init(GPIOD, &io);
+
+			/*****************************************************************\
+			|* UART RX GPIO pin configuration
+			\*****************************************************************/
+			 io.Pin = GPIO_PIN_9;
+			 io.Pull = GPIO_PULLUP;
+			 io.Alternate = GPIO_AF7_USART3;
+			 HAL_GPIO_Init(GPIOD, &io);
+
+			/*****************************************************************\
+			|* Comms parameters
+			\*****************************************************************/
+			 u->huart.Init.BaudRate 		= 115200;
+			 u->huart.Init.WordLength 		= UART_WORDLENGTH_8B;
+			 u->huart.Init.StopBits 		= UART_STOPBITS_1;
+			 u->huart.Init.Parity 			= UART_PARITY_NONE;
+			 u->huart.Init.HwFlowCtl 		= UART_HWCONTROL_NONE;
+			 u->huart.Init.Mode 			= UART_MODE_TX_RX;
+			 u->huart.Init.OverSampling 	= UART_OVERSAMPLING_16;
+			 HAL_UART_Init(&(u->huart));
+
+			/*****************************************************************\
+			|* NVIC setup
+			\*****************************************************************/
+			 HAL_NVIC_SetPriority(USART3_IRQn, 1, 0);
+			 HAL_NVIC_EnableIRQ(USART3_IRQn);
+			 break;
+
+ 	 	 default:
+ 	 		 /* do nothing */
+ 	 		 u = NULL;
+ 	 		 break;
+ 	 	 }
+
+	/*************************************************************************\
+	|* initialize the uart's FIFO subsystem
+	\*************************************************************************/
+	if (u)
+		{
+		FifoInit(&(u->tx), 128);
+		FifoInit(&(u->rx), 128);
+
+		/*********************************************************************\
+		|* enable UART RX interrupt. Disable the TX interrupt since the FIFO's
+		|* empty right now
+		\*********************************************************************/
+		__HAL_UART_ENABLE_IT(&(u->huart), UART_IT_RXNE);
+		__HAL_UART_DISABLE_IT(&(u->huart), UART_IT_TXE);
+		}
+
+	return u;
+	}
+
+/*****************************************************************************\
+|* writes to the transmitter FIFO. Returns the number of bytes written
+\*****************************************************************************/
+int UartWrite(Uart *u, const char *buf, int len)
+	{
+	int nwritten = 0;
+
+	while (len)
+		{
+		if (FifoPut(&(u->tx), *buf) == 0)
+			{
+			++buf;
+			++nwritten;
+			--len;
+			}
+		else
+			break;
+		}
+
+	/*************************************************************************\
+	|* enable the transmitter empty interrupt to start things flowing
+	\*************************************************************************/
+	__HAL_UART_ENABLE_IT(&(u->huart), UART_IT_TXE);
+
+	return nwritten;
+	}
+
+
+/*****************************************************************************\
+|* reads from the receiver FIFO. Returns the number of bytes read
+\*****************************************************************************/
+int UartRead(Uart *u, char *buf, int maxlen)
+	{
+	int nread 	= 0;
+	int left 	= maxlen;
+
+	while (left)
+		{
+		if (!FifoIsEmpty(&(u->rx)))
+			{
+			*buf = (uint8_t)FifoGet(&(u->rx));
+			++buf;
+			++nread;
+			--left;
+			}
+		else
+			{
+			/* no character available, drop out immediately */
+			break;
 			}
 		}
-	return len;
+
+	return nread;
 	}
-	
-static int USART_Reader(void *f, char *data, int len) 
-	{
-	FILE *fp = (FILE *)f;
-
-	int fd = fp->_file-SYS_UART_BASE;
-	if (fd >= 0 && fd < 6)
-		{
-		UartIO *io = &(_io[fd]);
-		if (io && io->rxq)
-			while(len--) 
-				{
-				while (sysQueueIsEmpty(io->rxq))
-					;
-					
-				*data = sysQueueGet(io->rxq);
-				
-				printf("%c", *data);
-				if (*data == '\r')
-					*data = '\n';
-				data ++;
-				}
-		}
-	return 0;
-	}
-
-
-/******************************************************************************\
-|* close a UART by device number
-\******************************************************************************/
-static int sys_uart_fclose(void *arg)
-	{
-	FILE *fp = (FILE *)arg;
-	
-	int which = fp->_file - SYS_UART_BASE;
-	if (which >= 0 && which < 6)
-		{
-		UartIO *io 	= &(_io[which]);
-		if (io && io->rxq)
-			{
-			/******************************************************************\
-			|* Disable the incoming data interrupt
-			\******************************************************************/
-			NVIC_InitTypeDef nvic;
-			nvic.NVIC_IRQChannel 					= io->irq;
-			nvic.NVIC_IRQChannelPreemptionPriority 	= 0;
-			nvic.NVIC_IRQChannelSubPriority 		= 0;
-			nvic.NVIC_IRQChannelCmd 				= DISABLE;
-			NVIC_Init(&nvic);
-
-			/******************************************************************\
-			|* Close the device down
-			\******************************************************************/
-			USART_DeInit(io->uart);
-
-			/******************************************************************\
-			|* Free allocated RAM
-			\******************************************************************/
-			sysQueueDestroy(io->rxq);
-			free(io->rxq);
-			
-			/******************************************************************\
-			|* Zero the structures
-			\******************************************************************/
-			FILE *fp	= &(_fp[which]);
-			memset(fp, 0, sizeof(FILE));
-			memset(io, 0, sizeof(UartIO));
-			}
-		}
-	return 0;
-	}
-
-/******************************************************************************\
-|* open a UART by device number and return a FILE pointer 
-\******************************************************************************/
-FILE *sys_uart_fopen(int which)
-	{
-	FILE *fp = NULL;
-	
-	/**************************************************************************\
-	|* Sanity check
-	\**************************************************************************/
-	which --;
-	if (which <0 || which > 5)
-		return NULL;
-		
-	/**************************************************************************\
-	|* Set up the FILE handle
-	\**************************************************************************/
-	fp 			= &(_fp[which]);
-	fp->_file 	= which+SYS_UART_BASE;
-	fp->_write 	= USART_Writer;
-	fp->_read 	= USART_Reader;
-	fp->_close	= sys_uart_fclose;
-		
- 	/**************************************************************************\
-	|* Configure the clocks for the specified port
-	\**************************************************************************/
-	UartIO *io = &(_io[which]);
- 	RCC_AHB1PeriphClockCmd(io->txGpioClock, ENABLE);
-  	RCC_AHB1PeriphClockCmd(io->rxGpioClock, ENABLE);
-	
-	if (which == 0 || which == 5)
-		RCC_APB2PeriphClockCmd(io->clock, ENABLE);
-	else
-		RCC_APB1PeriphClockCmd(io->clock, ENABLE);
-	
-	GPIO_PinAFConfig(io->txPort, io->txSource, io->txAltFunc);
-	GPIO_PinAFConfig(io->rxPort, io->rxSource, io->rxAltFunc);
-		
-	/**************************************************************************\
-	|* Configure the pins for the specified port
-	\**************************************************************************/
-  	GPIO_InitTypeDef gpio;
-	gpio.GPIO_Pin		= io->txPin;
-	gpio.GPIO_Mode		= GPIO_Mode_AF;
-	gpio.GPIO_OType		= GPIO_OType_PP;
-	gpio.GPIO_Speed		= GPIO_Speed_50MHz;
-	gpio.GPIO_PuPd		= GPIO_PuPd_UP;
-	GPIO_Init(io->txPort, &gpio);
-	
-	gpio.GPIO_Pin		= io->rxPin;
-	gpio.GPIO_OType		= GPIO_OType_OD;
-	gpio.GPIO_PuPd		= GPIO_PuPd_NOPULL;
-	GPIO_Init(io->rxPort, &gpio);
-		
-	/**************************************************************************\
-	|* Configure default characteristics of the port
-	\**************************************************************************/
-  	USART_InitTypeDef usart;
-	usart.USART_BaudRate			= 115200;
-	usart.USART_WordLength			= USART_WordLength_8b;
-	usart.USART_StopBits			= USART_StopBits_1;
-	usart.USART_Parity				= USART_Parity_No;
-	usart.USART_HardwareFlowControl	= USART_HardwareFlowControl_None;
-	usart.USART_Mode				= USART_Mode_Rx | USART_Mode_Tx;
-	USART_Init(io->uart, &usart);
-		
-	/**************************************************************************\
-	|* Set up the incoming data interrupt
-	\**************************************************************************/
-	NVIC_InitTypeDef nvic;
-	nvic.NVIC_IRQChannel 					= io->irq;
-	nvic.NVIC_IRQChannelPreemptionPriority 	= 0;
-	nvic.NVIC_IRQChannelSubPriority 		= 0;
-	nvic.NVIC_IRQChannelCmd 				= ENABLE;
-	NVIC_Init(&nvic);
-		
-	/**************************************************************************\
-	|* And enable the USART device
-	\**************************************************************************/
-	USART_Cmd(io->uart, ENABLE);
-
-	/**************************************************************************\
-	|* Create the rxq. We can buffer 128 bytes per serial channel. Ought to be
-	|* enough
-	\**************************************************************************/
-	io->rxq = (sysQueue *) malloc(sizeof(sysQueue));
-	sysQueueInit(io->rxq, 128);
-		
-	/**************************************************************************\
-	|* Enable the receive interrupt
-	\**************************************************************************/
-	USART_ITConfig(io->uart, USART_IT_RXNE, ENABLE);
-	
-	/**************************************************************************\
-	|* Send back the result
-	\**************************************************************************/
-	return fp;
-	}
-
-/******************************************************************************\
-|* Return whether there is anything queued on a given input device 
-\******************************************************************************/
-int sys_uart_canReadData(int which)
-	{
-	FILE *fp	= &(_fp[which]);
-	UartIO *io 	= &(_io[which]);
-	if (fp && (fp->_file != 0) && io && io->rxq)
-		return (sysQueueIsEmpty(io->rxq)) ? 0 : 1;
-		
-	return 0;
-	}
-	
-/******************************************************************************\
-|* Return whether there is anything space to write on a given output device 
-\******************************************************************************/
-int sys_uart_canWriteData(int which)
-	{
-	FILE *fp	= &(_fp[which]);
-	UartIO *io 	= &(_io[which]);
-	if (fp && (fp->_file != 0) && io && io->rxq)
-		return (sysQueueIsFull(io->rxq)) ? 0 : 1;
-		
-	return 0;
-	}
-	
-	

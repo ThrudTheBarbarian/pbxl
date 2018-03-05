@@ -1,6 +1,6 @@
-19:56:25 **** Clean-only build of configuration Debug for project led-blink ****
-make -j7 clean 
+10:37:17 **** Clean-only build of configuration Debug for project led-blink ****
+make -j23 clean 
 make: *** No rule to make target `clean'.  Stop.
 
-19:56:25 Build Finished (took 68ms)
+10:37:17 Build Finished (took 132ms)
 

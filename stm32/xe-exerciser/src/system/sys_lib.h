@@ -1,22 +1,21 @@
-#ifndef __system_library_common_header__
-#define __system_library_common_header__
+/*
+ * sys_lib.h
+ *
+ *  Created on: 5 Mar 2018
+ *      Author: simon
+ */
 
-#include <sys_startup.h>
-#include <sys_timer.h>
-#include <sys_delay.h>
+#ifndef SYSTEM_SYS_LIB_H_
+#define SYSTEM_SYS_LIB_H_
 
-#include <sys_stdio.h>
-#include <sys_queue.h>
-#include <sys_malloc.h>
-#include <sys_bcopy.h>
-#include <sys_strlen.h>
-#include <sys_strtok.h>
-#include <sys_strcmp.h>
+#include <stdint.h>
+#include <stdbool.h>
 
-#include <sys_leds.h>
-#include <sys_uart.h>
-#include <sys_sram.h>
-#include <sys_spi.h>
-#include <sys_console.h>
+#include "stm32f7xx.h"
+#include "stm32f7xx_nucleo_144.h"
 
-#endif // ! __system_library_common_header__
+#include "sys_fifo.h"
+#include "sys_uart.h"
+
+
+#endif /* SYSTEM_SYS_LIB_H_ */

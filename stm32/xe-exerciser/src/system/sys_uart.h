@@ -1,43 +1,38 @@
-#ifndef __sys_uart_header__
-#define __sys_uart_header__
+/*
+ * sys_uart.h
+ *
+ *  Created on: 5 Mar 2018
+ *      Author: simon
+ */
 
-#include <stdio.h>
-#include <sys_lib.h>
+#ifndef SYSTEM_SYS_UART_H_
+#define SYSTEM_SYS_UART_H_
 
 #include "stm32f7xx.h"
 #include "stm32f7xx_nucleo_144.h"
 
+#include "sys_fifo.h"
+
 typedef struct
 	{
-	USART_TypeDef *	uart;			// eg: USART1
-	uint32_t clock;					// eg: RCC_APB2Periph_USART1
-	
-	uint32_t txPin;					// eg: GPIO_Pin_9
-	GPIO_TypeDef * txPort;			// eg: GPIOA
-	uint32_t txGpioClock;			// eg: RCC_AHB1Periph_GPIOA
-	uint32_t txSource;				// eg: GPIO_PinSource9
-	uint8_t txAltFunc;				// eg: GPIO_AF_USART1
-	
-	uint32_t rxPin;					// eg: GPIO_Pin_10
-	GPIO_TypeDef * rxPort;			// eg: GPIOA
-	uint32_t rxGpioClock;			// eg: RCC_AHB1Periph_GPIOA
-	uint32_t rxSource;				// eg: GPIO_PinSource10
-	uint8_t rxAltFunc;				// eg: GPIO_AF_USART1
+	UART_HandleTypeDef huart;			// the HAL_UART structure
+	Fifo tx, rx;						// transmi and receive fifos
+	} Uart;
 
-	uint32_t irq;					// eg: USART1_IRQn
-	void (*irqHandler)();			// IRQ handler function pointer
-	sysQueue *rxq;					// Data buffer for incoming data
-	} UartIO;
-	
-void  USART1_IRQHandler(void);
-void  USART2_IRQHandler(void);
-void  USART3_IRQHandler(void);
-void  USART4_IRQHandler(void);
-void  USART5_IRQHandler(void);
-void  USART6_IRQHandler(void);
 
-FILE * 	sys_uart_fopen(int which);
-int 	sys_uart_canReadData(int which);
-int 	sys_uart_canWriteData(int which);
+/*****************************************************************************\
+|* HW-specific UART init, returns augmented uart struct or NULL
+\*****************************************************************************/
+Uart * UartInit(int	uartId);
 
-#endif // ! __sys_uart_header__
+/*****************************************************************************\
+|* writes to the transmitter FIFO. Returns the number of bytes written
+\*****************************************************************************/
+int UartWrite(Uart *u, const char *buf, int len);
+
+/*****************************************************************************\
+|* reads from the receiver FIFO. Returns the number of bytes read
+\*****************************************************************************/
+int UartRead(Uart *u, char *buf, int maxlen);
+
+#endif /* SYSTEM_SYS_UART_H_ */
