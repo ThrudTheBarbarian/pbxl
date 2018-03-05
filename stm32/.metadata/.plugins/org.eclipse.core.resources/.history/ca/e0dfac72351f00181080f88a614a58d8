@@ -1,0 +1,51 @@
+/******************************************************************************\
+|* Common library code
+|*
+|* Simple malloc implementation that uses the 112k block, starting at the 
+|* base address (0x2000 0000)
+|*
+|* Based on		: the allocator in K&R C, section 8.7
+\******************************************************************************/
+
+#ifndef __malloc_header__
+#define __malloc_header__
+
+#include <stdint.h>
+#include <string.h>
+
+#define MALLOC_BASE_ADDRESS		0x20000000
+#define MALLOC_UPPER_LIMIT		0x12000
+#define MIN_MALLOC_UNITS		16				// a unit is 8 bytes
+
+/******************************************************************************\
+|* We want to align memory to the most-restrictive type so that the generic 
+|* allocator can return a pointer to anything
+\******************************************************************************/
+typedef uint32_t mallocAlignBoundary;
+
+/******************************************************************************\
+|* Create a header structure to define the next pool of memory in the linked
+|* list that is the memory allocator. Uses the above definition of 
+|* mallocAlignBoundary to make sure these are aligned correctly. 'x' is not
+|* otherwise used
+\******************************************************************************/
+union mallocHeader_t
+	{
+	struct
+		{
+		union mallocHeader_t *	next;
+		unsigned long			size;
+		} s;
+	mallocAlignBoundary x;
+	};
+
+typedef union mallocHeader_t MallocHeader;
+
+
+/******************************************************************************\
+|* Dynamic memory API
+\******************************************************************************/
+void * malloc(unsigned long numBytes);
+void free(void *anyPtr);
+
+#endif // !__malloc_header__

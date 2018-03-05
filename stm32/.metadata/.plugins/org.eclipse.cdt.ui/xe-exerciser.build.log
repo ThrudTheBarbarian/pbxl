@@ -1,0 +1,7 @@
+19:56:21 **** Clean-only build of configuration Debug for project xe-exerciser ****
+make -j7 clean 
+rm -rf *
+ 
+
+19:56:21 Build Finished (took 69ms)
+
