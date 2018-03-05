@@ -53,6 +53,7 @@
 #include <sys/time.h>
 #include <sys/times.h>
 
+#include "sys_lib.h"
 
 /* Variables */
 //#undef errno
@@ -90,18 +91,21 @@ void _exit (int status)
 
 int _read (int file, char *ptr, int len)
 {
+#if 0
 	int DataIdx;
 
 	for (DataIdx = 0; DataIdx < len; DataIdx++)
 	{
 		*ptr++ = __io_getchar();
 	}
-
 return len;
+#endif
+	return UartRead(NULL, ptr, len);
 }
 
 int _write(int file, char *ptr, int len)
 {
+#if 0
 	int DataIdx;
 
 	for (DataIdx = 0; DataIdx < len; DataIdx++)
@@ -109,6 +113,8 @@ int _write(int file, char *ptr, int len)
 		__io_putchar(*ptr++);
 	}
 	return len;
+#endif
+	return UartWrite(NULL, ptr, len);
 }
 
 caddr_t _sbrk(int incr)

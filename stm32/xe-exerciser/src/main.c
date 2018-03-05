@@ -25,10 +25,17 @@ int main(void)
 	//sysLedInit(SYS_LED_ALL);
 
 	/*************************************************************************\
-	|* Initialise the uart
+	|* Initialise the uart. USART3 is bound to the USB port's serial i/o
 	\*************************************************************************/
-	Uart *io = UartInit(3);
-	UartWrite(io, "Testing the UART\n", 17);
+	UartInit(3);
+	printf("Testing printf()\n");
 
-	for(;;);
+	for(;;)
+		{
+		char buf[1024];
+		printf("command > ");
+		while (fgets(buf, 80, stdin) == NULL)
+			;
+		printf("[%s]\n", buf);
+		}
 	}
