@@ -1,4 +1,23 @@
-10:37:22 **** Clean-only build of configuration Debug for project xe-exerciser ****
-make -j23 clean 
-rm -rf *
+13:59:51 **** Incremental Build of configuration Debug for project xe-exerciser ****
+make -j23 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DSTM32 -DSTM32F7 -DSTM32F767ZITx -DNUCLEO_F767ZI -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -I"/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/HAL_Driver/Inc/Legacy" -I"/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/src/system" -I"/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/Utilities/STM32F7xx_Nucleo_144" -I"/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/inc" -I"/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/CMSIS/device" -I"/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/CMSIS/core" -I"/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/HAL_Driver/Inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
+Building target: xe-exerciser.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -nodefaultlibs -T"/Users/simon/Documents/eagle/pbxl/stm32/xe-exerciser/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "xe-exerciser.elf" @"objects.list"   -lm
+Finished building target: xe-exerciser.elf
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "xe-exerciser.elf" "xe-exerciser.bin"
+arm-none-eabi-size "xe-exerciser.elf"
+   text	   data	    bss	    dec	    hex	filename
+  27364	   2500	   1824	  31688	   7bc8	xe-exerciser.elf
+ 
+13:59:58 **** Incremental Build of configuration Debug for project xe-exerciser ****
+make -j23 all 
+make: Nothing to be done for `all'.
