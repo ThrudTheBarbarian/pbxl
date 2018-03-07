@@ -73,8 +73,6 @@
 				moreData = NO;
 			else
 				{
-				rows1 = [self read:_csv1];
-				rows2 = [self read:_csv2];
 				NSArray *rows = [self filter:rows1 and:rows2];
 				[vcd writeVars:rows usingTimestamp:_timeSignal];
 				}

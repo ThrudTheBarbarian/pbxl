@@ -77,7 +77,7 @@
 					  ? _value | (1<<bit)
 					  : _value & (~(1<<bit));
 		
-	bool changed = (value != newValue) || (_valid == NO);
+	bool changed = (_value != newValue) || (_valid == NO);
 	_value = newValue;
 	_valid = YES;
 	return changed;

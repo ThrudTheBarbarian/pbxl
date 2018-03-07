@@ -120,7 +120,7 @@
 				subscript		= [[split objectAtIndex:1] intValue];
 				}
 			NSString *theVal 	= [sample objectForKey:varName];
-
+				
 			VcdVariable *var	= [_values objectForKey:theName];
 			bool changed		= NO;
 			if (subscript >= 0)
