@@ -57,9 +57,11 @@
 						<key>%colour_footer_bkg%</key>
 						<string>#FEFEFE</string>
 						<key>%colour_nav_toggle_normal_text%</key>
-						<string>#666666</string>
+						<string>#B3B3B2</string>
+						<key>%colour_site_slogan%</key>
+						<string>#FFFFFF</string>
 						<key>%colour_site_title_normal_text%</key>
-						<string>#666666</string>
+						<string>#B3B3B2</string>
 					</dict>
 				</dict>
 				<key>CreditRapidWeaver</key>

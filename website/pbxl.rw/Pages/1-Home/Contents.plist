@@ -26,14 +26,14 @@
 					<key>Name</key>
 					<string>Stacks</string>
 					<key>Version</key>
-					<string>3.5.7</string>
+					<string>3.5.8</string>
 				</dict>
 				<key>PublishingManifests</key>
 				<dict>
 					<key>sftp://xanadu.gornall.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-01T17:46:46Z</date>
+						<date>2018-03-12T14:50:39Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -62,8 +62,8 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								XxeTcfTQrczc
-								DvwNP0sSgA==
+								ejDEd5CyAYcW
+								vPzA0UH4HQ==
 								</data>
 								<key>Size</key>
 								<integer>8759</integer>
