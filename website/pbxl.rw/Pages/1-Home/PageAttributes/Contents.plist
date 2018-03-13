@@ -20,7 +20,17 @@
 				</dict>
 				<key>ColourStyles</key>
 				<dict>
+					<key>Avantgarde</key>
+					<dict/>
 					<key>Bravo</key>
+					<dict/>
+					<key>Cameo</key>
+					<dict/>
+					<key>Delta</key>
+					<dict/>
+					<key>Japanese Fantasy</key>
+					<dict/>
+					<key>Kiki</key>
 					<dict/>
 					<key>Lander</key>
 					<dict>
@@ -39,6 +49,31 @@
 						<key>%colour_sidebar_text%</key>
 						<string>#EEEEEE</string>
 					</dict>
+					<key>Manitoba</key>
+					<dict/>
+					<key>Patchy</key>
+					<dict/>
+					<key>Reason</key>
+					<dict/>
+					<key>Split</key>
+					<dict/>
+					<key>Tesla</key>
+					<dict/>
+					<key>Voyager</key>
+					<dict>
+						<key>%colour_body_links%</key>
+						<string>#B3B3B2</string>
+						<key>%colour_footer_bkg%</key>
+						<string>#FEFEFE</string>
+						<key>%colour_nav_toggle_normal_text%</key>
+						<string>#B3B3B2</string>
+						<key>%colour_sidebar_bkg%</key>
+						<string>#FEFEFE</string>
+						<key>%colour_site_slogan%</key>
+						<string>#FFFFFF</string>
+						<key>%colour_site_title_normal_text%</key>
+						<string>#B3B3B2</string>
+					</dict>
 				</dict>
 				<key>CreditRapidWeaver</key>
 				<true/>
@@ -53,7 +88,7 @@
 				<key>FilenameExtension</key>
 				<string>html</string>
 				<key>HasCustomThemeStyle</key>
-				<false/>
+				<true/>
 				<key>ImageFormat</key>
 				<string>Original</string>
 				<key>ImageQuality</key>
@@ -75,16 +110,64 @@
 				<key>SidebarEnabled</key>
 				<integer>1</integer>
 				<key>SidebarTitle</key>
-				<string>Shortcuts...</string>
+				<string></string>
 				<key>TextEncoding</key>
 				<string>utf-8</string>
 				<key>ThemeStyles</key>
 				<dict>
+					<key>Avantgarde</key>
+					<array>
+						<string>Font Style.San Serif</string>
+						<string>Menu Color.Orange</string>
+						<string>Sidebar.Right</string>
+						<string>Title Background and Blog Mark.Brown</string>
+						<string>Width.900 px</string>
+					</array>
+					<key>Baukraft</key>
+					<array>
+						<string>Breadcrumb position and visibility.top</string>
+						<string>Container Font Size.medium</string>
+						<string>Custom header image.Default</string>
+						<string>Font Style.Liberation Serif Regular</string>
+						<string>Footer Font Size.medium</string>
+						<string>Header Font Size.medium</string>
+						<string>Header image visibility.On</string>
+						<string>Sidebar Font Size.medium</string>
+						<string>Sidebar.Right</string>
+					</array>
+					<key>Cameo</key>
+					<array>
+						<string>Icons.Blue</string>
+						<string>Sidebar.Right</string>
+						<string>Width.800px</string>
+					</array>
+					<key>Delta</key>
+					<array>
+						<string>Icons.Orange</string>
+						<string>Sidebar.Right</string>
+						<string>Width.800px</string>
+					</array>
+					<key>Japanese Fantasy</key>
+					<array>
+						<string>Accent.Red</string>
+						<string>Banner.Image 2</string>
+						<string>Sidebar.Right</string>
+					</array>
+					<key>Kiki</key>
+					<array>
+						<string>Font Family.Georgia</string>
+						<string>Font Size.Small</string>
+						<string>Sidebar.Hidden</string>
+						<string>Site Banner Overlay.Blue overlay</string>
+						<string>Toggle Site Banner.Display Banner</string>
+					</array>
 					<key>Lander</key>
 					<array>
 						<string>[+] combo options.Back to Top Button</string>
+						<string>[+] combo options.Banner Image: Show dots grid</string>
 						<string>[+] combo options.Navigation: Uppercase</string>
 						<string>[+] combo options.StyledText+Blog: Fluid image (edge to edge)</string>
+						<string>[+] combo options.Text justified</string>
 						<string>Banner Image - Parallax.Inactive</string>
 						<string>Banner Image - Vertical masking.MaxHeight 500px</string>
 						<string>BreakPoint: Sidebar.Page full width (Hide Sidebar)</string>
@@ -94,6 +177,44 @@
 						<string>Loading page - Effects.Default</string>
 						<string>Max Width.1000 Pixel</string>
 						<string>Navigation Colors.Navigation - Link</string>
+					</array>
+					<key>Magnesium</key>
+					<array>
+						<string>Sidebar.Right</string>
+						<string>Styles.Electric</string>
+						<string>Width.Default Width (780px)</string>
+					</array>
+					<key>Manitoba</key>
+					<array>
+						<string>Header Alignment.Inline</string>
+						<string>Icon Colour.Green</string>
+						<string>Sidebar.Right</string>
+						<string>Width.800px</string>
+					</array>
+					<key>Patchy</key>
+					<array>
+						<string>Font Style.Serif</string>
+						<string>Graphical Elements.Paper Under Site - Bottom</string>
+						<string>Graphical Elements.Paper Under Site - Right</string>
+						<string>Graphical Elements.Tape - Bottom Left and Right</string>
+						<string>Graphical Elements.Tape - Top Right</string>
+						<string>Sidebar.Hidden</string>
+					</array>
+					<key>Voyager</key>
+					<array>
+						<string>Banner Height.440 px</string>
+						<string>Body Text.Merriweather</string>
+						<string>Breadcrumb Trail.Translucent White Presets</string>
+						<string>Content Width.1,170px</string>
+						<string>Headers.Fjalla One</string>
+						<string>Navigation Overlay.Translucent Black</string>
+						<string>Sidebar.Left-hand Side</string>
+						<string>Site Slogan.Fjalla One</string>
+						<string>Site Title Divider.Light</string>
+						<string>Site Title.Fjalla One</string>
+						<string>Theme Toggles.Show Site Title in Navigation Overlay</string>
+						<string>Theme Toggles.Uppercase Site Title</string>
+						<string>Theme Toggles.Uppercase Slogan</string>
 					</array>
 				</dict>
 			</dict>

@@ -23,7 +23,7 @@
 					<key>page0 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T14:50:39Z</date>
+						<date>2018-03-13T15:29:10Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -52,11 +52,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								ejDEd5CyAYcW
-								vPzA0UH4HQ==
+								gAhHwunaf0ak
+								xWj1zCrreA==
 								</data>
 								<key>Size</key>
-								<integer>8759</integer>
+								<integer>8850</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -69,7 +69,7 @@
 					<key>page1 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T14:50:39Z</date>
+						<date>2018-03-13T15:16:34Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -98,24 +98,24 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								kX1HFOgty7s7
-								bMI1oIqr0Q==
+								Sy0nyLncIBe4
+								xOtKEtGoTA==
 								</data>
 								<key>Size</key>
-								<integer>10946</integer>
+								<integer>10990</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>page1</string>
 						<key>SiteRoot</key>
-						<string>page</string>
+						<string>design</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>page2 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T14:50:39Z</date>
+						<date>2018-03-13T15:16:34Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -164,24 +164,24 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								/sxfaL9/MAje
-								Mn1tXyo2cQ==
+								i3aLnglJS7+c
+								IbSo0sADyw==
 								</data>
 								<key>Size</key>
-								<integer>18598</integer>
+								<integer>18620</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>page2</string>
 						<key>SiteRoot</key>
-						<string>page-2</string>
+						<string>host-interface</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>page3 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T14:50:39Z</date>
+						<date>2018-03-13T15:16:34Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -210,24 +210,24 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								QTRY07MDIkXs
-								u0C3AjqBmg==
+								7Q7z8WAfORYR
+								lbH/lPjuBw==
 								</data>
 								<key>Size</key>
-								<integer>12412</integer>
+								<integer>12427</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>page3</string>
 						<key>SiteRoot</key>
-						<string>page-3</string>
+						<string>device-interface</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>page4 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T14:50:39Z</date>
+						<date>2018-03-13T15:16:34Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -396,24 +396,24 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								K6FNILyLbZxN
-								nY7YADXDsg==
+								K1JEHmWu7Vgm
+								6C2e45OJcA==
 								</data>
 								<key>Size</key>
-								<integer>14947</integer>
+								<integer>14969</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>page4</string>
 						<key>SiteRoot</key>
-						<string>page-4</string>
+						<string>enclosure</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>page5 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T15:11:52Z</date>
+						<date>2018-03-13T15:33:12Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -458,6 +458,26 @@
 								<key>Size</key>
 								<integer>69093</integer>
 							</dict>
+							<key>files/lg_540.png</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								ZvOymVYxBl/h
+								aqlWW+G3AA==
+								</data>
+								<key>Size</key>
+								<integer>10122</integer>
+							</dict>
+							<key>files/sq_540.png</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								Yz9EBcLt3+lS
+								5bZEb5j6wQ==
+								</data>
+								<key>Size</key>
+								<integer>13411</integer>
+							</dict>
 							<key>files/stacks-image-146cf28.jpg</key>
 							<dict>
 								<key>Digest</key>
@@ -488,15 +508,15 @@
 								<key>Size</key>
 								<integer>311412</integer>
 							</dict>
-							<key>files/stacks-image-68fc5dc.png</key>
+							<key>files/stacks-image-8236940-1200x804.png</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								WN4RvOIIGPfe
-								+v6OXDAWNg==
+								nGryLMR8lpBy
+								e1T20ivaHA==
 								</data>
 								<key>Size</key>
-								<integer>87874</integer>
+								<integer>348635</integer>
 							</dict>
 							<key>files/stacks-image-a6dd7ac.png</key>
 							<dict>
@@ -528,16 +548,6 @@
 								<key>Size</key>
 								<integer>75532</integer>
 							</dict>
-							<key>files/stacks-image-be1d075-1198x870.png</key>
-							<dict>
-								<key>Digest</key>
-								<data>
-								zg86Anmbp2bD
-								VrAWmJABHg==
-								</data>
-								<key>Size</key>
-								<integer>354165</integer>
-							</dict>
 							<key>files/stacks-image-dcc796f.jpg</key>
 							<dict>
 								<key>Digest</key>
@@ -548,15 +558,25 @@
 								<key>Size</key>
 								<integer>342149</integer>
 							</dict>
+							<key>files/stacks-image-f73b777-1200x808.png</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								SapeIenUm7+K
+								AmKd46QhJA==
+								</data>
+								<key>Size</key>
+								<integer>353657</integer>
+							</dict>
 							<key>files/stacks_page_page5.css</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								6v9xEdS9O4Kb
-								tADcYKA7GA==
+								ddr+pnIHy70H
+								6BkBfyB9Pg==
 								</data>
 								<key>Size</key>
-								<integer>165777</integer>
+								<integer>166013</integer>
 							</dict>
 							<key>files/stacks_page_page5.js</key>
 							<dict>
@@ -578,28 +598,38 @@
 								<key>Size</key>
 								<integer>20</integer>
 							</dict>
+							<key>files/th_540.png</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								fRn3Ixsbf65K
+								QzhM22BT7g==
+								</data>
+								<key>Size</key>
+								<integer>18081</integer>
+							</dict>
 							<key>index.php</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								MhhyVLCcO15w
-								JF+cp1VRxA==
+								QnSXmYY9kDYP
+								pIPd4KcRoQ==
 								</data>
 								<key>Size</key>
-								<integer>116694</integer>
+								<integer>117134</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
 						<string>page5</string>
 						<key>SiteRoot</key>
-						<string>page-5</string>
+						<string>progress</string>
 						<key>Version</key>
 						<integer>3</integer>
 					</dict>
 					<key>rw:document:extrafiles - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T14:50:39Z</date>
+						<date>2018-03-13T15:29:10Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -628,11 +658,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								vUMbaLfdxe8j
-								ClibA8IDLg==
+								5N7iDsOutj1E
+								bobJV6aqMQ==
 								</data>
 								<key>Size</key>
-								<integer>724</integer>
+								<integer>749</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -645,7 +675,7 @@
 					<key>rw:plugin:stacks - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T14:50:39Z</date>
+						<date>2018-03-13T15:16:34Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -821,11 +851,21 @@
 					<key>rw:theme:Voyager - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-12T14:52:37Z</date>
+						<date>2018-03-13T15:16:34Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
 						<dict>
+							<key>consolidated-0.css</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								FtDDI3rOIhib
+								3er//JbHNg==
+								</data>
+								<key>Size</key>
+								<integer>155014</integer>
+							</dict>
 							<key>consolidated.css</key>
 							<dict>
 								<key>Digest</key>
@@ -11328,7 +11368,7 @@
 					<key>WebClipIconUsed</key>
 					<false/>
 					<key>cacheBustingString</key>
-					<string>?rwcache=542559034</string>
+					<string>?rwcache=542646988</string>
 					<key>globalBody</key>
 					<string></string>
 					<key>globalCSS</key>
