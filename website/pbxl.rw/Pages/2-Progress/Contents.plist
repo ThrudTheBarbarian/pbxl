@@ -26,14 +26,14 @@
 					<key>Name</key>
 					<string>Stacks</string>
 					<key>Version</key>
-					<string>3.5.7</string>
+					<string>3.5.8</string>
 				</dict>
 				<key>PublishingManifests</key>
 				<dict>
 					<key>sftp://xanadu.gornall.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-19T04:14:54Z</date>
+						<date>2018-03-20T04:46:00Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -408,6 +408,16 @@
 								<key>Size</key>
 								<integer>427863</integer>
 							</dict>
+							<key>files/stacks-image-e530c79-1200x854.png</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								molLdCBHHs75
+								7ON4ytNb+A==
+								</data>
+								<key>Size</key>
+								<integer>313361</integer>
+							</dict>
 							<key>files/stacks-image-e590feb-1200x900.jpg</key>
 							<dict>
 								<key>Digest</key>
@@ -438,25 +448,45 @@
 								<key>Size</key>
 								<integer>353657</integer>
 							</dict>
+							<key>files/stacks-image-fdbc1ed-1200x900.jpg</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								UVPscKloz7gg
+								tjJDTwFMsA==
+								</data>
+								<key>Size</key>
+								<integer>143355</integer>
+							</dict>
+							<key>files/stacks-image-fdbc1ed-1200x900@2x.jpg</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								HjUMLakBnvOA
+								U2E4Oq09hg==
+								</data>
+								<key>Size</key>
+								<integer>252931</integer>
+							</dict>
 							<key>files/stacks_page_page5.css</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								S4TxhTD7012A
-								mksvdh35ZQ==
+								fyHi4O46HCbi
+								hywhn1EvTQ==
 								</data>
 								<key>Size</key>
-								<integer>185587</integer>
+								<integer>191370</integer>
 							</dict>
 							<key>files/stacks_page_page5.js</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								Vvc+4+guaBYJ
-								zhiXb8p1Ew==
+								wrP4M6+Uzm7C
+								kxX7YFtVHQ==
 								</data>
 								<key>Size</key>
-								<integer>40260</integer>
+								<integer>40538</integer>
 							</dict>
 							<key>files/stacks_page_page5.php</key>
 							<dict>
@@ -482,11 +512,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								9HUrSp0oEPhm
-								cRW8TbhKqA==
+								THEXjTfucU3c
+								cQtWoyKZuw==
 								</data>
 								<key>Size</key>
-								<integer>158326</integer>
+								<integer>170738</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
