@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AAAA_CurrentOSXVersion</key>
+	<string>MacOS High Sierra: 1451.000000</string>
+	<key>AAAA_DKDDocumentVersion</key>
+	<string>6.7.0 : Mobile Friendly</string>
+	<key>AAAA_EazyDrawVersion</key>
+	<string>8.7.1b</string>
+	<key>AAAB_Build</key>
+	<string>8725</string>
+	<key>AAAB_Distribution</key>
+	<string>Free Market</string>
+	<key>AAA_DKDQuicklookData</key>
+	<data>
+	JVBERi0xLjMKJcTl8uXrp/Og0MTGCjQgMCBvYmoKPDwgL0xlbmd0aCA1IDAgUiAvRmls
+	dGVyIC9GbGF0ZURlY29kZSA+PgpzdHJlYW0KeAGFl0FuJDcMRfd1Cl0gGkmUVNLaiwDZ
+	DXyEBiYJMF4MfH8gX1XiJxvtQWDALr+mVCQ/Sal/he/hV0ixh3/Dt7fPHB6fIeP/2dM5
+	quBpjCKtzPD5CN/+hMHfnyGFs/XwEdrZr6ef6+lI4Sc+Wb//ocWPUMJf98Zv79enKby/
+	4Y14B37+WH/WXo+PUGY8u5wjSD9jGr0fHyGXM7Y2Mxk2NzZ7HC1VMKkp5na2IF+xPmJL
+	Mg+4OWLOqdQweqyt94m1fO9XTH2B3TsytXxOyMSBTJSVCRmx9PMsoUq5nfkIty91GKsl
+	pnritbSqEqecKZMcj1B7TL3MSRYq3B1jrp1SxHpsQFIQ1Bw1YJ2xtlI4DkdKnAX5cyTF
+	NGt7WpdP6D2a8yC3OGpph/m5yVrHaJRZxEosL7rTAxrGXPMpodKqxnTJBnx7ICSFfjp2
+	R3M4ckeMAtCdLC/GNHvmwVbrMD9Vvweq95V+hB9fFi0tpQiim6tomQ1lljEjqj+J01+Z
+	6SilxbL6hDoKOqOmjM5xDHEW6ShGrQgRielM0+0kLc7UnvQXRJEkO/3ZT9RfyapT1V+Z
+	i5h9qH1BG6e/MtORHlAzMT8du6MxtWVH7HayvNg6zR711wyb0koQn9NfKWbdan+q3VFl
+	taYJTrXJND+HEVWbxKlNRtV66fGSQ2XspWIQzJV7QzlKw4A2kjER8jw9aXG1tV+W5Rqo
+	B4dNzzlWkTWJ9kgicVKTWbh7nbUQbZzUZBSjbw9MxI5xcLlpKnaNxZaVHa8jV1IQnUN3
+	4lRnU+BVuSedqcH/9fnB08cpT6bK2xnFpNLGlLe9qGHGYXQNYpU5S44j41Q2VTPC7bU5
+	nbNgFowk1uUZMq0K8svg3FWyVD7XGq8z0JxU8jgsFGVUnuuYVBKnvDITNasH1MvcNLRj
+	MVEZr9oclhRFSPidOFXeFDAn9S7hlTcN7g7XVAZcROKcJaPD1UuijIStWW9GuWKq4rp0
+	0OaBZRARlw1n1fZ8lhM3l95zyEZqPCuMsW4z7LWvFEqw03Ux67TBmTqvAe/WgfU4a530
+	4JBeUUVjkdtP2Gyy/NRolDFgAoqyCSZRxoC+BhC3yjhsShniHDBibpLtYCCnrmPARiwt
+	xjR59GBrhZ3uRrCUL61f6e+63FniCprOua6gu5XkvJHLlxHNqpIn9fdWTsUZETPUoPoj
+	x4Lb3JOKY8virBqO6VkPR6D0ut5Z1eCMQqpbQ22x/mbG6YEhYupvsmSk+mZ1zw4hYFaV
+	ePV1K1ORDlAx3KzVTWN3MFBH1d8Bu3pwaaHVqckz9VUY+rlluM7yF031LE/61cI6XTJC
+	x73c6kdwWq2atsaWvK7pKHJdhpmH02p1F5Hg8rrGL/vcwF3P8MzQ7nIDu8kJrMcN7Rbf
+	r7YOp3vau8s9zbAyi5OE2bAOl9TumwE7XJJESef6OqbvN8IONyvtcEc0WK472eHOane4
+	eaAdjrfvL4SWftzXXujvOtxZssMtG9q+ljEjqvouNq/63oniaIkSWB0b0qGrpTJ2P2wL
+	XKvYNLZotzYLThuSqivwqmuHWpxqZdlQgnVUXZnpsjv7cMScpKKMxIgGa+QeeKsPyJg2
+	esDsm75M/5Pq1HLd0r//B/uGS4UKZW5kc3RyZWFtCmVuZG9iago1IDAgb2JqCjEyMTcK
+	ZW5kb2JqCjIgMCBvYmoKPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAzIDAgUiAvUmVzb3Vy
+	Y2VzIDYgMCBSIC9Db250ZW50cyA0IDAgUiAvTWVkaWFCb3ggWzAgMCA1NzYgNzU2XQo+
+	PgplbmRvYmoKNiAwIG9iago8PCAvUHJvY1NldCBbIC9QREYgXSAvQ29sb3JTcGFjZSA8
+	PCAvQ3MxIDcgMCBSID4+IC9FeHRHU3RhdGUgPDwgL0dzMSA4IDAgUgovR3MyIDkgMCBS
+	ID4+ID4+CmVuZG9iago4IDAgb2JqCjw8IC9UeXBlIC9FeHRHU3RhdGUgL2NhIDAuOSA+
+	PgplbmRvYmoKOSAwIG9iago8PCAvVHlwZSAvRXh0R1N0YXRlIC9jYSAxID4+CmVuZG9i
+	agoxMCAwIG9iago8PCAvTGVuZ3RoIDExIDAgUiAvTiAzIC9BbHRlcm5hdGUgL0Rldmlj
+	ZVJHQiAvRmlsdGVyIC9GbGF0ZURlY29kZSA+PgpzdHJlYW0KeAGFVVuIG1UY/pM5yQq7
+	ztPa1S2kQ710KbtLthXdpbSaW5O0axqy2dUWQbOTk2TM7CTOTNILfSqC4ourvklBvL0t
+	CILSesHWB/tSqVBWd+siKD60eEEo9EW38TuTZCZZaptlz3zz/d/5b+efGaKBtUK9rvsV
+	oiXDNnPJqPLc0WPKwDr56SEapFEaLKhWPZLNzhJ+Qiuu/b9bP5BPMFcn7mzvV2+5Gyxy
+	SyXy3Qe+VrTUJeATRIGzat20iQaGwU8ft+sCixyGTSQI/KLA5TaGjYYX2/g1R5PPxaA5
+	CyyrlUIReAV4fLGHL/fgdg5QwE+SG9zUVEX0ImvWSprOHUN7uYe5R3k3uKQ3ULPz24F1
+	yKrOHcZ1DLW/UizEBZ4EXlELiTngR4CvNbWFTAffrtvRHPBjRP6djep8BHg3cKpkHpwH
+	hh+/WWmkuvidU5X8s+C3gf/GWMwc6exdU60Yekk7wd+u8LTob4hIUjQ7nQeGH+mAWcsJ
+	PXKQSkUeTwCPA79erR0WOcCn9JnVnBO8yGftVCUm8hT85ZcKh7LAo8C/cj0p9Igl/Vu3
+	s50cWMjQMyIuYrE4t5x64YeF7Eo+BR5xmW6b+c5etlzSDqY7+k8qZkrwYu+1uu7MKHIL
+	+M1GTtSOWIHJgplIAsNnIMuNedFPgZu04CsQpxotYlXJoE1SKEdJiuJaJxOWEmmkg+Gw
+	cjAcd13NhLPPoip4jZqOzcKadZTtnV2tQmWwBl13tCrFQh9RA54q9AfYiutToRjuGuDK
+	/+OnncuNjp8aG2Fhthf/+9gs28+m2Qwp7Cn2NDvA4mBn2D7XdxZ7uhWJfG4gStvPy4jI
+	Hd0Car+IGm0qYP0FihpZroe+riyPNsY8yxnzBU298sbfPb3SsLPqKib6OnrkXj0P/Ba4
+	HljFuh7YcH0ogZ8CG/hbR2+8WmqevdNlcVIaTrTWp9t6Fl1VBJXqzs4ldEFDzbyn5ole
+	H5dOf/mgF22VnXv+6tCl0yVjedRjRRf4q5lbGToz7rHhH8N/hlfD74U/DP8uvS19Kn0l
+	nZc+ly6TIl2QLkpfS99KH0tfuPq7zZB79iQyF3Ml8hbT1a2wt9eYWDkqb5cfluPyDvlR
+	edZVKfKIPCWn5F2wbHfPzZtvpbdy9OUoonX7c+dY4lnRXE84A9/9mADNi9g3A/PIWKPj
+	8Gmi32LeDDoJbe+T16mIhdgUS2+Z7mkx813fwUQwHoyQEtwdnAlOBQ8J3H2Wg7tgm8Ga
+	6M0N8+Eq+irlNj8hvicUq9VPmlq5Yit7wuEnlQg+fVxJG+rkuFLQdcUxWYrJLW42eXGS
+	xHdT7CO6mXO+h75tVzzOfoZo/194933vcccaRCsW0cjjHjeGd+UD7xKde0JtmM22P/L5
+	viOySnv3OPe+oSjeXz+3WjfxHht4i2jzzVbrn/dbrc0P4H+D6IL+H6CffFUKZW5kc3Ry
+	ZWFtCmVuZG9iagoxMSAwIG9iagoxMDc5CmVuZG9iago3IDAgb2JqClsgL0lDQ0Jhc2Vk
+	IDEwIDAgUiBdCmVuZG9iagozIDAgb2JqCjw8IC9UeXBlIC9QYWdlcyAvTWVkaWFCb3gg
+	WzAgMCA1NzYgNzU2XSAvQ291bnQgMSAvS2lkcyBbIDIgMCBSIF0gPj4KZW5kb2JqCjEy
+	IDAgb2JqCjw8IC9UeXBlIC9DYXRhbG9nIC9QYWdlcyAzIDAgUiAvVmVyc2lvbiAvMS40
+	ID4+CmVuZG9iagoxMyAwIG9iagooTWFjIE9TIFggMTAuMTMuMyBRdWFydHogUERGQ29u
+	dGV4dCkKZW5kb2JqCjE0IDAgb2JqCihEOjIwMTgwMzIwMDQzNjUxWjAwJzAwJykKZW5k
+	b2JqCjEgMCBvYmoKPDwgL1Byb2R1Y2VyIDEzIDAgUiAvQ3JlYXRpb25EYXRlIDE0IDAg
+	UiAvTW9kRGF0ZSAxNCAwIFIgPj4KZW5kb2JqCnhyZWYKMCAxNQowMDAwMDAwMDAwIDY1
+	NTM1IGYgCjAwMDAwMDMxMTUgMDAwMDAgbiAKMDAwMDAwMTMzMyAwMDAwMCBuIAowMDAw
+	MDAyODczIDAwMDAwIG4gCjAwMDAwMDAwMjIgMDAwMDAgbiAKMDAwMDAwMTMxMyAwMDAw
+	MCBuIAowMDAwMDAxNDM3IDAwMDAwIG4gCjAwMDAwMDI4MzcgMDAwMDAgbiAKMDAwMDAw
+	MTU0NCAwMDAwMCBuIAowMDAwMDAxNTkwIDAwMDAwIG4gCjAwMDAwMDE2MzQgMDAwMDAg
+	biAKMDAwMDAwMjgxNiAwMDAwMCBuIAowMDAwMDAyOTU2IDAwMDAwIG4gCjAwMDAwMDMw
+	MjAgMDAwMDAgbiAKMDAwMDAwMzA3MyAwMDAwMCBuIAp0cmFpbGVyCjw8IC9TaXplIDE1
+	IC9Sb290IDEyIDAgUiAvSW5mbyAxIDAgUiAvSUQgWyA8YTU1M2U1MzM4MGYwNjVhNWVk
+	OTUyMzg1MTU0N2QzMWI+CjxhNTUzZTUzMzgwZjA2NWE1ZWQ5NTIzODUxNTQ3ZDMxYj4g
+	XSA+PgpzdGFydHhyZWYKMzE5MAolJUVPRgo=
+	</data>
+	<key>ArchiveMatchStore</key>
+	<dict>
+		<key>Archive_Stores</key>
+		<array>
+			<dict>
+				<key>Class_Store</key>
+				<string>DKDLock</string>
+				<key>Match_Hashes</key>
+				<array>
+					<dict>
+						<key>BinIndex</key>
+						<string>14</string>
+						<key>BinMatches</key>
+						<array>
+							<dict/>
+							<dict>
+								<key>NumericPin</key>
+								<string>Center</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+				<key>NHashBins</key>
+				<string>16</string>
+			</dict>
+			<dict>
+				<key>Class_Store</key>
+				<string>DKDGraphicStyle</string>
+				<key>Match_Hashes</key>
+				<array>
+					<dict>
+						<key>BinIndex</key>
+						<string>8</string>
+						<key>BinMatches</key>
+						<array>
+							<dict>
+								<key>DrawsFill</key>
+								<string>NO</string>
+								<key>DrawsLine</key>
+								<string>YES</string>
+								<key>LineCapStyle</key>
+								<string>Square</string>
+								<key>LineJoinStyle</key>
+								<string>Miter</string>
+								<key>LineRGB</key>
+								<string>rgb 0 0 0 1</string>
+								<key>LineWidth</key>
+								<string>1</string>
+								<key>MiterLimit</key>
+								<string>10</string>
+								<key>StrokePosition</key>
+								<string>Front</string>
+								<key>WindingRule</key>
+								<string>Non-Zero</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>BinIndex</key>
+						<string>9</string>
+						<key>BinMatches</key>
+						<array>
+							<dict>
+								<key>DrawsFill</key>
+								<string>YES</string>
+								<key>DrawsLine</key>
+								<string>YES</string>
+								<key>FillRGB</key>
+								<string>rgb 0 0 0 1</string>
+								<key>LineCapStyle</key>
+								<string>Square</string>
+								<key>LineJoinStyle</key>
+								<string>Miter</string>
+								<key>LineRGB</key>
+								<string>rgb 0 0 0 1</string>
+								<key>LineWidth</key>
+								<string>1</string>
+								<key>MiterLimit</key>
+								<string>10</string>
+								<key>StrokePosition</key>
+								<string>Front</string>
+								<key>WindingRule</key>
+								<string>Non-Zero</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+				<key>NHashBins</key>
+				<string>16</string>
+			</dict>
+		</array>
+	</dict>
+	<key>DKDChangeTimeStamp</key>
+	<string>2018-03-20 04:36:51 +0000</string>
+	<key>DKDCreateTimeStamp</key>
+	<string>2018-03-11 06:18:47 +0000</string>
+	<key>DKDDisplayGraphicDetails</key>
+	<dict>
+		<key>AngleFormatDisplayDetails</key>
+		<dict>
+			<key>AngleDirection</key>
+			<string>Right</string>
+			<key>AngleForm</key>
+			<string>degrees</string>
+			<key>AngleRotation</key>
+			<string>Counter Clockwise</string>
+			<key>PrecisionAngles</key>
+			<string>2</string>
+		</dict>
+		<key>AnglesDisplaySpec</key>
+		<dict>
+			<key>ExampleValueDisplaySpec</key>
+			<string>100.01</string>
+			<key>FieldWidthDisplaySpec</key>
+			<string>62</string>
+			<key>FormDisplaySpec</key>
+			<string>Decimal</string>
+			<key>PrecisionDisplaySpec</key>
+			<string>2</string>
+			<key>TextAlignDisplaySpec</key>
+			<string>Right</string>
+			<key>UnitsDisplaySpec</key>
+			<string>Punctuation</string>
+		</dict>
+		<key>AreaForm</key>
+		<string>Natural</string>
+		<key>HelpTipDisplaySpec</key>
+		<dict>
+			<key>ExampleValueDisplaySpec</key>
+			<string>100.01</string>
+			<key>FieldWidthDisplaySpec</key>
+			<string>127.242529653</string>
+			<key>FormDisplaySpec</key>
+			<string>Decimal</string>
+			<key>PrecisionDisplaySpec</key>
+			<string>3</string>
+			<key>TextAlignDisplaySpec</key>
+			<string>Right</string>
+			<key>UnitsDisplaySpec</key>
+			<string>Abbreviate</string>
+		</dict>
+		<key>InspectingSpecIndex</key>
+		<string>3</string>
+		<key>LengthsDisplaySpec</key>
+		<dict>
+			<key>ExampleValueDisplaySpec</key>
+			<string>100.01</string>
+			<key>FieldWidthDisplaySpec</key>
+			<string>62</string>
+			<key>FormDisplaySpec</key>
+			<string>Decimal</string>
+			<key>PrecisionDisplaySpec</key>
+			<string>2</string>
+			<key>TextAlignDisplaySpec</key>
+			<string>Right</string>
+			<key>UnitsDisplaySpec</key>
+			<string>Nothing</string>
+		</dict>
+		<key>PercentDisplaySpec</key>
+		<dict>
+			<key>ExampleValueDisplaySpec</key>
+			<string>1.01</string>
+			<key>FieldWidthDisplaySpec</key>
+			<string>50</string>
+			<key>FormDisplaySpec</key>
+			<string>Decimal</string>
+			<key>PrecisionDisplaySpec</key>
+			<string>1</string>
+			<key>TextAlignDisplaySpec</key>
+			<string>Right</string>
+			<key>UnitsDisplaySpec</key>
+			<string>Punctuation</string>
+		</dict>
+		<key>PercentFormatDisplayDetails</key>
+		<dict>
+			<key>PercentForm</key>
+			<string>Percent</string>
+			<key>PrecisionPercents</key>
+			<string>1</string>
+		</dict>
+	</dict>
+	<key>DKDExportDoc</key>
+	<dict>
+		<key>BMPExporBackground</key>
+		<string>No (White) Background</string>
+		<key>CSVStringEncoding</key>
+		<string>Unicode (UTF8)</string>
+		<key>DXFExportLayers</key>
+		<string>All</string>
+		<key>DXFExportRevision</key>
+		<string>AutoCADLT 2010</string>
+		<key>EPSColorSpace</key>
+		<string>RGB</string>
+		<key>EPSExporBackground</key>
+		<string>No (Black) Background</string>
+		<key>EPSLatexPsfrag</key>
+		<string>NO</string>
+		<key>ExporBackground</key>
+		<string>No (Black) Background</string>
+		<key>ExportColorTable</key>
+		<string>256 Best</string>
+		<key>ExportCompresion</key>
+		<string>1</string>
+		<key>ExportContent</key>
+		<string>Just Graphics</string>
+		<key>ExportExpand</key>
+		<string>1</string>
+		<key>ExportFileExtension</key>
+		<string>svg</string>
+		<key>ExportImageAntialias</key>
+		<string>YES</string>
+		<key>ExportImageInterpolation</key>
+		<string>Automatic</string>
+		<key>ExportPath</key>
+		<string>/Volumes/home/simon/Desktop/pbxl</string>
+		<key>ExportTransparentColor</key>
+		<string>Automatic</string>
+		<key>GIFExporBackground</key>
+		<string>White Background</string>
+		<key>GIFFDither</key>
+		<string>NO</string>
+		<key>HideExtension</key>
+		<string>NO</string>
+		<key>ICOColorTable</key>
+		<string>256 Best</string>
+		<key>ICOExporBackground</key>
+		<string>No (White) Background</string>
+		<key>JPGExporBackground</key>
+		<string>White Background</string>
+		<key>PDFExporBackground</key>
+		<string>No (Black) Background</string>
+		<key>PDFPagination</key>
+		<string>Single Page</string>
+		<key>PDFXMirror</key>
+		<string>NO</string>
+		<key>PDFYMirror</key>
+		<string>NO</string>
+		<key>PNGColorSpace</key>
+		<string>RGBA</string>
+		<key>PNGExporBackground</key>
+		<string>No (White) Background</string>
+		<key>PNGInterlace</key>
+		<string>NO</string>
+		<key>SVGCompress</key>
+		<string>NO</string>
+		<key>SVGDOMIds</key>
+		<string>YES</string>
+		<key>SVGEmbedImages</key>
+		<string>YES</string>
+		<key>SVGFont</key>
+		<string>SVG</string>
+		<key>SVGGlyphs</key>
+		<string>System Font</string>
+		<key>SVGOverwriteImages</key>
+		<string>NO</string>
+		<key>SVGProfile</key>
+		<string>SVG Basic 1.1</string>
+		<key>SVGTidyFormatting</key>
+		<string>YES</string>
+		<key>TIFExporBackground</key>
+		<string>No (Black) Background</string>
+		<key>TIFFColorSpace</key>
+		<string>RGBA</string>
+	</dict>
+	<key>DKDGrids</key>
+	<dict>
+		<key>DynamicSnapGrid</key>
+		<string>YES</string>
+		<key>GuidesLayer</key>
+		<string>NO</string>
+		<key>MajorGrid</key>
+		<dict>
+			<key>GridAboveGraphics</key>
+			<string>NO</string>
+			<key>GridRGB</key>
+			<dict>
+				<key>Blue</key>
+				<string>1</string>
+				<key>ColorSpace</key>
+				<string>NSCalibratedRGBColorSpace</string>
+				<key>Green</key>
+				<string>0.713725</string>
+				<key>Opacity</key>
+				<string>1</string>
+				<key>Red</key>
+				<string>0.54902</string>
+			</dict>
+			<key>GridSpacingX</key>
+			<string>28.3464566929</string>
+			<key>GridSpacingY</key>
+			<string>28.3464566929</string>
+			<key>LinkGridToRulers</key>
+			<string>NO</string>
+			<key>PrintLineWidth</key>
+			<string>1.1</string>
+			<key>PrintsGrid</key>
+			<string>NO</string>
+			<key>ShowsGrid</key>
+			<string>YES</string>
+			<key>SnapsToGrid</key>
+			<string>NO</string>
+		</dict>
+		<key>MinorGrid</key>
+		<dict>
+			<key>GridAboveGraphics</key>
+			<string>NO</string>
+			<key>GridRGB</key>
+			<dict>
+				<key>Blue</key>
+				<string>0.87451</string>
+				<key>ColorSpace</key>
+				<string>NSCalibratedRGBColorSpace</string>
+				<key>Green</key>
+				<string>0.854902</string>
+				<key>Opacity</key>
+				<string>1</string>
+				<key>Red</key>
+				<string>0.745098</string>
+			</dict>
+			<key>GridSpacingX</key>
+			<string>1.417322834645</string>
+			<key>GridSpacingY</key>
+			<string>1.417322834645</string>
+			<key>LinkGridToRulers</key>
+			<string>NO</string>
+			<key>PrintLineWidth</key>
+			<string>0.85</string>
+			<key>PrintsGrid</key>
+			<string>NO</string>
+			<key>ShowsGrid</key>
+			<string>YES</string>
+			<key>SnapsToGrid</key>
+			<string>YES</string>
+		</dict>
+		<key>SnapDrawing</key>
+		<string>NO</string>
+		<key>SnapEnds</key>
+		<string>NO</string>
+		<key>SnapGuidelines</key>
+		<string>NO</string>
+		<key>SnapRadiusGrid</key>
+		<string>3</string>
+		<key>SnapSound</key>
+		<string>None</string>
+		<key>SoftSnap</key>
+		<string>NO</string>
+	</dict>
+	<key>DKDHideExtension</key>
+	<string>YES</string>
+	<key>DKDLayersList</key>
+	<array>
+		<dict>
+			<key>CloakLayerGuidelines</key>
+			<string>NO</string>
+			<key>CloakLayerVertices</key>
+			<string>NO</string>
+			<key>FullLayerScale</key>
+			<dict>
+				<key>ArchivePrecision</key>
+				<string>12</string>
+				<key>ScaleOriginX</key>
+				<string>0</string>
+				<key>ScaleOriginY</key>
+				<string>0</string>
+				<key>ScalePlusDown</key>
+				<string>YES</string>
+				<key>ScalePlusToRight</key>
+				<string>YES</string>
+				<key>ScaleScale</key>
+				<string>1</string>
+				<key>ScaleUnits</key>
+				<string>Centimeters</string>
+			</dict>
+			<key>GraphicsList</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>DKDPath</string>
+					<key>DKDLockInfo</key>
+					<string>14</string>
+					<key>GraphicID</key>
+					<string>E28465E6</string>
+					<key>GraphicStyle</key>
+					<string>8</string>
+					<key>SVGPath</key>
+					<string>M29.7637795275,367.086614173 L127.559055118,367.086614173 L127.559055118,396.850393701 L340.157480315,396.850393701 L340.157480315,368.503937008 L58.1102362204,86.4566929133 L29.7637795275,86.4566929133
+L29.7637795275,367.086614173</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{34.0157480315, 323.149606299}, {14.1732283465, 17.0078740157}}</string>
+					<key>Class</key>
+					<string>DKDRadiusRectangle</string>
+					<key>DKDLockInfo</key>
+					<string>30</string>
+					<key>DKDRectRadius0</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius1</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius2</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius3</key>
+					<string>4.251968503937</string>
+					<key>GraphicID</key>
+					<string>69022907</string>
+					<key>GraphicStyle</key>
+					<string>9</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{34.0157480315, 127.559055118}, {14.1732283465, 17.0078740157}}</string>
+					<key>Class</key>
+					<string>DKDRadiusRectangle</string>
+					<key>DKDLockInfo</key>
+					<string>30</string>
+					<key>DKDRectRadius0</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius1</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius2</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius3</key>
+					<string>4.251968503937</string>
+					<key>GraphicID</key>
+					<string>1FD0E417</string>
+					<key>GraphicStyle</key>
+					<string>9</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{133.228346457, 377.007874016}, {17.0078740157, 14.1732283465}}</string>
+					<key>Class</key>
+					<string>DKDRadiusRectangle</string>
+					<key>DKDLockInfo</key>
+					<string>30</string>
+					<key>DKDRectRadius0</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius1</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius2</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius3</key>
+					<string>4.251968503937</string>
+					<key>GraphicID</key>
+					<string>F3C4C817</string>
+					<key>GraphicStyle</key>
+					<string>9</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{303.307086614, 377.007874016}, {17.0078740157, 14.1732283465}}</string>
+					<key>Class</key>
+					<string>DKDRadiusRectangle</string>
+					<key>DKDLockInfo</key>
+					<string>30</string>
+					<key>DKDRectRadius0</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius1</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius2</key>
+					<string>4.251968503937</string>
+					<key>DKDRectRadius3</key>
+					<string>4.251968503937</string>
+					<key>GraphicID</key>
+					<string>89BC6917</string>
+					<key>GraphicStyle</key>
+					<string>9</string>
+				</dict>
+			</array>
+			<key>HideDimensions</key>
+			<string>NO</string>
+			<key>LayerColorMod</key>
+			<dict>
+				<key>DKDOnColorMod</key>
+				<string>NO</string>
+				<key>DKDOpacityColorMod</key>
+				<string>0.5</string>
+				<key>DKDOutlineColorMod</key>
+				<string>NO</string>
+				<key>DKDTintColorColorMod</key>
+				<dict>
+					<key>ColorSpace</key>
+					<string>NSCalibratedWhiteColorSpace</string>
+					<key>Opacity</key>
+					<string>1</string>
+					<key>White</key>
+					<string>0.5</string>
+				</dict>
+				<key>DKDTintFractionColorMod</key>
+				<string>0.5</string>
+			</dict>
+			<key>LayerLock</key>
+			<string>NO</string>
+			<key>LayerName</key>
+			<string>Paper</string>
+			<key>LayerState</key>
+			<string>Active</string>
+			<key>OutlineLayer</key>
+			<string>NO</string>
+		</dict>
+	</array>
+	<key>DKDPagesSpec</key>
+	<dict>
+		<key>BackgroundDisplay</key>
+		<string>Background</string>
+		<key>CanvasBorder</key>
+		<string>rgb 0.54902 0.53333 0.53333 1</string>
+		<key>CanvasColor</key>
+		<string>rgb 0.28628 0.28628 0.28628 1</string>
+		<key>CanvasMargin</key>
+		<string>0</string>
+		<key>DetailsDrawerWidth</key>
+		<string>200</string>
+		<key>DisplayAttributesBar</key>
+		<string>YES</string>
+		<key>DisplayRulers</key>
+		<string>YES</string>
+		<key>FullScreen</key>
+		<string>NO</string>
+		<key>FullScreenCanvasMargin</key>
+		<string>216</string>
+		<key>LayersDrawerWidth</key>
+		<string>200</string>
+		<key>NonFullScreenCanvasMargin</key>
+		<string>0</string>
+		<key>NumberAcrossFirst</key>
+		<string>YES</string>
+		<key>PagesAcross</key>
+		<string>1</string>
+		<key>PagesDown</key>
+		<string>1</string>
+		<key>PagesSpecBackgroundRGB</key>
+		<string>white 1 1</string>
+		<key>PagesSpecPrintBackground</key>
+		<string>NO</string>
+		<key>ShowPageBreaks</key>
+		<string>NO</string>
+		<key>SizeChecker</key>
+		<string>40</string>
+		<key>aCheckerColor</key>
+		<string>rgb 0.94118 0.94118 0.94118 1</string>
+		<key>bCheckerColor</key>
+		<string>rgb 0.76471 0.78824 0.70196 1</string>
+	</dict>
+	<key>DKDPrintInfo</key>
+	<dict>
+		<key>BottomMargin</key>
+		<string>18</string>
+		<key>Copies</key>
+		<string>1</string>
+		<key>FallBackPaperSizeHeight</key>
+		<string>792</string>
+		<key>FallBackPaperSizeWidth</key>
+		<string>612</string>
+		<key>FirstPage</key>
+		<string>1</string>
+		<key>HorizontalPagination</key>
+		<string>2</string>
+		<key>HorizontallyCentered</key>
+		<string>YES</string>
+		<key>LastPage</key>
+		<string>-1</string>
+		<key>LeftMargin</key>
+		<string>18</string>
+		<key>MustCollate</key>
+		<string>YES</string>
+		<key>Orientation</key>
+		<string>0</string>
+		<key>PaperName</key>
+		<string>Letter</string>
+		<key>PaperSizeHeight</key>
+		<string>792</string>
+		<key>PaperSizeWidth</key>
+		<string>612</string>
+		<key>PreviewPageNumber</key>
+		<string>1</string>
+		<key>PrintAllPages</key>
+		<string>YES</string>
+		<key>PrintJobDisposition</key>
+		<string>NSPrintSpoolJob</string>
+		<key>PrintSavePath</key>
+		<string></string>
+		<key>PrintScalingFactor</key>
+		<string>1</string>
+		<key>PrinterName</key>
+		<string>Canon PRO-100 series</string>
+		<key>ReversePageOrder</key>
+		<string>NO</string>
+		<key>RightMargin</key>
+		<string>18</string>
+		<key>TopMargin</key>
+		<string>18</string>
+		<key>VerticalPagination</key>
+		<string>0</string>
+		<key>VerticallyCentered</key>
+		<string>YES</string>
+		<key>XPrintMirror</key>
+		<string>NO</string>
+		<key>YPrintMirror</key>
+		<string>NO</string>
+	</dict>
+	<key>DKDSaveTimeStamp</key>
+	<string>2018-03-20 04:36:51 +0000</string>
+	<key>DKDTablet</key>
+	<dict>
+		<key>BrushDynamic</key>
+		<string>NO</string>
+		<key>BrushFit</key>
+		<string>6</string>
+		<key>PenMax</key>
+		<string>25</string>
+		<key>PenMin</key>
+		<string>0.5</string>
+		<key>PenPressureFactor</key>
+		<string>0.5</string>
+		<key>PencilDynamic</key>
+		<string>NO</string>
+		<key>PencilFit</key>
+		<string>7</string>
+	</dict>
+	<key>DKDTimeFormat</key>
+	<dict>
+		<key>Field 0 Include</key>
+		<string>Weekday</string>
+		<key>Field 0 Type</key>
+		<string>Long</string>
+		<key>Field 1 Include</key>
+		<string>Month</string>
+		<key>Field 1 Type</key>
+		<string>Short</string>
+		<key>Field 2 Include</key>
+		<string>Day</string>
+		<key>Field 2 Type</key>
+		<string>Number</string>
+		<key>Field 3 Include</key>
+		<string>Year</string>
+		<key>Field 3 Type</key>
+		<string>Long</string>
+		<key>Include GMT</key>
+		<string>NO</string>
+		<key>Include Title</key>
+		<string>YES</string>
+		<key>IncludeDate</key>
+		<string>YES</string>
+		<key>IncludeTime</key>
+		<string>YES</string>
+		<key>Seperator 0</key>
+		<string> - </string>
+		<key>Seperator 1</key>
+		<string>. </string>
+		<key>Seperator 2</key>
+		<string>, </string>
+		<key>Seperator 3</key>
+		<string>  </string>
+		<key>Time Seperator</key>
+		<string>:</string>
+		<key>TimeAfterDate</key>
+		<string>YES</string>
+		<key>Twelve Hour Clock</key>
+		<string>YES</string>
+		<key>Used Once</key>
+		<string>YES</string>
+	</dict>
+	<key>DKDToolbarSelectedButtonPairs</key>
+	<array>
+		<string>ColorTextToolbarItemIdentifier_0</string>
+		<array>
+			<string>HSB_F0FFFF</string>
+		</array>
+		<string>ColorStrokeToolbarItemIdentifier_0</string>
+		<array>
+			<string>HSB_F0FFFF__nothing__</string>
+		</array>
+		<string>ColorFillToolbarItemIdentifier_0</string>
+		<array>
+			<string>HSB_000000</string>
+		</array>
+		<string>GradientToolbarItemIdentifier_0</string>
+		<array>
+			<dict>
+				<key>BurstPath</key>
+				<array/>
+				<key>BurstRect</key>
+				<string>{{0.25, 0.25}, {0.5, 0.5}}</string>
+				<key>EndGradientRGB</key>
+				<dict>
+					<key>Blue</key>
+					<string>1.000000</string>
+					<key>ColorSpace</key>
+					<string>NSCalibratedRGBColorSpace</string>
+					<key>Green</key>
+					<string>1.000000</string>
+					<key>Opacity</key>
+					<string>1.000000</string>
+					<key>Red</key>
+					<string>1.000000</string>
+				</dict>
+				<key>GradientAngle</key>
+				<string>0.000000</string>
+				<key>GradientCompositeOperation</key>
+				<string>Source Over</string>
+				<key>GradientFillClass</key>
+				<string>DKDHorizontalGradientFill</string>
+				<key>GradientGradientConvergence</key>
+				<dict>
+					<key>FinishGradient</key>
+					<string>100.00000</string>
+					<key>GradientConvergence</key>
+					<string>Linear</string>
+					<key>StartGradient</key>
+					<string>0.00000</string>
+				</dict>
+				<key>GradientImagePercent</key>
+				<string>1.000000</string>
+				<key>GradientOverlap</key>
+				<string>1.000000</string>
+				<key>GradientRadius</key>
+				<string>0.000000</string>
+				<key>LevelsOfGradient</key>
+				<string>100</string>
+				<key>StartGradientRGB</key>
+				<dict>
+					<key>Blue</key>
+					<string>0.000000</string>
+					<key>ColorSpace</key>
+					<string>NSCalibratedRGBColorSpace</string>
+					<key>Green</key>
+					<string>0.000000</string>
+					<key>Opacity</key>
+					<string>1.000000</string>
+					<key>Red</key>
+					<string>0.000000</string>
+				</dict>
+				<key>SymmetryAngle</key>
+				<string>0.000000</string>
+			</dict>
+		</array>
+		<string>PatternForToolbarItemIdentifier_0</string>
+		<array>
+			<string>Toolbar_02</string>
+		</array>
+		<string>ChartingMenuToolbarIdentifier_0</string>
+		<array>
+			<string>Right Fat Arrow</string>
+			<string>Right Fat Arrow</string>
+			<string>Right Box Arrow</string>
+			<string>Right Tear-Off</string>
+			<string>Right Brace</string>
+			<string>Right Drum</string>
+			<string>Folder</string>
+			<string>Bi-Length Octagon</string>
+			<string>Rounded Rectangle</string>
+			<string>Right Pointing Triangle</string>
+			<string>Right Trapezoid</string>
+			<string>Up Parallelogram</string>
+			<string>Parallelogram</string>
+			<string>Right Flame Tip</string>
+			<string>Right Nose Rectangle</string>
+			<string>Right Mushroom</string>
+		</array>
+		<string>StellateMenuToolbarIdentifier_0</string>
+		<array>
+			<string>Equilateral Polygon</string>
+			<string>Equilateral Polygon</string>
+			<string>Free Equilateral Polygon</string>
+			<string>Cross Star</string>
+			<string>Star</string>
+			<string>Smooth Free Star</string>
+			<string>Stagger Star</string>
+			<string>Smooth Stagger Star</string>
+			<string>Spoke</string>
+		</array>
+		<string>MathMenuToolbarIdentifier_0</string>
+		<array>
+			<string>Parabolic</string>
+			<string>Parabolic</string>
+			<string>Mirror X Cubed</string>
+			<string>Quartic</string>
+			<string>One Over X</string>
+			<string>Exponential</string>
+			<string>Tangent</string>
+			<string>Hyperbolic Tangent</string>
+			<string>Gaussian:</string>
+			<string>Square Wave</string>
+			<string>Sine Wave</string>
+		</array>
+		<string>TechnicalMenuToolbarIdentifier_0</string>
+		<array>
+			<string>Orthogonal Path</string>
+			<string>Orthogonal Path</string>
+			<string>Auto Line</string>
+			<string>Left Dimension</string>
+			<string>Left External Dimension</string>
+			<string>Report Dimension</string>
+			<string>Rounded Text Bubble</string>
+			<string>Straight Wall</string>
+			<string>Free Wall</string>
+			<string>Cog</string>
+			<string>Tick Pattern</string>
+		</array>
+	</array>
+	<key>DKDWindowState</key>
+	<dict>
+		<key>CursorMode</key>
+		<string>Nothing</string>
+		<key>DocCenter</key>
+		<string>{183.322445879, 207.921875}</string>
+		<key>DocumentFileName</key>
+		<string>/Volumes/home/simon/Desktop/pbxl/side-panel.ezdraw</string>
+		<key>DrawersOnMainView</key>
+		<string>YES</string>
+		<key>GDetailsLayersDrawerEdgePreference</key>
+		<string>Right</string>
+		<key>GraphicDetailsEdge</key>
+		<string>2</string>
+		<key>GraphicDetailsOpen</key>
+		<string>YES</string>
+		<key>LayerActiveAbove</key>
+		<string>NO</string>
+		<key>LayerOpen</key>
+		<string>NO</string>
+		<key>LayerSelect</key>
+		<string>Active Only</string>
+		<key>LayersDrawerEdgePreference</key>
+		<string>Auto</string>
+		<key>OutlineDrawing</key>
+		<string>NO</string>
+		<key>WindowLocation</key>
+		<string>240 68 1909 1336 0 0 2560 1417 </string>
+		<key>ZoomPercent</key>
+		<string>457.092945</string>
+	</dict>
+	<key>GroupEdit</key>
+	<string>Fixed</string>
+	<key>NumberColorsToListInContextMenu</key>
+	<string>12</string>
+	<key>NumberPairColorsToListInContextMenu</key>
+	<string>6</string>
+</dict>
+</plist>
