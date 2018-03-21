@@ -7,9 +7,9 @@
 	<key>AAAA_DKDDocumentVersion</key>
 	<string>6.7.0 : Mobile Friendly</string>
 	<key>AAAA_EazyDrawVersion</key>
-	<string>8.7.1</string>
+	<string>8.7.1b</string>
 	<key>AAAB_Build</key>
-	<string>8720</string>
+	<string>8725</string>
 	<key>AAAB_Distribution</key>
 	<string>Free Market</string>
 	<key>AAA_DKDQuicklookData</key>
@@ -155,7 +155,7 @@
 	Nl0gL0NvdW50IDEgL0tpZHMgWyAyIDAgUiBdID4+CmVuZG9iagoxMiAwIG9iago8PCAv
 	VHlwZSAvQ2F0YWxvZyAvUGFnZXMgMyAwIFIgL1ZlcnNpb24gLzEuNCA+PgplbmRvYmoK
 	MTMgMCBvYmoKKE1hYyBPUyBYIDEwLjEzLjMgUXVhcnR6IFBERkNvbnRleHQpCmVuZG9i
-	agoxNCAwIG9iagooRDoyMDE4MDMyMTE2MTM0MVowMCcwMCcpCmVuZG9iagoxIDAgb2Jq
+	agoxNCAwIG9iagooRDoyMDE4MDMyMTE3MzMzOVowMCcwMCcpCmVuZG9iagoxIDAgb2Jq
 	Cjw8IC9Qcm9kdWNlciAxMyAwIFIgL0NyZWF0aW9uRGF0ZSAxNCAwIFIgL01vZERhdGUg
 	MTQgMCBSID4+CmVuZG9iagp4cmVmCjAgMTUKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAw
 	MDA3MjM1IDAwMDAwIG4gCjAwMDAwMDU0NTMgMDAwMDAgbiAKMDAwMDAwNjk5MyAwMDAw
@@ -164,8 +164,8 @@
 	biAKMDAwMDAwNTcxMCAwMDAwMCBuIAowMDAwMDA1NzU0IDAwMDAwIG4gCjAwMDAwMDY5
 	MzYgMDAwMDAgbiAKMDAwMDAwNzA3NiAwMDAwMCBuIAowMDAwMDA3MTQwIDAwMDAwIG4g
 	CjAwMDAwMDcxOTMgMDAwMDAgbiAKdHJhaWxlcgo8PCAvU2l6ZSAxNSAvUm9vdCAxMiAw
-	IFIgL0luZm8gMSAwIFIgL0lEIFsgPGQxMTMwZTRjOTVlNTEyM2NkYzhmYmJjZWFkMDhk
-	ODllPgo8ZDExMzBlNGM5NWU1MTIzY2RjOGZiYmNlYWQwOGQ4OWU+IF0gPj4Kc3RhcnR4
+	IFIgL0luZm8gMSAwIFIgL0lEIFsgPDA3MWViZWUzYTk1ZjUyNDQ0NDNjMjhjZWY3Nzc5
+	M2U0Pgo8MDcxZWJlZTNhOTVmNTI0NDQ0M2MyOGNlZjc3NzkzZTQ+IF0gPj4Kc3RhcnR4
 	cmVmCjczMTAKJSVFT0YK
 	</data>
 	<key>ArchiveMatchStore</key>
@@ -182,10 +182,6 @@
 						<string>10</string>
 						<key>BinMatches</key>
 						<array>
-							<dict>
-								<key>CenterLock</key>
-								<string>YES</string>
-							</dict>
 							<dict>
 								<key>CenterLock</key>
 								<string>YES</string>
@@ -314,7 +310,7 @@
 		</array>
 	</dict>
 	<key>DKDChangeTimeStamp</key>
-	<string>2018-03-21 16:13:30 +0000</string>
+	<string>2018-03-21 17:33:38 +0000</string>
 	<key>DKDCreateTimeStamp</key>
 	<string>2018-03-11 06:18:47 +0000</string>
 	<key>DKDDisplayGraphicDetails</key>
@@ -795,7 +791,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>5561EF9E</string>
 					<key>GraphicStyle</key>
@@ -807,7 +803,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>3E2662AE</string>
 					<key>GraphicStyle</key>
@@ -819,7 +815,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>8D7363AE</string>
 					<key>GraphicStyle</key>
@@ -831,7 +827,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>C46975AE</string>
 					<key>GraphicStyle</key>
@@ -843,7 +839,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>6F8886AE</string>
 					<key>GraphicStyle</key>
@@ -855,7 +851,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>6583F8AE</string>
 					<key>GraphicStyle</key>
@@ -879,7 +875,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>E49BFFFE</string>
 					<key>GraphicStyle</key>
@@ -891,7 +887,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>0EE5020F</string>
 					<key>GraphicStyle</key>
@@ -903,7 +899,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>0849230F</string>
 					<key>GraphicStyle</key>
@@ -915,7 +911,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>539BE30F</string>
 					<key>GraphicStyle</key>
@@ -927,7 +923,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>B448650F</string>
 					<key>GraphicStyle</key>
@@ -939,7 +935,7 @@
 					<key>Class</key>
 					<string>DKDCircle</string>
 					<key>DKDLockInfo</key>
-					<string>26</string>
+					<string>10</string>
 					<key>GraphicID</key>
 					<string>87F3360F</string>
 					<key>GraphicStyle</key>
@@ -1079,7 +1075,7 @@
 		<string>NO</string>
 	</dict>
 	<key>DKDSaveTimeStamp</key>
-	<string>2018-03-21 16:13:41 +0000</string>
+	<string>2018-03-21 17:33:39 +0000</string>
 	<key>DKDTablet</key>
 	<dict>
 		<key>BrushDynamic</key>
@@ -1283,7 +1279,7 @@
 		<key>CursorMode</key>
 		<string>Nothing</string>
 		<key>DocCenter</key>
-		<string>{288, 240.25}</string>
+		<string>{288, 199.976878613}</string>
 		<key>DocumentFileName</key>
 		<string>/Users/simon/Documents/eagle/pbxl/designs/back-panel.ezdraw</string>
 		<key>DrawersOnMainView</key>
@@ -1307,7 +1303,7 @@
 		<key>WindowLocation</key>
 		<string>159 133 3296 2005 0 0 3840 2138 </string>
 		<key>ZoomPercent</key>
-		<string>400.000000</string>
+		<string>480.541992</string>
 	</dict>
 	<key>GroupEdit</key>
 	<string>Fixed</string>
