@@ -1,0 +1,8 @@
+15:57:19 **** Clean-only build of configuration Debug for project blink ****
+xmake CONFIG=Debug clean 
+Cleaning /Volumes/home/simon/Documents/eagle/pbxl/xc/blink
+rm -rf './bin/Debug'
+rm -rf '.build_Debug'
+
+15:57:19 Build Finished (took 167ms)
+

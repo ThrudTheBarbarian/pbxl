@@ -1,0 +1,56 @@
+15:21:30 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+Compiling blink.xc
+Creating blink_Debug.xe
+Build Complete
+15:25:04 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+Compiling blink.xc
+Creating blink_Debug.xe
+Build Complete
+15:25:05 **** Incremental Build of configuration Default for project sdram ****
+xmake CONFIG=Default all 
+Checking build modules
+Using build modules: lib_sdram(3.2.0)
+xmake[1]: `bin//sdram.xe' is up to date.
+Build Complete
+15:39:16 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+Compiling blink.xc
+Creating blink_Debug.xe
+Build Complete
+15:39:17 **** Incremental Build of configuration Default for project sdram ****
+xmake CONFIG=Default all 
+Checking build modules
+Using build modules: lib_sdram(3.2.0)
+xmake[1]: `bin//sdram.xe' is up to date.
+Build Complete
+15:40:45 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+Compiling blink.xc
+Creating blink_Debug.xe
+Build Complete
+15:40:46 **** Incremental Build of configuration Default for project sdram ****
+xmake CONFIG=Default all 
+Checking build modules
+Using build modules: lib_sdram(3.2.0)
+xmake[1]: `bin//sdram.xe' is up to date.
+Build Complete
+15:57:19 **** Clean-only build of configuration Debug for project blink ****
+xmake CONFIG=Debug clean 
+Cleaning /Volumes/home/simon/Documents/eagle/pbxl/xc/blink
+rm -rf './bin/Debug'
+rm -rf '.build_Debug'
+15:57:19 **** Clean-only build of configuration Default for project sdram ****
+xmake CONFIG=Default clean 
+Cleaning /Volumes/home/simon/Documents/eagle/pbxl/xc/sdram
+rm -rf './bin/'
+rm -rf '.build'

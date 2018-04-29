@@ -1,0 +1,8 @@
+15:57:19 **** Clean-only build of configuration Default for project sdram ****
+xmake CONFIG=Default clean 
+Cleaning /Volumes/home/simon/Documents/eagle/pbxl/xc/sdram
+rm -rf './bin/'
+rm -rf '.build'
+
+15:57:19 Build Finished (took 215ms)
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://www.xmos.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.xmos.com http://www.xmos.com">
+  <Type>Device</Type>
+  <Name>XL216-512-TQ128-C20 Device</Name>
+
+  <Declarations>
+    <Declaration>tileref tile[2]</Declaration>
+  </Declarations>
+
+  <Packages>
+    <Package id="0" Type="XS2-LnA-512-TQ128">
+      <Nodes>
+          <Boot>
+          	<Source Location="bootFlash"/>
+          </Boot>
+        <Node Id="0" InPackageId="0" Type="XS2-L16A-512" Oscillator="24MHz" SystemFrequency="500MHz">
+          <Tile Number="0" Reference="tile[0]"/>
+          <Tile Number="1" Reference="tile[1]"/>
+        </Node>
+      </Nodes>
+    </Package>
+  </Packages>
+
+  <JTAGChain>
+    <JTAGDevice NodeId="0"/>
+  </JTAGChain>
+
+  <ExternalDevices>
+    <Device NodeId="0" Tile="0" Class="SQIFlash" Name="bootFlash" Type="IS25LQ016B"> 
+      <Attribute Name="PORT_SQI_CS" Value="PORT_SQI_CS"/>
+      <Attribute Name="PORT_SQI_SCLK" Value="PORT_SQI_SCLK"/>
+      <Attribute Name="PORT_SQI_SIO" Value="PORT_SQI_SIO"/>
+    </Device>
+  </ExternalDevices>
+
+</Network>

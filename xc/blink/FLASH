@@ -1,0 +1,6 @@
+#!/bin/sh
+source /Applications/XMOS_xTIMEcomposer_Community_14.3.3/SetEnv.sh
+xflash --boot-partition-size 0x80000 \
+	   --spi-spec spi.spec \
+	   --quad-spi-clock 25MHz \
+	   bin/Debug/blink_Debug.xe 
