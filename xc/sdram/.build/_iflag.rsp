@@ -1,0 +1,1 @@
+-I'../.' -I'.././src' -I'/Users/simon/Documents/eagle/pbxl/xc/lib_sdram' -I'/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/api' -I'/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/doc' -I'/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/doc/pdf' -I'/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src'

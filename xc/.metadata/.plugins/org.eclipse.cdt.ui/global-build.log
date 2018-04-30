@@ -1,56 +1,96 @@
-15:21:30 **** Incremental Build of configuration Debug for project blink ****
+11:11:55 **** Build of configuration Debug for project blink ****
 xmake CONFIG=Debug all 
 Checking build modules
 No build modules used.
-Compiling blink.xc
-Creating blink_Debug.xe
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
 Build Complete
-15:25:04 **** Incremental Build of configuration Debug for project blink ****
-xmake CONFIG=Debug all 
-Checking build modules
-No build modules used.
-Compiling blink.xc
-Creating blink_Debug.xe
-Build Complete
-15:25:05 **** Incremental Build of configuration Default for project sdram ****
+11:12:02 **** Incremental Build of configuration Default for project sdram ****
 xmake CONFIG=Default all 
 Checking build modules
 Using build modules: lib_sdram(3.2.0)
-xmake[1]: `bin//sdram.xe' is up to date.
+Analyzing sdram.xc
+Creating dependencies for sdram.xc
+Compiling sdram.xc
+Creating sdram.xe
 Build Complete
-15:39:16 **** Incremental Build of configuration Debug for project blink ****
-xmake CONFIG=Debug all 
-Checking build modules
-No build modules used.
-Compiling blink.xc
-Creating blink_Debug.xe
-Build Complete
-15:39:17 **** Incremental Build of configuration Default for project sdram ****
+11:13:02 **** Incremental Build of configuration Default for project sdram ****
 xmake CONFIG=Default all 
 Checking build modules
 Using build modules: lib_sdram(3.2.0)
-xmake[1]: `bin//sdram.xe' is up to date.
+Analyzing sdram.xc
+Creating dependencies for sdram.xc
+Compiling sdram.xc
+Creating sdram.xe
 Build Complete
-15:40:45 **** Incremental Build of configuration Debug for project blink ****
-xmake CONFIG=Debug all 
-Checking build modules
-No build modules used.
-Compiling blink.xc
-Creating blink_Debug.xe
-Build Complete
-15:40:46 **** Incremental Build of configuration Default for project sdram ****
+11:15:18 **** Incremental Build of configuration Default for project sdram ****
 xmake CONFIG=Default all 
 Checking build modules
 Using build modules: lib_sdram(3.2.0)
-xmake[1]: `bin//sdram.xe' is up to date.
+Analyzing sdram.xc
+Propagating analysis
+Creating dependencies for sdram.xc
+Compiling sdram.xc
+Compiling client.xc
+Compiling server.xc
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:251:41: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+       sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                        ^~~~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:251:61: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+       sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                            ^~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:251:78: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+       sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                                             ^~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:251:96: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+       sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                                                               ^~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:280:42: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+        sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                         ^~~~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:280:62: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+        sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                             ^~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:280:79: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+        sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                                              ^~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:280:97: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+        sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                                                                ^~~
+Creating sdram.xe
 Build Complete
-15:57:19 **** Clean-only build of configuration Debug for project blink ****
-xmake CONFIG=Debug clean 
-Cleaning /Volumes/home/simon/Documents/eagle/pbxl/xc/blink
-rm -rf './bin/Debug'
-rm -rf '.build_Debug'
-15:57:19 **** Clean-only build of configuration Default for project sdram ****
-xmake CONFIG=Default clean 
-Cleaning /Volumes/home/simon/Documents/eagle/pbxl/xc/sdram
-rm -rf './bin/'
-rm -rf '.build'
+11:19:14 **** Incremental Build of configuration Default for project sdram ****
+xmake CONFIG=Default all 
+Checking build modules
+Using build modules: lib_sdram(3.2.0)
+Analyzing sdram.xc
+Propagating analysis
+Creating dependencies for sdram.xc
+Compiling sdram.xc
+Compiling client.xc
+Compiling server.xc
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:251:41: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+       sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                        ^~~~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:251:61: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+       sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                            ^~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:251:78: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+       sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                                             ^~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:251:96: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+       sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                                                               ^~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:280:42: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+        sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                         ^~~~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:280:62: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+        sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                             ^~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:280:79: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+        sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                                              ^~~~
+/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc:280:97: warning: Taking the address of a resource handle, not the actual resource. Passing by (unsafe) value may be a better option [-Wunusual-code]
+        sdram_ports ports = {*(unsigned*)&dq_ah, *(unsigned*)&cas,*(unsigned*)&ras, *(unsigned*)&we};
+                                                                                                ^~~
+Creating sdram.xe
+Build Complete

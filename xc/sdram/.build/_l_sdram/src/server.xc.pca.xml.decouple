@@ -1,0 +1,1558 @@
+<preCompilationAnalysis file="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc">
+<fDef name="addr_to_bank" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="addr_to_col" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="addr_to_row" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="false" numParams="11"/>
+<fDef name="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="false" numParams="14"/>
+<fDef name="read_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="true" numParams="11"/>
+<fDef name="refresh" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="false" numParams="8"/>
+<fDef name="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="false" numParams="14"/>
+<fDef name="write_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" noreturn="false" doNotSpecialize="true" numParams="10"/>
+<fDef name="delay_microseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_milliseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_seconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="sdram_server" global="true" noreturn="false" doNotSpecialize="false" numParams="17"/>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timestamped" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_stop_clock" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="5" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_timer_after" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_clk_div" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="5" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_clk" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="5" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_type" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="20495"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_clk" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="5" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_clk" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="5" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_clk" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="5" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_clk" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="5" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_sdel" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16391"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_pad_delay" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_sdel" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16399"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_pad_delay" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_sdel" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16399"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_pad_delay" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_sdel" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16399"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_pad_delay" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="5"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_sdel" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16391"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_pad_delay" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_sdel" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16391"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_pad_delay" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_sdel" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16391"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_pad_delay" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_trap" global="true" numArgs="0">
+</fCall>
+<fCall name="__builtin_start_clock" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="5" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_timer_after" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_timer_after" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_timer_after" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_timer_after" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="refresh" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="intval"><intval isSigned="true" val="256"/></value>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="1" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="2" caller="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timestamped" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="5"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="6"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="5"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sdram_block_write" global="true" numArgs="5">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="4" caller="write_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <passThroughArg param="9" caller="write_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timestamped" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="5"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout_timed" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="6"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sdram_block_read" global="true" numArgs="6">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="4" caller="read_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <passThroughArg param="9" caller="read_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="10" caller="read_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="read_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="11">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="5" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <passThroughArg param="6" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="7" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="8">
+    <passThroughArg param="8" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="9">
+    <passThroughArg param="9" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="10">
+    <passThroughArg param="10" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="read_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="11">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="5" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <passThroughArg param="6" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="7" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="8">
+    <passThroughArg param="8" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="9">
+    <passThroughArg param="9" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="10">
+    <passThroughArg param="10" caller="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="write_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="10">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="5" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <passThroughArg param="6" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="7" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="8">
+    <passThroughArg param="8" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="9">
+    <passThroughArg param="9" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="write_impl" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="10">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="5" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <passThroughArg param="6" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="7" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="8">
+    <passThroughArg param="8" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="9">
+    <passThroughArg param="9" caller="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="addr_to_row" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="8" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="9" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="addr_to_col" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="6" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="addr_to_bank" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="8" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="9" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="10" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="read" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="14">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="2" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <passThroughArg param="3" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="4" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="8">
+    <passThroughArg param="5" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="9">
+    <passThroughArg param="6" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="10">
+    <passThroughArg param="7" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="11">
+    <passThroughArg param="8" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="12">
+    <passThroughArg param="9" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="13">
+    <passThroughArg param="10" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="write" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="14">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="2" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <passThroughArg param="3" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="4" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="8">
+    <passThroughArg param="5" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="9">
+    <passThroughArg param="6" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="10">
+    <passThroughArg param="7" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="11">
+    <passThroughArg param="8" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="12">
+    <passThroughArg param="9" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="13">
+    <passThroughArg param="10" caller="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_unreachable" global="true" numArgs="0">
+</fCall>
+<fCall name="sdram_init" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="8">
+  <arg num="0">
+    <passThroughArg param="2" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="4" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="5" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <passThroughArg param="6" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="7" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="16" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="get_local_tile_id" global="true" numArgs="0">
+</fCall>
+<fCall name="refresh" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="15" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="4" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_clz" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_timer_after" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="refresh" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="4" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="handle_command" global="false" unit="/Users/simon/Documents/eagle/pbxl/xc/lib_sdram/src/server.xc" numArgs="11">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="2" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="3" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <passThroughArg param="4" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="5" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <passThroughArg param="9" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="7">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="8">
+    <passThroughArg param="11" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="9">
+    <passThroughArg param="12" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="10">
+    <passThroughArg param="13" caller="sdram_server" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+</preCompilationAnalysis>

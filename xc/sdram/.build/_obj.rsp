@@ -1,0 +1,1 @@
+../.build/src/sdram.xc.o ../.build/_l_sdram/src/client.xc.o ../.build/_l_sdram/src/memory_address_allocator.xc.o ../.build/_l_sdram/src/server.xc.o ../.build/_l_sdram/src/io.s.o
