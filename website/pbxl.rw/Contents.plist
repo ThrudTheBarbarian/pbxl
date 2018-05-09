@@ -413,7 +413,7 @@
 					<key>page5 - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-05-07T17:21:20Z</date>
+						<date>2018-05-09T15:31:26Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -1322,21 +1322,21 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								vjajkLq/1IFQ
-								h08mk0vwlA==
+								l86TeRW9I6EX
+								5ADqMu1FNQ==
 								</data>
 								<key>Size</key>
-								<integer>260052</integer>
+								<integer>271865</integer>
 							</dict>
 							<key>files/stacks_page_page5.js</key>
 							<dict>
 								<key>Digest</key>
 								<data>
-								peDCThvPjBRg
-								qEqBYYeNSA==
+								7GenChGoDTmZ
+								uLRJYlBkrg==
 								</data>
 								<key>Size</key>
-								<integer>45038</integer>
+								<integer>63449</integer>
 							</dict>
 							<key>files/stacks_page_page5.php</key>
 							<dict>
@@ -1362,11 +1362,11 @@
 							<dict>
 								<key>Digest</key>
 								<data>
-								b4+g3V6pvEHu
-								WfCCm3sr0w==
+								IvQRJUoDVs6I
+								yp3WodZc1A==
 								</data>
 								<key>Size</key>
-								<integer>362073</integer>
+								<integer>380476</integer>
 							</dict>
 						</dict>
 						<key>PageID</key>
@@ -1425,7 +1425,7 @@
 					<key>rw:plugin:stacks - sftp:/xanadu.gornall.net/www/pbxl.oobergeek.net</key>
 					<dict>
 						<key>CreationDate</key>
-						<date>2018-03-29T15:29:59Z</date>
+						<date>2018-05-09T15:31:26Z</date>
 						<key>DigestAlgorithm</key>
 						<string>MD5</string>
 						<key>PageDigests</key>
@@ -1569,6 +1569,16 @@
 								</data>
 								<key>Size</key>
 								<integer>5471</integer>
+							</dict>
+							<key>run_prettify.js</key>
+							<dict>
+								<key>Digest</key>
+								<data>
+								pz4yvS4h5edC
+								g1lOONfYGw==
+								</data>
+								<key>Size</key>
+								<integer>18037</integer>
 							</dict>
 							<key>scrollreveal.min.js</key>
 							<dict>
