@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7256,6 +7256,8 @@ Based on the following sources:
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
 <part name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
+<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7308,6 +7310,8 @@ Based on the following sources:
 <instance part="JP2" gate="A" x="294.64" y="25.4"/>
 <instance part="H1" gate="G$1" x="309.88" y="-17.78"/>
 <instance part="H2" gate="G$1" x="309.88" y="-22.86"/>
+<instance part="SUPPLY15" gate="GND" x="-53.34" y="111.76"/>
+<instance part="P+12" gate="1" x="-53.34" y="144.78"/>
 </instances>
 <busses>
 <bus name="D[0..7]">
@@ -7525,6 +7529,12 @@ Based on the following sources:
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 <wire x1="163.83" y1="134.62" x2="163.83" y2="121.92" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND@2"/>
+<pinref part="SUPPLY15" gate="GND" pin="GND"/>
+<wire x1="-48.26" y1="116.84" x2="-53.34" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="116.84" x2="-53.34" y2="114.3" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="AUDIO" class="0">
 <segment>
@@ -7723,6 +7733,12 @@ Based on the following sources:
 <wire x1="264.16" y1="22.86" x2="261.62" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+5V"/>
 <wire x1="261.62" y1="25.4" x2="261.62" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="VCC@1"/>
+<pinref part="P+12" gate="1" pin="+5V"/>
+<wire x1="-48.26" y1="137.16" x2="-53.34" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="137.16" x2="-53.34" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -8251,8 +8267,13 @@ Based on the following sources:
 <segment>
 <wire x1="114.3" y1="5.08" x2="111.76" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="Y9@14"/>
-<wire x1="111.76" y1="7.62" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="7.62" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
 <label x="111.252" y="7.366" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC1" gate="A" pin="DIR"/>
+<wire x1="104.14" y1="7.62" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-22.86" x2="104.14" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-22.86" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
+<junction x="104.14" y="7.62"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="-5.08" x2="205.74" y2="-2.54" width="0.1524" layer="91"/>
