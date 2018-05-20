@@ -1,0 +1,6 @@
+15:13:57 **** Build of configuration Default for project lib_sdram ****
+xmake -f .makefile all 
+** Module only - only builds as part of application **
+
+15:13:57 Build Finished (took 65ms)
+
