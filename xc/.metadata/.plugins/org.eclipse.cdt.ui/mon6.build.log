@@ -1,0 +1,10 @@
+12:19:52 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+
+12:19:53 Build Finished (took 1s.27ms)
+

@@ -94,3 +94,292 @@ Compiling server.xc
                                                                                                 ^~~
 Creating sdram.xe
 Build Complete
+12:15:06 **** Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:15:07 **** Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:19:5: error: use of undeclared identifer `uint8_t'
+    uint8_t data;
+    ^
+../src/mon6.xc:19:13: error: parse error before "data"
+    uint8_t data;
+            ^
+../src/mon6.xc:20:13: error: parse error before "tmp"
+    uint8_t tmp;
+            ^
+../src/mon6.xc:27:40: error: use of undeclared identifer `x'
+            case clk when pinseq(0) :> x:
+                                       ^
+../src/mon6.xc:32:17: error: use of undeclared identifer `tmp'
+        dbus :> tmp;        // make the data-bus be in input mode
+                ^
+../src/mon6.xc:33:17: error: input destination must be an lvalue
+        ext  :> 0x00;       // We're not triggering EXTSEL just yet
+                ^~~~
+../src/mon6.xc:33:9: error: incompatible type in input destination
+        ext  :> 0x00;       // We're not triggering EXTSEL just yet
+        ^~~~~~~~~~~~
+../src/mon6.xc:36:9: error: use of undeclared identifer `uint32_t'
+        uint32_t start, end;
+        ^
+../src/mon6.xc:36:18: error: parse error before "start"
+        uint32_t start, end;
+                 ^
+../src/mon6.xc:37:14: error: use of undeclared identifer `start'
+        t :> start;
+             ^
+../src/mon6.xc:38:9: error: use of undeclared identifer `end'
+        end = start + 177;
+        ^
+../src/mon6.xc:46:9: error: use of undeclared identifer `uint16_t'
+        uint16_t address;
+        ^
+../src/mon6.xc:46:18: error: parse error before "address"
+        uint16_t address;
+                 ^
+../src/mon6.xc:47:16: error: use of undeclared identifer `address'
+        adr :> address;
+               ^
+../src/mon6.xc:56:21: error: parse error before "sigs"
+            uint8_t sigs;
+                    ^
+../src/mon6.xc:57:24: error: use of undeclared identifer `sigs'
+            signals :> sigs;
+                       ^
+../src/mon6.xc:60:26: error: invalid operands to binary &
+            if ((signals & 0x2) == 0)
+                ~~~~~~~~~^~~~~~
+../src/mon6.xc:72:25: error: use of undeclared identifer `data'
+                dbus :> data;
+                        ^
+../src/mon6.xc:77:26: warning: variable will be promoted to word size before output (suggest explicit cast to word size) [-Wunusual-code]
+                dbus <: (data + 2);
+                         ^~~~
+../src/mon6.xc:81:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+12:15:22 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:15:23 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:28:40: error: use of undeclared identifer `x'
+            case clk when pinseq(0) :> x:
+                                       ^
+../src/mon6.xc:34:17: error: input destination must be an lvalue
+        ext  :> 0x00;       // We're not triggering EXTSEL just yet
+                ^~~~
+../src/mon6.xc:34:9: error: incompatible type in input destination
+        ext  :> 0x00;       // We're not triggering EXTSEL just yet
+        ^~~~~~~~~~~~
+../src/mon6.xc:61:26: error: invalid operands to binary &
+            if ((signals & 0x2) == 0)
+                ~~~~~~~~~^~~~~~
+../src/mon6.xc:78:26: warning: variable will be promoted to word size before output (suggest explicit cast to word size) [-Wunusual-code]
+                dbus <: (data + 2);
+                         ^~~~
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+12:15:44 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:15:44 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:34:17: error: input destination must be an lvalue
+        ext  :> 0x00;       // We're not triggering EXTSEL just yet
+                ^~~~
+../src/mon6.xc:34:9: error: incompatible type in input destination
+        ext  :> 0x00;       // We're not triggering EXTSEL just yet
+        ^~~~~~~~~~~~
+../src/mon6.xc:61:26: error: invalid operands to binary &
+            if ((signals & 0x2) == 0)
+                ~~~~~~~~~^~~~~~
+../src/mon6.xc:78:26: warning: variable will be promoted to word size before output (suggest explicit cast to word size) [-Wunusual-code]
+                dbus <: (data + 2);
+                         ^~~~
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+12:16:11 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:16:12 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:61:26: error: invalid operands to binary &
+            if ((signals & 0x2) == 0)
+                ~~~~~~~~~^~~~~~
+../src/mon6.xc:78:26: warning: variable will be promoted to word size before output (suggest explicit cast to word size) [-Wunusual-code]
+                dbus <: (data + 2);
+                         ^~~~
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+12:16:25 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:16:26 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:78:26: warning: variable will be promoted to word size before output (suggest explicit cast to word size) [-Wunusual-code]
+                dbus <: (data + 2);
+                         ^~~~
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+Propagating analysis
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+../src/mon6.xc:78:26: warning: variable will be promoted to word size before output (suggest explicit cast to word size) [-Wunusual-code]
+                dbus <: (data + 2);
+                         ^~~~
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+Creating mon6.xe
+Build Complete
+12:16:48 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:16:49 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+Creating mon6.xe
+Build Complete
+12:17:07 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:17:08 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:78:26: warning: variable will be promoted to word size before output (suggest explicit cast to word size) [-Wunusual-code]
+                dbus <: (data + 2);
+                         ^~~~
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+../src/mon6.xc:78:26: warning: variable will be promoted to word size before output (suggest explicit cast to word size) [-Wunusual-code]
+                dbus <: (data + 2);
+                         ^~~~
+../src/mon6.xc:82:5: warning: control reaches end of non-void function [-Wreturn-type]
+    }
+    ^
+Creating mon6.xe
+Build Complete
+12:17:34 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:17:35 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Propagating analysis
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+12:17:51 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:17:52 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+12:18:13 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:18:13 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+12:19:52 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:19:52 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
