@@ -57,17 +57,12 @@ int main(void)
             uint8_t sigs;
             signals :> sigs;
 
-            // Note that both of the below wait until we're well into the
-            // clock=high phase of the bus timings, thus making the wait-for
-            // clock-to-go-low at the top of the loop be a synchronizer for
-            // every clock
-
             // If it's a write, get the value off the data-bus
             if ((sigs & 0x2) == 0)
                 {
-                // Wait for 140ns
+                // Wait for 220ns
                 t :> start;
-                end = start + 140;
+                end = start + 220;
                 select
                     {
                     case t when timerafter(end) :> void:
@@ -80,15 +75,6 @@ int main(void)
             // otherwise drive the data on the output ports
             else
                 {
-                // Wait for 220ns
-                t :> start;
-                end = start + 220;
-                select
-                    {
-                    case t when timerafter(end) :> void:
-                        break;
-                    }
-
                 uint8_t value = data + 2;
                 dbus <: value;
                 }

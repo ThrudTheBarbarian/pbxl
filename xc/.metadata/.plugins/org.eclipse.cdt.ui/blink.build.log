@@ -1,9 +1,9 @@
-12:19:52 **** Incremental Build of configuration Debug for project blink ****
+12:53:28 **** Incremental Build of configuration Debug for project blink ****
 xmake CONFIG=Debug all 
 Checking build modules
 No build modules used.
 xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
 Build Complete
 
-12:19:52 Build Finished (took 574ms)
+12:53:29 Build Finished (took 570ms)
 

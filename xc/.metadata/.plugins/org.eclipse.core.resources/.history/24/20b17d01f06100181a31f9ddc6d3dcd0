@@ -57,11 +57,6 @@ int main(void)
             uint8_t sigs;
             signals :> sigs;
 
-            // Note that both of the below wait until we're well into the
-            // clock=high phase of the bus timings, thus making the wait-for
-            // clock-to-go-low at the top of the loop be a synchronizer for
-            // every clock
-
             // If it's a write, get the value off the data-bus
             if ((sigs & 0x2) == 0)
                 {

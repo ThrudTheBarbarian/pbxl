@@ -383,3 +383,19 @@ No build modules used.
 Compiling mon6.xc
 Creating mon6.xe
 Build Complete
+12:53:28 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+12:53:29 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Propagating analysis
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
