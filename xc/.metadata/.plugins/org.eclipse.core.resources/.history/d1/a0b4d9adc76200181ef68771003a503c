@@ -33,8 +33,8 @@ int main(void)
 void task1(void)
     {
     timer t;
-    uint8_t data, signals;
-    uint32_t clockLow, clockWrite, clockRead;
+    uint8_t data;
+    uint32_t clockLow;
     uint16_t addr;
 
     printf("Starting\n");
@@ -51,22 +51,21 @@ void task1(void)
         pData :> uint8_t tmp;    // make the data-bus be in input mode
         pExt  <: 0x03;           // We're not triggering EXTSEL/MPD just yet
 
-        // Since we're about to wait, calculate some things we'll need later
-        clockWrite = clockLow + 432;
-        clockRead  = clockLow + 300;
-
         // wait for 177 ns
         t when timerafter(clockLow + 157) :> void;
 
-        // Read and latch the various things we need to know
-        pAddr       :> addr;
-        pSignals    :> signals;
+        // Read the various things we need to know
+        adr :> address;
 
         // If we're in page 0x6...
-        if ((addr >> 8) == 0x6)
+        if ((address >> 8) == 0x6)
             {
             // Drive the 'external access' line
-            pExt <: 0x01;
+            ext <: 0x01;
+
+            // Read the signals
+            uint8_t sigs;
+            signals :> sigs;
 
             // Note that both of the below wait until we're well into the
             // clock=high phase of the bus timings, thus making the wait-for
@@ -74,25 +73,25 @@ void task1(void)
             // every clock
 
             // If it's a write, get the value off the data-bus
-            if ((signals & 0x2) == 0)
+            if ((sigs & 0x2) == 0)
                 {
                 // Wait for write phase
-                t when timerafter(clockWrite) :> void;
+                t when timerafter(clocklow + 482) :> void;
 
                 // read the data bus
-                pData :> data;
-                //printf("write %x\n", data);
+                dbus :> data;
+                printf("write %x\n", data);
                }
             // otherwise drive the data on the output ports
             else
                 {
                 uint8_t value = data + 2;
-                //printf("read %x\n", value);
+                printf("read %x\n", value);
 
                 // Wait for 300ns to get into clock=hi state
-                t when timerafter(clockRead) :> void;
+                t when timerafter(clocklow + 300) :> void;
 
-                pData <: value;
+                dbus <: value;
                }
             }
         }

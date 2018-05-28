@@ -90,7 +90,7 @@ void task1(void)
                 //printf("read %x\n", value);
 
                 // Wait for 300ns to get into clock=hi state
-                t when timerafter(clockRead) :> void;
+                t when timerafter(clockLow + 300) :> void;
 
                 pData <: value;
                }

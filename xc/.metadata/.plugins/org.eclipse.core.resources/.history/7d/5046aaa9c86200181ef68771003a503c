@@ -34,7 +34,7 @@ void task1(void)
     {
     timer t;
     uint8_t data, signals;
-    uint32_t clockLow, clockWrite, clockRead;
+    uint32_t clockLow, clockWrite;
     uint16_t addr;
 
     printf("Starting\n");
@@ -52,8 +52,7 @@ void task1(void)
         pExt  <: 0x03;           // We're not triggering EXTSEL/MPD just yet
 
         // Since we're about to wait, calculate some things we'll need later
-        clockWrite = clockLow + 432;
-        clockRead  = clockLow + 300;
+        clockWrite = clockLow + 482;
 
         // wait for 177 ns
         t when timerafter(clockLow + 157) :> void;
@@ -90,7 +89,7 @@ void task1(void)
                 //printf("read %x\n", value);
 
                 // Wait for 300ns to get into clock=hi state
-                t when timerafter(clockRead) :> void;
+                t when timerafter(clockLow + 300) :> void;
 
                 pData <: value;
                }

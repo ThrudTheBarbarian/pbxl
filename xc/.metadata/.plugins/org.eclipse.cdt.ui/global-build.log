@@ -399,3 +399,345 @@ Creating dependencies for mon6.xc
 Compiling mon6.xc
 Creating mon6.xe
 Build Complete
+14:52:11 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:52:12 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Propagating analysis
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+14:07:22 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:07:22 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:55:17: error: use of undeclared identifer `tmp'
+        dbus :> tmp;        // make the data-bus be in input mode
+                ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:07:34 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:07:35 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Propagating analysis
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+14:08:21 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:08:22 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+14:08:56 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:08:57 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+14:09:40 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:09:41 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+14:33:48 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:33:49 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:60:14: error: use of undeclared identifer `address'
+        if ((address >> 8) == 0x6)
+             ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:34:44 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:34:45 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:45:9: error: use of undeclared identifer `clk'
+        clk when pinsneq(1) :> void;
+        ^
+../src/mon6.xc:51:9: error: use of undeclared identifer `dbus'
+        dbus :> uint8_t tmp;    // make the data-bus be in input mode
+        ^
+../src/mon6.xc:52:9: error: use of undeclared identifer `ext'
+        ext  <: 0x03;           // We're not triggering EXTSEL/MPD just yet
+        ^
+../src/mon6.xc:58:9: error: use of undeclared identifer `adr'
+        adr :> address;
+        ^
+../src/mon6.xc:68:13: error: use of undeclared identifer `signals'
+            signals :> sigs;
+            ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:35:29 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:35:30 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:51:9: error: use of undeclared identifer `dbus'
+        dbus :> uint8_t tmp;    // make the data-bus be in input mode
+        ^
+../src/mon6.xc:52:9: error: use of undeclared identifer `ext'
+        ext  <: 0x03;           // We're not triggering EXTSEL/MPD just yet
+        ^
+../src/mon6.xc:55:27: error: use of undeclared identifer `clocklow'
+        t when timerafter(clocklow + 157) :> void;
+                          ^
+/Applications/XMOS_xTIMEcomposer_Community_14.3.3/target/include/xs1.h:1710:69: note: expanded from macro 'timerafter'
+#define timerafter(val)                       __builtin_timer_after(val)
+                                                                    ^
+../src/mon6.xc:58:9: error: use of undeclared identifer `adr'
+        adr :> address;
+        ^
+../src/mon6.xc:58:16: error: use of undeclared identifer `address'
+        adr :> address;
+               ^
+../src/mon6.xc:68:13: error: use of undeclared identifer `signals'
+            signals :> sigs;
+            ^
+../src/mon6.xc:38:14: warning: unused variable `addr' [-Wunused-variable]
+    uint16_t addr;
+             ^~~~
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:36:07 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:36:08 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:58:9: error: use of undeclared identifer `adr'
+        adr :> address;
+        ^
+../src/mon6.xc:58:16: error: use of undeclared identifer `address'
+        adr :> address;
+               ^
+../src/mon6.xc:64:13: error: use of undeclared identifer `ext'
+            ext <: 0x01;
+            ^
+../src/mon6.xc:68:13: error: use of undeclared identifer `signals'
+            signals :> sigs;
+            ^
+../src/mon6.xc:79:35: error: use of undeclared identifer `clocklow'
+                t when timerafter(clocklow + 482) :> void;
+                                  ^
+/Applications/XMOS_xTIMEcomposer_Community_14.3.3/target/include/xs1.h:1710:69: note: expanded from macro 'timerafter'
+#define timerafter(val)                       __builtin_timer_after(val)
+                                                                    ^
+../src/mon6.xc:82:17: error: use of undeclared identifer `dbus'
+                dbus :> data;
+                ^
+../src/mon6.xc:38:14: warning: unused variable `addr' [-Wunused-variable]
+    uint16_t addr;
+             ^~~~
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:37:18 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:37:19 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:73:18: error: use of undeclared identifer `sigs'
+            if ((sigs & 0x2) == 0)
+                 ^
+../src/mon6.xc:76:35: error: use of undeclared identifer `clocklow'
+                t when timerafter(clocklow + 482) :> void;
+                                  ^
+/Applications/XMOS_xTIMEcomposer_Community_14.3.3/target/include/xs1.h:1710:69: note: expanded from macro 'timerafter'
+#define timerafter(val)                       __builtin_timer_after(val)
+                                                                    ^
+../src/mon6.xc:79:17: error: use of undeclared identifer `dbus'
+                dbus :> data;
+                ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:38:40 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:38:41 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:82:17: error: use of undeclared identifer `dbus'
+                dbus :> data;
+                ^
+../src/mon6.xc:92:35: error: use of undeclared identifer `clocklow'
+                t when timerafter(clocklow + 300) :> void;
+                                  ^
+/Applications/XMOS_xTIMEcomposer_Community_14.3.3/target/include/xs1.h:1710:69: note: expanded from macro 'timerafter'
+#define timerafter(val)                       __builtin_timer_after(val)
+                                                                    ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:38:54 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:38:55 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:92:35: error: use of undeclared identifer `clocklow'
+                t when timerafter(clocklow + 300) :> void;
+                                  ^
+/Applications/XMOS_xTIMEcomposer_Community_14.3.3/target/include/xs1.h:1710:69: note: expanded from macro 'timerafter'
+#define timerafter(val)                       __builtin_timer_after(val)
+                                                                    ^
+../src/mon6.xc:94:17: error: use of undeclared identifer `dbus'
+                dbus <: value;
+                ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:43:20 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:43:21 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+../src/mon6.xc:94:17: error: use of undeclared identifer `dbus'
+                dbus <: value;
+                ^
+xmake[1]: *** [.build/src/mon6.xc.pca.xml.decouple] Error 1
+xmake: *** [analyze] Error 2
+14:43:29 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:43:30 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Propagating analysis
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+14:44:25 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:44:26 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete
+14:44:51 **** Incremental Build of configuration Debug for project blink ****
+xmake CONFIG=Debug all 
+Checking build modules
+No build modules used.
+xmake[1]: `bin/Debug/blink_Debug.xe' is up to date.
+Build Complete
+14:44:51 **** Incremental Build of configuration Default for project mon6 ****
+xmake CONFIG=Default all 
+Checking build modules
+No build modules used.
+Analyzing mon6.xc
+Creating dependencies for mon6.xc
+Compiling mon6.xc
+Creating mon6.xe
+Build Complete

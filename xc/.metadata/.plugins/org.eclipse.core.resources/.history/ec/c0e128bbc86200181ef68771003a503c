@@ -52,7 +52,7 @@ void task1(void)
         pExt  <: 0x03;           // We're not triggering EXTSEL/MPD just yet
 
         // Since we're about to wait, calculate some things we'll need later
-        clockWrite = clockLow + 432;
+        clockWrite = clockLow + 422;
         clockRead  = clockLow + 300;
 
         // wait for 177 ns
@@ -90,7 +90,7 @@ void task1(void)
                 //printf("read %x\n", value);
 
                 // Wait for 300ns to get into clock=hi state
-                t when timerafter(clockRead) :> void;
+                t when timerafter(clockLow + 300) :> void;
 
                 pData <: value;
                }
