@@ -38952,7 +38952,7 @@ disable all outputs
 <sheet>
 <description>STM32 Video out</description>
 <plain>
-<text x="147.32" y="-111.76" size="1.778" layer="94">STM VIDEO Out</text>
+<text x="147.32" y="-111.76" size="1.778" layer="94">HDMI Out</text>
 <text x="101.6" y="35.56" size="1.778" layer="94">Pull-up/down resistors  
 on data signal lanes</text>
 <wire x1="99.06" y1="124.46" x2="99.06" y2="43.18" width="0.1524" layer="94" style="shortdash"/>
@@ -38971,6 +38971,9 @@ In particular, PVDD (for PLL) needs to be
 clean</text>
 <wire x1="99.06" y1="-12.7" x2="99.06" y2="-106.68" width="0.1524" layer="94" style="shortdash"/>
 <text x="101.6" y="-17.78" size="1.778" layer="94">Bypass caps on supply rails</text>
+<text x="124.46" y="22.86" size="1.778" layer="97">Question: Is the 100R/100R just for voltage 
+  translation on a 2V5 system ? Do we need
+  it on a 3V3 system ?</text>
 </plain>
 <instances>
 <instance part="STM32" gate="-LCD" x="-129.54" y="-50.8" rot="MR0"/>
@@ -39891,60 +39894,68 @@ clean</text>
 <label x="104.14" y="-52.832" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="TXC_P" class="0">
 <segment>
 <pinref part="U$22" gate="G$1" pin="TXC+@28"/>
 <pinref part="CN2" gate="G$1" pin="TXC+"/>
 <wire x1="22.86" y1="2.54" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
+<label x="27.94" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$56" class="0">
+<net name="TXC_N" class="0">
 <segment>
 <pinref part="CN2" gate="G$1" pin="TXC-"/>
 <pinref part="U$22" gate="G$1" pin="TXC-@27"/>
 <wire x1="50.8" y1="0" x2="22.86" y2="0" width="0.1524" layer="91"/>
+<label x="27.94" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$57" class="0">
+<net name="TX0_P" class="0">
 <segment>
 <pinref part="U$22" gate="G$1" pin="TX0+@31"/>
 <pinref part="CN2" gate="G$1" pin="TX0+"/>
 <wire x1="22.86" y1="-5.08" x2="50.8" y2="-5.08" width="0.1524" layer="91"/>
+<label x="27.94" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$63" class="0">
+<net name="TX0_N" class="0">
 <segment>
 <pinref part="CN2" gate="G$1" pin="TX0-"/>
 <pinref part="U$22" gate="G$1" pin="TX0-@30"/>
 <wire x1="50.8" y1="-7.62" x2="22.86" y2="-7.62" width="0.1524" layer="91"/>
+<label x="27.94" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$64" class="0">
+<net name="TX1_P" class="0">
 <segment>
 <pinref part="U$22" gate="G$1" pin="TX1+@35"/>
 <pinref part="CN2" gate="G$1" pin="TX1+"/>
 <wire x1="22.86" y1="-12.7" x2="50.8" y2="-12.7" width="0.1524" layer="91"/>
+<label x="27.94" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$65" class="0">
+<net name="TX1_N" class="0">
 <segment>
 <pinref part="CN2" gate="G$1" pin="TX1-"/>
 <pinref part="U$22" gate="G$1" pin="TX1-@34"/>
 <wire x1="50.8" y1="-15.24" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
+<label x="27.94" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$66" class="0">
+<net name="TX2_P" class="0">
 <segment>
 <pinref part="U$22" gate="G$1" pin="TX2+@38"/>
 <pinref part="CN2" gate="G$1" pin="TX2+"/>
 <wire x1="22.86" y1="-20.32" x2="50.8" y2="-20.32" width="0.1524" layer="91"/>
+<label x="27.94" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$67" class="0">
+<net name="TX2_N" class="0">
 <segment>
 <pinref part="CN2" gate="G$1" pin="TX2-"/>
 <pinref part="U$22" gate="G$1" pin="TX2-@37"/>
 <wire x1="50.8" y1="-22.86" x2="22.86" y2="-22.86" width="0.1524" layer="91"/>
+<label x="27.94" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DDSCL" class="0">
