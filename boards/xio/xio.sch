@@ -25016,6 +25016,9 @@ Based on the following sources:
 </class>
 <class number="2" name="Slot-power" width="0.508" drill="0">
 </class>
+<class number="3" name="hdmi" width="0.3048" drill="0">
+<clearance class="3" value="0.508"/>
+</class>
 </classes>
 <parts>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
@@ -39894,7 +39897,7 @@ clean</text>
 <label x="104.14" y="-52.832" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXC_P" class="0">
+<net name="TXC_P" class="3">
 <segment>
 <pinref part="U$22" gate="G$1" pin="TXC+@28"/>
 <pinref part="CN2" gate="G$1" pin="TXC+"/>
@@ -39902,7 +39905,7 @@ clean</text>
 <label x="27.94" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXC_N" class="0">
+<net name="TXC_N" class="3">
 <segment>
 <pinref part="CN2" gate="G$1" pin="TXC-"/>
 <pinref part="U$22" gate="G$1" pin="TXC-@27"/>
