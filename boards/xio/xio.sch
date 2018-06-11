@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19522,11 +19522,10 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </symbol>
 <symbol name="STM32F777N-PIO">
 <description>STM32F777N interface to peripherals</description>
-<pin name="PE3@A2" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="PH1@H1" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="PH4@H4" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="PC1@M3" x="25.4" y="22.86" length="middle" rot="R180"/>
-<pin name="PG3@M12" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="PE3@A2" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PH1@H1" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PH4@H4" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PG3@M12" x="25.4" y="12.7" length="middle" rot="R180"/>
 <wire x1="20.32" y1="27.94" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="27.94" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="17.78" x2="-17.78" y2="-7.62" width="0.254" layer="94"/>
@@ -19536,24 +19535,25 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <wire x1="20.32" y1="-7.62" x2="20.32" y2="17.78" width="0.254" layer="94"/>
 <wire x1="20.32" y1="17.78" x2="20.32" y2="27.94" width="0.254" layer="94"/>
 <text x="-17.78" y="28.194" size="1.778" layer="94">&gt;NAME</text>
-<pin name="C14@E1" x="25.4" y="20.32" length="middle" rot="R180"/>
-<pin name="C15@F1" x="25.4" y="17.78" length="middle" rot="R180"/>
-<pin name="F10@L1" x="25.4" y="12.7" length="middle" rot="R180"/>
-<pin name="G6@J15" x="25.4" y="7.62" length="middle" rot="R180"/>
-<pin name="G7@J14" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="G9@D9" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="G10@C8" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="PI9@E4" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="PI11@F3" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="C14@E1" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="C15@F1" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="F10@L1" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="G6@J15" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="G7@J14" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="G9@D9" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="G10@C8" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PI9@E4" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PI11@F3" x="25.4" y="-7.62" length="middle" rot="R180"/>
 <text x="-17.78" y="-35.56" size="1.778" layer="94">&gt;VALUE</text>
-<pin name="B8@A7" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="C2@M4" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="C3@L4" x="25.4" y="-17.78" length="middle" rot="R180"/>
-<pin name="H2@K4" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="H3@J4" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="B8@A7" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="C2@M4" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="C3@L4" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="H2@K4" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="H3@J4" x="25.4" y="-20.32" length="middle" rot="R180"/>
 <pin name="H6@P13" x="25.4" y="-25.4" length="middle" rot="R180"/>
 <pin name="H7@N13" x="25.4" y="-27.94" length="middle" rot="R180"/>
 <pin name="I10@D5" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="PH5@J3" x="25.4" y="-22.86" length="middle" rot="R180"/>
 </symbol>
 <symbol name="STM32F777N-I2C-SPI">
 <pin name="PB13@K14" x="-22.86" y="10.16" length="middle"/>
@@ -19639,7 +19639,6 @@ signals
 <pin name="PG14@A4" x="25.4" y="-43.18" length="middle" rot="R180"/>
 <pin name="PG11@B8" x="25.4" y="-38.1" length="middle" rot="R180"/>
 <pin name="PB12@L13" x="25.4" y="-40.64" length="middle" rot="R180"/>
-<pin name="PC0@M2" x="25.4" y="68.58" length="middle" rot="R180"/>
 <pin name="PA1@N2" x="25.4" y="17.78" length="middle" rot="R180"/>
 <pin name="PC4@N5" x="25.4" y="-7.62" length="middle" rot="R180"/>
 <pin name="PA2@P2" x="25.4" y="71.12" length="middle" rot="R180"/>
@@ -19668,6 +19667,7 @@ signals
 <text x="8.255" y="-37.465" size="1.27" layer="94" rot="R180">TX_EN</text>
 <text x="8.255" y="-40.005" size="1.27" layer="94" rot="R180">TX_D0</text>
 <text x="8.255" y="-42.545" size="1.27" layer="94" rot="R180">TX_D1</text>
+<pin name="PC1@M3" x="25.4" y="68.58" length="middle" rot="R180"/>
 </symbol>
 <symbol name="STM32F777N-PWR">
 <description>STM32F777N Power and system config</description>
@@ -19767,7 +19767,6 @@ signals
 <pin name="PF3@H2" x="-22.86" y="50.8" length="middle"/>
 <pin name="PG8@H14" x="-22.86" y="-38.1" length="middle"/>
 <pin name="PF4@J2" x="-22.86" y="48.26" length="middle"/>
-<pin name="PH5@J3" x="-22.86" y="-58.42" length="middle"/>
 <pin name="PF5@K3" x="-22.86" y="45.72" length="middle"/>
 <pin name="PD15@K13" x="-22.86" y="7.62" length="middle"/>
 <pin name="PD10@K15" x="-22.86" y="-27.94" length="middle"/>
@@ -19820,6 +19819,7 @@ signals
 <text x="2.54" y="-50.8" size="1.27" layer="94">!RAS!</text>
 <text x="2.54" y="-53.34" size="1.27" layer="94">!CAS!</text>
 <text x="2.54" y="-58.42" size="1.27" layer="94">!WE!</text>
+<pin name="PC0@M2" x="-22.86" y="-58.42" length="middle"/>
 </symbol>
 <symbol name="STM32F777N-USART">
 <pin name="PG13@B3" x="-22.86" y="-7.62" length="middle"/>
@@ -20109,7 +20109,7 @@ Bus</text>
 <connect gate="-NET" pin="PA2@P2" pad="P2"/>
 <connect gate="-NET" pin="PA7@R3" pad="R3"/>
 <connect gate="-NET" pin="PB12@L13" pad="L13"/>
-<connect gate="-NET" pin="PC0@M2" pad="M2"/>
+<connect gate="-NET" pin="PC1@M3" pad="M3"/>
 <connect gate="-NET" pin="PC4@N5" pad="N5"/>
 <connect gate="-NET" pin="PC5@P5" pad="P5"/>
 <connect gate="-NET" pin="PG11@B8" pad="B8"/>
@@ -20129,13 +20129,14 @@ Bus</text>
 <connect gate="-PIO" pin="H6@P13" pad="P13"/>
 <connect gate="-PIO" pin="H7@N13" pad="N13"/>
 <connect gate="-PIO" pin="I10@D5" pad="D5"/>
-<connect gate="-PIO" pin="PC1@M3" pad="M3"/>
 <connect gate="-PIO" pin="PE3@A2" pad="A2"/>
 <connect gate="-PIO" pin="PG3@M12" pad="M12"/>
 <connect gate="-PIO" pin="PH1@H1" pad="H1"/>
 <connect gate="-PIO" pin="PH4@H4" pad="H4"/>
+<connect gate="-PIO" pin="PH5@J3" pad="J3"/>
 <connect gate="-PIO" pin="PI11@F3" pad="F3"/>
 <connect gate="-PIO" pin="PI9@E4" pad="E4"/>
+<connect gate="-SDRAM" pin="PC0@M2" pad="M2"/>
 <connect gate="-SDRAM" pin="PD0@B12" pad="B12"/>
 <connect gate="-SDRAM" pin="PD10@K15" pad="K15"/>
 <connect gate="-SDRAM" pin="PD14@L12" pad="L12"/>
@@ -20172,7 +20173,6 @@ Bus</text>
 <connect gate="-SDRAM" pin="PG4@N12" pad="N12"/>
 <connect gate="-SDRAM" pin="PG5@N11" pad="N11"/>
 <connect gate="-SDRAM" pin="PG8@H14" pad="H14"/>
-<connect gate="-SDRAM" pin="PH5@J3" pad="J3"/>
 <connect gate="-SD_CARD" pin="PC10@B14" pad="B14"/>
 <connect gate="-SD_CARD" pin="PC11@B13" pad="B13"/>
 <connect gate="-SD_CARD" pin="PC12@A12" pad="A12"/>
@@ -35577,6 +35577,11 @@ AGND only connects to GND at this point</text>
 <text x="152.4" y="-106.68" size="1.778" layer="94">STM Periph i/o, Debug LEDs</text>
 <text x="76.2" y="80.01" size="2.1844" layer="96">Ports can only drive 4mA, so 
 resistors set to 1K</text>
+<wire x1="-86.36" y1="-15.24" x2="-83.82" y2="-15.24" width="0.1524" layer="97"/>
+<wire x1="-83.82" y1="-15.24" x2="-83.82" y2="-71.12" width="0.1524" layer="97"/>
+<wire x1="-83.82" y1="-71.12" x2="-86.36" y2="-71.12" width="0.1524" layer="97"/>
+<text x="-81.28" y="-45.72" size="1.778" layer="97">Unused pins on the
+STM32F7</text>
 </plain>
 <instances>
 <instance part="FRAME12" gate="G$1" x="-190.5" y="-127"/>
@@ -37763,7 +37768,7 @@ for I2C</text>
 <wire x1="-96.52" y1="-43.18" x2="-99.06" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="-40.64" x2="-119.38" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-116.84" y="-40.64" size="1.778" layer="95"/>
-<pinref part="STM32F777N" gate="-SDRAM" pin="PH5@J3"/>
+<pinref part="STM32F777N" gate="-SDRAM" pin="PC0@M2"/>
 </segment>
 <segment>
 <pinref part="IC11" gate="G$1" pin="!WE"/>
@@ -38977,7 +38982,7 @@ Magnetics</text>
 </net>
 <net name="ETH_MDC" class="0">
 <segment>
-<pinref part="STM32F777N" gate="-NET" pin="PC0@M2"/>
+<pinref part="STM32F777N" gate="-NET" pin="PC1@M3"/>
 <wire x1="-76.2" y1="68.58" x2="-106.68" y2="68.58" width="0.1524" layer="91"/>
 <label x="-101.6" y="68.58" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="MDC"/>
