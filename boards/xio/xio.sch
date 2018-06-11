@@ -25129,6 +25129,11 @@ Reference Digikey: 609-1975-ND</description>
 <part name="R79" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="49.9@1%"/>
 <part name="R80" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="49.9@1%"/>
 <part name="CN3" library="microbuilder" deviceset="RJ45" device="J000065NL" value="J00-0065NL"/>
+<part name="C129" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
+<part name="C130" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
+<part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
+<part name="R81" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="270"/>
+<part name="R82" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="270"/>
 </parts>
 <sheets>
 <sheet>
@@ -38767,6 +38772,17 @@ clean</text>
 <attribute name="VALUE" x="-16.256" y="-5.588" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="CN3" gate="G$1" x="53.34" y="12.7"/>
+<instance part="C129" gate="G$1" x="53.34" y="-76.2"/>
+<instance part="C130" gate="G$1" x="60.96" y="-63.5"/>
+<instance part="SUPPLY35" gate="GND" x="53.34" y="-96.52"/>
+<instance part="R81" gate="G$1" x="78.74" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.7334" y="-51.308" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="82.804" y="-53.848" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R82" gate="G$1" x="91.44" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="89.4334" y="-51.308" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="95.504" y="-53.848" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -38886,6 +38902,32 @@ clean</text>
 <wire x1="-119.38" y1="109.22" x2="-119.38" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="104.14" x2="-134.62" y2="104.14" width="0.1524" layer="91"/>
 <junction x="-134.62" y="104.14"/>
+</segment>
+<segment>
+<pinref part="CN3" gate="G$1" pin="GND2"/>
+<wire x1="45.72" y1="-53.34" x2="45.72" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-60.96" x2="45.72" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-88.9" x2="53.34" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="SUPPLY35" gate="GND" pin="GND"/>
+<wire x1="53.34" y1="-88.9" x2="53.34" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="CN3" gate="G$1" pin="GND1"/>
+<wire x1="43.18" y1="-53.34" x2="43.18" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-60.96" x2="45.72" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="45.72" y="-60.96"/>
+<pinref part="C129" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="-81.28" x2="53.34" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="53.34" y="-88.9"/>
+<pinref part="C130" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="-68.58" x2="60.96" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-88.9" x2="53.34" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="R81" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="-53.34" x2="78.74" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-88.9" x2="60.96" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="60.96" y="-88.9"/>
+<pinref part="R82" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="-53.34" x2="91.44" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-88.9" x2="78.74" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="78.74" y="-88.9"/>
 </segment>
 </net>
 <net name="!RESET!" class="0">
@@ -39147,6 +39189,36 @@ clean</text>
 <pinref part="STM32F777N" gate="-NET" pin="PA7@R3"/>
 <pinref part="R73" gate="G$1" pin="2"/>
 <wire x1="-106.68" y1="43.18" x2="-101.6" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$87" class="0">
+<segment>
+<pinref part="CN3" gate="G$1" pin="RCT"/>
+<pinref part="C129" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="-53.34" x2="53.34" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$88" class="0">
+<segment>
+<pinref part="C130" gate="G$1" pin="1"/>
+<pinref part="CN3" gate="G$1" pin="TCT"/>
+<wire x1="60.96" y1="-60.96" x2="60.96" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$89" class="0">
+<segment>
+<pinref part="CN3" gate="G$1" pin="LED2_K"/>
+<pinref part="R81" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="-35.56" x2="78.74" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-35.56" x2="78.74" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$92" class="0">
+<segment>
+<pinref part="CN3" gate="G$1" pin="LED1_K"/>
+<pinref part="R82" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="-20.32" x2="91.44" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-20.32" x2="91.44" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
