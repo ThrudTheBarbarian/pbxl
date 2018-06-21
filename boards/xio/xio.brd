@@ -170,7 +170,17 @@
 <wire x1="15" y1="169" x2="23" y2="169" width="0" layer="20"/>
 <wire x1="23" y1="169" x2="24" y2="170" width="0" layer="20"/>
 <wire x1="24" y1="170" x2="170" y2="170" width="0" layer="20"/>
-<text x="175" y="129" size="1.778" layer="48">Add vias to +3v3 around vRegs</text>
+<text x="180" y="106" size="1.778" layer="48">Add vias to +3v3 around vRegs
+XIO:BOOT0 ought to have no-stuff pull-up
+Label for XIO:XSPI
+XIO:LED ought to be 1k ?
+XIO:PSRAM - check pins
+XIO:Serial IO - move gnd/power pins
+PIO:BOOT0 needs pullup/down
+Labels for SD-Card and ADC sections
+Notes on SDRAM lengths
+Label for Audio/video section into HDMI
+Move PIO:Video-in to 14/19</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
