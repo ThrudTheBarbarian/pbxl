@@ -20072,8 +20072,388 @@ Mouser: &lt;a href=https://www.mouser.com/ProductDetail/ISSI/IS42S32800J-7TL?qs=
 <part name="ECI" library="microbuilder" deviceset="HEADER-2X23" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="XSP1_TST" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="XSPI2_TST" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 </parts>
 <sheets>
+<sheet>
+<plain>
+<wire x1="-137.16" y1="35.56" x2="-124.46" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="-124.46" y1="35.56" x2="-124.46" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-124.46" y1="-12.7" x2="-137.16" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="-12.7" x2="-137.16" y2="35.56" width="0.1524" layer="94"/>
+<text x="-134.62" y="9.906" size="1.778" layer="94">VHDCI</text>
+<text x="-128.016" y="-11.938" size="1.778" layer="94">5v</text>
+<wire x1="-93.98" y1="81.28" x2="-93.98" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-93.98" y1="2.54" x2="-93.98" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-93.98" y1="-12.7" x2="-66.04" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-66.04" y1="-12.7" x2="-66.04" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="-66.04" y1="81.28" x2="-93.98" y2="81.28" width="0.1524" layer="94"/>
+<text x="-88.9" y="35.56" size="1.778" layer="94">STM32F7 (XIO)</text>
+<text x="-71.374" y="-11.684" size="1.778" layer="94">3.3v</text>
+<wire x1="-121.92" y1="15.24" x2="-104.14" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="15.24" x2="-104.14" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="5.08" x2="-104.14" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="10.16" x2="-121.92" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-121.92" y1="10.16" x2="-121.92" y2="15.24" width="0.1524" layer="94"/>
+<text x="-106.68" y="11.938" size="1.778" layer="94">/68</text>
+<wire x1="-104.14" y1="5.08" x2="-96.52" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="12.7" x2="-104.14" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="-45.72" x2="-101.6" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-101.6" y1="-45.72" x2="-101.6" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-101.6" y1="-81.28" x2="-104.14" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="-81.28" x2="-104.14" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="-45.72" x2="-93.98" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-93.98" y1="-45.72" x2="-93.98" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-93.98" y1="-81.28" x2="-96.52" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="-81.28" x2="-96.52" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-45.72" x2="-86.36" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-86.36" y1="-45.72" x2="-86.36" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-86.36" y1="-81.28" x2="-88.9" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-81.28" x2="-88.9" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-81.28" y1="-45.72" x2="-78.74" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-78.74" y1="-45.72" x2="-78.74" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-78.74" y1="-81.28" x2="-81.28" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-81.28" y1="-81.28" x2="-81.28" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-73.66" y1="-45.72" x2="-71.12" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-71.12" y1="-45.72" x2="-71.12" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-71.12" y1="-81.28" x2="-73.66" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-73.66" y1="-81.28" x2="-73.66" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-66.04" y1="-45.72" x2="-63.5" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-63.5" y1="-45.72" x2="-63.5" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-63.5" y1="-81.28" x2="-66.04" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-66.04" y1="-81.28" x2="-66.04" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-58.42" y1="-45.72" x2="-55.88" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-55.88" y1="-45.72" x2="-55.88" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-55.88" y1="-81.28" x2="-58.42" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-58.42" y1="-81.28" x2="-58.42" y2="-45.72" width="0.1524" layer="94"/>
+<text x="-91.44" y="-21.336" size="1.778" layer="94">SPI2</text>
+<text x="-91.186" y="-33.528" size="1.778" layer="94">@25</text>
+<text x="-83.312" y="-43.942" size="1.778" layer="94">Slots 0..6</text>
+<text x="-54.102" y="69.596" size="1.778" layer="94" rot="R180">SPI5</text>
+<text x="-47.244" y="69.596" size="1.778" layer="94" rot="R180">@50</text>
+<text x="-54.102" y="26.416" size="1.778" layer="94" rot="R180">SPI1</text>
+<text x="-47.244" y="26.416" size="1.778" layer="94" rot="R180">@50</text>
+<wire x1="-88.9" y1="-38.1" x2="-96.52" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="-30.48" x2="-91.44" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-91.44" y1="-30.48" x2="-91.44" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-91.44" y1="-22.86" x2="-96.52" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="-22.86" x2="-88.9" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-15.24" x2="-81.28" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-81.28" y1="-22.86" x2="-86.36" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-86.36" y1="-22.86" x2="-86.36" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-86.36" y1="-30.48" x2="-81.28" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-81.28" y1="-30.48" x2="-88.9" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="-60.96" y1="68.58" x2="-53.34" y2="76.2" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="76.2" x2="-53.34" y2="71.12" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="71.12" x2="-45.72" y2="71.12" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="71.12" x2="-45.72" y2="76.2" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="76.2" x2="-38.1" y2="68.58" width="0.1524" layer="94"/>
+<wire x1="-38.1" y1="68.58" x2="-45.72" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="60.96" x2="-45.72" y2="66.04" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="66.04" x2="-53.34" y2="66.04" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="66.04" x2="-53.34" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="60.96" x2="-60.96" y2="68.58" width="0.1524" layer="94"/>
+<wire x1="-60.96" y1="25.4" x2="-53.34" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="33.02" x2="-53.34" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="27.94" x2="-45.72" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="27.94" x2="-45.72" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="33.02" x2="-38.1" y2="25.4" width="0.1524" layer="94"/>
+<wire x1="-38.1" y1="25.4" x2="-45.72" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="17.78" x2="-45.72" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="22.86" x2="-53.34" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="22.86" x2="-53.34" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="17.78" x2="-60.96" y2="25.4" width="0.1524" layer="94"/>
+<text x="-72.898" y="-21.336" size="1.778" layer="94">I2C</text>
+<wire x1="-71.12" y1="-38.1" x2="-78.74" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-78.74" y1="-30.48" x2="-73.66" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-73.66" y1="-30.48" x2="-73.66" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-73.66" y1="-22.86" x2="-78.74" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-78.74" y1="-22.86" x2="-71.12" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="-71.12" y1="-15.24" x2="-63.5" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-63.5" y1="-22.86" x2="-68.58" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="-68.58" y1="-22.86" x2="-68.58" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-68.58" y1="-30.48" x2="-63.5" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-63.5" y1="-30.48" x2="-71.12" y2="-38.1" width="0.1524" layer="94"/>
+<wire x1="-60.96" y1="-2.54" x2="-45.72" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="-2.54" x2="-45.72" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="-12.7" x2="-45.72" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-45.72" y1="-7.62" x2="-60.96" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-60.96" y1="-7.62" x2="-60.96" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-58.42" y="-5.842" size="1.778" layer="94">VidBus</text>
+<wire x1="-45.72" y1="-12.7" x2="-38.1" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-38.1" y1="-5.08" x2="-45.72" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-127" y1="-17.78" x2="-127" y2="-53.34" width="0.1524" layer="94"/>
+<wire x1="-127" y1="-53.34" x2="-121.92" y2="-58.42" width="0.1524" layer="94" curve="90"/>
+<wire x1="-121.92" y1="-58.42" x2="-116.84" y2="-58.42" width="0.1524" layer="94"/>
+<wire x1="-116.84" y1="-58.42" x2="-116.84" y2="-53.34" width="0.1524" layer="94"/>
+<wire x1="-116.84" y1="-53.34" x2="-109.22" y2="-62.23" width="0.1524" layer="94"/>
+<wire x1="-109.22" y1="-62.23" x2="-116.84" y2="-71.12" width="0.1524" layer="94"/>
+<wire x1="-116.84" y1="-71.12" x2="-116.84" y2="-66.04" width="0.1524" layer="94"/>
+<wire x1="-116.84" y1="-66.04" x2="-124.46" y2="-66.04" width="0.1524" layer="94"/>
+<wire x1="-124.46" y1="-66.04" x2="-134.62" y2="-53.34" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-134.62" y1="-53.34" x2="-134.62" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="-134.62" y1="-17.78" x2="-127" y2="-17.78" width="0.1524" layer="94"/>
+<text x="-133.604" y="-43.942" size="1.778" layer="94">SIO
+JOY0
+JOY1</text>
+<text x="-112.776" y="49.784" size="1.778" layer="94" rot="R90">RS232</text>
+<wire x1="-96.52" y1="53.34" x2="-104.14" y2="45.72" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="45.72" x2="-104.14" y2="50.8" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="50.8" x2="-111.76" y2="50.8" width="0.1524" layer="94"/>
+<wire x1="-111.76" y1="50.8" x2="-111.76" y2="45.72" width="0.1524" layer="94"/>
+<wire x1="-111.76" y1="45.72" x2="-119.38" y2="53.34" width="0.1524" layer="94"/>
+<wire x1="-119.38" y1="53.34" x2="-111.76" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="-111.76" y1="60.96" x2="-111.76" y2="55.88" width="0.1524" layer="94"/>
+<wire x1="-111.76" y1="55.88" x2="-104.14" y2="55.88" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="55.88" x2="-104.14" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="60.96" x2="-96.52" y2="53.34" width="0.1524" layer="94"/>
+<text x="-112.776" y="67.564" size="1.778" layer="94" rot="R90">RS232</text>
+<wire x1="-96.52" y1="71.12" x2="-104.14" y2="63.5" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="63.5" x2="-104.14" y2="68.58" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="68.58" x2="-111.76" y2="68.58" width="0.1524" layer="94"/>
+<wire x1="-111.76" y1="68.58" x2="-111.76" y2="63.5" width="0.1524" layer="94"/>
+<wire x1="-111.76" y1="63.5" x2="-119.38" y2="71.12" width="0.1524" layer="94"/>
+<wire x1="-119.38" y1="71.12" x2="-111.76" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="-111.76" y1="78.74" x2="-111.76" y2="73.66" width="0.1524" layer="94"/>
+<wire x1="-111.76" y1="73.66" x2="-104.14" y2="73.66" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="73.66" x2="-104.14" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="-104.14" y1="78.74" x2="-96.52" y2="71.12" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="81.28" x2="-33.02" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="2.54" x2="-33.02" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="-45.72" x2="-5.08" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-45.72" x2="-5.08" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="81.28" x2="-33.02" y2="81.28" width="0.1524" layer="94"/>
+<text x="-27.94" y="35.56" size="1.778" layer="94">STM32F7 (PIO)</text>
+<text x="-10.414" y="-44.704" size="1.778" layer="94">3.3v</text>
+<text x="-45.466" y="-5.842" size="1.778" layer="94">/9</text>
+<wire x1="27.94" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="45.72" y1="-20.32" x2="45.72" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="45.72" y1="-45.72" x2="27.94" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="-45.72" x2="27.94" y2="-20.32" width="0.1524" layer="94"/>
+<text x="30.48" y="-33.274" size="1.778" layer="94">ADV9889B</text>
+<text x="40.132" y="-44.704" size="1.778" layer="94">1.8v</text>
+<wire x1="0" y1="-27.94" x2="15.24" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-27.94" x2="15.24" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-38.1" x2="15.24" y2="-33.02" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-33.02" x2="0" y2="-33.02" width="0.1524" layer="94"/>
+<wire x1="0" y1="-33.02" x2="0" y2="-27.94" width="0.1524" layer="94"/>
+<text x="2.54" y="-31.242" size="1.778" layer="94">LCD</text>
+<wire x1="15.24" y1="-38.1" x2="22.86" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="-30.48" x2="15.24" y2="-22.86" width="0.1524" layer="94"/>
+<text x="15.748" y="-30.734" size="1.778" layer="94">/28</text>
+<wire x1="-80.01" y1="83.82" x2="-87.63" y2="91.44" width="0.1524" layer="94"/>
+<wire x1="-87.63" y1="91.44" x2="-82.55" y2="91.44" width="0.1524" layer="94"/>
+<wire x1="-82.55" y1="91.44" x2="-82.55" y2="99.06" width="0.1524" layer="94"/>
+<wire x1="-82.55" y1="99.06" x2="-87.63" y2="99.06" width="0.1524" layer="94"/>
+<wire x1="-87.63" y1="99.06" x2="-80.01" y2="106.68" width="0.1524" layer="94"/>
+<wire x1="-80.01" y1="106.68" x2="-72.39" y2="99.06" width="0.1524" layer="94"/>
+<wire x1="-72.39" y1="99.06" x2="-77.47" y2="99.06" width="0.1524" layer="94"/>
+<wire x1="-77.47" y1="99.06" x2="-77.47" y2="91.44" width="0.1524" layer="94"/>
+<wire x1="-77.47" y1="91.44" x2="-72.39" y2="91.44" width="0.1524" layer="94"/>
+<wire x1="-72.39" y1="91.44" x2="-80.01" y2="83.82" width="0.1524" layer="94"/>
+<wire x1="-93.98" y1="109.22" x2="-66.04" y2="109.22" width="0.1524" layer="94"/>
+<wire x1="-66.04" y1="109.22" x2="-66.04" y2="119.38" width="0.1524" layer="94"/>
+<wire x1="-66.04" y1="119.38" x2="-93.98" y2="119.38" width="0.1524" layer="94"/>
+<wire x1="-93.98" y1="119.38" x2="-93.98" y2="109.22" width="0.1524" layer="94"/>
+<text x="-86.36" y="114.3" size="1.778" layer="94">1 MB PSRAM</text>
+<text x="-82.296" y="100.33" size="1.778" layer="94">/41</text>
+<text x="-85.344" y="110.998" size="1.778" layer="94">(16 bit)</text>
+<wire x1="-19.05" y1="83.82" x2="-26.67" y2="90.17" width="0.1524" layer="94"/>
+<wire x1="-26.67" y1="90.17" x2="-21.59" y2="90.17" width="0.1524" layer="94"/>
+<wire x1="-21.59" y1="90.17" x2="-21.59" y2="97.79" width="0.1524" layer="94"/>
+<wire x1="-21.59" y1="97.79" x2="-26.67" y2="97.79" width="0.1524" layer="94"/>
+<wire x1="-26.67" y1="97.79" x2="-19.05" y2="105.41" width="0.1524" layer="94"/>
+<wire x1="-19.05" y1="105.41" x2="-11.43" y2="97.79" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="97.79" x2="-16.51" y2="97.79" width="0.1524" layer="94"/>
+<wire x1="-16.51" y1="97.79" x2="-16.51" y2="90.17" width="0.1524" layer="94"/>
+<wire x1="-16.51" y1="90.17" x2="-11.43" y2="90.17" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="90.17" x2="-19.05" y2="83.82" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="109.22" x2="-5.08" y2="109.22" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="109.22" x2="-5.08" y2="119.38" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="119.38" x2="-33.02" y2="119.38" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="119.38" x2="-33.02" y2="109.22" width="0.1524" layer="94"/>
+<text x="-27.94" y="114.3" size="1.778" layer="94">32 MB SDRAM</text>
+<text x="-21.336" y="99.06" size="1.778" layer="94">/55</text>
+<text x="-24.384" y="110.998" size="1.778" layer="94">(32 bit)</text>
+<text x="-71.12" y="109.982" size="1.778" layer="94">3.3v</text>
+<text x="-10.16" y="110.236" size="1.778" layer="94">3.3v</text>
+<wire x1="22.86" y1="-40.64" x2="0" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="0" y1="-40.64" x2="1.27" y2="-39.37" width="0.1524" layer="94"/>
+<wire x1="0" y1="-40.64" x2="1.27" y2="-41.91" width="0.1524" layer="94"/>
+<text x="5.08" y="-43.18" size="1.778" layer="94">HDMI_IRQ</text>
+<wire x1="27.94" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="94"/>
+<wire x1="45.72" y1="40.64" x2="45.72" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="45.72" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="20.32" x2="27.94" y2="40.64" width="0.1524" layer="94"/>
+<text x="30.48" y="27.686" size="1.778" layer="94">POWER SW</text>
+<wire x1="0" y1="15.24" x2="66.04" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="15.24" x2="66.04" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="5.08" x2="66.04" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="10.16" x2="0" y2="15.24" width="0.1524" layer="94"/>
+<text x="2.54" y="11.938" size="1.778" layer="94">USB FS</text>
+<wire x1="66.04" y1="5.08" x2="73.66" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="73.66" y1="12.7" x2="66.04" y2="20.32" width="0.1524" layer="94"/>
+<text x="66.548" y="12.446" size="1.778" layer="94">/5</text>
+<wire x1="22.86" y1="27.94" x2="0" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="0" y1="27.94" x2="1.27" y2="29.21" width="0.1524" layer="94"/>
+<wire x1="0" y1="27.94" x2="1.27" y2="26.67" width="0.1524" layer="94"/>
+<text x="2.54" y="25.4" size="1.778" layer="94">CURRENT_OVER</text>
+<wire x1="27.94" y1="81.28" x2="45.72" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="45.72" y1="81.28" x2="45.72" y2="55.88" width="0.1524" layer="94"/>
+<wire x1="45.72" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="55.88" x2="27.94" y2="81.28" width="0.1524" layer="94"/>
+<text x="30.48" y="73.406" size="1.778" layer="94">LAN8742A</text>
+<text x="42.672" y="21.336" size="1.778" layer="94">5v</text>
+<wire x1="0" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="71.12" x2="15.24" y2="76.2" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="60.96" x2="15.24" y2="66.04" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="66.04" x2="0" y2="66.04" width="0.1524" layer="94"/>
+<wire x1="0" y1="66.04" x2="0" y2="71.12" width="0.1524" layer="94"/>
+<text x="2.54" y="67.818" size="1.778" layer="94">RMII</text>
+<wire x1="15.24" y1="60.96" x2="22.86" y2="68.58" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="68.58" x2="15.24" y2="76.2" width="0.1524" layer="94"/>
+<text x="15.748" y="68.326" size="1.778" layer="94">/8</text>
+<wire x1="0" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="35.56" x2="21.59" y2="34.29" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="35.56" x2="21.59" y2="36.83" width="0.1524" layer="94"/>
+<text x="20.32" y="38.1" size="1.778" layer="94" rot="R180">VBUS_ENABLE</text>
+<wire x1="-19.05" y1="-68.58" x2="-26.67" y2="-62.23" width="0.1524" layer="94"/>
+<wire x1="-26.67" y1="-62.23" x2="-21.59" y2="-62.23" width="0.1524" layer="94"/>
+<wire x1="-21.59" y1="-62.23" x2="-21.59" y2="-54.61" width="0.1524" layer="94"/>
+<wire x1="-21.59" y1="-54.61" x2="-26.67" y2="-54.61" width="0.1524" layer="94"/>
+<wire x1="-26.67" y1="-54.61" x2="-19.05" y2="-46.99" width="0.1524" layer="94"/>
+<wire x1="-19.05" y1="-46.99" x2="-11.43" y2="-54.61" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="-54.61" x2="-16.51" y2="-54.61" width="0.1524" layer="94"/>
+<wire x1="-16.51" y1="-54.61" x2="-16.51" y2="-62.23" width="0.1524" layer="94"/>
+<wire x1="-16.51" y1="-62.23" x2="-11.43" y2="-62.23" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="-62.23" x2="-19.05" y2="-68.58" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="-81.28" x2="-5.08" y2="-81.28" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-81.28" x2="-5.08" y2="-71.12" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-71.12" x2="-33.02" y2="-71.12" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="-71.12" x2="-33.02" y2="-81.28" width="0.1524" layer="94"/>
+<text x="-22.86" y="-76.2" size="1.778" layer="94">SD Card</text>
+<text x="-20.32" y="-53.34" size="1.778" layer="94">/7</text>
+<text x="-10.414" y="-73.914" size="1.778" layer="94">@48</text>
+<text x="-10.16" y="-80.264" size="1.778" layer="94">3.3v</text>
+<text x="-12.7" y="78.74" size="1.778" layer="94">@200</text>
+<text x="-73.66" y="78.74" size="1.778" layer="94">@216</text>
+<text x="31.75" y="36.068" size="1.778" layer="94">NCP380</text>
+<wire x1="78.74" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="94"/>
+<wire x1="88.9" y1="25.4" x2="88.9" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="88.9" y1="2.54" x2="78.74" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="78.74" y1="2.54" x2="78.74" y2="25.4" width="0.1524" layer="94"/>
+<text x="30.226" y="11.938" size="1.778" layer="94">(host mode)</text>
+<text x="80.264" y="13.208" size="1.778" layer="94">USB 'A'</text>
+<text x="30.48" y="66.04" size="1.778" layer="94">RMII PHY</text>
+<wire x1="78.74" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="88.9" y1="81.28" x2="88.9" y2="55.88" width="0.1524" layer="94"/>
+<wire x1="88.9" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="94"/>
+<wire x1="78.74" y1="55.88" x2="78.74" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="50.8" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="71.12" x2="66.04" y2="76.2" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="60.96" x2="66.04" y2="66.04" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="94"/>
+<wire x1="50.8" y1="66.04" x2="50.8" y2="71.12" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="60.96" x2="73.66" y2="68.58" width="0.1524" layer="94"/>
+<wire x1="73.66" y1="68.58" x2="66.04" y2="76.2" width="0.1524" layer="94"/>
+<text x="81.28" y="68.58" size="1.778" layer="94">RJ45</text>
+<wire x1="78.74" y1="-20.32" x2="88.9" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="88.9" y1="-20.32" x2="88.9" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="88.9" y1="-45.72" x2="78.74" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="78.74" y1="-45.72" x2="78.74" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="50.8" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="-30.48" x2="66.04" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="-40.64" x2="66.04" y2="-35.56" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="-35.56" x2="50.8" y2="-35.56" width="0.1524" layer="94"/>
+<wire x1="50.8" y1="-35.56" x2="50.8" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="66.04" y1="-40.64" x2="73.66" y2="-33.02" width="0.1524" layer="94"/>
+<wire x1="73.66" y1="-33.02" x2="66.04" y2="-25.4" width="0.1524" layer="94"/>
+<text x="81.28" y="-33.02" size="1.778" layer="94">HDMI</text>
+<wire x1="48.26" y1="35.56" x2="80.01" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="80.01" y1="35.56" x2="82.55" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="82.55" y1="35.56" x2="83.82" y2="34.29" width="0.1524" layer="94" curve="-90"/>
+<wire x1="83.82" y1="34.29" x2="83.82" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="83.82" y1="27.94" x2="85.09" y2="29.21" width="0.1524" layer="94"/>
+<wire x1="83.82" y1="27.94" x2="82.55" y2="29.21" width="0.1524" layer="94"/>
+<text x="-40.386" y="26.416" size="1.778" layer="94" rot="R180">SPI4</text>
+<text x="-40.64" y="69.85" size="1.778" layer="94" rot="R180">SPI5</text>
+<wire x1="-124.46" y1="63.5" x2="-124.46" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="-124.46" y1="78.74" x2="-137.16" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="78.74" x2="-137.16" y2="63.5" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="63.5" x2="-124.46" y2="63.5" width="0.1524" layer="94"/>
+<text x="-133.604" y="70.358" size="1.778" layer="94">DB9</text>
+<wire x1="-124.46" y1="45.72" x2="-124.46" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="-124.46" y1="60.96" x2="-137.16" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="60.96" x2="-137.16" y2="45.72" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="45.72" x2="-124.46" y2="45.72" width="0.1524" layer="94"/>
+<text x="-133.604" y="52.578" size="1.778" layer="94">DB9</text>
+<wire x1="33.02" y1="-58.42" x2="33.02" y2="-93.98" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="-93.98" x2="27.94" y2="-99.06" width="0.1524" layer="94" curve="-90"/>
+<wire x1="27.94" y1="-99.06" x2="-116.84" y2="-99.06" width="0.1524" layer="94"/>
+<wire x1="-116.84" y1="-106.68" x2="30.48" y2="-106.68" width="0.1524" layer="94"/>
+<wire x1="30.48" y1="-106.68" x2="40.64" y2="-93.98" width="0.1524" layer="94" curve="90"/>
+<wire x1="40.64" y1="-93.98" x2="40.64" y2="-58.42" width="0.1524" layer="94"/>
+<wire x1="-127" y1="-71.12" x2="-127" y2="-93.98" width="0.1524" layer="94"/>
+<wire x1="-127" y1="-93.98" x2="-121.92" y2="-99.06" width="0.1524" layer="94" curve="90"/>
+<wire x1="-121.92" y1="-99.06" x2="-116.84" y2="-99.06" width="0.1524" layer="94"/>
+<wire x1="-116.84" y1="-106.68" x2="-124.46" y2="-106.68" width="0.1524" layer="94"/>
+<wire x1="-124.46" y1="-106.68" x2="-134.62" y2="-93.98" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-134.62" y1="-93.98" x2="-134.62" y2="-71.12" width="0.1524" layer="94"/>
+<wire x1="40.64" y1="-58.42" x2="45.72" y2="-58.42" width="0.1524" layer="94"/>
+<wire x1="45.72" y1="-58.42" x2="36.83" y2="-50.8" width="0.1524" layer="94"/>
+<wire x1="36.83" y1="-50.8" x2="27.94" y2="-58.42" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="-58.42" x2="33.02" y2="-58.42" width="0.1524" layer="94"/>
+<wire x1="-134.62" y1="-71.12" x2="-134.62" y2="-55.88" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-127" y1="-71.12" x2="-127" y2="-66.04" width="0.1524" layer="94" style="shortdash"/>
+<text x="-58.42" y="-104.14" size="1.778" layer="94">AUDIO (L, R, SYSTEM)</text>
+<text x="134.62" y="78.74" size="1.778" layer="94">Power budgets
+
+5v supply @ 10A
+  - Total power supply is 50W
+
+3.3v from 5V, max power provided= 1.5A / Vreg
+  - One Vreg per slot
+  - One Vreg for everything else
+  - Max power consumed = 4W * 7 = 32W 
+
+1.8v from 5V, max power provided = 1.5A
+  - Max power consumed = 4W 
+
+
+Main board current sinks (in mA)</text>
+<text x="162.56" y="76.2" size="1.778" layer="94" rot="R180">'PIO' STM32F7
+'XIO' STM32F7
+IS66WV51216EBLL
+MAX3232 x2
+LEDs x6
+IS42S32800J
+LAN8742A-CZ
+NCP380
+
+Total</text>
+<text x="172.72" y="76.2" size="1.778" layer="94" rot="R180">320 
+320
+25
+4
+20
+190
+50
+1
+
+910</text>
+<text x="162.56" y="-104.14" size="2.54" layer="94">Block Diagram</text>
+</plain>
+<instances>
+<instance part="FRAME5" gate="G$1" x="-180.34" y="-124.46"/>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
 <sheet>
 <description>XIO Power</description>
 <plain>
@@ -20086,13 +20466,15 @@ Mouser: &lt;a href=https://www.mouser.com/ProductDetail/ISSI/IS42S32800J-7TL?qs=
 <text x="149.86" y="-106.68" size="2.54" layer="94">XIO POWER</text>
 <text x="-170.18" y="-111.76" size="1.778" layer="97"> AP7363-330-13    : fixed, 3.3vout, 5.5vin, 1.5A</text>
 <text x="-180.34" y="-33.02" size="1.778" layer="97">Regulated 5v supply at 10A. (JYH05010000B)
-Use copper strip 20mm wide to distribute to various vregs</text>
+Internal copper strip 14mm wide to distribute to various vregs
+ -&gt; 6 degree temperature rise</text>
 <text x="134.62" y="50.8" size="1.778" layer="97">Caps placed close 
 to VDDA pin</text>
 <text x="-12.7" y="-25.4" size="1.778" layer="97">Caps placed close 
 to VCAP pins</text>
-<text x="71.12" y="-76.2" size="2.54" layer="97">Question: Should I have synchronised clocks via a clock-generator ?
- - Will the vidbus latch signals on an un-matched clock ?</text>
+<text x="60.96" y="-83.82" size="2.54" layer="97">Question: Should I have synchronised clocks via a clock-generator ?
+ - Will the vidbus latch signals on an un-matched clock ?
+ - CPUs are ideally running at different speeds anyway (200, 216 MHz) </text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="-129.54" y="104.14"/>
@@ -21867,6 +22249,8 @@ for I2C</text>
 <instance part="SPI_EXT_2" gate="A" x="-5.08" y="22.86"/>
 <instance part="XIO" gate="-SPI-I2C" x="86.36" y="68.58"/>
 <instance part="XIO" gate="-XSPI" x="86.36" y="-45.72"/>
+<instance part="XSP1_TST" gate="A" x="-22.86" y="-33.02" rot="R180"/>
+<instance part="XSPI2_TST" gate="A" x="-22.86" y="-50.8" rot="R180"/>
 </instances>
 <busses>
 <bus name="SPI_I2C:I2C_SCL,I2C_SDA,SPI_CLK,SPI_IRQ[0..9],SPI_MISO,SPI_MOSI,SPI_SS[0..9]">
@@ -21886,6 +22270,9 @@ for I2C</text>
 <wire x1="38.1" y1="-27.94" x2="35.56" y2="-25.4" width="0.762" layer="92"/>
 <wire x1="35.56" y1="-25.4" x2="17.78" y2="-25.4" width="0.762" layer="92"/>
 <label x="17.78" y="-24.384" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-25.4" x2="2.54" y2="-25.4" width="0.762" layer="92"/>
+<wire x1="2.54" y1="-25.4" x2="0" y2="-27.94" width="0.762" layer="92"/>
+<wire x1="0" y1="-27.94" x2="0" y2="-38.1" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="XSPI2:XSPI2_CLK,XSPI2_MISO,XSPI2_MOSI,XSPI2_SSEL">
@@ -21894,6 +22281,9 @@ for I2C</text>
 <wire x1="38.1" y1="-45.72" x2="35.56" y2="-43.18" width="0.762" layer="92"/>
 <wire x1="35.56" y1="-43.18" x2="17.78" y2="-43.18" width="0.762" layer="92"/>
 <label x="17.78" y="-42.418" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-43.18" x2="2.54" y2="-43.18" width="0.762" layer="92"/>
+<wire x1="2.54" y1="-43.18" x2="0" y2="-45.72" width="0.762" layer="92"/>
+<wire x1="0" y1="-45.72" x2="0" y2="-55.88" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -22243,6 +22633,12 @@ for I2C</text>
 <label x="43.18" y="-33.02" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-XSPI" pin="PA5@54"/>
 </segment>
+<segment>
+<wire x1="0" y1="-27.94" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-17.78" y="-30.48" size="1.778" layer="95"/>
+<pinref part="XSP1_TST" gate="A" pin="4"/>
+</segment>
 </net>
 <net name="XSPI1_MISO" class="0">
 <segment>
@@ -22250,6 +22646,12 @@ for I2C</text>
 <wire x1="40.64" y1="-35.56" x2="63.5" y2="-35.56" width="0.1524" layer="91"/>
 <label x="43.18" y="-35.56" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-XSPI" pin="PA6@55"/>
+</segment>
+<segment>
+<wire x1="0" y1="-30.48" x2="-2.54" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-33.02" x2="-2.54" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-17.78" y="-33.02" size="1.778" layer="95"/>
+<pinref part="XSP1_TST" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="XSPI1_MOSI" class="0">
@@ -22259,6 +22661,12 @@ for I2C</text>
 <label x="43.18" y="-38.1" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-XSPI" pin="PA7@56"/>
 </segment>
+<segment>
+<wire x1="0" y1="-33.02" x2="-2.54" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-35.56" x2="-2.54" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-17.78" y="-35.56" size="1.778" layer="95"/>
+<pinref part="XSP1_TST" gate="A" pin="2"/>
+</segment>
 </net>
 <net name="XSPI1_SSEL" class="0">
 <segment>
@@ -22266,6 +22674,12 @@ for I2C</text>
 <wire x1="40.64" y1="-40.64" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
 <label x="43.18" y="-40.64" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-XSPI" pin="PA4@53"/>
+</segment>
+<segment>
+<wire x1="0" y1="-35.56" x2="-2.54" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-38.1" x2="-2.54" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-17.78" y="-38.1" size="1.778" layer="95"/>
+<pinref part="XSP1_TST" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="XSPI2_CLK" class="0">
@@ -22275,6 +22689,12 @@ for I2C</text>
 <label x="43.18" y="-50.8" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-XSPI" pin="PF7@28"/>
 </segment>
+<segment>
+<wire x1="0" y1="-45.72" x2="-2.54" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-48.26" x2="-2.54" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-17.78" y="-48.26" size="1.778" layer="95"/>
+<pinref part="XSPI2_TST" gate="A" pin="4"/>
+</segment>
 </net>
 <net name="XSPI2_MISO" class="0">
 <segment>
@@ -22282,6 +22702,12 @@ for I2C</text>
 <wire x1="40.64" y1="-53.34" x2="63.5" y2="-53.34" width="0.1524" layer="91"/>
 <label x="43.18" y="-53.34" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-XSPI" pin="PF8@29"/>
+</segment>
+<segment>
+<wire x1="0" y1="-48.26" x2="-2.54" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-50.8" x2="-2.54" y2="-50.8" width="0.1524" layer="91"/>
+<label x="-17.78" y="-50.8" size="1.778" layer="95"/>
+<pinref part="XSPI2_TST" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="XSPI2_MOSI" class="0">
@@ -22291,6 +22717,12 @@ for I2C</text>
 <label x="43.18" y="-55.88" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-XSPI" pin="PF9@30"/>
 </segment>
+<segment>
+<wire x1="0" y1="-50.8" x2="-2.54" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-53.34" x2="-2.54" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-17.78" y="-53.34" size="1.778" layer="95"/>
+<pinref part="XSPI2_TST" gate="A" pin="2"/>
+</segment>
 </net>
 <net name="XSPI2_SSEL" class="0">
 <segment>
@@ -22298,6 +22730,12 @@ for I2C</text>
 <wire x1="40.64" y1="-58.42" x2="63.5" y2="-58.42" width="0.1524" layer="91"/>
 <label x="43.18" y="-58.42" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-XSPI" pin="PF6@27"/>
+</segment>
+<segment>
+<wire x1="0" y1="-53.34" x2="-2.54" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-55.88" x2="-2.54" y2="-55.88" width="0.1524" layer="91"/>
+<label x="-17.78" y="-55.88" size="1.778" layer="95"/>
+<pinref part="XSPI2_TST" gate="A" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -22473,6 +22911,9 @@ unconnected</text>
 <description>XIO PSRAM &amp; VHDCI</description>
 <plain>
 <text x="177.8" y="-48.26" size="2.1844" layer="94">XIO PSRAM, VHDCI</text>
+<text x="-71.12" y="-35.56" size="1.778" layer="97">PSRAM access time guaranteed at 60ns
+If we could use SDRAM, could bump the memory to 32MBytes. 
+- does SDRAM refresh impact access time too much ?</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="-165.1" y="-68.58"/>
@@ -32778,46 +33219,46 @@ manual. Page 1592</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,6,-167.64,10.16,IC8P,VCC,+3V3,,,"/>
-<approved hash="104,6,-152.4,10.16,IC9P,VCC,+3V3,,,"/>
-<approved hash="104,13,-38.1,-48.26,J1,VDD,+3V3,,,"/>
-<approved hash="104,13,-38.1,-53.34,J1,VSS,GND,,,"/>
-<approved hash="104,13,-38.1,-58.42,J1,SH1,GND,,,"/>
-<approved hash="104,13,-38.1,-60.96,J1,SH2,GND,,,"/>
-<approved hash="104,13,-38.1,-63.5,J1,SH3,GND,,,"/>
-<approved hash="104,13,-38.1,-66.04,J1,SH4,GND,,,"/>
-<approved hash="104,13,-38.1,-68.58,J1,SH5,GND,,,"/>
-<approved hash="104,15,73.66,20.32,CN2,+5V,N$69,,,"/>
-<approved hash="104,15,66.04,-71.12,CN2,TX0_SHIELD,GND,,,"/>
-<approved hash="104,15,68.58,-71.12,CN2,TX1_SHIELD,GND,,,"/>
-<approved hash="104,15,71.12,-71.12,CN2,TX2_SHIELD,GND,,,"/>
-<approved hash="104,15,63.5,-71.12,CN2,TXC_SHIELD,GND,,,"/>
-<approved hash="104,17,-121.92,-2.54,CN4,VBUS,N$96,,,"/>
-<approved hash="113,1,0.531,3.071,FRAME2,,,,,"/>
-<approved hash="113,7,61.491,-12.169,FRAME6,,,,,"/>
-<approved hash="113,9,-7.089,3.071,FRAME7,,,,,"/>
-<approved hash="113,2,31.011,-4.549,FRAME9,,,,,"/>
-<approved hash="113,11,-2.009,-7.089,FRAME11,,,,,"/>
-<approved hash="113,12,3.071,3.071,FRAME12,,,,,"/>
-<approved hash="113,6,-2.009,10.691,FRAME13,,,,,"/>
-<approved hash="113,13,-2.009,10.691,FRAME14,,,,,"/>
-<approved hash="113,14,5.611,10.691,FRAME15,,,,,"/>
-<approved hash="113,15,-2.009,-2.009,FRAME16,,,,,"/>
-<approved hash="113,16,8.151,10.691,FRAME17,,,,,"/>
-<approved hash="113,17,8.151,8.151,FRAME18,,,,,"/>
-<approved hash="113,18,3.071,5.611,FRAME19,,,,,"/>
-<approved hash="113,3,-6.94754,91.6661,I2C_EXT,,,,,"/>
-<approved hash="113,6,-17.78,-6.09705,X8,,,,,"/>
-<approved hash="113,6,-20.32,-56.8971,X9,,,,,"/>
-<approved hash="113,10,5.611,3.071,FRAME20,,,,,"/>
-<approved hash="113,3,-2.009,10.691,FRAME3,,,,,"/>
-<approved hash="113,4,-4.549,-4.549,FRAME4,,,,,"/>
-<approved hash="113,5,28.471,61.491,FRAME8,,,,,"/>
-<approved hash="113,3,-5.50948,70.0761,SPI_EXT_0,,,,,"/>
-<approved hash="113,3,-5.50948,47.2161,SPI_EXT_1,,,,,"/>
-<approved hash="113,3,-5.50948,24.3561,SPI_EXT_2,,,,,"/>
-<approved hash="113,8,112.291,48.791,FRAME1,,,,,"/>
-<approved hash="115,15,156.21,17.78,LCD_CLK,,,,,"/>
+<approved hash="104,7,-167.64,10.16,IC8P,VCC,+3V3,,,"/>
+<approved hash="104,7,-152.4,10.16,IC9P,VCC,+3V3,,,"/>
+<approved hash="104,14,-38.1,-48.26,J1,VDD,+3V3,,,"/>
+<approved hash="104,14,-38.1,-53.34,J1,VSS,GND,,,"/>
+<approved hash="104,14,-38.1,-58.42,J1,SH1,GND,,,"/>
+<approved hash="104,14,-38.1,-60.96,J1,SH2,GND,,,"/>
+<approved hash="104,14,-38.1,-63.5,J1,SH3,GND,,,"/>
+<approved hash="104,14,-38.1,-66.04,J1,SH4,GND,,,"/>
+<approved hash="104,14,-38.1,-68.58,J1,SH5,GND,,,"/>
+<approved hash="104,16,73.66,20.32,CN2,+5V,N$69,,,"/>
+<approved hash="104,16,66.04,-71.12,CN2,TX0_SHIELD,GND,,,"/>
+<approved hash="104,16,68.58,-71.12,CN2,TX1_SHIELD,GND,,,"/>
+<approved hash="104,16,71.12,-71.12,CN2,TX2_SHIELD,GND,,,"/>
+<approved hash="104,16,63.5,-71.12,CN2,TXC_SHIELD,GND,,,"/>
+<approved hash="104,18,-121.92,-2.54,CN4,VBUS,N$96,,,"/>
+<approved hash="113,2,0.531,3.071,FRAME2,,,,,"/>
+<approved hash="113,8,61.491,-12.169,FRAME6,,,,,"/>
+<approved hash="113,10,-7.089,3.071,FRAME7,,,,,"/>
+<approved hash="113,3,31.011,-4.549,FRAME9,,,,,"/>
+<approved hash="113,12,-2.009,-7.089,FRAME11,,,,,"/>
+<approved hash="113,13,3.071,3.071,FRAME12,,,,,"/>
+<approved hash="113,7,-2.009,10.691,FRAME13,,,,,"/>
+<approved hash="113,14,-2.009,10.691,FRAME14,,,,,"/>
+<approved hash="113,15,5.611,10.691,FRAME15,,,,,"/>
+<approved hash="113,16,-2.009,-2.009,FRAME16,,,,,"/>
+<approved hash="113,17,8.151,10.691,FRAME17,,,,,"/>
+<approved hash="113,18,8.151,8.151,FRAME18,,,,,"/>
+<approved hash="113,19,3.071,5.611,FRAME19,,,,,"/>
+<approved hash="113,4,-6.94754,91.6661,I2C_EXT,,,,,"/>
+<approved hash="113,7,-17.78,-6.09705,X8,,,,,"/>
+<approved hash="113,7,-20.32,-56.8971,X9,,,,,"/>
+<approved hash="113,11,5.611,3.071,FRAME20,,,,,"/>
+<approved hash="113,4,-2.009,10.691,FRAME3,,,,,"/>
+<approved hash="113,5,-4.549,-4.549,FRAME4,,,,,"/>
+<approved hash="113,6,28.471,61.491,FRAME8,,,,,"/>
+<approved hash="113,4,-5.50948,70.0761,SPI_EXT_0,,,,,"/>
+<approved hash="113,4,-5.50948,47.2161,SPI_EXT_1,,,,,"/>
+<approved hash="113,4,-5.50948,24.3561,SPI_EXT_2,,,,,"/>
+<approved hash="113,9,112.291,48.791,FRAME1,,,,,"/>
+<approved hash="115,16,156.21,17.78,LCD_CLK,,,,,"/>
 </errors>
 </schematic>
 </drawing>
