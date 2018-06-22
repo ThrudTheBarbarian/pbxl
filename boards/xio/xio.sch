@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -20103,10 +20103,10 @@ Mouser: &lt;a href=https://www.mouser.com/ProductDetail/ISSI/IS42S32800J-7TL?qs=
 <sheets>
 <sheet>
 <plain>
-<wire x1="-137.16" y1="35.56" x2="-124.46" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="-147.32" y1="35.56" x2="-124.46" y2="35.56" width="0.1524" layer="94"/>
 <wire x1="-124.46" y1="35.56" x2="-124.46" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-124.46" y1="-12.7" x2="-137.16" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-137.16" y1="-12.7" x2="-137.16" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="-124.46" y1="-12.7" x2="-147.32" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-147.32" y1="-12.7" x2="-147.32" y2="35.56" width="0.1524" layer="94"/>
 <text x="-134.62" y="9.906" size="1.778" layer="94">VHDCI</text>
 <text x="-128.016" y="-11.938" size="1.778" layer="94">5v</text>
 <wire x1="-93.98" y1="81.28" x2="-93.98" y2="2.54" width="0.1524" layer="94"/>
@@ -32643,7 +32643,7 @@ Differential impedance</text>
 <label x="104.14" y="-52.832" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXC_P" class="3">
+<net name="TXC_P" class="0">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TXC+@28"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TXC+"/>
@@ -32651,7 +32651,7 @@ Differential impedance</text>
 <label x="27.94" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXC_N" class="3">
+<net name="TXC_N" class="0">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TXC-"/>
 <pinref part="HDMI" gate="G$1" pin="TXC-@27"/>
@@ -32659,7 +32659,7 @@ Differential impedance</text>
 <label x="27.94" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX0_P" class="3">
+<net name="TX0_P" class="0">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TX0+@31"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX0+"/>
@@ -32667,7 +32667,7 @@ Differential impedance</text>
 <label x="27.94" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX0_N" class="3">
+<net name="TX0_N" class="0">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX0-"/>
 <pinref part="HDMI" gate="G$1" pin="TX0-@30"/>
@@ -32675,7 +32675,7 @@ Differential impedance</text>
 <label x="27.94" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX1_P" class="3">
+<net name="TX1_P" class="0">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TX1+@35"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX1+"/>
@@ -32683,7 +32683,7 @@ Differential impedance</text>
 <label x="27.94" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX1_N" class="3">
+<net name="TX1_N" class="0">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX1-"/>
 <pinref part="HDMI" gate="G$1" pin="TX1-@34"/>
@@ -32691,7 +32691,7 @@ Differential impedance</text>
 <label x="27.94" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX2_P" class="3">
+<net name="TX2_P" class="0">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TX2+@38"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX2+"/>
@@ -32699,7 +32699,7 @@ Differential impedance</text>
 <label x="27.94" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX2_N" class="3">
+<net name="TX2_N" class="0">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX2-"/>
 <pinref part="HDMI" gate="G$1" pin="TX2-@37"/>
@@ -33311,7 +33311,7 @@ Differential impedance</text>
 <label x="-14.732" y="6.604" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ETH_TX_P" class="3">
+<net name="ETH_TX_P" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="TX+"/>
 <pinref part="R77" gate="G$1" pin="1"/>
@@ -33323,7 +33323,7 @@ Differential impedance</text>
 <label x="2.54" y="69.088" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ETH_TX_N" class="3">
+<net name="ETH_TX_N" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="TX-"/>
 <pinref part="R78" gate="G$1" pin="1"/>
@@ -33335,7 +33335,7 @@ Differential impedance</text>
 <label x="2.54" y="43.688" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ETH_RX_P" class="3">
+<net name="ETH_RX_P" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="RX+"/>
 <pinref part="R79" gate="G$1" pin="1"/>
@@ -33347,7 +33347,7 @@ Differential impedance</text>
 <label x="2.54" y="15.748" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ETH_RX_N" class="3">
+<net name="ETH_RX_N" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="RX-"/>
 <pinref part="R80" gate="G$1" pin="1"/>
