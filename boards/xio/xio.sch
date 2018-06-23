@@ -10987,62 +10987,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-0.795" y="2.62" size="0.4064" layer="25" ratio="10">&gt;NAME</text>
 <text x="-0.69" y="3.415" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SJ_2S">
-<description>Small solder jumper with big paste layer so it will short during reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.1524" layer="21"/>
-<wire x1="0.8" y1="1" x2="1.1" y2="0.75" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="0.75" x2="-0.8" y2="1" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="-0.75" x2="-0.8" y2="-1" width="0.1524" layer="21" curve="90.114706"/>
-<wire x1="0.8" y1="-1" x2="1.1" y2="-0.75" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.1" y1="-0.75" x2="1.1" y2="0.75" width="0.1524" layer="21"/>
-<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.1524" layer="21"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.1524" layer="21"/>
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1"/>
-<text x="-0.9498" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9498" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.2192" y1="-1.143" x2="1.2192" y2="1.143" layer="31"/>
-</package>
-<package name="SJ_2S-TRACE">
-<description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
-<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-0.381" y1="0" x2="0.381" y2="0" width="0.2032" layer="1"/>
-<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SJ_2S-NOTRACE">
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90.076445"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90.03821"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90.03821"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90.03821"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" layer="31"/>
-</package>
-<package name="SJ_2S-NO">
-<description>Small solder jumper with no paste layer so it will open after reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="F09G">
@@ -11077,15 +11021,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="9" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="5" x="-7.62" y="-5.08" visible="pad" length="middle" direction="pas"/>
 </symbol>
-<symbol name="SJ">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
 <symbol name="1.8V">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -11112,51 +11047,6 @@ Standard DB9 (D-Sub 9) serial connector. Can be used for CAN bus as well as RS48
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOLDERJUMPER" prefix="SJ">
-<description>&lt;b&gt;Solder Jumper&lt;/b&gt;
-Standard SMD solder jumper. Used to automate production. Two varients : Normally Open and Normally Closed are the same, but have different paste layers. NC will have a large amount of paste and should jumper during reflow.</description>
-<gates>
-<gate name="1" symbol="SJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="NC" package="SJ_2S">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TRACE" package="SJ_2S-TRACE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NC2" package="SJ_2S-NOTRACE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NO" package="SJ_2S-NO">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19861,7 +19751,6 @@ Mouser: &lt;a href=https://www.mouser.com/ProductDetail/ISSI/IS42S32800J-7TL?qs=
 <part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1k"/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1k"/>
 <part name="SUPPLY68" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
-<part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NC"/>
 <part name="SUPPLY69" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 <part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C78" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
@@ -20099,6 +19988,7 @@ Mouser: &lt;a href=https://www.mouser.com/ProductDetail/ISSI/IS42S32800J-7TL?qs=
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="2.7k"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -29462,11 +29352,8 @@ Slot ID</text>
 <text x="147.32" y="-116.84" size="1.778" layer="94">PIO POWER</text>
 <text x="106.68" y="30.48" size="1.778" layer="97">Caps placed close 
 to VDDA pin</text>
-<text x="50.8" y="-111.76" size="1.778" layer="97">Solder Jumper has extra
-paste defined, and will
-close on reflow 
-
-AGND only connects to GND at this point</text>
+<text x="58.42" y="-86.36" size="1.778" layer="97">AGND only connects 
+to GND at this point</text>
 <text x="-22.86" y="-40.64" size="1.778" layer="97" rot="R180">Caps placed close 
 to VCAP pins</text>
 <text x="83.82" y="-46.736" size="1.27" layer="97">(Load Cap 8pF)</text>
@@ -29512,7 +29399,6 @@ to VCAP pins</text>
 </instance>
 <instance part="SUPPLY66" gate="GND" x="63.5" y="76.2"/>
 <instance part="SUPPLY68" gate="G$1" x="55.88" y="-93.98"/>
-<instance part="SJ1" gate="1" x="45.72" y="-96.52" rot="R90"/>
 <instance part="PIO" gate="-POWER" x="22.86" y="-25.4"/>
 <instance part="Y1" gate="G$1" x="81.28" y="-38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="86.36" y="-35.56" size="1.27" layer="95" rot="R180"/>
@@ -29529,6 +29415,7 @@ to VCAP pins</text>
 <instance part="+3V8" gate="G$1" x="-86.36" y="-63.5" smashed="yes">
 <attribute name="VALUE" x="-83.82" y="-60.96" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="R20" gate="G$1" x="45.72" y="-96.52" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -29874,7 +29761,6 @@ to VCAP pins</text>
 <junction x="-35.56" y="-114.3"/>
 <wire x1="-55.88" y1="-114.3" x2="-48.26" y2="-114.3" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-114.3"/>
-<pinref part="SJ1" gate="1" pin="1"/>
 <wire x1="45.72" y1="-101.6" x2="45.72" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-POWER" pin="VSS@14"/>
 <pinref part="PIO" gate="-POWER" pin="VSS@25"/>
@@ -29895,6 +29781,7 @@ to VCAP pins</text>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="-109.22" x2="-68.58" y2="-114.3" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-114.3" x2="-55.88" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C22" gate="G$1" pin="2"/>
@@ -29930,12 +29817,12 @@ to VCAP pins</text>
 <segment>
 <pinref part="SUPPLY68" gate="G$1" pin="AGND"/>
 <wire x1="55.88" y1="-78.74" x2="55.88" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="1" pin="2"/>
 <wire x1="55.88" y1="-83.82" x2="55.88" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-91.44" x2="45.72" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-83.82" x2="55.88" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="55.88" y="-83.82"/>
 <pinref part="PIO" gate="-POWER" pin="VSSA@40"/>
+<pinref part="R20" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$128" class="0">
@@ -31546,60 +31433,68 @@ audio signals is +/- 0.4v</text>
 <pinref part="SDRAM" gate="G$1" pin="CKE@67"/>
 </segment>
 </net>
-<net name="N$97" class="0">
+<net name="STM_RAM_CLK" class="0">
 <segment>
 <wire x1="-22.86" y1="-20.32" x2="58.42" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-SDRAM" pin="PG8@135"/>
 <pinref part="SDRAM" gate="G$1" pin="CLK@68"/>
+<label x="10.16" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$98" class="0">
+<net name="STM_RAM_DQM0" class="0">
 <segment>
 <wire x1="-22.86" y1="-30.48" x2="58.42" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-SDRAM" pin="PE0@200"/>
 <pinref part="SDRAM" gate="G$1" pin="DQM0@16"/>
+<label x="10.16" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$99" class="0">
+<net name="STM_RAM_DQM1" class="0">
 <segment>
 <wire x1="58.42" y1="-33.02" x2="-22.86" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-SDRAM" pin="PE1@201"/>
 <pinref part="SDRAM" gate="G$1" pin="DQM1@71"/>
+<label x="10.16" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$100" class="0">
+<net name="STM_RAM_DQM2" class="0">
 <segment>
 <wire x1="-22.86" y1="-35.56" x2="58.42" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-SDRAM" pin="PI4@205"/>
 <pinref part="SDRAM" gate="G$1" pin="DQM2@28"/>
+<label x="10.16" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$101" class="0">
+<net name="STM_RAM_DQM3" class="0">
 <segment>
 <wire x1="58.42" y1="-38.1" x2="-22.86" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-SDRAM" pin="PI5@206"/>
 <pinref part="SDRAM" gate="G$1" pin="DQM3@59"/>
+<label x="10.16" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$102" class="0">
+<net name="STM_RAM_RAS" class="0">
 <segment>
 <wire x1="-22.86" y1="-45.72" x2="58.42" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-SDRAM" pin="PF11@70"/>
 <pinref part="SDRAM" gate="G$1" pin="!RAS!@19"/>
+<label x="10.16" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$103" class="0">
+<net name="STM_RAM_CAS" class="0">
 <segment>
 <wire x1="58.42" y1="-48.26" x2="-22.86" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-SDRAM" pin="PG15@191"/>
 <pinref part="SDRAM" gate="G$1" pin="!CAS!@18"/>
+<label x="10.16" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$104" class="0">
+<net name="STM_RAM_WE" class="0">
 <segment>
 <wire x1="-22.86" y1="-53.34" x2="58.42" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-SDRAM" pin="PC0@35"/>
 <pinref part="SDRAM" gate="G$1" pin="!WE!@17"/>
+<label x="10.16" y="-53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
