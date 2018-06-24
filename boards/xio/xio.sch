@@ -20359,6 +20359,31 @@ Total</text>
 
 910</text>
 <text x="162.56" y="-104.14" size="2.54" layer="94">Block Diagram</text>
+<wire x1="132.08" y1="121.92" x2="193.04" y2="121.92" width="0.1524" layer="94"/>
+<wire x1="193.04" y1="121.92" x2="193.04" y2="48.26" width="0.1524" layer="94"/>
+<wire x1="193.04" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="94"/>
+<wire x1="132.08" y1="48.26" x2="132.08" y2="121.92" width="0.1524" layer="94"/>
+<wire x1="147.32" y1="20.32" x2="177.8" y2="20.32" width="2.54" layer="94"/>
+<wire x1="147.32" y1="10.16" x2="175.26" y2="10.16" width="2.54" layer="94"/>
+<wire x1="175.26" y1="10.16" x2="177.8" y2="10.16" width="2.54" layer="94"/>
+<wire x1="177.8" y1="10.16" x2="175.26" y2="10.16" width="2.54" layer="94"/>
+<wire x1="147.32" y1="-5.08" x2="177.8" y2="-5.08" width="2.54" layer="94"/>
+<wire x1="147.32" y1="-15.24" x2="177.8" y2="-15.24" width="2.54" layer="94"/>
+<text x="154.94" y="2.54" size="1.778" layer="94">1.2mm core</text>
+<text x="154.94" y="-10.16" size="1.778" layer="94">0.2mm pre-preg</text>
+<text x="154.94" y="15.24" size="1.778" layer="94">0.2mm pre-preg</text>
+<text x="180.34" y="19.812" size="1.778" layer="94">0.035mm</text>
+<text x="180.34" y="-15.748" size="1.778" layer="94">0.035mm</text>
+<text x="180.34" y="9.652" size="1.778" layer="94">0.017mm</text>
+<text x="180.34" y="-5.588" size="1.778" layer="94">0.017mm</text>
+<text x="134.62" y="27.94" size="1.778" layer="94">Layer stack-up</text>
+<wire x1="132.08" y1="33.02" x2="193.04" y2="33.02" width="0.2032" layer="94"/>
+<wire x1="193.04" y1="33.02" x2="193.04" y2="-27.94" width="0.2032" layer="94"/>
+<wire x1="193.04" y1="-27.94" x2="132.08" y2="-27.94" width="0.2032" layer="94"/>
+<wire x1="132.08" y1="-27.94" x2="132.08" y2="33.02" width="0.2032" layer="94"/>
+<text x="137.16" y="9.398" size="1.778" layer="94">GND</text>
+<text x="137.16" y="-5.842" size="1.778" layer="94">Power</text>
+<text x="162.56" y="-25.4" size="1.778" layer="94">Dielectrict constant: 4.2</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="-180.34" y="-124.46"/>
