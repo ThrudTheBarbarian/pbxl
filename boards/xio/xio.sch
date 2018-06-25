@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12897,6 +12897,7 @@ DIN A3, landscape with location and doc. field</description>
 <pin name="PH1@33" x="48.26" y="-25.4" length="middle" rot="R180"/>
 <text x="27.94" y="-3.048" size="1.27" layer="94">Osc In</text>
 <text x="27.94" y="-25.908" size="1.27" layer="94">Osc Out</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-XIO-CFG">
 <wire x1="-17.78" y1="15.24" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
@@ -12996,6 +12997,7 @@ signals</text>
 <pin name="PD2@166" x="-22.86" y="10.16" length="middle"/>
 <pin name="PD3@167" x="-22.86" y="0" length="middle"/>
 <pin name="PD6@172" x="-22.86" y="-10.16" length="middle"/>
+<text x="-17.78" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-XIO-PIO">
 <description>STM32F777N interface to peripherals</description>
@@ -13253,6 +13255,7 @@ Bus</text>
 <text x="0.254" y="7.112" size="1.778" layer="94">WS</text>
 <text x="0.508" y="-0.508" size="1.778" layer="94">CK</text>
 <text x="0.508" y="-8.128" size="1.778" layer="94">SD</text>
+<text x="-17.78" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-VID-LCD">
 <pin name="PJ13@175" x="-27.94" y="-5.08" length="middle"/>
@@ -13306,6 +13309,7 @@ Bus</text>
 <text x="-5.08" y="-49.022" size="1.6764" layer="94">HSync</text>
 <pin name="PA0@43" x="-27.94" y="-53.34" length="middle"/>
 <text x="-5.08" y="-54.102" size="1.6764" layer="94">!IRQ!</text>
+<text x="-22.86" y="-60.96" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-VID-LED">
 <wire x1="-17.78" y1="10.16" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
@@ -13317,6 +13321,7 @@ Bus</text>
 <pin name="PD11@111" x="-22.86" y="10.16" length="middle"/>
 <pin name="PD12@112" x="-22.86" y="0" length="middle"/>
 <pin name="PD13@113" x="-22.86" y="-10.16" length="middle"/>
+<text x="-17.78" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-VID-NET">
 <description>STM32F777N Ethernet</description>
@@ -13352,6 +13357,7 @@ Bus</text>
 <text x="8.255" y="-52.705" size="1.27" layer="94" rot="R180">TX_D0</text>
 <text x="8.255" y="-55.245" size="1.27" layer="94" rot="R180">TX_D1</text>
 <pin name="PC1@36" x="25.4" y="55.88" length="middle" rot="R180"/>
+<text x="-17.78" y="-63.5" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-VID-PIO">
 <description>STM32F777N interface to peripherals</description>
@@ -13498,6 +13504,7 @@ Bus</text>
 <pin name="PI10@12" x="-22.86" y="-48.26" length="middle"/>
 <pin name="PI4@205" x="-22.86" y="-71.12" length="middle"/>
 <pin name="PI5@206" x="-22.86" y="-73.66" length="middle"/>
+<text x="-17.78" y="-93.98" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-VID-USB">
 <pin name="PA12@146" x="-25.4" y="-10.16" length="middle"/>
@@ -13591,6 +13598,7 @@ Bus</text>
 <pin name="PC2@37" x="-25.4" y="2.54" length="middle"/>
 <pin name="PC3@38" x="-25.4" y="0" length="middle"/>
 <pin name="PA3@50" x="-25.4" y="-2.54" length="middle"/>
+<text x="-20.32" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-VID-PWR">
 <description>STM32F777N Power and system config</description>
@@ -13652,6 +13660,7 @@ Bus</text>
 <pin name="PH1@33" x="48.26" y="-25.4" length="middle" rot="R180"/>
 <text x="27.94" y="-3.048" size="1.27" layer="94">Osc In</text>
 <text x="27.94" y="-25.908" size="1.27" layer="94">Osc Out</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
