@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23003,284 +23003,324 @@ If we could use SDRAM, could bump the memory to 32MBytes.
 </bus>
 </busses>
 <nets>
-<net name="N$19" class="0">
+<net name="XIO_RAM_A0" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A0@5"/>
 <wire x1="-68.58" y1="129.54" x2="-43.18" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF0@16"/>
+<label x="-63.5" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="XIO_RAM_A1" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A1@4"/>
 <wire x1="-68.58" y1="127" x2="-43.18" y2="127" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF1@17"/>
+<label x="-63.5" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$51" class="0">
+<net name="XIO_RAM_A2" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A2@3"/>
 <wire x1="-43.18" y1="124.46" x2="-68.58" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF2@18"/>
+<label x="-63.5" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$53" class="0">
+<net name="XIO_RAM_A3" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A3@2"/>
 <wire x1="-68.58" y1="121.92" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF3@22"/>
+<label x="-63.5" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$54" class="0">
+<net name="XIO_RAM_A4" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A4@1"/>
 <wire x1="-43.18" y1="119.38" x2="-68.58" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF4@23"/>
+<label x="-63.5" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$55" class="0">
+<net name="XIO_RAM_A5" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A5@44"/>
 <wire x1="-68.58" y1="116.84" x2="-43.18" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF5@24"/>
+<label x="-63.5" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$56" class="0">
+<net name="XIO_RAM_A6" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A6@43"/>
 <wire x1="-43.18" y1="114.3" x2="-68.58" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF12@71"/>
+<label x="-63.5" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$57" class="0">
+<net name="XIO_RAM_A7" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A7@42"/>
 <wire x1="-68.58" y1="111.76" x2="-43.18" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF13@74"/>
+<label x="-63.5" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$58" class="0">
+<net name="XIO_RAM_A8" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A8@27"/>
 <wire x1="-43.18" y1="109.22" x2="-68.58" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF14@75"/>
+<label x="-63.5" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$59" class="0">
+<net name="XIO_RAM_A9" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A9@26"/>
 <wire x1="-68.58" y1="106.68" x2="-43.18" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PF15@76"/>
+<label x="-63.5" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$60" class="0">
+<net name="XIO_RAM_A10" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A10@25"/>
 <wire x1="-43.18" y1="104.14" x2="-68.58" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PG0@77"/>
+<label x="-63.5" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$61" class="0">
+<net name="XIO_RAM_A11" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A11@24"/>
 <wire x1="-68.58" y1="101.6" x2="-43.18" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PG1@78"/>
+<label x="-63.5" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$63" class="0">
+<net name="XIO_RAM_A12" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A12@22"/>
 <wire x1="-43.18" y1="99.06" x2="-68.58" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PG2@129"/>
+<label x="-63.5" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$65" class="0">
+<net name="XIO_RAM_A13" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A13@21"/>
 <wire x1="-68.58" y1="96.52" x2="-43.18" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PG3@130"/>
+<label x="-63.5" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$66" class="0">
+<net name="XIO_RAM_A14" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A14@20"/>
 <wire x1="-43.18" y1="93.98" x2="-68.58" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PG4@131"/>
+<label x="-63.5" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$72" class="0">
+<net name="XIO_RAM_A15" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A15@19"/>
 <wire x1="-68.58" y1="91.44" x2="-43.18" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PG5@132"/>
+<label x="-63.5" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$73" class="0">
+<net name="XIO_RAM_A16" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A16@18"/>
 <wire x1="-43.18" y1="88.9" x2="-68.58" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD11@111"/>
+<label x="-63.5" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$105" class="0">
+<net name="XIO_RAM_A17" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A17@23"/>
 <wire x1="-68.58" y1="86.36" x2="-43.18" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD12@112"/>
+<label x="-63.5" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$106" class="0">
+<net name="XIO_RAM_A18" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="A18@28"/>
 <wire x1="-43.18" y1="83.82" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD13@113"/>
+<label x="-63.5" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$107" class="0">
+<net name="XIO_RAM_D0" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D0@7"/>
 <wire x1="-68.58" y1="76.2" x2="-43.18" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD14@116"/>
+<label x="-63.5" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$108" class="0">
+<net name="XIO_RAM_D1" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D1@8"/>
 <wire x1="-43.18" y1="73.66" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD15@117"/>
+<label x="-63.5" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$109" class="0">
+<net name="XIO_RAM_D2" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D2@9"/>
 <wire x1="-68.58" y1="71.12" x2="-43.18" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD0@164"/>
+<label x="-63.5" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$110" class="0">
+<net name="XIO_RAM_D3" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D3@10"/>
 <wire x1="-43.18" y1="68.58" x2="-68.58" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD1@165"/>
+<label x="-63.5" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$111" class="0">
+<net name="XIO_RAM_D4" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D4@13"/>
 <wire x1="-68.58" y1="66.04" x2="-43.18" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE7@79"/>
+<label x="-63.5" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$112" class="0">
+<net name="XIO_RAM_D5" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D5@14"/>
 <wire x1="-43.18" y1="63.5" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE8@80"/>
+<label x="-63.5" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$113" class="0">
+<net name="XIO_RAM_D6" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D6@15"/>
 <wire x1="-68.58" y1="60.96" x2="-43.18" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE9@81"/>
+<label x="-63.5" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$114" class="0">
+<net name="XIO_RAM_D7" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D7@16"/>
 <wire x1="-43.18" y1="58.42" x2="-68.58" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE10@84"/>
+<label x="-63.5" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$115" class="0">
+<net name="XIO_RAM_D8" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D8@29"/>
 <wire x1="-68.58" y1="55.88" x2="-43.18" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE11@85"/>
+<label x="-63.5" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$116" class="0">
+<net name="XIO_RAM_D9" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D9@30"/>
 <wire x1="-43.18" y1="53.34" x2="-68.58" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE12@86"/>
+<label x="-63.5" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$117" class="0">
+<net name="XIO_RAM_D10" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D10@31"/>
 <wire x1="-68.58" y1="50.8" x2="-43.18" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE13@87"/>
+<label x="-63.5" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$118" class="0">
+<net name="XIO_RAM_D11" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D11@32"/>
 <wire x1="-43.18" y1="48.26" x2="-68.58" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE14@88"/>
+<label x="-63.5" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$119" class="0">
+<net name="XIO_RAM_D12" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D12@35"/>
 <wire x1="-68.58" y1="45.72" x2="-43.18" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE15@89"/>
+<label x="-63.5" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$120" class="0">
+<net name="XIO_RAM_D13" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D13@36"/>
 <wire x1="-43.18" y1="43.18" x2="-68.58" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD8@108"/>
+<label x="-63.5" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$121" class="0">
+<net name="XIO_RAM_D14" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D14@37"/>
 <wire x1="-68.58" y1="40.64" x2="-43.18" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD9@109"/>
+<label x="-63.5" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$122" class="0">
+<net name="XIO_RAM_D15" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="D15@38"/>
 <wire x1="-43.18" y1="38.1" x2="-68.58" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD10@110"/>
+<label x="-63.5" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$123" class="0">
+<net name="XIO_RAM_!OE!" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="!OE!@41"/>
 <wire x1="-68.58" y1="30.48" x2="-43.18" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD4@168"/>
+<label x="-63.5" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$124" class="0">
+<net name="XIO_RAM_!WE!" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="!WE!@17"/>
 <wire x1="-43.18" y1="22.86" x2="-68.58" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD5@169"/>
+<label x="-63.5" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$125" class="0">
+<net name="XIO_RAM_!LB!" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="!LB!@39"/>
 <wire x1="-68.58" y1="15.24" x2="-43.18" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE0@200"/>
+<label x="-63.5" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$126" class="0">
+<net name="XIO_RAM_!UB!" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="!UB!@40"/>
 <wire x1="-43.18" y1="12.7" x2="-68.58" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PE1@201"/>
+<label x="-63.5" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$127" class="0">
+<net name="XIO_RAM_!CS!" class="0">
 <segment>
 <pinref part="PSRAM" gate="G$1" pin="!CS1!@6"/>
 <wire x1="-68.58" y1="2.54" x2="-43.18" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD7@173"/>
+<label x="-63.5" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -31754,24 +31794,24 @@ clean</text>
 <wire x1="4.7625" y1="20.6375" x2="4.1275" y2="20.0025" width="0.1524" layer="94" curve="-90"/>
 <wire x1="4.1275" y1="20.0025" x2="1.5875" y2="20.0025" width="0.1524" layer="94"/>
 <text x="1.3335" y="21.0185" size="1.27" layer="94">100</text>
-<text x="40.64" y="-121.92" size="1.778" layer="97">Trace thickness
+<text x="38.1" y="99.06" size="1.778" layer="97">Trace thickness
 Prepreg thickness
 Trace width
 Inter-trace spacing
 Prepreg dielectric
 
 Differential impedance</text>
-<text x="71.12" y="-121.92" size="1.778" layer="97">0.035 mm
+<text x="68.58" y="99.06" size="1.778" layer="97">0.035 mm
 0.2 mm
 12 mil
 6 mil
 4.2
 
 102 ohms</text>
-<wire x1="38.1" y1="-101.6" x2="86.36" y2="-101.6" width="0.1524" layer="97"/>
-<wire x1="86.36" y1="-101.6" x2="86.36" y2="-124.46" width="0.1524" layer="97"/>
-<wire x1="86.36" y1="-124.46" x2="38.1" y2="-124.46" width="0.1524" layer="97"/>
-<wire x1="38.1" y1="-124.46" x2="38.1" y2="-101.6" width="0.1524" layer="97"/>
+<wire x1="35.56" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="97"/>
+<wire x1="83.82" y1="119.38" x2="83.82" y2="96.52" width="0.1524" layer="97"/>
+<wire x1="83.82" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="97"/>
+<wire x1="35.56" y1="96.52" x2="35.56" y2="119.38" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME16" gate="G$1" x="-195.58" y="-132.08"/>
@@ -31871,7 +31911,7 @@ Differential impedance</text>
 </instance>
 <instance part="P+29" gate="1" x="86.36" y="86.36"/>
 <instance part="PIO" gate="-VIDEO_OUT" x="-167.64" y="-50.8" rot="MR0"/>
-<instance part="PIO" gate="-AUDIO" x="-162.56" y="27.94" rot="MR0"/>
+<instance part="PIO" gate="-AUDIO" x="-162.56" y="38.1" rot="MR0"/>
 <instance part="R12" gate="G$1" x="40.64" y="2.54" rot="R270"/>
 <instance part="P+4" gate="1" x="40.64" y="15.24"/>
 <instance part="P+17" gate="1" x="40.64" y="-10.16"/>
@@ -32482,15 +32522,15 @@ Differential impedance</text>
 <segment>
 <pinref part="HDMI" gate="G$1" pin="SCLK@13"/>
 <wire x1="-55.88" y1="17.78" x2="-132.08" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="17.78" x2="-132.08" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="27.94" x2="-139.7" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="17.78" x2="-132.08" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="38.1" x2="-139.7" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-AUDIO" pin="PA5@54"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<wire x1="-139.7" y1="35.56" x2="-124.46" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-124.46" y1="35.56" x2="-124.46" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="45.72" x2="-124.46" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="45.72" x2="-124.46" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="HDMI" gate="G$1" pin="LRCLK@14"/>
 <wire x1="-124.46" y1="20.32" x2="-55.88" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-AUDIO" pin="PA15@160"/>
@@ -32699,7 +32739,7 @@ Differential impedance</text>
 <label x="104.14" y="-52.832" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXC_P" class="0">
+<net name="TXC_P" class="3">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TXC+@28"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TXC+"/>
@@ -32707,7 +32747,7 @@ Differential impedance</text>
 <label x="27.94" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXC_N" class="0">
+<net name="TXC_N" class="3">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TXC-"/>
 <pinref part="HDMI" gate="G$1" pin="TXC-@27"/>
@@ -32836,10 +32876,9 @@ Differential impedance</text>
 </net>
 <net name="N$21" class="0">
 <segment>
-<wire x1="-139.7" y1="20.32" x2="-137.16" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-137.16" y1="20.32" x2="-137.16" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-137.16" y1="15.24" x2="-71.12" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="15.24" x2="-71.12" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="30.48" x2="-137.16" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="30.48" x2="-137.16" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="7.62" x2="-71.12" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="HDMI" gate="G$1" pin="I2S0@9"/>
 <wire x1="-71.12" y1="7.62" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="PIO" gate="-AUDIO" pin="PD7@173"/>
@@ -32856,55 +32895,55 @@ Differential impedance</text>
 Magnetics</text>
 <text x="-101.6" y="81.28" size="1.778" layer="97">RMII interface</text>
 <text x="-58.42" y="-76.962" size="1.778" layer="97" rot="R180">Load Cap 8pF</text>
-<wire x1="20.447" y1="56.007" x2="21.717" y2="56.007" width="0.1524" layer="94"/>
-<wire x1="21.717" y1="56.007" x2="22.352" y2="56.642" width="0.1524" layer="94" curve="90"/>
-<wire x1="25.527" y1="57.277" x2="26.162" y2="56.642" width="0.1524" layer="94" curve="-90"/>
-<wire x1="26.162" y1="56.642" x2="26.797" y2="56.007" width="0.1524" layer="94" curve="90"/>
-<wire x1="26.797" y1="56.007" x2="27.432" y2="56.007" width="0.1524" layer="94"/>
-<wire x1="27.432" y1="56.007" x2="28.067" y2="56.007" width="0.1524" layer="94"/>
-<wire x1="22.352" y1="56.642" x2="22.987" y2="57.277" width="0.1524" layer="94" curve="-90"/>
-<wire x1="22.987" y1="57.277" x2="25.527" y2="57.277" width="0.1524" layer="94"/>
-<wire x1="28.067" y1="55.372" x2="26.797" y2="55.372" width="0.1524" layer="94"/>
-<wire x1="26.797" y1="55.372" x2="26.162" y2="54.737" width="0.1524" layer="94" curve="90"/>
-<wire x1="22.987" y1="54.102" x2="22.352" y2="54.737" width="0.1524" layer="94" curve="-90"/>
-<wire x1="22.352" y1="54.737" x2="21.717" y2="55.372" width="0.1524" layer="94" curve="90"/>
-<wire x1="21.717" y1="55.372" x2="21.082" y2="55.372" width="0.1524" layer="94"/>
-<wire x1="21.082" y1="55.372" x2="20.447" y2="55.372" width="0.1524" layer="94"/>
-<wire x1="26.162" y1="54.737" x2="25.527" y2="54.102" width="0.1524" layer="94" curve="-90"/>
-<wire x1="25.527" y1="54.102" x2="22.987" y2="54.102" width="0.1524" layer="94"/>
-<text x="22.733" y="55.118" size="1.27" layer="94">100</text>
-<wire x1="20.955" y1="3.175" x2="22.225" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="22.225" y1="3.175" x2="22.86" y2="3.81" width="0.1524" layer="94" curve="90"/>
-<wire x1="26.035" y1="4.445" x2="26.67" y2="3.81" width="0.1524" layer="94" curve="-90"/>
-<wire x1="26.67" y1="3.81" x2="27.305" y2="3.175" width="0.1524" layer="94" curve="90"/>
-<wire x1="27.305" y1="3.175" x2="27.94" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="27.94" y1="3.175" x2="28.575" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="22.86" y1="3.81" x2="23.495" y2="4.445" width="0.1524" layer="94" curve="-90"/>
-<wire x1="23.495" y1="4.445" x2="26.035" y2="4.445" width="0.1524" layer="94"/>
-<wire x1="28.575" y1="2.54" x2="27.305" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="27.305" y1="2.54" x2="26.67" y2="1.905" width="0.1524" layer="94" curve="90"/>
-<wire x1="23.495" y1="1.27" x2="22.86" y2="1.905" width="0.1524" layer="94" curve="-90"/>
-<wire x1="22.86" y1="1.905" x2="22.225" y2="2.54" width="0.1524" layer="94" curve="90"/>
-<wire x1="22.225" y1="2.54" x2="21.59" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="21.59" y1="2.54" x2="20.955" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="26.67" y1="1.905" x2="26.035" y2="1.27" width="0.1524" layer="94" curve="-90"/>
-<wire x1="26.035" y1="1.27" x2="23.495" y2="1.27" width="0.1524" layer="94"/>
-<text x="23.241" y="2.286" size="1.27" layer="94">100</text>
-<wire x1="24.13" y1="58.42" x2="24.13" y2="67.31" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.13" y1="67.31" x2="22.86" y2="66.04" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="22.86" y1="66.04" x2="24.13" y2="67.31" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.13" y1="67.31" x2="25.4" y2="66.04" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.13" y1="53.34" x2="24.13" y2="44.45" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.13" y1="44.45" x2="25.4" y2="45.72" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="25.4" y1="45.72" x2="24.13" y2="44.45" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.13" y1="44.45" x2="22.86" y2="45.72" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.765" y1="5.3975" x2="24.765" y2="14.2875" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.765" y1="14.2875" x2="25.4" y2="13.6525" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="25.4" y1="13.6525" x2="24.765" y2="14.2875" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.765" y1="14.2875" x2="24.13" y2="13.6525" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.765" y1="0.635" x2="24.765" y2="-6.985" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.765" y1="-6.985" x2="25.4" y2="-6.35" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="24.765" y1="-6.985" x2="24.13" y2="-6.35" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-43.053" y1="56.007" x2="-41.783" y2="56.007" width="0.1524" layer="94"/>
+<wire x1="-41.783" y1="56.007" x2="-41.148" y2="56.642" width="0.1524" layer="94" curve="90"/>
+<wire x1="-37.973" y1="57.277" x2="-37.338" y2="56.642" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-37.338" y1="56.642" x2="-36.703" y2="56.007" width="0.1524" layer="94" curve="90"/>
+<wire x1="-36.703" y1="56.007" x2="-36.068" y2="56.007" width="0.1524" layer="94"/>
+<wire x1="-36.068" y1="56.007" x2="-35.433" y2="56.007" width="0.1524" layer="94"/>
+<wire x1="-41.148" y1="56.642" x2="-40.513" y2="57.277" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-40.513" y1="57.277" x2="-37.973" y2="57.277" width="0.1524" layer="94"/>
+<wire x1="-35.433" y1="55.372" x2="-36.703" y2="55.372" width="0.1524" layer="94"/>
+<wire x1="-36.703" y1="55.372" x2="-37.338" y2="54.737" width="0.1524" layer="94" curve="90"/>
+<wire x1="-40.513" y1="54.102" x2="-41.148" y2="54.737" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-41.148" y1="54.737" x2="-41.783" y2="55.372" width="0.1524" layer="94" curve="90"/>
+<wire x1="-41.783" y1="55.372" x2="-42.418" y2="55.372" width="0.1524" layer="94"/>
+<wire x1="-42.418" y1="55.372" x2="-43.053" y2="55.372" width="0.1524" layer="94"/>
+<wire x1="-37.338" y1="54.737" x2="-37.973" y2="54.102" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-37.973" y1="54.102" x2="-40.513" y2="54.102" width="0.1524" layer="94"/>
+<text x="-40.767" y="55.118" size="1.27" layer="94">100</text>
+<wire x1="-43.053" y1="3.429" x2="-41.783" y2="3.429" width="0.1524" layer="94"/>
+<wire x1="-41.783" y1="3.429" x2="-41.148" y2="4.064" width="0.1524" layer="94" curve="90"/>
+<wire x1="-37.973" y1="4.699" x2="-37.338" y2="4.064" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-37.338" y1="4.064" x2="-36.703" y2="3.429" width="0.1524" layer="94" curve="90"/>
+<wire x1="-36.703" y1="3.429" x2="-36.068" y2="3.429" width="0.1524" layer="94"/>
+<wire x1="-36.068" y1="3.429" x2="-35.433" y2="3.429" width="0.1524" layer="94"/>
+<wire x1="-41.148" y1="4.064" x2="-40.513" y2="4.699" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-40.513" y1="4.699" x2="-37.973" y2="4.699" width="0.1524" layer="94"/>
+<wire x1="-35.433" y1="2.794" x2="-36.703" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="-36.703" y1="2.794" x2="-37.338" y2="2.159" width="0.1524" layer="94" curve="90"/>
+<wire x1="-40.513" y1="1.524" x2="-41.148" y2="2.159" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-41.148" y1="2.159" x2="-41.783" y2="2.794" width="0.1524" layer="94" curve="90"/>
+<wire x1="-41.783" y1="2.794" x2="-42.418" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="-42.418" y1="2.794" x2="-43.053" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="-37.338" y1="2.159" x2="-37.973" y2="1.524" width="0.1524" layer="94" curve="-90"/>
+<wire x1="-37.973" y1="1.524" x2="-40.513" y2="1.524" width="0.1524" layer="94"/>
+<text x="-40.767" y="2.54" size="1.27" layer="94">100</text>
+<wire x1="-36.83" y1="58.42" x2="-36.83" y2="67.31" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.83" y1="67.31" x2="-38.1" y2="66.04" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-38.1" y1="66.04" x2="-36.83" y2="67.31" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.83" y1="67.31" x2="-35.56" y2="66.04" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.83" y1="53.34" x2="-36.83" y2="44.45" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.83" y1="44.45" x2="-35.56" y2="45.72" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-35.56" y1="45.72" x2="-36.83" y2="44.45" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.83" y1="44.45" x2="-38.1" y2="45.72" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.195" y1="5.3975" x2="-36.195" y2="14.2875" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.195" y1="14.2875" x2="-35.56" y2="13.6525" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-35.56" y1="13.6525" x2="-36.195" y2="14.2875" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.195" y1="14.2875" x2="-36.83" y2="13.6525" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.195" y1="0.635" x2="-36.195" y2="-6.985" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.195" y1="-6.985" x2="-35.56" y2="-6.35" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-36.195" y1="-6.985" x2="-36.83" y2="-6.35" width="0.1524" layer="94" style="shortdash"/>
 <text x="104.14" y="35.56" size="1.778" layer="97">Trace thickness
 Prepreg thickness
 Trace width
