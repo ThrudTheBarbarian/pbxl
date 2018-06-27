@@ -21089,6 +21089,12 @@ to VCAP pins</text>
 <text x="53.34" y="-10.16" size="2.54" layer="97" rot="R90">VHDCI Connector</text>
 <text x="160.02" y="58.42" size="2.54" layer="97">Cartridge 
 Port Header</text>
+<text x="93.98" y="-101.6" size="1.778" layer="97">Question: Do I need line drivers on the 18 could-be-output lines ?
+(RSRVD[0..2], !MPD!,!EXSEL!,!IRQ!,RD4,RD5,!RST!,!HALT!,D[0..7])
+
+According to datasheet (p97) 
+   - Max current per pin: 25mA
+   - Overall max current: 120mA</text>
 </plain>
 <instances>
 <instance part="U$14" gate="G$1" x="71.12" y="12.7"/>
@@ -22810,6 +22816,8 @@ unconnected</text>
 <text x="17.78" y="0" size="1.778" layer="94" rot="R180">Video bus out</text>
 <text x="-7.62" y="-10.16" size="1.778" layer="94">Unused pins</text>
 <text x="144.78" y="-114.3" size="2.54" layer="94">LEDs, Video-bus, unused</text>
+<text x="-121.92" y="77.47" size="2.1844" layer="96">Ports will drive 3.3mA 
+with 1K resistors</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="-198.12" y="-134.62"/>
@@ -23288,7 +23296,7 @@ If we could use SDRAM, could bump the memory to 32MBytes.
 <pinref part="PSRAM" gate="G$1" pin="!OE!@41"/>
 <wire x1="-68.58" y1="30.48" x2="-43.18" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD4@168"/>
-<label x="-63.5" y="30.48" size="1.778" layer="95"/>
+<label x="-63.5" y="30.734" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XIO_RAM_!WE!" class="0">
@@ -23296,7 +23304,7 @@ If we could use SDRAM, could bump the memory to 32MBytes.
 <pinref part="PSRAM" gate="G$1" pin="!WE!@17"/>
 <wire x1="-43.18" y1="22.86" x2="-68.58" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-PSRAM" pin="PD5@169"/>
-<label x="-63.5" y="22.86" size="1.778" layer="95"/>
+<label x="-63.5" y="23.114" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XIO_RAM_!LB!" class="0">
@@ -30299,6 +30307,7 @@ audio signals is +/- 0.4v</text>
 <text x="119.38" y="-64.262" size="1.778" layer="97">+2.05v</text>
 <text x="119.38" y="-69.342" size="1.778" layer="97">+1.25v</text>
 <text x="146.812" y="-66.548" size="1.778" layer="97">1.65v</text>
+<text x="-119.38" y="0" size="1.778" layer="97">Place pull-ups close to card socket</text>
 </plain>
 <instances>
 <instance part="FRAME14" gate="G$1" x="-195.58" y="-119.38"/>
