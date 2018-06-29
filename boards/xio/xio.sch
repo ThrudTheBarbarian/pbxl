@@ -20162,8 +20162,6 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="C51" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="33"/>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="33"/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="33"/>
-<part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="I2C_EXT1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="I2C_EXT0" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -20243,6 +20241,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="C138" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="4.7uF"/>
 <part name="R92" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10K"/>
 <part name="+3V45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R91" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="33"/>
 </parts>
 <sheets>
 <sheet>
@@ -20714,7 +20713,7 @@ Total</text>
 <text x="-180.34" y="-33.02" size="1.778" layer="97">Regulated 5v supply at 10A. (JYH05010000B)
 Internal copper strip 14mm wide to distribute to various vregs
  -&gt; 6 degree temperature rise</text>
-<text x="134.62" y="50.8" size="1.778" layer="97">Caps placed close 
+<text x="134.62" y="43.18" size="1.778" layer="97">Caps placed close 
 to VDDA pin</text>
 <text x="-12.7" y="-25.4" size="1.778" layer="97">Caps placed close 
 to VCAP pins</text>
@@ -20723,12 +20722,9 @@ to VCAP pins</text>
 <wire x1="-91.44" y1="83.82" x2="-187.96" y2="83.82" width="0.1524" layer="94" style="shortdash"/>
 <text x="-104.14" y="78.74" size="1.778" layer="94">Pullups</text>
 <text x="203.2" y="101.6" size="1.778" layer="94">- Added resistor in series to power on VDDA
-   - is 33R ok ?
 - Added pull-ups on /RESET and SWDIO
 - Added 0-ohm resistors on all power sources</text>
-<text x="203.2" y="88.9" size="1.778" layer="94">Anoop says "mended to add a filter on micro’s VDDA pin 
-and connect the filter cap between VDDA and VSSA"
- - need to understand more</text>
+<text x="129.54" y="66.04" size="1.778" layer="97">Filter on VDDA</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="-63.5" y="96.52"/>
@@ -20770,10 +20766,10 @@ and connect the filter cap between VDDA and VSSA"
 <instance part="+3V1" gate="G$1" x="0" y="58.42" smashed="yes">
 <attribute name="VALUE" x="2.54" y="60.96" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C1" gate="G$1" x="111.76" y="53.34"/>
-<instance part="C13" gate="G$1" x="124.46" y="53.34"/>
-<instance part="+3V4" gate="G$1" x="124.46" y="66.04" smashed="yes">
-<attribute name="VALUE" x="127" y="68.58" size="1.778" layer="96" rot="R180"/>
+<instance part="C1" gate="G$1" x="111.76" y="45.72"/>
+<instance part="C13" gate="G$1" x="124.46" y="45.72"/>
+<instance part="+3V4" gate="G$1" x="124.46" y="76.2" smashed="yes">
+<attribute name="VALUE" x="127" y="78.74" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="Y2" gate="G$1" x="109.22" y="-17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="114.3" y="-15.24" size="1.27" layer="95" rot="R180"/>
@@ -20807,8 +20803,8 @@ and connect the filter cap between VDDA and VSSA"
 <instance part="C31" gate="G$1" x="114.3" y="96.52"/>
 <instance part="C32" gate="G$1" x="127" y="96.52"/>
 <instance part="C33" gate="G$1" x="139.7" y="96.52"/>
-<instance part="SUPPLY12" gate="G$1" x="124.46" y="35.56"/>
-<instance part="R21" gate="G$1" x="96.52" y="58.42"/>
+<instance part="SUPPLY12" gate="G$1" x="124.46" y="30.48"/>
+<instance part="R21" gate="G$1" x="124.46" y="63.5" rot="R90"/>
 <instance part="R53" gate="G$1" x="0" y="35.56" rot="R270"/>
 <instance part="R56" gate="G$1" x="-111.76" y="-66.04" rot="R270"/>
 <instance part="R89" gate="G$1" x="-139.7" y="53.34" rot="R270"/>
@@ -21023,24 +21019,6 @@ and connect the filter cap between VDDA and VSSA"
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="58.42" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="58.42" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="58.42" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="58.42" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
-<junction x="111.76" y="58.42"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<wire x1="124.46" y1="58.42" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
-<junction x="124.46" y="58.42"/>
-<wire x1="99.06" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="20.32" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="XIO" gate="-POWER" pin="VREF+@41"/>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
-<junction x="104.14" y="58.42"/>
-</segment>
-<segment>
 <pinref part="XIO-SWD" gate="G$1" pin="VDD_OUT@1"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="-60.96" y1="12.7" x2="-68.58" y2="12.7" width="0.1524" layer="91"/>
@@ -21221,6 +21199,11 @@ and connect the filter cap between VDDA and VSSA"
 <wire x1="-139.7" y1="63.5" x2="-132.08" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-132.08" y="63.5"/>
 </segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="124.46" y1="68.58" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="2">
 <segment>
@@ -21347,22 +21330,12 @@ and connect the filter cap between VDDA and VSSA"
 <net name="AGND" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="45.72" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="33.02" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="45.72" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="45.72" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="33.02" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="33.02" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="G$1" pin="AGND"/>
-<wire x1="124.46" y1="38.1" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
-<junction x="124.46" y="45.72"/>
-</segment>
-</net>
-<net name="XIO_VDDA" class="0">
-<segment>
-<wire x1="86.36" y1="58.42" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="XIO" gate="-POWER" pin="VDDA@42"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
-<label x="88.9" y="45.72" size="1.778" layer="95" rot="R90"/>
+<junction x="124.46" y="33.02"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -21382,6 +21355,28 @@ and connect the filter cap between VDDA and VSSA"
 <pinref part="R56" gate="G$1" pin="2"/>
 <wire x1="-111.76" y1="-73.66" x2="-111.76" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="-111.76" y="-73.66"/>
+</segment>
+</net>
+<net name="XIO_VDDA" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="50.8" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="50.8" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
+<junction x="111.76" y="50.8"/>
+<wire x1="99.06" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="20.32" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="XIO" gate="-POWER" pin="VREF+@41"/>
+<pinref part="XIO" gate="-POWER" pin="VDDA@42"/>
+<wire x1="104.14" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="50.8" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
+<junction x="104.14" y="50.8"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="50.8" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
+<junction x="124.46" y="50.8"/>
+<label x="99.06" y="53.34" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
@@ -22652,9 +22647,9 @@ for I2C</text>
 <text x="-129.54" y="-12.7" size="1.778" layer="94">Inter-CPU SPI
 Both at up to 50MHz </text>
 <wire x1="-190.5" y1="-5.08" x2="187.96" y2="-5.08" width="0.1524" layer="94" style="shortdash"/>
-<text x="10.16" y="55.88" size="1.778" layer="97">Add termination 
+<text x="68.58" y="83.82" size="1.778" layer="97">Add termination 
 resistors close to
-STM32F7</text>
+source</text>
 <text x="205.74" y="111.76" size="1.778" layer="94">- Added 33R termination resistors on SPI:{MISO, MOSI, CLK}
 - Added +3.3v, GND to both I2C and SPI pinouts</text>
 </plain>
@@ -22665,14 +22660,18 @@ STM32F7</text>
 <attribute name="VALUE" x="-127" y="40.64" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="FRAME3" gate="G$1" x="-195.58" y="-119.38"/>
-<instance part="XIO" gate="-SPI-I2C" x="86.36" y="68.58"/>
+<instance part="XIO" gate="-SPI-I2C" x="124.46" y="68.58"/>
 <instance part="XIO" gate="-XSPI" x="86.36" y="-45.72"/>
 <instance part="XSP1_TST" gate="A" x="-22.86" y="-33.02" rot="R180"/>
 <instance part="XSPI2_TST" gate="A" x="-22.86" y="-50.8" rot="R180"/>
-<instance part="R26" gate="G$1" x="22.86" y="76.2" rot="R270"/>
-<instance part="R27" gate="G$1" x="12.7" y="76.2" rot="R270"/>
-<instance part="R30" gate="G$1" x="2.54" y="76.2" rot="R270"/>
-<instance part="SUPPLY14" gate="GND" x="2.54" y="58.42"/>
+<instance part="R26" gate="G$1" x="88.9" y="78.74" smashed="yes">
+<attribute name="NAME" x="85.09" y="80.2386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="91.186" y="80.518" size="1.778" layer="96"/>
+</instance>
+<instance part="R27" gate="G$1" x="88.9" y="73.66" smashed="yes">
+<attribute name="NAME" x="84.836" y="70.3326" size="1.778" layer="95"/>
+<attribute name="VALUE" x="91.186" y="70.358" size="1.778" layer="96"/>
+</instance>
 <instance part="I2C_EXT1" gate="A" x="-121.92" y="55.88" rot="MR0"/>
 <instance part="I2C_EXT0" gate="A" x="-121.92" y="81.28" rot="MR0"/>
 <instance part="+3V10" gate="G$1" x="-129.54" y="91.44" smashed="yes">
@@ -22744,7 +22743,7 @@ STM32F7</text>
 </segment>
 <segment>
 <wire x1="38.1" y1="99.06" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
 <label x="43.18" y="96.52" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PB10@90"/>
 </segment>
@@ -22770,7 +22769,7 @@ STM32F7</text>
 </segment>
 <segment>
 <wire x1="38.1" y1="96.52" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
 <label x="43.18" y="93.98" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PB11@91"/>
 </segment>
@@ -22831,18 +22830,6 @@ STM32F7</text>
 </net>
 <net name="SPI_CLK" class="0">
 <segment>
-<wire x1="38.1" y1="81.28" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="78.74" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
-<label x="43.18" y="78.74" size="1.778" layer="95"/>
-<pinref part="XIO" gate="-SPI-I2C" pin="PB13@105"/>
-</segment>
-<segment>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="101.6" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="99.06" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
-<label x="22.352" y="86.36" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="SPI_EXT0" gate="A" pin="1"/>
 <wire x1="-88.9" y1="91.44" x2="-86.36" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="88.9" x2="-63.5" y2="88.9" width="0.1524" layer="91"/>
@@ -22860,20 +22847,14 @@ STM32F7</text>
 <wire x1="-86.36" y1="33.02" x2="-63.5" y2="33.02" width="0.1524" layer="91"/>
 <label x="-83.82" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="81.28" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+<label x="43.18" y="78.74" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI_MISO" class="0">
-<segment>
-<wire x1="38.1" y1="78.74" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="76.2" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
-<label x="43.18" y="76.2" size="1.778" layer="95"/>
-<pinref part="XIO" gate="-SPI-I2C" pin="PB14@106"/>
-</segment>
-<segment>
-<pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="0" y1="101.6" x2="2.54" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="99.06" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
-<label x="2.032" y="86.36" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="SPI_EXT0" gate="A" pin="3"/>
 <wire x1="-88.9" y1="88.9" x2="-86.36" y2="86.36" width="0.1524" layer="91"/>
@@ -22892,20 +22873,14 @@ STM32F7</text>
 <wire x1="-86.36" y1="30.48" x2="-63.5" y2="30.48" width="0.1524" layer="91"/>
 <label x="-83.82" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="XIO" gate="-SPI-I2C" pin="PB14@106"/>
+<wire x1="38.1" y1="78.74" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="43.18" y="76.2" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI_MOSI" class="0">
-<segment>
-<wire x1="38.1" y1="76.2" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
-<label x="43.18" y="73.66" size="1.778" layer="95"/>
-<pinref part="XIO" gate="-SPI-I2C" pin="PB15@107"/>
-</segment>
-<segment>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="101.6" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="99.06" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
-<label x="12.192" y="86.36" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="SPI_EXT0" gate="A" pin="5"/>
 <wire x1="-88.9" y1="86.36" x2="-86.36" y2="83.82" width="0.1524" layer="91"/>
@@ -22924,11 +22899,17 @@ STM32F7</text>
 <wire x1="-86.36" y1="27.94" x2="-63.5" y2="27.94" width="0.1524" layer="91"/>
 <label x="-83.82" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="76.2" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
+<label x="43.18" y="73.66" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI_SS0" class="0">
 <segment>
 <wire x1="38.1" y1="68.58" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="66.04" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="43.18" y="66.04" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH2@46"/>
 </segment>
@@ -22936,7 +22917,7 @@ STM32F7</text>
 <net name="SPI_SS1" class="0">
 <segment>
 <wire x1="38.1" y1="66.04" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
 <label x="43.18" y="63.5" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH3@47"/>
 </segment>
@@ -22944,7 +22925,7 @@ STM32F7</text>
 <net name="SPI_SS2" class="0">
 <segment>
 <wire x1="38.1" y1="63.5" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 <label x="43.18" y="60.96" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH4@48"/>
 </segment>
@@ -22952,7 +22933,7 @@ STM32F7</text>
 <net name="SPI_SS3" class="0">
 <segment>
 <wire x1="38.1" y1="60.96" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 <label x="43.18" y="58.42" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH5@49"/>
 </segment>
@@ -22960,7 +22941,7 @@ STM32F7</text>
 <net name="SPI_SS4" class="0">
 <segment>
 <wire x1="38.1" y1="58.42" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="55.88" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
 <label x="43.18" y="55.88" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH6@96"/>
 </segment>
@@ -22968,7 +22949,7 @@ STM32F7</text>
 <net name="SPI_SS5" class="0">
 <segment>
 <wire x1="38.1" y1="55.88" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="43.18" y="53.34" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH7@97"/>
 </segment>
@@ -22976,7 +22957,7 @@ STM32F7</text>
 <net name="SPI_SS6" class="0">
 <segment>
 <wire x1="38.1" y1="53.34" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
 <label x="43.18" y="50.8" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH8@98"/>
 </segment>
@@ -22984,7 +22965,7 @@ STM32F7</text>
 <net name="SPI_SS7" class="0">
 <segment>
 <wire x1="38.1" y1="50.8" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
 <label x="43.18" y="48.26" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PB0@61"/>
 </segment>
@@ -22997,7 +22978,7 @@ STM32F7</text>
 <net name="SPI_SS8" class="0">
 <segment>
 <wire x1="38.1" y1="48.26" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="45.72" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
 <label x="43.18" y="45.72" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PB1@62"/>
 </segment>
@@ -23010,7 +22991,7 @@ STM32F7</text>
 <net name="SPI_SS9" class="0">
 <segment>
 <wire x1="38.1" y1="45.72" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
 <label x="43.18" y="43.18" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PB3@63"/>
 </segment>
@@ -23023,7 +23004,7 @@ STM32F7</text>
 <net name="SPI_IRQ0" class="0">
 <segment>
 <wire x1="38.1" y1="38.1" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
 <label x="43.18" y="35.56" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH9@99"/>
 </segment>
@@ -23031,7 +23012,7 @@ STM32F7</text>
 <net name="SPI_IRQ1" class="0">
 <segment>
 <wire x1="38.1" y1="35.56" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="33.02" x2="63.5" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
 <label x="43.18" y="33.02" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH10@100"/>
 </segment>
@@ -23039,7 +23020,7 @@ STM32F7</text>
 <net name="SPI_IRQ2" class="0">
 <segment>
 <wire x1="38.1" y1="33.02" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
 <label x="43.18" y="30.48" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH11@101"/>
 </segment>
@@ -23047,7 +23028,7 @@ STM32F7</text>
 <net name="SPI_IRQ3" class="0">
 <segment>
 <wire x1="38.1" y1="30.48" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
 <label x="43.18" y="27.94" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH12@102"/>
 </segment>
@@ -23055,7 +23036,7 @@ STM32F7</text>
 <net name="SPI_IRQ4" class="0">
 <segment>
 <wire x1="38.1" y1="27.94" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="25.4" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="25.4" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
 <label x="43.18" y="25.4" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH13@151"/>
 </segment>
@@ -23063,7 +23044,7 @@ STM32F7</text>
 <net name="SPI_IRQ5" class="0">
 <segment>
 <wire x1="38.1" y1="25.4" x2="40.64" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="22.86" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 <label x="43.18" y="22.86" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH14@152"/>
 </segment>
@@ -23071,7 +23052,7 @@ STM32F7</text>
 <net name="SPI_IRQ6" class="0">
 <segment>
 <wire x1="38.1" y1="22.86" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="20.32" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="20.32" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
 <label x="43.18" y="20.32" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PH15@153"/>
 </segment>
@@ -23079,7 +23060,7 @@ STM32F7</text>
 <net name="SPI_IRQ7" class="0">
 <segment>
 <wire x1="38.1" y1="20.32" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="17.78" x2="63.5" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
 <label x="43.18" y="17.78" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PB3@192"/>
 </segment>
@@ -23093,7 +23074,7 @@ STM32F7</text>
 <net name="SPI_IRQ8" class="0">
 <segment>
 <wire x1="38.1" y1="17.78" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
 <label x="43.18" y="15.24" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PB4@193"/>
 </segment>
@@ -23107,7 +23088,7 @@ STM32F7</text>
 <net name="SPI_IRQ9" class="0">
 <segment>
 <wire x1="38.1" y1="15.24" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="12.7" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
 <label x="43.18" y="12.7" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SPI-I2C" pin="PB5@193"/>
 </segment>
@@ -23232,20 +23213,6 @@ STM32F7</text>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="60.96" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="66.04" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="71.12" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
-<junction x="2.54" y="66.04"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="71.12" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
-<junction x="12.7" y="66.04"/>
-</segment>
-<segment>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
 <wire x1="-55.88" y1="81.28" x2="-48.26" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="81.28" x2="-48.26" y2="78.74" width="0.1524" layer="91"/>
@@ -23274,6 +23241,20 @@ STM32F7</text>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
 <wire x1="-119.38" y1="53.34" x2="-129.54" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-129.54" y1="53.34" x2="-129.54" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="XIO" gate="-SPI-I2C" pin="PB13@105"/>
+<wire x1="93.98" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="XIO" gate="-SPI-I2C" pin="PB15@107"/>
+<wire x1="93.98" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -30283,7 +30264,7 @@ Slot ID</text>
 <description>PIO Power</description>
 <plain>
 <text x="147.32" y="-116.84" size="1.778" layer="94">PIO POWER</text>
-<text x="106.68" y="30.48" size="1.778" layer="97">Caps placed close 
+<text x="106.68" y="27.94" size="1.778" layer="97">Caps placed close 
 to VDDA pin</text>
 <text x="58.42" y="-86.36" size="1.778" layer="97">AGND only connects 
 to GND at this point</text>
@@ -30300,10 +30281,10 @@ to VCAP pins</text>
 <instance part="+3V16" gate="G$1" x="-10.16" y="45.72" smashed="yes">
 <attribute name="VALUE" x="-7.62" y="48.26" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C57" gate="G$1" x="83.82" y="33.02"/>
-<instance part="C58" gate="G$1" x="96.52" y="33.02"/>
-<instance part="+3V17" gate="G$1" x="96.52" y="45.72" smashed="yes">
-<attribute name="VALUE" x="99.06" y="48.26" size="1.778" layer="96" rot="R180"/>
+<instance part="C57" gate="G$1" x="83.82" y="30.48"/>
+<instance part="C58" gate="G$1" x="96.52" y="30.48"/>
+<instance part="+3V17" gate="G$1" x="96.52" y="63.5" smashed="yes">
+<attribute name="VALUE" x="99.06" y="66.04" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY64" gate="GND" x="25.4" y="-119.38"/>
 <instance part="C59" gate="G$1" x="-35.56" y="-55.88"/>
@@ -30358,6 +30339,7 @@ to VCAP pins</text>
 <instance part="+3V45" gate="G$1" x="-152.4" y="-83.82" smashed="yes">
 <attribute name="VALUE" x="-149.86" y="-81.28" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="R91" gate="G$1" x="96.52" y="50.8" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -30440,25 +30422,6 @@ to VCAP pins</text>
 <junction x="33.02" y="27.94"/>
 <pinref part="R55" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="20.32" x2="-25.4" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="58.42" y1="22.86" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C57" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="38.1" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C58" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="38.1" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="38.1" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
-<junction x="83.82" y="38.1"/>
-<pinref part="+3V17" gate="G$1" pin="+3V3"/>
-<wire x1="96.52" y1="38.1" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
-<junction x="96.52" y="38.1"/>
-<pinref part="PIO" gate="-POWER" pin="VDDA@42"/>
-<pinref part="PIO" gate="-POWER" pin="VREF+@41"/>
-<wire x1="76.2" y1="38.1" x2="76.2" y2="0" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="0" x2="71.12" y2="0" width="0.1524" layer="91"/>
-<junction x="76.2" y="38.1"/>
 </segment>
 <segment>
 <pinref part="PIO-SWD" gate="G$1" pin="VDD_OUT@1"/>
@@ -30549,6 +30512,11 @@ to VCAP pins</text>
 <pinref part="R92" gate="G$1" pin="1"/>
 <pinref part="+3V45" gate="G$1" pin="+3V3"/>
 <wire x1="-152.4" y1="-91.44" x2="-152.4" y2="-86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R91" gate="G$1" pin="1"/>
+<pinref part="+3V17" gate="G$1" pin="+3V3"/>
+<wire x1="96.52" y1="55.88" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -30764,13 +30732,13 @@ to VCAP pins</text>
 </segment>
 <segment>
 <pinref part="C57" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="25.4" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="20.32" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C58" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="25.4" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="25.4" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="20.32" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="20.32" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="AGND"/>
-<wire x1="96.52" y1="15.24" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
-<junction x="96.52" y="25.4"/>
+<wire x1="96.52" y1="15.24" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
+<junction x="96.52" y="20.32"/>
 </segment>
 </net>
 <net name="PIO_RX" class="0">
@@ -30862,6 +30830,29 @@ to VCAP pins</text>
 <pinref part="PIO" gate="-POWER" pin="PDR_ON@203"/>
 <pinref part="R55" gate="G$1" pin="2"/>
 <wire x1="-25.4" y1="0" x2="-25.4" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PIO_VDDA" class="0">
+<segment>
+<wire x1="58.42" y1="22.86" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C57" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="38.1" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C58" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="38.1" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="38.1" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
+<junction x="83.82" y="38.1"/>
+<pinref part="PIO" gate="-POWER" pin="VDDA@42"/>
+<pinref part="PIO" gate="-POWER" pin="VREF+@41"/>
+<wire x1="76.2" y1="38.1" x2="76.2" y2="0" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="0" x2="71.12" y2="0" width="0.1524" layer="91"/>
+<junction x="76.2" y="38.1"/>
+<pinref part="R91" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="45.72" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="40.64" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
+<junction x="96.52" y="38.1"/>
+<label x="61.214" y="39.116" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -31099,7 +31090,7 @@ audio signals is +/- 0.4v</text>
 <text x="146.812" y="-66.548" size="1.778" layer="97">1.65v</text>
 <text x="-119.38" y="0" size="1.778" layer="97">Place pull-ups close to card socket</text>
 <text x="205.74" y="114.3" size="1.778" layer="94">- Added capacitor to +3v3 on SD_SLOT
-    - is 0.1uF sufficient ?</text>
+</text>
 </plain>
 <instances>
 <instance part="FRAME14" gate="G$1" x="-195.58" y="-119.38"/>
@@ -33865,7 +33856,6 @@ Differential impedance</text>
 <wire x1="149.86" y1="55.88" x2="149.86" y2="33.02" width="0.1524" layer="97"/>
 <wire x1="149.86" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="97"/>
 <wire x1="101.6" y1="33.02" x2="101.6" y2="55.88" width="0.1524" layer="97"/>
-<text x="218.44" y="121.92" size="1.778" layer="94">- Need ESD ? What to do ?</text>
 </plain>
 <instances>
 <instance part="FRAME17" gate="G$1" x="-185.42" y="-119.38"/>
@@ -34455,6 +34445,7 @@ Differential impedance</text>
 <wire x1="-40.64" y1="91.44" x2="-40.64" y2="68.58" width="0.1524" layer="97"/>
 <wire x1="-40.64" y1="68.58" x2="-88.9" y2="68.58" width="0.1524" layer="97"/>
 <wire x1="-88.9" y1="68.58" x2="-88.9" y2="91.44" width="0.1524" layer="97"/>
+<text x="213.36" y="116.84" size="1.778" layer="94">Need ESD</text>
 </plain>
 <instances>
 <instance part="FRAME18" gate="G$1" x="-185.42" y="-121.92"/>
