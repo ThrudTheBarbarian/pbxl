@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19053,317 +19053,6 @@ Reference Digikey: 609-1975-ND</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="sjg-ram">
-<packages>
-<package name="TSOPII-Z44" urn="urn:adsk.eagle:footprint:18908/1">
-<description>&lt;b&gt;44 PIN TSOP II Z44&lt;/b&gt;&lt;p&gt;
-Source: CYPRESS cy7c1049cv33_8.pdf</description>
-<wire x1="9.189" y1="-5.0792" x2="9.189" y2="5.1062" width="0.1524" layer="21"/>
-<wire x1="-9.1898" y1="5.1062" x2="-9.1898" y2="-5.0792" width="0.1524" layer="21"/>
-<wire x1="9.189" y1="-5.0792" x2="8.8822" y2="-5.0792" width="0.1524" layer="21"/>
-<wire x1="-9.1898" y1="-5.0792" x2="-8.8072" y2="-5.0792" width="0.1524" layer="21"/>
-<wire x1="-8.8072" y1="-5.0792" x2="8.8822" y2="-5.0792" width="0.1524" layer="51"/>
-<wire x1="-9.189" y1="5.0792" x2="-8.8822" y2="5.0792" width="0.1524" layer="21"/>
-<wire x1="9.1898" y1="5.0792" x2="8.8072" y2="5.0792" width="0.1524" layer="21"/>
-<wire x1="8.8072" y1="5.0792" x2="-8.8822" y2="5.0792" width="0.1524" layer="51"/>
-<circle x="-8.065" y="-3.935" radius="0.5334" width="0.1524" layer="21"/>
-<smd name="1" x="-8.4" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="2" x="-7.6" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="3" x="-6.8" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="4" x="-6" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="5" x="-5.2" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="6" x="-4.4" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="7" x="-3.6" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="8" x="-2.8" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="9" x="-2" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="10" x="-1.2" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="11" x="-0.4" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="12" x="0.4" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="13" x="1.2" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="14" x="2" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="15" x="2.8" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="16" x="3.6" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="17" x="4.4" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="18" x="5.2" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="19" x="6" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="20" x="6.8" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="21" x="7.6" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="22" x="8.4" y="-5.6272" dx="0.5" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="23" x="8.4" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="24" x="7.6" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="25" x="6.8" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="26" x="6" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="27" x="5.2" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="28" x="4.4" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="29" x="3.6" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="30" x="2.8" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="31" x="2" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="32" x="1.2" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="33" x="0.4" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="34" x="-0.4" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="35" x="-1.2" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="36" x="-2" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="37" x="-2.8" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="38" x="-3.6" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="39" x="-4.4" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="40" x="-5.2" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="41" x="-6" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="42" x="-6.8" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="43" x="-7.6" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="44" x="-8.4" y="5.6272" dx="0.5" dy="1.2" layer="1" rot="R180" stop="no" cream="no"/>
-<text x="-9.4438" y="-5.1046" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="-7.9706" y="-0.6596" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-8.625" y1="-5.988" x2="-8.175" y2="-5.1" layer="51"/>
-<rectangle x1="-7.825" y1="-5.988" x2="-7.375" y2="-5.1" layer="51"/>
-<rectangle x1="-8.625" y1="-6.175" x2="-8.175" y2="-5.05" layer="31"/>
-<rectangle x1="-7.825" y1="-6.175" x2="-7.375" y2="-5.05" layer="31"/>
-<rectangle x1="-8.725" y1="-6.3" x2="-8.075" y2="-4.975" layer="29"/>
-<rectangle x1="-7.925" y1="-6.3" x2="-7.275" y2="-4.975" layer="29"/>
-<rectangle x1="-7.025" y1="-5.988" x2="-6.575" y2="-5.1" layer="51"/>
-<rectangle x1="-6.225" y1="-5.988" x2="-5.775" y2="-5.1" layer="51"/>
-<rectangle x1="-7.025" y1="-6.175" x2="-6.575" y2="-5.05" layer="31"/>
-<rectangle x1="-6.225" y1="-6.175" x2="-5.775" y2="-5.05" layer="31"/>
-<rectangle x1="-7.125" y1="-6.3" x2="-6.475" y2="-4.975" layer="29"/>
-<rectangle x1="-6.325" y1="-6.3" x2="-5.675" y2="-4.975" layer="29"/>
-<rectangle x1="-5.425" y1="-5.988" x2="-4.975" y2="-5.1" layer="51"/>
-<rectangle x1="-4.625" y1="-5.988" x2="-4.175" y2="-5.1" layer="51"/>
-<rectangle x1="-5.425" y1="-6.175" x2="-4.975" y2="-5.05" layer="31"/>
-<rectangle x1="-4.625" y1="-6.175" x2="-4.175" y2="-5.05" layer="31"/>
-<rectangle x1="-5.525" y1="-6.3" x2="-4.875" y2="-4.975" layer="29"/>
-<rectangle x1="-4.725" y1="-6.3" x2="-4.075" y2="-4.975" layer="29"/>
-<rectangle x1="-3.825" y1="-5.988" x2="-3.375" y2="-5.1" layer="51"/>
-<rectangle x1="-3.025" y1="-5.988" x2="-2.575" y2="-5.1" layer="51"/>
-<rectangle x1="-3.825" y1="-6.175" x2="-3.375" y2="-5.05" layer="31"/>
-<rectangle x1="-3.025" y1="-6.175" x2="-2.575" y2="-5.05" layer="31"/>
-<rectangle x1="-3.925" y1="-6.3" x2="-3.275" y2="-4.975" layer="29"/>
-<rectangle x1="-3.125" y1="-6.3" x2="-2.475" y2="-4.975" layer="29"/>
-<rectangle x1="-2.225" y1="-5.988" x2="-1.775" y2="-5.1" layer="51"/>
-<rectangle x1="-1.425" y1="-5.988" x2="-0.975" y2="-5.1" layer="51"/>
-<rectangle x1="-2.225" y1="-6.175" x2="-1.775" y2="-5.05" layer="31"/>
-<rectangle x1="-1.425" y1="-6.175" x2="-0.975" y2="-5.05" layer="31"/>
-<rectangle x1="-2.325" y1="-6.3" x2="-1.675" y2="-4.975" layer="29"/>
-<rectangle x1="-1.525" y1="-6.3" x2="-0.875" y2="-4.975" layer="29"/>
-<rectangle x1="-0.625" y1="-5.988" x2="-0.175" y2="-5.1" layer="51"/>
-<rectangle x1="0.175" y1="-5.988" x2="0.625" y2="-5.1" layer="51"/>
-<rectangle x1="-0.625" y1="-6.175" x2="-0.175" y2="-5.05" layer="31"/>
-<rectangle x1="0.175" y1="-6.175" x2="0.625" y2="-5.05" layer="31"/>
-<rectangle x1="-0.725" y1="-6.3" x2="-0.075" y2="-4.975" layer="29"/>
-<rectangle x1="0.075" y1="-6.3" x2="0.725" y2="-4.975" layer="29"/>
-<rectangle x1="0.975" y1="-5.988" x2="1.425" y2="-5.1" layer="51"/>
-<rectangle x1="1.775" y1="-5.988" x2="2.225" y2="-5.1" layer="51"/>
-<rectangle x1="0.975" y1="-6.175" x2="1.425" y2="-5.05" layer="31"/>
-<rectangle x1="1.775" y1="-6.175" x2="2.225" y2="-5.05" layer="31"/>
-<rectangle x1="0.875" y1="-6.3" x2="1.525" y2="-4.975" layer="29"/>
-<rectangle x1="1.675" y1="-6.3" x2="2.325" y2="-4.975" layer="29"/>
-<rectangle x1="2.575" y1="-5.988" x2="3.025" y2="-5.1" layer="51"/>
-<rectangle x1="3.375" y1="-5.988" x2="3.825" y2="-5.1" layer="51"/>
-<rectangle x1="2.575" y1="-6.175" x2="3.025" y2="-5.05" layer="31"/>
-<rectangle x1="3.375" y1="-6.175" x2="3.825" y2="-5.05" layer="31"/>
-<rectangle x1="2.475" y1="-6.3" x2="3.125" y2="-4.975" layer="29"/>
-<rectangle x1="3.275" y1="-6.3" x2="3.925" y2="-4.975" layer="29"/>
-<rectangle x1="4.175" y1="-5.988" x2="4.625" y2="-5.1" layer="51"/>
-<rectangle x1="4.975" y1="-5.988" x2="5.425" y2="-5.1" layer="51"/>
-<rectangle x1="4.175" y1="-6.175" x2="4.625" y2="-5.05" layer="31"/>
-<rectangle x1="4.975" y1="-6.175" x2="5.425" y2="-5.05" layer="31"/>
-<rectangle x1="4.075" y1="-6.3" x2="4.725" y2="-4.975" layer="29"/>
-<rectangle x1="4.875" y1="-6.3" x2="5.525" y2="-4.975" layer="29"/>
-<rectangle x1="5.775" y1="-5.988" x2="6.225" y2="-5.1" layer="51"/>
-<rectangle x1="6.575" y1="-5.988" x2="7.025" y2="-5.1" layer="51"/>
-<rectangle x1="5.775" y1="-6.175" x2="6.225" y2="-5.05" layer="31"/>
-<rectangle x1="6.575" y1="-6.175" x2="7.025" y2="-5.05" layer="31"/>
-<rectangle x1="5.675" y1="-6.3" x2="6.325" y2="-4.975" layer="29"/>
-<rectangle x1="6.475" y1="-6.3" x2="7.125" y2="-4.975" layer="29"/>
-<rectangle x1="7.375" y1="-5.988" x2="7.825" y2="-5.1" layer="51"/>
-<rectangle x1="8.175" y1="-5.988" x2="8.625" y2="-5.1" layer="51"/>
-<rectangle x1="7.375" y1="-6.175" x2="7.825" y2="-5.05" layer="31"/>
-<rectangle x1="8.175" y1="-6.175" x2="8.625" y2="-5.05" layer="31"/>
-<rectangle x1="7.275" y1="-6.3" x2="7.925" y2="-4.975" layer="29"/>
-<rectangle x1="8.075" y1="-6.3" x2="8.725" y2="-4.975" layer="29"/>
-<rectangle x1="8.175" y1="5.1" x2="8.625" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="7.375" y1="5.1" x2="7.825" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="8.175" y1="5.05" x2="8.625" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="7.375" y1="5.05" x2="7.825" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="8.075" y1="4.975" x2="8.725" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="7.275" y1="4.975" x2="7.925" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="6.575" y1="5.1" x2="7.025" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="5.775" y1="5.1" x2="6.225" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="6.575" y1="5.05" x2="7.025" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="5.775" y1="5.05" x2="6.225" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="6.475" y1="4.975" x2="7.125" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="5.675" y1="4.975" x2="6.325" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="4.975" y1="5.1" x2="5.425" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="4.175" y1="5.1" x2="4.625" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="4.975" y1="5.05" x2="5.425" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="4.175" y1="5.05" x2="4.625" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="4.875" y1="4.975" x2="5.525" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="4.075" y1="4.975" x2="4.725" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="3.375" y1="5.1" x2="3.825" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="2.575" y1="5.1" x2="3.025" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="3.375" y1="5.05" x2="3.825" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="2.575" y1="5.05" x2="3.025" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="3.275" y1="4.975" x2="3.925" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="2.475" y1="4.975" x2="3.125" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="1.775" y1="5.1" x2="2.225" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="0.975" y1="5.1" x2="1.425" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="1.775" y1="5.05" x2="2.225" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="0.975" y1="5.05" x2="1.425" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="1.675" y1="4.975" x2="2.325" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="0.875" y1="4.975" x2="1.525" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="0.175" y1="5.1" x2="0.625" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-0.625" y1="5.1" x2="-0.175" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="0.175" y1="5.05" x2="0.625" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-0.625" y1="5.05" x2="-0.175" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="0.075" y1="4.975" x2="0.725" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-0.725" y1="4.975" x2="-0.075" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-1.425" y1="5.1" x2="-0.975" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-2.225" y1="5.1" x2="-1.775" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-1.425" y1="5.05" x2="-0.975" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-2.225" y1="5.05" x2="-1.775" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-1.525" y1="4.975" x2="-0.875" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-2.325" y1="4.975" x2="-1.675" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-3.025" y1="5.1" x2="-2.575" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-3.825" y1="5.1" x2="-3.375" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-3.025" y1="5.05" x2="-2.575" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-3.825" y1="5.05" x2="-3.375" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-3.125" y1="4.975" x2="-2.475" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-3.925" y1="4.975" x2="-3.275" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-4.625" y1="5.1" x2="-4.175" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-5.425" y1="5.1" x2="-4.975" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-4.625" y1="5.05" x2="-4.175" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-5.425" y1="5.05" x2="-4.975" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-4.725" y1="4.975" x2="-4.075" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-5.525" y1="4.975" x2="-4.875" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-6.225" y1="5.1" x2="-5.775" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-7.025" y1="5.1" x2="-6.575" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-6.225" y1="5.05" x2="-5.775" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-7.025" y1="5.05" x2="-6.575" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-6.325" y1="4.975" x2="-5.675" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-7.125" y1="4.975" x2="-6.475" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-7.825" y1="5.1" x2="-7.375" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-8.625" y1="5.1" x2="-8.175" y2="5.988" layer="51" rot="R180"/>
-<rectangle x1="-7.825" y1="5.05" x2="-7.375" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-8.625" y1="5.05" x2="-8.175" y2="6.175" layer="31" rot="R180"/>
-<rectangle x1="-7.925" y1="4.975" x2="-7.275" y2="6.3" layer="29" rot="R180"/>
-<rectangle x1="-8.725" y1="4.975" x2="-8.075" y2="6.3" layer="29" rot="R180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="IS66WV51216BLL">
-<description>IS66WV51216BALL 8Mbit 16-bit wide PSRAM @ 55ns
-Digikey: 706-1427-5-ND</description>
-<pin name="A4@1" x="20.32" y="53.34" length="middle" rot="R180"/>
-<pin name="A3@2" x="20.32" y="55.88" length="middle" rot="R180"/>
-<pin name="A2@3" x="20.32" y="58.42" length="middle" rot="R180"/>
-<pin name="A1@4" x="20.32" y="60.96" length="middle" rot="R180"/>
-<pin name="A0@5" x="20.32" y="63.5" length="middle" rot="R180"/>
-<pin name="!CS1!@6" x="20.32" y="-63.5" length="middle" rot="R180"/>
-<pin name="D0@7" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="D1@8" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="D2@9" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="D3@10" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="VDD@11" x="-20.32" y="60.96" length="middle"/>
-<pin name="GND@12" x="-20.32" y="-60.96" length="middle"/>
-<pin name="D4@13" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="D5@14" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="D6@15" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="D7@16" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="!WE!@17" x="20.32" y="-43.18" length="middle" rot="R180"/>
-<pin name="A16@18" x="20.32" y="22.86" length="middle" rot="R180"/>
-<pin name="A15@19" x="20.32" y="25.4" length="middle" rot="R180"/>
-<pin name="A14@20" x="20.32" y="27.94" length="middle" rot="R180"/>
-<pin name="A13@21" x="20.32" y="30.48" length="middle" rot="R180"/>
-<pin name="A12@22" x="20.32" y="33.02" length="middle" rot="R180"/>
-<pin name="A5@44" x="20.32" y="50.8" length="middle" rot="R180"/>
-<pin name="A6@43" x="20.32" y="48.26" length="middle" rot="R180"/>
-<pin name="A7@42" x="20.32" y="45.72" length="middle" rot="R180"/>
-<pin name="!OE!@41" x="20.32" y="-35.56" length="middle" rot="R180"/>
-<pin name="!UB!@40" x="20.32" y="-53.34" length="middle" rot="R180"/>
-<pin name="!LB!@39" x="20.32" y="-50.8" length="middle" rot="R180"/>
-<pin name="D15@38" x="20.32" y="-27.94" length="middle" rot="R180"/>
-<pin name="D14@37" x="20.32" y="-25.4" length="middle" rot="R180"/>
-<pin name="D13@36" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<pin name="D12@35" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="GND@34" x="-20.32" y="-63.5" length="middle"/>
-<pin name="VDD@33" x="-20.32" y="63.5" length="middle"/>
-<pin name="D11@32" x="20.32" y="-17.78" length="middle" rot="R180"/>
-<pin name="D10@31" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="D9@30" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="D8@29" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="A18@28" x="20.32" y="17.78" length="middle" rot="R180"/>
-<pin name="A8@27" x="20.32" y="43.18" length="middle" rot="R180"/>
-<pin name="A9@26" x="20.32" y="40.64" length="middle" rot="R180"/>
-<pin name="A10@25" x="20.32" y="38.1" length="middle" rot="R180"/>
-<pin name="A11@24" x="20.32" y="35.56" length="middle" rot="R180"/>
-<pin name="A17@23" x="20.32" y="20.32" length="middle" rot="R180"/>
-<wire x1="-15.24" y1="68.58" x2="15.24" y2="68.58" width="0.254" layer="94"/>
-<wire x1="15.24" y1="68.58" x2="15.24" y2="-68.58" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-68.58" x2="-15.24" y2="-68.58" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-68.58" x2="-15.24" y2="68.58" width="0.254" layer="94"/>
-<text x="-15.24" y="69.342" size="1.778" layer="94">&gt;NAME</text>
-<text x="-15.24" y="-71.12" size="1.778" layer="94">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="IS66WV51216EBLL">
-<gates>
-<gate name="G$1" symbol="IS66WV51216BLL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSOPII-Z44">
-<connects>
-<connect gate="G$1" pin="!CS1!@6" pad="6"/>
-<connect gate="G$1" pin="!LB!@39" pad="39"/>
-<connect gate="G$1" pin="!OE!@41" pad="41"/>
-<connect gate="G$1" pin="!UB!@40" pad="40"/>
-<connect gate="G$1" pin="!WE!@17" pad="17"/>
-<connect gate="G$1" pin="A0@5" pad="5"/>
-<connect gate="G$1" pin="A10@25" pad="25"/>
-<connect gate="G$1" pin="A11@24" pad="24"/>
-<connect gate="G$1" pin="A12@22" pad="22"/>
-<connect gate="G$1" pin="A13@21" pad="21"/>
-<connect gate="G$1" pin="A14@20" pad="20"/>
-<connect gate="G$1" pin="A15@19" pad="19"/>
-<connect gate="G$1" pin="A16@18" pad="18"/>
-<connect gate="G$1" pin="A17@23" pad="23"/>
-<connect gate="G$1" pin="A18@28" pad="28"/>
-<connect gate="G$1" pin="A1@4" pad="4"/>
-<connect gate="G$1" pin="A2@3" pad="3"/>
-<connect gate="G$1" pin="A3@2" pad="2"/>
-<connect gate="G$1" pin="A4@1" pad="1"/>
-<connect gate="G$1" pin="A5@44" pad="44"/>
-<connect gate="G$1" pin="A6@43" pad="43"/>
-<connect gate="G$1" pin="A7@42" pad="42"/>
-<connect gate="G$1" pin="A8@27" pad="27"/>
-<connect gate="G$1" pin="A9@26" pad="26"/>
-<connect gate="G$1" pin="D0@7" pad="7"/>
-<connect gate="G$1" pin="D10@31" pad="31"/>
-<connect gate="G$1" pin="D11@32" pad="32"/>
-<connect gate="G$1" pin="D12@35" pad="35"/>
-<connect gate="G$1" pin="D13@36" pad="36"/>
-<connect gate="G$1" pin="D14@37" pad="37"/>
-<connect gate="G$1" pin="D15@38" pad="38"/>
-<connect gate="G$1" pin="D1@8" pad="8"/>
-<connect gate="G$1" pin="D2@9" pad="9"/>
-<connect gate="G$1" pin="D3@10" pad="10"/>
-<connect gate="G$1" pin="D4@13" pad="13"/>
-<connect gate="G$1" pin="D5@14" pad="14"/>
-<connect gate="G$1" pin="D6@15" pad="15"/>
-<connect gate="G$1" pin="D7@16" pad="16"/>
-<connect gate="G$1" pin="D8@29" pad="29"/>
-<connect gate="G$1" pin="D9@30" pad="30"/>
-<connect gate="G$1" pin="GND@12" pad="12"/>
-<connect gate="G$1" pin="GND@34" pad="34"/>
-<connect gate="G$1" pin="VDD@11" pad="11"/>
-<connect gate="G$1" pin="VDD@33" pad="33"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="sjg-sdram">
 <packages>
 <package name="SOP50P1176X120-86" urn="urn:adsk.eagle:footprint:3661696/1">
@@ -20113,9 +19802,6 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1K"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1K"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1K"/>
-<part name="PSRAM" library="sjg-ram" deviceset="IS66WV51216EBLL" device=""/>
-<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
-<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -20192,7 +19878,6 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="33"/>
 <part name="+3V30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="C52" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="4.7uF"/>
 <part name="C53" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="C54" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
@@ -20254,6 +19939,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="+3V45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R91" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="33"/>
 <part name="XIO" library="sjg-stm32" deviceset="STM32H753B-XIO" device=""/>
+<part name="SDRAM1" library="sjg-sdram" deviceset="IS42S32800J" device="" package3d_urn="urn:adsk.eagle:package:3661691/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -20436,7 +20122,7 @@ JOY1</text>
 <wire x1="-53.34" y1="111.76" x2="-53.34" y2="121.92" width="0.1524" layer="94"/>
 <wire x1="-53.34" y1="121.92" x2="-81.28" y2="121.92" width="0.1524" layer="94"/>
 <wire x1="-81.28" y1="121.92" x2="-81.28" y2="111.76" width="0.1524" layer="94"/>
-<text x="-73.66" y="116.84" size="1.778" layer="94">1 MB PSRAM</text>
+<text x="-73.66" y="116.84" size="1.778" layer="94">32 MB SDRAM</text>
 <text x="-69.596" y="102.87" size="1.778" layer="94">/41</text>
 <text x="-72.644" y="113.538" size="1.778" layer="94">(16 bit)</text>
 <wire x1="-6.35" y1="86.36" x2="-13.97" y2="92.71" width="0.1524" layer="94"/>
@@ -20517,8 +20203,8 @@ JOY1</text>
 <text x="-7.62" y="-50.8" size="1.778" layer="94">/7</text>
 <text x="2.286" y="-71.374" size="1.778" layer="94">@48</text>
 <text x="2.54" y="-77.724" size="1.778" layer="94">3.3v</text>
-<text x="0" y="81.28" size="1.778" layer="94">@200</text>
-<text x="-60.96" y="81.28" size="1.778" layer="94">@216</text>
+<text x="0" y="81.28" size="1.778" layer="94">@400</text>
+<text x="-60.96" y="81.28" size="1.778" layer="94">@400</text>
 <text x="44.45" y="38.608" size="1.778" layer="94">NCP380</text>
 <wire x1="91.44" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="94"/>
 <wire x1="101.6" y1="27.94" x2="101.6" y2="5.08" width="0.1524" layer="94"/>
@@ -23482,9 +23168,6 @@ unconnected</text>
 <description>XIO PSRAM &amp; VHDCI</description>
 <plain>
 <text x="177.8" y="-48.26" size="2.1844" layer="94">XIO PSRAM, VHDCI</text>
-<text x="-101.6" y="-35.56" size="1.778" layer="97">PSRAM access time guaranteed at 60ns
-If we could use SDRAM, could bump the memory to 32MBytes. 
-- does SDRAM refresh impact access time too much ?</text>
 <wire x1="43.18" y1="187.96" x2="43.18" y2="-63.5" width="0.1524" layer="94" style="shortdash"/>
 <text x="22.86" y="182.88" size="1.778" layer="94">PSRAM interface</text>
 <text x="45.72" y="182.88" size="1.778" layer="94">VHDCI connector interface</text>
@@ -23494,17 +23177,14 @@ Placed close to destination</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="-165.1" y="-68.58"/>
-<instance part="PSRAM" gate="G$1" x="-88.9" y="66.04"/>
-<instance part="C19" gate="G$1" x="-129.54" y="88.9" rot="MR0"/>
-<instance part="C20" gate="G$1" x="-142.24" y="88.9" rot="MR0"/>
-<instance part="+3V6" gate="G$1" x="-129.54" y="149.86" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-132.08" y="152.4" size="1.778" layer="96" rot="MR180"/>
+<instance part="+3V6" gate="G$1" x="25.4" y="170.18" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="22.86" y="172.72" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="SUPPLY10" gate="GND" x="-129.54" y="-15.24" rot="MR0"/>
-<instance part="C52" gate="G$1" x="-116.84" y="88.9" rot="MR0"/>
+<instance part="SUPPLY10" gate="GND" x="-2.54" y="-38.1" rot="MR0"/>
 <instance part="R51" gate="G$1" x="147.32" y="132.08"/>
-<instance part="XIO" gate="-SDRAM" x="-10.16" y="66.04"/>
+<instance part="XIO" gate="-SDRAM" x="-137.16" y="68.58" rot="MR0"/>
 <instance part="XIO" gate="-VHDCI" x="185.42" y="63.5"/>
+<instance part="SDRAM1" gate="G$1" x="-35.56" y="71.12"/>
 </instances>
 <busses>
 <bus name="VHDCI:!VHDCI_EXSEL!,!VHDCI_IRQ!,!VHDCI_MPD!,VHDCI_AUDIO_L,VHDCI_AUDIO_R,VHDCI_AUDIO_SIO,VHDCI_A[0..15],VHDCI_CCTL,VHDCI_CLK,VHDCI_COMMAND,VHDCI_D1XX,VHDCI_DATA_OUT,VHDCI_D[0..7],VHDCI_GND,VHDCI_HALT,VHDCI_J1_A1,VHDCI_J1_A2,VHDCI_J1_[1..5],VHDCI_J2_A1,VHDCI_J2_A2,VHDCI_J2_[1..5],VHDCI_MTR_CTRL,VHDCI_RD4,VHDCI_RD5,VHDCI_REF,VHDCI_RSRVD[0..6],VHDCI_RST,VHDCI_RW,VHDCI_S4,VHDCI_S5,VHDCI_SIO_CLK_IN,VHDCI_SIO_DATA_IN">
@@ -23517,332 +23197,6 @@ Placed close to destination</text>
 </bus>
 </busses>
 <nets>
-<net name="XIO_RAM_A0" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A0@5"/>
-<wire x1="-68.58" y1="129.54" x2="-43.18" y2="129.54" width="0.1524" layer="91"/>
-<label x="-63.5" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A1" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A1@4"/>
-<wire x1="-68.58" y1="127" x2="-43.18" y2="127" width="0.1524" layer="91"/>
-<label x="-63.5" y="127" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A2" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A2@3"/>
-<wire x1="-43.18" y1="124.46" x2="-68.58" y2="124.46" width="0.1524" layer="91"/>
-<label x="-63.5" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A3" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A3@2"/>
-<wire x1="-68.58" y1="121.92" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
-<label x="-63.5" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A4" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A4@1"/>
-<wire x1="-43.18" y1="119.38" x2="-68.58" y2="119.38" width="0.1524" layer="91"/>
-<label x="-63.5" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A5" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A5@44"/>
-<wire x1="-68.58" y1="116.84" x2="-43.18" y2="116.84" width="0.1524" layer="91"/>
-<label x="-63.5" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A6" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A6@43"/>
-<wire x1="-43.18" y1="114.3" x2="-68.58" y2="114.3" width="0.1524" layer="91"/>
-<label x="-63.5" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A7" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A7@42"/>
-<wire x1="-68.58" y1="111.76" x2="-43.18" y2="111.76" width="0.1524" layer="91"/>
-<label x="-63.5" y="111.76" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A8" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A8@27"/>
-<wire x1="-43.18" y1="109.22" x2="-68.58" y2="109.22" width="0.1524" layer="91"/>
-<label x="-63.5" y="109.22" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A9" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A9@26"/>
-<wire x1="-68.58" y1="106.68" x2="-43.18" y2="106.68" width="0.1524" layer="91"/>
-<label x="-63.5" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A10" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A10@25"/>
-<wire x1="-43.18" y1="104.14" x2="-68.58" y2="104.14" width="0.1524" layer="91"/>
-<label x="-63.5" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A11" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A11@24"/>
-<wire x1="-68.58" y1="101.6" x2="-43.18" y2="101.6" width="0.1524" layer="91"/>
-<label x="-63.5" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A12" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A12@22"/>
-<wire x1="-43.18" y1="99.06" x2="-68.58" y2="99.06" width="0.1524" layer="91"/>
-<label x="-63.5" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A13" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A13@21"/>
-<wire x1="-68.58" y1="96.52" x2="-43.18" y2="96.52" width="0.1524" layer="91"/>
-<label x="-63.5" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A14" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A14@20"/>
-<wire x1="-43.18" y1="93.98" x2="-68.58" y2="93.98" width="0.1524" layer="91"/>
-<label x="-63.5" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A15" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A15@19"/>
-<wire x1="-68.58" y1="91.44" x2="-43.18" y2="91.44" width="0.1524" layer="91"/>
-<label x="-63.5" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A16" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A16@18"/>
-<wire x1="-43.18" y1="88.9" x2="-68.58" y2="88.9" width="0.1524" layer="91"/>
-<label x="-63.5" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A17" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A17@23"/>
-<wire x1="-68.58" y1="86.36" x2="-43.18" y2="86.36" width="0.1524" layer="91"/>
-<label x="-63.5" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_A18" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="A18@28"/>
-<wire x1="-43.18" y1="83.82" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
-<label x="-63.5" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D0" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D0@7"/>
-<wire x1="-68.58" y1="76.2" x2="-43.18" y2="76.2" width="0.1524" layer="91"/>
-<label x="-63.5" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D1" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D1@8"/>
-<wire x1="-43.18" y1="73.66" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
-<label x="-63.5" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D2" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D2@9"/>
-<wire x1="-68.58" y1="71.12" x2="-43.18" y2="71.12" width="0.1524" layer="91"/>
-<label x="-63.5" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D3" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D3@10"/>
-<wire x1="-43.18" y1="68.58" x2="-68.58" y2="68.58" width="0.1524" layer="91"/>
-<label x="-63.5" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D4" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D4@13"/>
-<wire x1="-68.58" y1="66.04" x2="-43.18" y2="66.04" width="0.1524" layer="91"/>
-<label x="-63.5" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D5" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D5@14"/>
-<wire x1="-43.18" y1="63.5" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
-<label x="-63.5" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D6" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D6@15"/>
-<wire x1="-68.58" y1="60.96" x2="-43.18" y2="60.96" width="0.1524" layer="91"/>
-<label x="-63.5" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D7" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D7@16"/>
-<wire x1="-43.18" y1="58.42" x2="-68.58" y2="58.42" width="0.1524" layer="91"/>
-<label x="-63.5" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D8" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D8@29"/>
-<wire x1="-68.58" y1="55.88" x2="-43.18" y2="55.88" width="0.1524" layer="91"/>
-<label x="-63.5" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D9" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D9@30"/>
-<wire x1="-43.18" y1="53.34" x2="-68.58" y2="53.34" width="0.1524" layer="91"/>
-<label x="-63.5" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D10" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D10@31"/>
-<wire x1="-68.58" y1="50.8" x2="-43.18" y2="50.8" width="0.1524" layer="91"/>
-<label x="-63.5" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D11" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D11@32"/>
-<wire x1="-43.18" y1="48.26" x2="-68.58" y2="48.26" width="0.1524" layer="91"/>
-<label x="-63.5" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D12" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D12@35"/>
-<wire x1="-68.58" y1="45.72" x2="-43.18" y2="45.72" width="0.1524" layer="91"/>
-<label x="-63.5" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D13" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D13@36"/>
-<wire x1="-43.18" y1="43.18" x2="-68.58" y2="43.18" width="0.1524" layer="91"/>
-<label x="-63.5" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D14" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D14@37"/>
-<wire x1="-68.58" y1="40.64" x2="-43.18" y2="40.64" width="0.1524" layer="91"/>
-<label x="-63.5" y="40.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_D15" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="D15@38"/>
-<wire x1="-43.18" y1="38.1" x2="-68.58" y2="38.1" width="0.1524" layer="91"/>
-<label x="-63.5" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_!OE!" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="!OE!@41"/>
-<wire x1="-68.58" y1="30.48" x2="-43.18" y2="30.48" width="0.1524" layer="91"/>
-<label x="-63.5" y="30.734" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_!WE!" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="!WE!@17"/>
-<wire x1="-43.18" y1="22.86" x2="-68.58" y2="22.86" width="0.1524" layer="91"/>
-<label x="-63.5" y="23.114" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_!LB!" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="!LB!@39"/>
-<wire x1="-68.58" y1="15.24" x2="-43.18" y2="15.24" width="0.1524" layer="91"/>
-<label x="-63.5" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_!UB!" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="!UB!@40"/>
-<wire x1="-43.18" y1="12.7" x2="-68.58" y2="12.7" width="0.1524" layer="91"/>
-<label x="-63.5" y="12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="XIO_RAM_!CS!" class="0">
-<segment>
-<pinref part="PSRAM" gate="G$1" pin="!CS1!@6"/>
-<wire x1="-68.58" y1="2.54" x2="-43.18" y2="2.54" width="0.1524" layer="91"/>
-<label x="-63.5" y="2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="SUPPLY10" gate="GND" pin="GND"/>
-<pinref part="C19" gate="G$1" pin="2"/>
-<wire x1="-129.54" y1="-12.7" x2="-129.54" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="2"/>
-<wire x1="-129.54" y1="2.54" x2="-129.54" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="5.08" x2="-129.54" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="78.74" x2="-129.54" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="78.74" x2="-142.24" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="78.74" x2="-142.24" y2="83.82" width="0.1524" layer="91"/>
-<junction x="-129.54" y="78.74"/>
-<pinref part="PSRAM" gate="G$1" pin="GND@12"/>
-<wire x1="-109.22" y1="5.08" x2="-129.54" y2="5.08" width="0.1524" layer="91"/>
-<junction x="-129.54" y="5.08"/>
-<pinref part="PSRAM" gate="G$1" pin="GND@34"/>
-<wire x1="-109.22" y1="2.54" x2="-129.54" y2="2.54" width="0.1524" layer="91"/>
-<junction x="-129.54" y="2.54"/>
-<pinref part="C52" gate="G$1" pin="2"/>
-<wire x1="-129.54" y1="78.74" x2="-116.84" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="78.74" x2="-116.84" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="C19" gate="G$1" pin="1"/>
-<pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<wire x1="-129.54" y1="91.44" x2="-129.54" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="1"/>
-<wire x1="-129.54" y1="96.52" x2="-129.54" y2="127" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="127" x2="-129.54" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="129.54" x2="-129.54" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="91.44" x2="-142.24" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="96.52" x2="-129.54" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-129.54" y="96.52"/>
-<pinref part="PSRAM" gate="G$1" pin="VDD@33"/>
-<wire x1="-109.22" y1="129.54" x2="-129.54" y2="129.54" width="0.1524" layer="91"/>
-<junction x="-129.54" y="129.54"/>
-<pinref part="PSRAM" gate="G$1" pin="VDD@11"/>
-<wire x1="-109.22" y1="127" x2="-129.54" y2="127" width="0.1524" layer="91"/>
-<junction x="-129.54" y="127"/>
-<pinref part="C52" gate="G$1" pin="1"/>
-<wire x1="-116.84" y1="91.44" x2="-116.84" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="96.52" x2="-129.54" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VHDCI_CLK" class="0">
 <segment>
 <wire x1="109.22" y1="116.84" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
