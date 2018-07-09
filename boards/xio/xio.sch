@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -21987,7 +21987,7 @@ to VCAP pins</text>
 <wire x1="124.46" y1="68.58" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="VREG33" gate="G$1" pin="IN@1"/>
 <wire x1="-149.86" y1="-73.66" x2="-157.48" y2="-73.66" width="0.1524" layer="91"/>
@@ -23047,7 +23047,7 @@ VHDCI connector</text>
 <pinref part="VHDCI_CON" gate="G$1" pin="P$68"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="ECI" gate="G$1" pin="42"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
@@ -24735,7 +24735,7 @@ by default, all busses are tri-state</text>
 <wire x1="-165.1" y1="-127" x2="-165.1" y2="-129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="P+19" gate="1" pin="+5V"/>
 <pinref part="LVL_IN" gate="G$1" pin="DIR@2"/>
@@ -27410,7 +27410,7 @@ Differential impedance</text>
 <busses>
 </busses>
 <nets>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="XIO-POWER_SW" gate="G$1" pin="IN@1"/>
 <pinref part="P+41" gate="1" pin="+5V"/>
@@ -27488,7 +27488,7 @@ Differential impedance</text>
 <wire x1="-27.94" y1="20.32" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="XIO_USB_N" class="4">
+<net name="XIO_USB_N" class="0">
 <segment>
 <wire x1="-144.78" y1="2.54" x2="-81.28" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C174" gate="G$1" pin="1"/>
@@ -27509,7 +27509,7 @@ Differential impedance</text>
 <junction x="-81.28" y="27.94"/>
 </segment>
 </net>
-<net name="XIO_USB_P" class="4">
+<net name="XIO_USB_P" class="0">
 <segment>
 <wire x1="-144.78" y1="0" x2="-91.44" y2="0" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="0" x2="-76.2" y2="0" width="0.1524" layer="91"/>
@@ -27876,7 +27876,7 @@ Slot ID</text>
 <label x="-4.572" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="SLOT1" gate="G$1" pin="B1"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
@@ -29414,7 +29414,7 @@ Slot ID</text>
 <label x="188.468" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="SLOT2" gate="G$1" pin="B1"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
@@ -30949,7 +30949,7 @@ Slot ID</text>
 <label x="69.088" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="SLOT4" gate="G$1" pin="B1"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
@@ -32352,7 +32352,7 @@ Slot ID</text>
 <label x="21.082" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="SLOT6" gate="G$1" pin="B1"/>
 <pinref part="P+15" gate="1" pin="+5V"/>
@@ -36199,7 +36199,7 @@ Differential impedance</text>
 <wire x1="-76.2" y1="45.72" x2="-76.2" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="R54" gate="G$1" pin="1"/>
 <pinref part="P+29" gate="1" pin="+5V"/>
@@ -36330,7 +36330,7 @@ Differential impedance</text>
 <junction x="-58.42" y="114.3"/>
 </segment>
 </net>
-<net name="HDMI_CLK_P" class="3">
+<net name="HDMI_CLK_P" class="0">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TXC+@28"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TXC+"/>
@@ -36338,7 +36338,7 @@ Differential impedance</text>
 <label x="71.12" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_CLK_N" class="3">
+<net name="HDMI_CLK_N" class="0">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TXC-"/>
 <pinref part="HDMI" gate="G$1" pin="TXC-@27"/>
@@ -36346,7 +36346,7 @@ Differential impedance</text>
 <label x="71.12" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_D0_P" class="3">
+<net name="HDMI_D0_P" class="0">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TX0+@31"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX0+"/>
@@ -36354,7 +36354,7 @@ Differential impedance</text>
 <label x="71.12" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_D0_N" class="3">
+<net name="HDMI_D0_N" class="0">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX0-"/>
 <pinref part="HDMI" gate="G$1" pin="TX0-@30"/>
@@ -36362,7 +36362,7 @@ Differential impedance</text>
 <label x="71.12" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_D1_P" class="3">
+<net name="HDMI_D1_P" class="0">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TX1+@35"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX1+"/>
@@ -36370,7 +36370,7 @@ Differential impedance</text>
 <label x="71.12" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_D1_N" class="3">
+<net name="HDMI_D1_N" class="0">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX1-"/>
 <pinref part="HDMI" gate="G$1" pin="TX1-@34"/>
@@ -36378,7 +36378,7 @@ Differential impedance</text>
 <label x="71.12" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_D2_P" class="3">
+<net name="HDMI_D2_P" class="0">
 <segment>
 <pinref part="HDMI" gate="G$1" pin="TX2+@38"/>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX2+"/>
@@ -36386,7 +36386,7 @@ Differential impedance</text>
 <label x="71.12" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_D2_N" class="3">
+<net name="HDMI_D2_N" class="0">
 <segment>
 <pinref part="HDMI_SOCKET" gate="G$1" pin="TX2-"/>
 <pinref part="HDMI" gate="G$1" pin="TX2-@37"/>
@@ -36663,7 +36663,7 @@ on data signal lanes</text>
 <wire x1="129.54" y1="5.08" x2="129.54" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="VREG18" gate="G$1" pin="IN@1"/>
 <wire x1="-121.92" y1="78.74" x2="-129.54" y2="78.74" width="0.1524" layer="91"/>
@@ -36752,56 +36752,56 @@ on data signal lanes</text>
 <junction x="-83.82" y="78.74"/>
 </segment>
 </net>
-<net name="HDMI_CLK_P" class="3">
+<net name="HDMI_CLK_P" class="0">
 <segment>
 <wire x1="86.36" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
 <label x="73.152" y="53.848" size="1.778" layer="95" rot="R180"/>
 <pinref part="HDMI_ESD" gate="G$1" pin="CLK+@2"/>
 </segment>
 </net>
-<net name="HDMI_CLK_N" class="3">
+<net name="HDMI_CLK_N" class="0">
 <segment>
 <wire x1="86.36" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 <label x="73.152" y="56.388" size="1.778" layer="95" rot="R180"/>
 <pinref part="HDMI_ESD" gate="G$1" pin="CLK-@1"/>
 </segment>
 </net>
-<net name="HDMI_D0_N" class="3">
+<net name="HDMI_D0_N" class="0">
 <segment>
 <wire x1="86.36" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
 <label x="73.152" y="48.768" size="1.778" layer="95" rot="R180"/>
 <pinref part="HDMI_ESD" gate="G$1" pin="TX0-@4"/>
 </segment>
 </net>
-<net name="HDMI_D0_P" class="3">
+<net name="HDMI_D0_P" class="0">
 <segment>
 <wire x1="86.36" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <label x="73.152" y="46.228" size="1.778" layer="95" rot="R180"/>
 <pinref part="HDMI_ESD" gate="G$1" pin="TX0+@5"/>
 </segment>
 </net>
-<net name="HDMI_D1_N" class="3">
+<net name="HDMI_D1_N" class="0">
 <segment>
 <wire x1="86.36" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
 <label x="73.152" y="41.148" size="1.778" layer="95" rot="R180"/>
 <pinref part="HDMI_ESD" gate="G$1" pin="TX1-@7"/>
 </segment>
 </net>
-<net name="HDMI_D1_P" class="3">
+<net name="HDMI_D1_P" class="0">
 <segment>
 <wire x1="86.36" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 <label x="73.152" y="38.608" size="1.778" layer="95" rot="R180"/>
 <pinref part="HDMI_ESD" gate="G$1" pin="TX1+@8"/>
 </segment>
 </net>
-<net name="HDMI_D2_N" class="3">
+<net name="HDMI_D2_N" class="0">
 <segment>
 <wire x1="86.36" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <label x="73.152" y="33.528" size="1.778" layer="95" rot="R180"/>
 <pinref part="HDMI_ESD" gate="G$1" pin="TX2-@10"/>
 </segment>
 </net>
-<net name="HDMI_D2_P" class="3">
+<net name="HDMI_D2_P" class="0">
 <segment>
 <wire x1="86.36" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
 <label x="73.152" y="30.988" size="1.778" layer="95" rot="R180"/>
@@ -37593,7 +37593,7 @@ Differential impedance</text>
 <pinref part="PIO" gate="-USB" pin="PA5@54"/>
 </segment>
 </net>
-<net name="+5V" class="2">
+<net name="+5V" class="0">
 <segment>
 <pinref part="POWER_SW" gate="G$1" pin="IN@1"/>
 <pinref part="P+16" gate="1" pin="+5V"/>
