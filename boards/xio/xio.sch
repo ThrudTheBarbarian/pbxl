@@ -36532,7 +36532,7 @@ on data signal lanes</text>
 <instance part="C120" gate="G$1" x="-96.52" y="-91.44"/>
 <instance part="SUPPLY90" gate="GND" x="-66.04" y="-106.68"/>
 <instance part="R88" gate="G$1" x="-71.12" y="88.9" smashed="yes" rot="R270"/>
-<instance part="SUPPLY132" gate="GND" x="129.54" y="-7.62"/>
+<instance part="SUPPLY132" gate="GND" x="129.54" y="-12.7"/>
 <instance part="HDMI_ESD" gate="G$1" x="104.14" y="25.4"/>
 <instance part="P+42" gate="1" x="53.34" y="7.62"/>
 </instances>
@@ -36657,10 +36657,9 @@ on data signal lanes</text>
 </segment>
 <segment>
 <pinref part="SUPPLY132" gate="GND" pin="GND"/>
-<wire x1="129.54" y1="-5.08" x2="129.54" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="HDMI_ESD" gate="G$1" pin="GND@18"/>
-<wire x1="121.92" y1="5.08" x2="129.54" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="5.08" x2="129.54" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-10.16" x2="129.54" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="HDMI_ESD" gate="G$1" pin="GND@12"/>
+<wire x1="121.92" y1="-2.54" x2="129.54" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -37360,7 +37359,7 @@ Differential impedance</text>
 <label x="-14.732" y="6.604" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ETH_TX_P" class="3">
+<net name="ETH_TX_P" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="TX+"/>
 <pinref part="R77" gate="G$1" pin="1"/>
@@ -37372,7 +37371,7 @@ Differential impedance</text>
 <label x="2.54" y="69.088" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ETH_TX_N" class="3">
+<net name="ETH_TX_N" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="TX-"/>
 <pinref part="R78" gate="G$1" pin="1"/>
@@ -37384,7 +37383,7 @@ Differential impedance</text>
 <label x="2.54" y="43.688" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ETH_RX_P" class="3">
+<net name="ETH_RX_P" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="RX+"/>
 <pinref part="R79" gate="G$1" pin="1"/>
@@ -37396,7 +37395,7 @@ Differential impedance</text>
 <label x="2.54" y="15.748" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ETH_RX_N" class="3">
+<net name="ETH_RX_N" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="RX-"/>
 <pinref part="R80" gate="G$1" pin="1"/>
@@ -37525,7 +37524,7 @@ Differential impedance</text>
 <busses>
 </busses>
 <nets>
-<net name="PIO_USB_N" class="4">
+<net name="PIO_USB_N" class="0">
 <segment>
 <wire x1="-139.7" y1="2.54" x2="-60.96" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C132" gate="G$1" pin="1"/>
@@ -37546,7 +37545,7 @@ Differential impedance</text>
 <junction x="-60.96" y="27.94"/>
 </segment>
 </net>
-<net name="PIO_USB_P" class="4">
+<net name="PIO_USB_P" class="0">
 <segment>
 <wire x1="-139.7" y1="0" x2="-78.74" y2="0" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="0" x2="-43.18" y2="0" width="0.1524" layer="91"/>
@@ -38044,6 +38043,31 @@ Differential impedance</text>
 <approved hash="113,9,3.071,8.151,FRAME8,,,,,"/>
 <approved hash="113,22,-57.889,8.151,FRAME21,,,,,"/>
 <approved hash="113,19,8.151,-2.009,FRAME22,,,,,"/>
+<approved hash="113,15,-92.0242,-10.1346,TP1,,,,,"/>
+<approved hash="113,15,-89.4842,-5.0546,TP2,,,,,"/>
+<approved hash="113,15,-86.9442,-10.1346,TP3,,,,,"/>
+<approved hash="113,15,-84.4042,-5.0546,TP4,,,,,"/>
+<approved hash="113,15,-81.8642,-10.1346,TP5,,,,,"/>
+<approved hash="113,15,-79.3242,-5.0546,TP6,,,,,"/>
+<approved hash="113,15,-71.7042,-10.1346,TP9,,,,,"/>
+<approved hash="113,15,-69.1106,-5.0546,TP10,,,,,"/>
+<approved hash="113,15,-66.5706,-10.1346,TP11,,,,,"/>
+<approved hash="113,15,-64.0306,-5.0546,TP12,,,,,"/>
+<approved hash="113,15,-61.4906,-10.1346,TP13,,,,,"/>
+<approved hash="113,15,-58.9506,-5.0546,TP14,,,,,"/>
+<approved hash="113,15,-56.4106,-10.1346,TP15,,,,,"/>
+<approved hash="113,15,-53.8706,-5.0546,TP16,,,,,"/>
+<approved hash="113,15,-51.3306,-10.1346,TP17,,,,,"/>
+<approved hash="113,15,-48.7906,-5.0546,TP18,,,,,"/>
+<approved hash="113,15,-46.2506,-10.1346,TP19,,,,,"/>
+<approved hash="113,5,-119.964,-50.7746,TP7,,,,,"/>
+<approved hash="113,5,-117.424,-45.6946,TP8,,,,,"/>
+<approved hash="113,5,-114.831,-50.7746,TP20,,,,,"/>
+<approved hash="113,5,-112.291,-45.6946,TP21,,,,,"/>
+<approved hash="113,5,-109.751,-50.7746,TP22,,,,,"/>
+<approved hash="113,5,-107.211,-45.6946,TP23,,,,,"/>
+<approved hash="113,5,-104.671,-50.7746,TP24,,,,,"/>
+<approved hash="113,5,-102.131,-45.6946,TP25,,,,,"/>
 <approved hash="115,19,-87.63,10.16,LCD_CLK,,,,,"/>
 </errors>
 </schematic>
