@@ -26941,6 +26941,8 @@ by default, all busses are tri-state</text>
 (See Table 2, pg 9 in datasheet)</text>
 <text x="-25.4" y="78.74" size="1.778" layer="97">the 'E' designation on the MAX3232 indicates
 that it has ESD protection built in</text>
+<text x="55.88" y="33.02" size="1.27" layer="94">D09P33E4GX00LF</text>
+<text x="53.34" y="-17.78" size="1.27" layer="94">D09P33E4GX00LF</text>
 </plain>
 <instances>
 <instance part="FRAME13" gate="G$1" x="-195.58" y="-119.38"/>
