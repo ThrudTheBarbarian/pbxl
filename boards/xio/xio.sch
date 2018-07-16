@@ -13488,8 +13488,8 @@ MAX3223-MAX3243.pdf</description>
 <class number="3" name="tx100" width="0.254" drill="0">
 <clearance class="3" value="0.4572"/>
 </class>
-<class number="4" name="usb90" width="0.508" drill="0">
-<clearance class="4" value="0.6096"/>
+<class number="4" name="usb90" width="0.254" drill="0">
+<clearance class="4" value="0.2032"/>
 </class>
 </classes>
 <parts>
@@ -13951,8 +13951,8 @@ Total</text>
 <wire x1="137.795" y1="6.985" x2="168.275" y2="6.985" width="1.27" layer="94"/>
 <wire x1="137.795" y1="-5.715" x2="168.275" y2="-5.715" width="2.54" layer="94"/>
 <text x="145.415" y="12.065" size="1.778" layer="94">1.2 mm core</text>
-<text x="145.415" y="-0.635" size="1.778" layer="94">0.2mm pre-preg</text>
-<text x="145.415" y="24.765" size="1.778" layer="94">0.2mm pre-preg</text>
+<text x="145.415" y="-0.635" size="1.778" layer="94">0.12mm pre-preg</text>
+<text x="145.415" y="24.765" size="1.778" layer="94">0.12mm pre-preg</text>
 <text x="170.815" y="31.877" size="1.778" layer="94">0.035mm</text>
 <text x="170.815" y="-6.223" size="1.778" layer="94">0.035mm</text>
 <text x="170.815" y="19.177" size="1.778" layer="94">0.017mm</text>
@@ -17867,12 +17867,12 @@ Prepreg dielectric
 
 Differential impedance</text>
 <text x="-48.26" y="88.9" size="1.778" layer="97">0.035 mm
-0.2 mm
-16 mil
+0.12 mm
+10 mil
 8 mil
-4.2
+4.4
 
-91.6 ohms</text>
+91.7 ohms</text>
 <wire x1="-81.28" y1="109.22" x2="-33.02" y2="109.22" width="0.1524" layer="97"/>
 <wire x1="-33.02" y1="109.22" x2="-33.02" y2="86.36" width="0.1524" layer="97"/>
 <wire x1="-33.02" y1="86.36" x2="-81.28" y2="86.36" width="0.1524" layer="97"/>
