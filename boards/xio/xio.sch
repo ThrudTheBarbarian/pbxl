@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13924,56 +13924,45 @@ JOY1</text>
 3.3v from 5V, max power provided= 1.5A / Vreg
   - One Vreg per slot
   - One Vreg for everything else
-  - Max power consumed = 4W * 7 = 28W 
-
-1.8v from 5V, max power provided = 1.5A
-  - Max power consumed = 4W 
-
+  - Max power consumed = 4W * 5 = 20W 
 
 3.3v main-board current sinks (max, in mA)</text>
-<text x="153.035" y="80.01" size="1.778" layer="94" rot="R180">'PIO' STM32F7
-'XIO' STM32F7
+<text x="153.035" y="80.01" size="1.778" layer="94" rot="R180">'XIO' STM32F7
 IS66WV51216EBLL
-MAX3232 x2
+MAX3232
 LEDs x6
-IS42S32800J
-LAN8742A-CZ
 NCP380
 
 Total</text>
-<text x="163.195" y="80.01" size="1.778" layer="94" rot="R180">320 
-320
+<text x="163.195" y="80.01" size="1.778" layer="94" rot="R180">320
 25
-4
+2
 20
-190
-50
 1
 
-910</text>
+368</text>
 <text x="162.56" y="-104.14" size="2.54" layer="94">Block Diagram</text>
 <wire x1="111.76" y1="124.46" x2="198.12" y2="124.46" width="0.2032" layer="94"/>
 <wire x1="198.12" y1="124.46" x2="198.12" y2="50.8" width="0.2032" layer="94"/>
 <wire x1="198.12" y1="50.8" x2="111.76" y2="50.8" width="0.2032" layer="94"/>
 <wire x1="111.76" y1="50.8" x2="111.76" y2="124.46" width="0.2032" layer="94"/>
 <wire x1="137.795" y1="32.385" x2="168.275" y2="32.385" width="2.54" layer="94"/>
-<wire x1="137.795" y1="24.765" x2="168.275" y2="24.765" width="1.27" layer="94"/>
-<wire x1="137.795" y1="17.145" x2="168.275" y2="17.145" width="1.27" layer="94"/>
+<wire x1="137.795" y1="19.685" x2="168.275" y2="19.685" width="1.27" layer="94"/>
+<wire x1="137.795" y1="6.985" x2="168.275" y2="6.985" width="1.27" layer="94"/>
 <wire x1="137.795" y1="-5.715" x2="168.275" y2="-5.715" width="2.54" layer="94"/>
-<text x="145.415" y="19.685" size="1.778" layer="94">0.5 mm core</text>
-<text x="145.415" y="-3.175" size="1.778" layer="94">0.12mm pre-preg</text>
-<text x="145.415" y="27.305" size="1.778" layer="94">0.12mm pre-preg</text>
+<text x="145.415" y="12.065" size="1.778" layer="94">1.2 mm core</text>
+<text x="145.415" y="-0.635" size="1.778" layer="94">0.2mm pre-preg</text>
+<text x="145.415" y="24.765" size="1.778" layer="94">0.2mm pre-preg</text>
 <text x="170.815" y="31.877" size="1.778" layer="94">0.035mm</text>
 <text x="170.815" y="-6.223" size="1.778" layer="94">0.035mm</text>
-<text x="170.815" y="24.257" size="1.778" layer="94">0.017mm</text>
-<text x="170.815" y="9.017" size="1.778" layer="94">0.017mm</text>
+<text x="170.815" y="19.177" size="1.778" layer="94">0.017mm</text>
 <text x="116.84" y="38.1" size="1.778" layer="94">Layer stack-up</text>
 <wire x1="111.76" y1="43.18" x2="198.12" y2="43.18" width="0.2032" layer="94"/>
 <wire x1="198.12" y1="43.18" x2="198.12" y2="-17.78" width="0.2032" layer="94"/>
 <wire x1="198.12" y1="-17.78" x2="111.76" y2="-17.78" width="0.2032" layer="94"/>
 <wire x1="111.76" y1="-17.78" x2="111.76" y2="43.18" width="0.2032" layer="94"/>
-<text x="127.635" y="24.003" size="1.778" layer="94">GND</text>
-<text x="127.635" y="8.763" size="1.778" layer="94">Power</text>
+<text x="127.635" y="18.923" size="1.778" layer="94">GND</text>
+<text x="127.635" y="6.223" size="1.778" layer="94">Power</text>
 <text x="153.035" y="-13.335" size="1.778" layer="94">Dielectric constant: 4.2</text>
 <wire x1="115.57" y1="-36.83" x2="115.57" y2="-40.64" width="0.1524" layer="94"/>
 <wire x1="115.57" y1="-40.64" x2="149.86" y2="-40.64" width="0.1524" layer="94"/>
@@ -14029,12 +14018,7 @@ Total</text>
 <wire x1="198.12" y1="-86.36" x2="111.76" y2="-86.36" width="0.2032" layer="94"/>
 <wire x1="111.76" y1="-86.36" x2="111.76" y2="-27.94" width="0.2032" layer="94"/>
 <text x="116.84" y="119.38" size="1.778" layer="94">Power budgets</text>
-<wire x1="137.795" y1="1.905" x2="168.275" y2="1.905" width="1.27" layer="94"/>
-<wire x1="137.795" y1="9.525" x2="168.275" y2="9.525" width="1.27" layer="94"/>
-<text x="145.415" y="12.065" size="1.778" layer="94">0.24mm pre-preg</text>
-<text x="145.415" y="4.445" size="1.778" layer="94">0.5 mm core</text>
-<text x="170.815" y="16.637" size="1.778" layer="94">0.017mm</text>
-<text x="170.815" y="1.397" size="1.778" layer="94">0.017mm</text>
+<text x="170.815" y="6.477" size="1.778" layer="94">0.017mm</text>
 <wire x1="-154.94" y1="60.96" x2="-144.78" y2="60.96" width="0.1524" layer="94"/>
 <wire x1="-144.78" y1="60.96" x2="-144.78" y2="12.7" width="0.1524" layer="94"/>
 <wire x1="-144.78" y1="12.7" x2="-154.94" y2="12.7" width="0.1524" layer="94"/>
@@ -14794,24 +14778,6 @@ VHDCI connector</text>
 </instance>
 </instances>
 <busses>
-<bus name="VHDCI:VHDCI_A[0..15],VHDCI_AUDIO_L,VHDCI_AUDIO_R,VHDCI_AUDIO_SIO,VHDCI_CCTL,VHDCI_CLK,VHDCI_COMMAND,VHDCI_D[0..7],VHDCI_D1XX,VHDCI_DATA_OUT,!VHDCI_EXSEL!,VHDCI_GND,VHDCI_HALT,!VHDCI_IRQ!,VHDCI_J1_[1..5],VHDCI_J1_A1,VHDCI_J1_A2,VHDCI_J2_[1..5],VHDCI_J2_A1,VHDCI_J2_A2,!VHDCI_MPD!,VHDCI_MTR_CTRL,VHDCI_RD4,VHDCI_RD5,VHDCI_REF,VHDCI_RSRVD[0..6],VHDCI_RST,VHDCI_RW,VHDCI_S4,VHDCI_S5,VHDCI_SIO_CLK_IN,VHDCI_SIO_DATA_IN">
-<segment>
-<wire x1="22.86" y1="114.3" x2="25.4" y2="111.76" width="0.762" layer="92"/>
-</segment>
-<segment>
-<wire x1="-50.8" y1="114.3" x2="-48.26" y2="111.76" width="0.762" layer="92"/>
-</segment>
-<segment>
-<wire x1="-48.26" y1="-15.24" x2="-48.26" y2="111.76" width="0.762" layer="92"/>
-<wire x1="-48.26" y1="111.76" x2="-45.72" y2="114.3" width="0.762" layer="92"/>
-<wire x1="-45.72" y1="114.3" x2="22.86" y2="114.3" width="0.762" layer="92"/>
-</segment>
-<segment>
-<wire x1="-152.4" y1="2.54" x2="-152.4" y2="111.76" width="0.762" layer="92"/>
-<wire x1="-152.4" y1="111.76" x2="-149.86" y2="114.3" width="0.762" layer="92"/>
-<wire x1="-149.86" y1="114.3" x2="-50.8" y2="114.3" width="0.762" layer="92"/>
-</segment>
-</bus>
 <bus name="LVL_CART:LVL_CART_D[0..7],LVL_CART_S4,LVL_CART_S5">
 <segment>
 <wire x1="53.34" y1="30.48" x2="68.58" y2="30.48" width="0.762" layer="92"/>
@@ -14840,6 +14806,22 @@ VHDCI connector</text>
 <wire x1="50.8" y1="114.3" x2="213.36" y2="114.3" width="0.762" layer="92"/>
 <wire x1="213.36" y1="114.3" x2="215.9" y2="111.76" width="0.762" layer="92"/>
 <wire x1="215.9" y1="111.76" x2="215.9" y2="-60.96" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="22.86" y1="114.3" x2="25.4" y2="111.76" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="-50.8" y1="114.3" x2="-48.26" y2="111.76" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="-48.26" y1="-15.24" x2="-48.26" y2="111.76" width="0.762" layer="92"/>
+<wire x1="-48.26" y1="111.76" x2="-45.72" y2="114.3" width="0.762" layer="92"/>
+<wire x1="-45.72" y1="114.3" x2="22.86" y2="114.3" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="-152.4" y1="2.54" x2="-152.4" y2="111.76" width="0.762" layer="92"/>
+<wire x1="-152.4" y1="111.76" x2="-149.86" y2="114.3" width="0.762" layer="92"/>
+<wire x1="-149.86" y1="114.3" x2="-50.8" y2="114.3" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
