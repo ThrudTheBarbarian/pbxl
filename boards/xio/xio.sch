@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17052,8 +17052,6 @@ source</text>
 <wire x1="0" y1="-5.08" x2="182.88" y2="-5.08" width="0.1524" layer="97" style="shortdash"/>
 <text x="11.176" y="0" size="1.778" layer="94" rot="R180">SD Card</text>
 <text x="76.2" y="109.22" size="1.778" layer="97">Place pull-ups close to card socket</text>
-<attribute name="VALUE" x="99.06" y="104.14" size="1.778" layer="96" rot="R180"/>
-<attribute name="VALUE" x="167.64" y="73.66" size="1.778" layer="96" rot="R180"/>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="-198.12" y="-134.62"/>
@@ -23333,7 +23331,6 @@ Differential impedance</text>
 <wire x1="-20.32" y1="119.38" x2="-20.32" y2="93.98" width="0.1524" layer="97"/>
 <wire x1="-20.32" y1="93.98" x2="-68.58" y2="93.98" width="0.1524" layer="97"/>
 <wire x1="-68.58" y1="93.98" x2="-68.58" y2="119.38" width="0.1524" layer="97"/>
-<attribute name="VALUE" x="88.9" y="63.5" size="1.778" layer="96" rot="R180"/>
 <text x="-66.04" y="116.84" size="1.778" layer="94">USB3 connections</text>
 <wire x1="-7.62" y1="129.54" x2="-7.62" y2="27.94" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="-7.62" y1="27.94" x2="-7.62" y2="-119.38" width="0.1524" layer="94" style="shortdash"/>
@@ -25802,22 +25799,29 @@ tPD_BA : 0.6 .. 6ns</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,6,109.22,55.88,SERIAL_BUF0P,VCC,+3V3,,,"/>
-<approved hash="104,14,-30.48,96.52,OSC1,VCC,+3V3,,,"/>
+<approved hash="104,6,114.3,20.32,SERIAL_BUF0P,VCC,+3V3,,,"/>
+<approved hash="104,4,157.48,60.96,SD_SLOT,VDD,+3V3,,,"/>
+<approved hash="104,4,157.48,55.88,SD_SLOT,VSS,GND,,,"/>
+<approved hash="104,4,157.48,50.8,SD_SLOT,SH1,GND,,,"/>
+<approved hash="104,4,157.48,48.26,SD_SLOT,SH2,GND,,,"/>
+<approved hash="104,4,157.48,45.72,SD_SLOT,SH3,GND,,,"/>
+<approved hash="104,4,157.48,43.18,SD_SLOT,SH4,GND,,,"/>
+<approved hash="104,4,157.48,40.64,SD_SLOT,SH5,GND,,,"/>
+<approved hash="104,14,99.06,99.06,OSC1,VCC,+3V3,,,"/>
 <approved hash="110,7,6.35,2.54,XIO_USB_N,XIO_USB_P,,,,"/>
 <approved hash="110,7,6.35,2.54,XIO_USB_N,XIO_USB_P,,,,"/>
 <approved hash="113,2,0.531,3.071,FRAME2,,,,,"/>
 <approved hash="113,8,61.491,-12.169,FRAME6,,,,,"/>
 <approved hash="113,10,-7.089,3.071,FRAME7,,,,,"/>
 <approved hash="113,6,-2.009,10.691,FRAME13,,,,,"/>
-<approved hash="113,6,60.96,44.7029,SERIAL0,,,,,"/>
+<approved hash="113,6,66.04,9.14294,SERIAL0,,,,,"/>
 <approved hash="113,3,-2.009,10.691,FRAME3,,,,,"/>
 <approved hash="113,4,-4.549,-4.549,FRAME4,,,,,"/>
 <approved hash="113,9,112.291,48.791,FRAME1,,,,,"/>
 <approved hash="113,5,23.391,-2.009,FRAME10,,,,,"/>
 <approved hash="113,7,3.071,8.151,FRAME8,,,,,"/>
 <approved hash="113,12,-57.889,8.151,FRAME21,,,,,"/>
-<approved hash="113,6,-75.5529,18.0061,AUX_SERIAL,,,,,"/>
+<approved hash="113,6,-70.4729,-17.5539,AUX_SERIAL,,,,,"/>
 <approved hash="113,1,13.231,-4.549,FRAME11,,,,,"/>
 <approved hash="113,13,5.611,-2.009,FRAME5,,,,,"/>
 <approved hash="113,11,3.071,0.531,FRAME9,,,,,"/>
