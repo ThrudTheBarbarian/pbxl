@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15126,6 +15126,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </class>
 <class number="5" name="cclk50" width="0.2032" drill="0">
 </class>
+<class number="6" name="3v3" width="0.254" drill="0">
+</class>
 </classes>
 <parts>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
@@ -15576,6 +15578,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C96" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
 <part name="C97" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="1uF"/>
 <part name="R71" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="4.7K"/>
+<part name="R72" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0R"/>
+<part name="SUPPLY82" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16068,6 +16072,8 @@ to VCAP pins</text>
 <attribute name="VALUE" x="-129.54" y="73.66" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="XIO" gate="-POWER" x="50.8" y="-5.08"/>
+<instance part="R72" gate="G$1" x="93.98" y="-63.5"/>
+<instance part="SUPPLY82" gate="G$1" x="104.14" y="-71.12"/>
 </instances>
 <busses>
 </busses>
@@ -16271,9 +16277,12 @@ to VCAP pins</text>
 <pinref part="XIO" gate="-POWER" pin="VSS@184"/>
 <pinref part="XIO" gate="-POWER" pin="VSS@202"/>
 <pinref part="XIO" gate="-POWER" pin="VSSA@40"/>
+<pinref part="R72" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="-63.5" x2="83.82" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="83.82" y="-63.5"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="XIO-SWD" gate="G$1" pin="VDD_OUT@1"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
@@ -16594,6 +16603,12 @@ to VCAP pins</text>
 <wire x1="124.46" y1="33.02" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="G$1" pin="AGND"/>
 <junction x="124.46" y="33.02"/>
+</segment>
+<segment>
+<pinref part="R72" gate="G$1" pin="2"/>
+<pinref part="SUPPLY82" gate="G$1" pin="AGND"/>
+<wire x1="99.06" y1="-63.5" x2="104.14" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-63.5" x2="104.14" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -17156,7 +17171,7 @@ source</text>
 <wire x1="-55.88" y1="48.26" x2="-55.88" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <wire x1="-86.36" y1="101.6" x2="-78.74" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="+3V30" gate="G$1" pin="+3V3"/>
@@ -17528,7 +17543,7 @@ source</text>
 </bus>
 </busses>
 <nets>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="C167" gate="G$1" pin="1"/>
 <pinref part="+3V67" gate="G$1" pin="+3V3"/>
@@ -18609,7 +18624,7 @@ that it has ESD protection built in</text>
 <junction x="33.02" y="0"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="+3V25" gate="G$1" pin="+3V3"/>
 <pinref part="SERIAL_BUF0" gate="P" pin="VCC"/>
@@ -22400,7 +22415,7 @@ GND</text>
 <label x="78.74" y="-91.44" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
@@ -22704,7 +22719,7 @@ GND</text>
 <pinref part="XIO" gate="-CFG" pin="PG7@134"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="ARCH_ID" gate="A" pin="8"/>
 <wire x1="-60.96" y1="78.74" x2="-53.34" y2="78.74" width="0.1524" layer="91"/>
@@ -23116,7 +23131,7 @@ capacitance taken from ug393</text>
 <junction x="-50.8" y="48.26"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="+3V33" gate="G$1" pin="+3V3"/>
 <pinref part="C52" gate="G$1" pin="1"/>
@@ -23556,7 +23571,7 @@ Differential impedance</text>
 <label x="-142.24" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="C35" gate="G$1" pin="1"/>
 <pinref part="OSC1" gate="G$1" pin="VCC"/>
@@ -24024,7 +24039,7 @@ gains control</text>
 <label x="35.56" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="XLX-" gate="B2" pin="VCCO_2@0"/>
 <pinref part="+3V22" gate="G$1" pin="+3V3"/>
@@ -25569,7 +25584,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="162.56" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <pinref part="LVL_ALO" gate="G$1" pin="VCCA@1"/>
 <pinref part="+3V41" gate="G$1" pin="+3V3"/>
