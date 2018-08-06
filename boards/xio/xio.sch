@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15649,10 +15649,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <sheet>
 <description>Block diagram</description>
 <plain>
-<wire x1="-167.64" y1="40.64" x2="-157.48" y2="40.64" width="0.1524" layer="94"/>
-<wire x1="-157.48" y1="40.64" x2="-157.48" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-157.48" y1="-7.62" x2="-167.64" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-167.64" y1="-7.62" x2="-167.64" y2="40.64" width="0.1524" layer="94"/>
+<wire x1="-170.18" y1="40.64" x2="-154.94" y2="40.64" width="0.1524" layer="94"/>
+<wire x1="-154.94" y1="40.64" x2="-154.94" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-154.94" y1="-7.62" x2="-170.18" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-170.18" y1="-7.62" x2="-170.18" y2="40.64" width="0.1524" layer="94"/>
 <text x="-166.37" y="14.986" size="1.778" layer="94">USB-C</text>
 <text x="-162.56" y="-6.604" size="1.778" layer="94">3.3v</text>
 <wire x1="-40.64" y1="73.66" x2="-40.64" y2="-30.48" width="0.1524" layer="94"/>
@@ -15683,7 +15683,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="53.34" y1="-78.74" x2="53.34" y2="-114.3" width="0.1524" layer="94"/>
 <wire x1="53.34" y1="-114.3" x2="50.8" y2="-114.3" width="0.1524" layer="94"/>
 <wire x1="50.8" y1="-114.3" x2="50.8" y2="-78.74" width="0.1524" layer="94"/>
-<text x="5.08" y="-80.264" size="1.778" layer="94" rot="R180">SPI</text>
+<text x="6.35" y="-80.518" size="1.778" layer="94" rot="R180">SPI4</text>
 <text x="7.366" y="-85.344" size="1.778" layer="94" rot="R180">@45</text>
 <text x="41.148" y="-76.962" size="1.778" layer="94">Slots 0..4</text>
 <wire x1="15.24" y1="-86.36" x2="7.62" y2="-93.98" width="0.1524" layer="94"/>
@@ -15758,7 +15758,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="48.26" y1="30.48" x2="48.26" y2="35.56" width="0.1524" layer="94"/>
 <wire x1="48.26" y1="35.56" x2="-7.62" y2="35.56" width="0.1524" layer="94"/>
 <wire x1="-7.62" y1="35.56" x2="-7.62" y2="40.64" width="0.1524" layer="94"/>
-<text x="-5.08" y="37.338" size="1.778" layer="94">USB FS</text>
+<text x="-5.08" y="37.338" size="1.778" layer="94">USB Full-speed</text>
 <wire x1="48.26" y1="30.48" x2="55.88" y2="38.1" width="0.1524" layer="94"/>
 <wire x1="55.88" y1="38.1" x2="48.26" y2="45.72" width="0.1524" layer="94"/>
 <text x="48.768" y="37.846" size="1.778" layer="94">/5</text>
@@ -15910,16 +15910,6 @@ Total</text>
 
  PQFP144</text>
 <text x="-106.68" y="-52.324" size="1.778" layer="94">3.3v</text>
-<wire x1="-99.06" y1="15.24" x2="-91.44" y2="22.86" width="0.1524" layer="94"/>
-<wire x1="-91.44" y1="22.86" x2="-91.44" y2="17.78" width="0.1524" layer="94"/>
-<wire x1="-91.44" y1="17.78" x2="-53.34" y2="17.78" width="0.1524" layer="94"/>
-<wire x1="-53.34" y1="17.78" x2="-53.34" y2="22.86" width="0.1524" layer="94"/>
-<wire x1="-53.34" y1="22.86" x2="-45.72" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="-45.72" y1="15.24" x2="-53.34" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-53.34" y1="7.62" x2="-53.34" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="-53.34" y1="12.7" x2="-91.44" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="-91.44" y1="12.7" x2="-91.44" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-91.44" y1="7.62" x2="-99.06" y2="15.24" width="0.1524" layer="94"/>
 <wire x1="17.78" y1="-30.48" x2="17.78" y2="-25.4" width="0.1524" layer="94"/>
 <wire x1="17.78" y1="-25.4" x2="30.48" y2="-25.4" width="0.1524" layer="94"/>
 <wire x1="30.48" y1="-25.4" x2="30.48" y2="-30.48" width="0.1524" layer="94"/>
@@ -15953,21 +15943,19 @@ Total</text>
 <wire x1="43.18" y1="-55.88" x2="43.18" y2="-50.8" width="0.1524" layer="94"/>
 <wire x1="48.26" y1="-60.96" x2="55.88" y2="-53.34" width="0.1524" layer="94"/>
 <wire x1="55.88" y1="-53.34" x2="48.26" y2="-45.72" width="0.1524" layer="94"/>
-<text x="-97.028" y="24.384" size="1.778" layer="94">16-bit : LX-&gt;STM
-8-bit   : STM-&gt;LX</text>
-<wire x1="-154.94" y1="15.24" x2="-147.32" y2="22.86" width="0.1524" layer="94"/>
-<wire x1="-147.32" y1="22.86" x2="-147.32" y2="17.78" width="0.1524" layer="94"/>
-<wire x1="-147.32" y1="17.78" x2="-139.7" y2="17.78" width="0.1524" layer="94"/>
-<wire x1="-139.7" y1="17.78" x2="-139.7" y2="22.86" width="0.1524" layer="94"/>
-<wire x1="-139.7" y1="22.86" x2="-132.08" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="-132.08" y1="15.24" x2="-139.7" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-139.7" y1="7.62" x2="-139.7" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="-139.7" y1="12.7" x2="-147.32" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="-147.32" y1="12.7" x2="-147.32" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-147.32" y1="7.62" x2="-154.94" y2="15.24" width="0.1524" layer="94"/>
-<text x="-149.86" y="25.4" size="1.778" layer="94">2 Gbit in
+<wire x1="-152.4" y1="15.24" x2="-144.78" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="-144.78" y1="22.86" x2="-144.78" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="-144.78" y1="17.78" x2="-137.16" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="17.78" x2="-137.16" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="22.86" x2="-129.54" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="-129.54" y1="15.24" x2="-137.16" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="7.62" x2="-137.16" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="-137.16" y1="12.7" x2="-144.78" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="-144.78" y1="12.7" x2="-144.78" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-144.78" y1="7.62" x2="-152.4" y2="15.24" width="0.1524" layer="94"/>
+<text x="-147.32" y="25.4" size="1.778" layer="94">2 Gbit in
 1 Gbit out</text>
-<text x="1.016" y="6.35" size="1.778" layer="94">4-bit</text>
+<text x="0.762" y="7.112" size="1.778" layer="94">4-bit</text>
 <text x="213.36" y="101.6" size="2.1844" layer="94">Add GND pins to slots to use up vacancies</text>
 <wire x1="-127" y1="111.76" x2="-101.6" y2="111.76" width="0.1524" layer="94"/>
 <wire x1="-101.6" y1="111.76" x2="-101.6" y2="101.6" width="0.1524" layer="94"/>
@@ -16017,7 +16005,6 @@ Total</text>
 <text x="-72.39" y="70.612" size="1.778" layer="94">/1</text>
 <text x="163.83" y="-114.3" size="2.1844" layer="94">Block diagram</text>
 <text x="-39.37" y="69.342" size="2.1844" layer="150">[2]</text>
-<text x="-87.376" y="13.97" size="2.1844" layer="150">[3,14]</text>
 <text x="-2.54" y="-87.376" size="2.1844" layer="150">[3]</text>
 <text x="18.542" y="8.636" size="2.1844" layer="150">[4]</text>
 <wire x1="-76.2" y1="-83.82" x2="-50.8" y2="-83.82" width="0.1524" layer="94"/>
@@ -16054,26 +16041,54 @@ Supervisor</text>
 <wire x1="-48.26" y1="-53.34" x2="-46.99" y2="-54.61" width="0.1524" layer="94"/>
 <text x="-54.864" y="-51.562" size="2.1844" layer="150">[4]</text>
 <text x="-124.714" y="-51.816" size="2.1844" layer="150">[13]</text>
-<text x="-146.812" y="14.224" size="2.1844" layer="150">[14]</text>
-<text x="-164.846" y="36.83" size="2.1844" layer="150">[14]</text>
-<text x="-84.074" y="-21.082" size="1.778" layer="94" rot="MR0">H/C Bus</text>
-<wire x1="-99.06" y1="-20.32" x2="-91.44" y2="-27.94" width="0.1524" layer="94"/>
-<wire x1="-91.44" y1="-27.94" x2="-91.44" y2="-22.86" width="0.1524" layer="94"/>
-<wire x1="-91.44" y1="-22.86" x2="-83.82" y2="-22.86" width="0.1524" layer="94"/>
-<wire x1="-83.82" y1="-22.86" x2="-83.82" y2="-27.94" width="0.1524" layer="94"/>
-<wire x1="-83.82" y1="-27.94" x2="-76.2" y2="-20.32" width="0.1524" layer="94"/>
-<wire x1="-76.2" y1="-20.32" x2="-83.82" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-83.82" y1="-12.7" x2="-83.82" y2="-17.78" width="0.1524" layer="94"/>
-<wire x1="-83.82" y1="-17.78" x2="-91.44" y2="-17.78" width="0.1524" layer="94"/>
-<wire x1="-91.44" y1="-17.78" x2="-91.44" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-91.44" y1="-12.7" x2="-99.06" y2="-20.32" width="0.1524" layer="94"/>
-<wire x1="-73.66" y1="-25.4" x2="-73.66" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-73.66" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-55.88" y1="-12.7" x2="-55.88" y2="-25.4" width="0.1524" layer="94"/>
-<wire x1="-55.88" y1="-25.4" x2="-73.66" y2="-25.4" width="0.1524" layer="94"/>
-<text x="-60.96" y="-19.05" size="1.778" layer="94" rot="MR0">Cartridge</text>
-<text x="-68.072" y="-23.368" size="2.1844" layer="150">[16]</text>
+<text x="-144.272" y="14.224" size="2.1844" layer="150">[14]</text>
+<text x="-162.306" y="36.83" size="2.1844" layer="150">[14]</text>
+<text x="-81.534" y="-32.258" size="1.778" layer="94" rot="R180">H/C Bus</text>
+<wire x1="-96.52" y1="-33.02" x2="-88.9" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-25.4" x2="-88.9" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-30.48" x2="-81.28" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="-81.28" y1="-30.48" x2="-81.28" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="-81.28" y1="-25.4" x2="-73.66" y2="-33.02" width="0.1524" layer="94"/>
+<wire x1="-73.66" y1="-33.02" x2="-81.28" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="-81.28" y1="-40.64" x2="-81.28" y2="-35.56" width="0.1524" layer="94"/>
+<wire x1="-81.28" y1="-35.56" x2="-88.9" y2="-35.56" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-35.56" x2="-88.9" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-40.64" x2="-96.52" y2="-33.02" width="0.1524" layer="94"/>
+<wire x1="-71.12" y1="-27.94" x2="-71.12" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="-71.12" y1="-40.64" x2="-55.88" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="-55.88" y1="-40.64" x2="-55.88" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="-55.88" y1="-27.94" x2="-71.12" y2="-27.94" width="0.1524" layer="94"/>
+<text x="-58.42" y="-34.29" size="1.778" layer="94" rot="R180">Cartridge</text>
+<text x="-65.532" y="-29.972" size="2.1844" layer="150" rot="MR180">[16]</text>
 <text x="-107.95" y="107.95" size="2.1844" layer="150">[15]</text>
+<text x="-68.58" y="18.796" size="1.778" layer="94" rot="R180">SPI1,5,6</text>
+<text x="-61.214" y="18.796" size="1.778" layer="94" rot="R180">@45</text>
+<wire x1="-45.72" y1="17.78" x2="-53.34" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="10.16" x2="-53.34" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="15.24" x2="-88.9" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="15.24" x2="-88.9" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="10.16" x2="-96.52" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="17.78" x2="-88.9" y2="25.4" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="25.4" x2="-88.9" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="20.32" x2="-53.34" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="20.32" x2="-53.34" y2="25.4" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="25.4" x2="-45.72" y2="17.78" width="0.1524" layer="94"/>
+<text x="-91.44" y="16.764" size="2.1844" layer="150">[3]</text>
+<text x="-71.12" y="-11.684" size="1.778" layer="94" rot="R180">SPI3</text>
+<text x="-62.484" y="-11.684" size="1.778" layer="94" rot="R180">@22.5</text>
+<wire x1="-45.72" y1="-12.7" x2="-53.34" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="-20.32" x2="-53.34" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="-15.24" x2="-88.9" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-15.24" x2="-88.9" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-20.32" x2="-96.52" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="-12.7" x2="-88.9" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-5.08" x2="-88.9" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-88.9" y1="-10.16" x2="-53.34" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="-10.16" x2="-53.34" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-53.34" y1="-5.08" x2="-45.72" y2="-12.7" width="0.1524" layer="94"/>
+<text x="-91.44" y="-13.716" size="2.1844" layer="150">[3]</text>
+<text x="-88.9" y="0" size="1.778" layer="94">3 SPI channels at 45 MBit/s and
+1 SPI channel at 22.5 MBit/s</text>
 </plain>
 <instances>
 <instance part="FRAME11" gate="G$1" x="-180.34" y="-134.62"/>
