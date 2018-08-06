@@ -43,7 +43,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -151,12 +151,6 @@
 <wire x1="0" y1="0" x2="123.89" y2="0" width="0" layer="20"/>
 <wire x1="123.89" y1="0" x2="153.035" y2="0" width="0" layer="20"/>
 <wire x1="153.035" y1="0" x2="170" y2="0" width="0" layer="20"/>
-<text x="150.35" y="108.4" size="1.778" layer="48">1   : Signal
-2   : GND
-3   : Signal
-14 : Signal
-15 : +5v / +3.3v
-16 : Signal</text>
 <wire x1="0" y1="100" x2="13" y2="100" width="0" layer="20"/>
 <wire x1="13" y1="100" x2="14" y2="100" width="0" layer="20"/>
 <wire x1="14" y1="100" x2="15" y2="100" width="0" layer="20"/>
@@ -173,9 +167,15 @@ RX: 6mm</text>
 <wire x1="1.75" y1="79.75" x2="0" y2="78.25" width="0" layer="20"/>
 <wire x1="0" y1="78.25" x2="0" y2="0" width="0" layer="20"/>
 <circle x="97.6444" y="16.3142" radius="0.25519375" width="0.1524" layer="51"/>
-<text x="3" y="111.75" size="1.778" layer="48">Move holes
+<text x="151.5236" y="-26.553" size="1.778" layer="48">1   : Signal
+2   : GND
+3   : Signal
+14 : Signal
+15 : +5v / +3.3v
+16 : Signal</text>
+<text x="4.1736" y="-23.203" size="1.778" layer="48">Move holes
 Check the USB3 connector holes</text>
-<text x="63.5" y="108.5" size="1.778" layer="48">Place 8 or so caps in pairs from {3.3,5}v to GND along border
+<text x="64.6736" y="-26.453" size="1.778" layer="48">Place 8 or so caps in pairs from {3.3,5}v to GND along border
 Inspect crossing signals to make sure there's no high-speed ones</text>
 </plain>
 <libraries>
