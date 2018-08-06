@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23730,6 +23730,7 @@ Differential impedance</text>
 <segment>
 <pinref part="XLX-" gate="B0" pin="IO_L37P_GCLK13_0"/>
 <wire x1="-147.32" y1="27.94" x2="-139.7" y2="27.94" width="0.1524" layer="91"/>
+<label x="-139.192" y="27.178" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XSPI_1_MISO" class="0">
@@ -23976,14 +23977,6 @@ gains control</text>
 <wire x1="-60.96" y1="-12.7" x2="-58.42" y2="-15.24" width="0.762" layer="92"/>
 <wire x1="-58.42" y1="-15.24" x2="-45.72" y2="-15.24" width="0.762" layer="92"/>
 <label x="-55.88" y="-17.78" size="1.778" layer="95"/>
-</segment>
-</bus>
-<bus name="IOBUS:IOBUS_IN[0..7],IOBUS_!IN_CTS!,IOBUS_!IN_RTS!,IOBUS_OUT[0..15],IOBUS_!OUT_CTS!,IOBUS_!OUT_RTS!">
-<segment>
-<wire x1="-60.96" y1="40.64" x2="-60.96" y2="30.48" width="0.762" layer="92"/>
-<wire x1="-60.96" y1="30.48" x2="-58.42" y2="27.94" width="0.762" layer="92"/>
-<wire x1="-58.42" y1="27.94" x2="-48.26" y2="27.94" width="0.762" layer="92"/>
-<label x="-55.88" y="25.4" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="MUXED_SPI:+3V3,FLASH_CLK,FLASH_CS,FLASH_D[0..3],GND,SPI_CLK,SPI_MISO,SPI_MOSI">
@@ -24396,38 +24389,6 @@ gains control</text>
 <wire x1="-60.96" y1="27.94" x2="-63.5" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="30.48" x2="-86.36" y2="30.48" width="0.1524" layer="91"/>
 <label x="-81.28" y="30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IOBUS_!IN_CTS!" class="0">
-<segment>
-<pinref part="XLX-" gate="B2" pin="IO_L2P_CMPCLK_2"/>
-<wire x1="-60.96" y1="40.64" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="43.18" x2="-86.36" y2="43.18" width="0.1524" layer="91"/>
-<label x="-81.28" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IOBUS_!IN_RTS!" class="0">
-<segment>
-<pinref part="XLX-" gate="B2" pin="IO_L2N_CMPMOSI_2"/>
-<wire x1="-60.96" y1="38.1" x2="-63.5" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="40.64" x2="-86.36" y2="40.64" width="0.1524" layer="91"/>
-<label x="-81.28" y="40.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IOBUS_!OUT_CTS!" class="0">
-<segment>
-<pinref part="XLX-" gate="B2" pin="IO_L13N_D10_2"/>
-<wire x1="-60.96" y1="33.02" x2="-63.5" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="35.56" x2="-86.36" y2="35.56" width="0.1524" layer="91"/>
-<label x="-81.28" y="35.56" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IOBUS_!OUT_RTS!" class="0">
-<segment>
-<pinref part="XLX-" gate="B2" pin="IO_L14P_D11_2"/>
-<wire x1="-60.96" y1="30.48" x2="-63.5" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="33.02" x2="-86.36" y2="33.02" width="0.1524" layer="91"/>
-<label x="-81.28" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="5">
@@ -25900,13 +25861,13 @@ tPD_BA : 0.6 .. 6ns</text>
 <approved hash="113,5,23.391,-2.009,FRAME10,,,,,"/>
 <approved hash="113,7,3.071,8.151,FRAME8,,,,,"/>
 <approved hash="113,12,-57.889,8.151,FRAME21,,,,,"/>
-<approved hash="113,6,-70.4729,-17.5539,AUX_SERIAL,,,,,"/>
 <approved hash="113,1,13.231,-4.549,FRAME11,,,,,"/>
 <approved hash="113,13,5.611,-2.009,FRAME5,,,,,"/>
 <approved hash="113,11,3.071,0.531,FRAME9,,,,,"/>
 <approved hash="113,15,-2.009,0.531,FRAME12,,,,,"/>
 <approved hash="113,14,-7.089,5.611,FRAME15,,,,,"/>
 <approved hash="113,16,-2.009,0.531,FRAME17,,,,,"/>
+<approved hash="113,6,-72.4161,-17.5539,AUX-SIO,,,,,"/>
 </errors>
 </schematic>
 </drawing>
