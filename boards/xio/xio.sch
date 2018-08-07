@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -11095,6 +11095,55 @@ Epson Toyocom FCC-255</description>
 <text x="-2.032" y="1.778" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.032" y="-2.54" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="TESTPOINT_SMT">
+<description>Surface Mount Test Point - Compact SMT</description>
+<wire x1="-2.75" y1="2" x2="2.75" y2="2" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="2" x2="2.75" y2="-2" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="-2" x2="-2.75" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-2.75" y1="-2" x2="-2.75" y2="2" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="4.7" dy="3.4" layer="1"/>
+<text x="3.048" y="-1.143" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="3.048" y="-1.778" size="0.4064" layer="25" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TESTPOINT_PAD_2MM">
+<description>Testpoint - Pad</description>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" cream="no"/>
+<text x="-1.016" y="0" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.016" y="-0.508" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TESTPOINT_ROUND_2MM">
+<description>Testpoint - Round 2mm</description>
+<circle x="0" y="0" radius="1.3029" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
+<text x="1.651" y="0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.651" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="1X01_ROUND">
+<pad name="1" x="0" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="PAD-1.5X2.0">
+<description>1.5 x 2.0mm SMT pad (no solder paste)</description>
+<smd name="P$1" x="0" y="0" dx="1.5" dy="2" layer="1" cream="no"/>
+</package>
+<package name="TESTPOINT_ROUND_1MM">
+<circle x="0" y="0" radius="0.7" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="1.143" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.143" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TESTPOINT_ROUND_0.5MM">
+<circle x="0" y="0" radius="0.45" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" cream="no"/>
+<text x="0.889" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="0.889" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -11187,6 +11236,12 @@ Epson Toyocom FCC-255</description>
 <wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
 <text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="1.2V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="TESTPOINT">
+<circle x="0" y="3.81" radius="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="5.715" size="1.27" layer="95">&gt;VALUE</text>
+<pin name="P$1" x="0" y="0" visible="off" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11474,6 +11529,78 @@ Epson Toyocom FCC-255</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TESTPOINT" prefix="TP" uservalue="yes">
+<description>&lt;b&gt;Test Point&lt;/b&gt;
+&lt;p&gt;Various test points for characterisation and PCB testing&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;TESTPOINT_SMT&lt;/b&gt; - Compact Surface Mount Test Point [Digikey: 5016KTR-ND]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TESTPOINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TESTPOINT_SMT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAD" package="TESTPOINT_PAD_2MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND2MM" package="TESTPOINT_ROUND_2MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0.1&quot;" package="1X01_ROUND">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1.5X2.0MM_NOCREAM" package="PAD-1.5X2.0">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND1MM" package="TESTPOINT_ROUND_1MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND0.5MM" package="TESTPOINT_ROUND_0.5MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -16177,6 +16304,19 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="+3V58" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V59" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2"/>
+<part name="TP1" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP2" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP3" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP4" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP5" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP6" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP7" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP8" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP9" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP10" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP11" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP12" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
+<part name="TP13" library="microbuilder" deviceset="TESTPOINT" device="ROUND0.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -17756,6 +17896,19 @@ Resistors sited close to source signal</text>
 <instance part="XIO" gate="-LED" x="-149.86" y="58.42" rot="MR0"/>
 <instance part="XIO" gate="-SDCARD" x="30.48" y="50.8" rot="MR0"/>
 <instance part="XIO" gate="-UNUSED" x="-154.94" y="-76.2"/>
+<instance part="TP1" gate="G$1" x="-119.38" y="-40.64"/>
+<instance part="TP2" gate="G$1" x="-116.84" y="-30.48"/>
+<instance part="TP3" gate="G$1" x="-114.3" y="-40.64"/>
+<instance part="TP4" gate="G$1" x="-83.82" y="-40.64"/>
+<instance part="TP5" gate="G$1" x="-81.28" y="-30.48"/>
+<instance part="TP6" gate="G$1" x="-78.74" y="-40.64"/>
+<instance part="TP7" gate="G$1" x="-76.2" y="-30.48"/>
+<instance part="TP8" gate="G$1" x="-73.66" y="-40.64"/>
+<instance part="TP9" gate="G$1" x="-71.12" y="-30.48"/>
+<instance part="TP10" gate="G$1" x="-68.58" y="-40.64"/>
+<instance part="TP11" gate="G$1" x="-66.04" y="-30.48"/>
+<instance part="TP12" gate="G$1" x="-63.5" y="-40.64"/>
+<instance part="TP13" gate="G$1" x="-60.96" y="-30.48"/>
 </instances>
 <busses>
 <bus name="SDCARD:SD0,SD1,SD2,SD3,SDCD,SDCLK,SDCMD">
@@ -17766,6 +17919,14 @@ Resistors sited close to source signal</text>
 <wire x1="109.22" y1="27.94" x2="111.76" y2="30.48" width="0.762" layer="92"/>
 <wire x1="111.76" y1="30.48" x2="111.76" y2="58.42" width="0.762" layer="92"/>
 <label x="90.424" y="25.4" size="1.778" layer="95"/>
+</segment>
+</bus>
+<bus name="STMB:STMB[0..2],STMB[6..9],STMB12,STMB15">
+<segment>
+<wire x1="-106.68" y1="-76.2" x2="-106.68" y2="-55.88" width="0.762" layer="92"/>
+<wire x1="-106.68" y1="-55.88" x2="-104.14" y2="-53.34" width="0.762" layer="92"/>
+<wire x1="-104.14" y1="-53.34" x2="-93.98" y2="-53.34" width="0.762" layer="92"/>
+<label x="-100.33" y="-57.15" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -18114,6 +18275,182 @@ Resistors sited close to source signal</text>
 <wire x1="73.66" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
 <label x="60.96" y="50.8" size="1.778" layer="95"/>
 <pinref part="XIO" gate="-SDCARD" pin="PC7@139"/>
+</segment>
+</net>
+<net name="STMB0" class="0">
+<segment>
+<wire x1="-106.68" y1="-55.88" x2="-109.22" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-58.42" x2="-109.22" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-119.38" y="-58.42" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB0@61"/>
+</segment>
+</net>
+<net name="STMB1" class="0">
+<segment>
+<wire x1="-106.68" y1="-58.42" x2="-109.22" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-60.96" x2="-109.22" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-119.38" y="-60.96" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB1@62"/>
+</segment>
+</net>
+<net name="STMB2" class="0">
+<segment>
+<wire x1="-106.68" y1="-60.96" x2="-109.22" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-63.5" x2="-109.22" y2="-63.5" width="0.1524" layer="91"/>
+<label x="-119.38" y="-63.5" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB2@63"/>
+</segment>
+</net>
+<net name="STMB6" class="0">
+<segment>
+<wire x1="-106.68" y1="-63.5" x2="-109.22" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-66.04" x2="-109.22" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-119.38" y="-66.04" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB6@195"/>
+</segment>
+</net>
+<net name="STMB7" class="0">
+<segment>
+<wire x1="-106.68" y1="-66.04" x2="-109.22" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-68.58" x2="-109.22" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-119.38" y="-68.58" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB7@196"/>
+</segment>
+</net>
+<net name="STMB8" class="0">
+<segment>
+<wire x1="-106.68" y1="-68.58" x2="-109.22" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-71.12" x2="-109.22" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-119.38" y="-71.12" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB8@198"/>
+</segment>
+</net>
+<net name="STMB9" class="0">
+<segment>
+<wire x1="-106.68" y1="-71.12" x2="-109.22" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-73.66" x2="-109.22" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-119.38" y="-73.66" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB9@199"/>
+</segment>
+</net>
+<net name="STMB12" class="0">
+<segment>
+<wire x1="-106.68" y1="-73.66" x2="-109.22" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-76.2" x2="-109.22" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-119.38" y="-76.2" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB12@104"/>
+</segment>
+</net>
+<net name="STMB15" class="0">
+<segment>
+<wire x1="-106.68" y1="-76.2" x2="-109.22" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-78.74" x2="-109.22" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-119.38" y="-78.74" size="1.778" layer="95"/>
+<pinref part="XIO" gate="-UNUSED" pin="PB15@107"/>
+</segment>
+</net>
+<net name="N$85" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PA2@45"/>
+<pinref part="TP1" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-50.8" x2="-119.38" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="-50.8" x2="-119.38" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$86" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PA3@50"/>
+<pinref part="TP2" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-53.34" x2="-116.84" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-53.34" x2="-116.84" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$87" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PA4@53"/>
+<pinref part="TP3" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-55.88" x2="-114.3" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-55.88" x2="-114.3" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$88" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PC5@58"/>
+<pinref part="TP4" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-81.28" x2="-83.82" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="-81.28" x2="-83.82" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$89" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PC6@138"/>
+<pinref part="TP5" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-83.82" x2="-81.28" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-83.82" x2="-81.28" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$90" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PC13@8"/>
+<pinref part="TP6" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-86.36" x2="-78.74" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-86.36" x2="-78.74" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$91" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PC14@9"/>
+<pinref part="TP7" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-88.9" x2="-76.2" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="-88.9" x2="-76.2" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$92" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PC15@10"/>
+<pinref part="TP8" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-91.44" x2="-73.66" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-91.44" x2="-73.66" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$93" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PE3@2"/>
+<pinref part="TP9" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-93.98" x2="-71.12" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="-93.98" x2="-71.12" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$94" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PE4@3"/>
+<pinref part="TP10" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-96.52" x2="-68.58" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-96.52" x2="-68.58" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$95" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PF6@27"/>
+<pinref part="TP11" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-99.06" x2="-66.04" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="-99.06" x2="-66.04" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$96" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PF10@31"/>
+<pinref part="TP12" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-101.6" x2="-63.5" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="-101.6" x2="-63.5" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$97" class="0">
+<segment>
+<pinref part="XIO" gate="-UNUSED" pin="PG9@178"/>
+<pinref part="TP13" gate="G$1" pin="P$1"/>
+<wire x1="-129.54" y1="-104.14" x2="-60.96" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="-104.14" x2="-60.96" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
