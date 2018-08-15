@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15760,7 +15760,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME9" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="VGA_RED" library="sjg-logic" deviceset="SN74ALVC244" device="" value="SN74ALVC244PWR"/>
@@ -16005,6 +16004,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C100" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF"/>
 <part name="+3V51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY86" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19935,7 +19935,7 @@ Differential impedance</text>
 <pinref part="U$1" gate="-USB" pin="PD7@C11"/>
 </segment>
 </net>
-<net name="XIO_USB_N" class="0">
+<net name="XIO_USB_N" class="4">
 <segment>
 <wire x1="-88.9" y1="2.54" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C174" gate="G$1" pin="1"/>
@@ -19962,7 +19962,7 @@ Differential impedance</text>
 <label x="-152.4" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XIO_USB_P" class="0">
+<net name="XIO_USB_P" class="4">
 <segment>
 <wire x1="-88.9" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="0" x2="20.32" y2="0" width="0.1524" layer="91"/>
@@ -20101,24 +20101,6 @@ GND</text>
 <instance part="SUPPLY16" gate="GND" x="-45.72" y="15.24"/>
 </instances>
 <busses>
-<bus name="HBUS:HBUS_A[0..15],HBUS_CLK,HBUS_D[0..7],HBUS_!D1XX!,HBUS_!EXSEL!,HBUS_!HALT!,HBUS_!IRQ!,HBUS_!MPD!,HBUS_RD[4..5],HBUS_!REF!,HBUS_!RST!,HBUS_R!W!,HBUS_SIO_CLK,HBUS_SIO_CMD,HBUS_SIO_DIN,HBUS_SIO_DOUT,HBUS_SIO_MTR">
-<segment>
-<wire x1="-68.58" y1="12.7" x2="-68.58" y2="-63.5" width="0.762" layer="92"/>
-<wire x1="-68.58" y1="-63.5" x2="-66.04" y2="-66.04" width="0.762" layer="92"/>
-<wire x1="-66.04" y1="-66.04" x2="15.24" y2="-66.04" width="0.762" layer="92"/>
-<wire x1="15.24" y1="-66.04" x2="17.78" y2="-63.5" width="0.762" layer="92"/>
-<wire x1="17.78" y1="-63.5" x2="17.78" y2="-22.86" width="0.762" layer="92"/>
-<label x="-28.956" y="-68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="12.7" x2="71.12" y2="-63.5" width="0.762" layer="92"/>
-<wire x1="71.12" y1="-63.5" x2="73.66" y2="-66.04" width="0.762" layer="92"/>
-<wire x1="73.66" y1="-66.04" x2="157.48" y2="-66.04" width="0.762" layer="92"/>
-<wire x1="157.48" y1="-66.04" x2="160.02" y2="-63.5" width="0.762" layer="92"/>
-<wire x1="160.02" y1="-63.5" x2="160.02" y2="-22.86" width="0.762" layer="92"/>
-<label x="114.3" y="-68.58" size="1.778" layer="95"/>
-</segment>
-</bus>
 <bus name="SPI:SPI_CLK,SPI_IRQ[0..4],SPI_MISO,SPI_MOSI,SPI_SS[0..4]">
 <segment>
 <wire x1="30.48" y1="-17.78" x2="20.32" y2="-17.78" width="0.762" layer="92"/>
@@ -20133,18 +20115,24 @@ GND</text>
 <label x="165.1" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </bus>
-<bus name="STMB:STMB[0..2],STMB[6..9],STMB12,STMB15">
+<bus name="HOST:HOST_A[0..15],HOST_CLK,HOST_CTL[0..1],HOST_D[0..7],HOST_DIR[0..4],HOST_!EXTSEL!,HOST_GND,HOST_!HALT!,HOST_!IRQ!,HOST_!MPD!,HOST_!REF!,HOST_!RST!,HOST_R/!W!">
 <segment>
-<wire x1="30.48" y1="-5.08" x2="20.32" y2="-5.08" width="0.762" layer="92"/>
-<wire x1="20.32" y1="-5.08" x2="17.78" y2="-2.54" width="0.762" layer="92"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="7.62" width="0.762" layer="92"/>
-<label x="22.86" y="-7.62" size="1.778" layer="95"/>
+<wire x1="68.58" y1="7.62" x2="68.58" y2="-68.58" width="0.762" layer="92"/>
+<wire x1="68.58" y1="-68.58" x2="71.12" y2="-71.12" width="0.762" layer="92"/>
+<wire x1="71.12" y1="-71.12" x2="157.48" y2="-71.12" width="0.762" layer="92"/>
+<wire x1="157.48" y1="-71.12" x2="160.02" y2="-68.58" width="0.762" layer="92"/>
+<wire x1="160.02" y1="-68.58" x2="160.02" y2="-38.1" width="0.762" layer="92"/>
+<label x="113.792" y="-74.422" size="1.778" layer="95"/>
 </segment>
+</bus>
+<bus name="HOST:HOST_A[0..15],HOST_CLK,HOST_CTL[0..1],HOST_D[0..7],HOST_DIR[0..4],HOST_!EXTSEL!,HOST_GND,HOST_!HALT!,HOST_!IRQ!,HOST_!MPD!,HOST_!REF!,HOST_!RST!,HOST_R/!W!">
 <segment>
-<wire x1="172.72" y1="-5.08" x2="162.56" y2="-5.08" width="0.762" layer="92"/>
-<wire x1="162.56" y1="-5.08" x2="160.02" y2="-2.54" width="0.762" layer="92"/>
-<wire x1="160.02" y1="-2.54" x2="160.02" y2="7.62" width="0.762" layer="92"/>
-<label x="165.1" y="-7.62" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="7.62" x2="-71.12" y2="-68.58" width="0.762" layer="92"/>
+<wire x1="-71.12" y1="-68.58" x2="-68.58" y2="-71.12" width="0.762" layer="92"/>
+<wire x1="-68.58" y1="-71.12" x2="15.24" y2="-71.12" width="0.762" layer="92"/>
+<wire x1="15.24" y1="-71.12" x2="17.78" y2="-68.58" width="0.762" layer="92"/>
+<wire x1="17.78" y1="-68.58" x2="17.78" y2="-38.1" width="0.762" layer="92"/>
+<label x="-28.702" y="-74.168" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -20208,25 +20196,6 @@ GND</text>
 <junction x="101.6" y="15.24"/>
 </segment>
 <segment>
-<pinref part="SLOT0" gate="G$1" pin="A4"/>
-<wire x1="-38.1" y1="20.32" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="20.32" x2="-45.72" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="20.32" x2="-45.72" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<pinref part="SLOT0" gate="G$1" pin="A5"/>
-<wire x1="-38.1" y1="17.78" x2="-40.64" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="17.78" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
-<junction x="-40.64" y="20.32"/>
-<pinref part="SLOT0" gate="G$1" pin="A6"/>
-<wire x1="-38.1" y1="15.24" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="15.24" x2="-40.64" y2="17.78" width="0.1524" layer="91"/>
-<junction x="-40.64" y="17.78"/>
-<pinref part="SLOT0" gate="G$1" pin="A7"/>
-<wire x1="-38.1" y1="12.7" x2="-40.64" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="12.7" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
-<junction x="-40.64" y="15.24"/>
-</segment>
-<segment>
 <pinref part="SLOT1" gate="G$1" pin="A1"/>
 <wire x1="104.14" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
 <label x="98.552" y="28.448" size="1.778" layer="95" rot="R180"/>
@@ -20250,6 +20219,25 @@ GND</text>
 <pinref part="SLOT0" gate="G$1" pin="A3"/>
 <wire x1="-38.1" y1="22.86" x2="-43.18" y2="22.86" width="0.1524" layer="91"/>
 <label x="-43.688" y="23.368" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SLOT0" gate="G$1" pin="A4"/>
+<wire x1="-38.1" y1="20.32" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="20.32" x2="-45.72" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="20.32" x2="-45.72" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="SLOT0" gate="G$1" pin="A5"/>
+<wire x1="-38.1" y1="17.78" x2="-40.64" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="17.78" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-40.64" y="20.32"/>
+<pinref part="SLOT0" gate="G$1" pin="A6"/>
+<wire x1="-38.1" y1="15.24" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="15.24" x2="-40.64" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-40.64" y="17.78"/>
+<pinref part="SLOT0" gate="G$1" pin="A7"/>
+<wire x1="-38.1" y1="12.7" x2="-40.64" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="12.7" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-40.64" y="15.24"/>
+<pinref part="SUPPLY16" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -20385,510 +20373,6 @@ GND</text>
 <junction x="139.7" y="83.82"/>
 </segment>
 </net>
-<net name="HBUS_A0" class="0">
-<segment>
-<wire x1="-68.58" y1="12.7" x2="-66.04" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="10.16" x2="-38.1" y2="10.16" width="0.1524" layer="91"/>
-<label x="-63.5" y="10.16" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A8"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="12.7" x2="73.66" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
-<label x="76.2" y="10.16" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A8"/>
-</segment>
-</net>
-<net name="HBUS_A1" class="0">
-<segment>
-<wire x1="-68.58" y1="10.16" x2="-66.04" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="7.62" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
-<label x="-63.5" y="7.62" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A9"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="10.16" x2="73.66" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="7.62" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
-<label x="76.2" y="7.62" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A9"/>
-</segment>
-</net>
-<net name="HBUS_A2" class="0">
-<segment>
-<wire x1="-68.58" y1="7.62" x2="-66.04" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="5.08" x2="-38.1" y2="5.08" width="0.1524" layer="91"/>
-<label x="-63.5" y="5.08" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A10"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="7.62" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="5.08" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
-<label x="76.2" y="5.08" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A10"/>
-</segment>
-</net>
-<net name="HBUS_A3" class="0">
-<segment>
-<wire x1="-68.58" y1="5.08" x2="-66.04" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="2.54" x2="-38.1" y2="2.54" width="0.1524" layer="91"/>
-<label x="-63.5" y="2.54" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A11"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="5.08" x2="73.66" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="2.54" x2="104.14" y2="2.54" width="0.1524" layer="91"/>
-<label x="76.2" y="2.54" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A11"/>
-</segment>
-</net>
-<net name="HBUS_A4" class="0">
-<segment>
-<wire x1="-68.58" y1="2.54" x2="-66.04" y2="0" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="0" x2="-38.1" y2="0" width="0.1524" layer="91"/>
-<label x="-63.5" y="0" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A12"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="2.54" x2="73.66" y2="0" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="0" x2="104.14" y2="0" width="0.1524" layer="91"/>
-<label x="76.2" y="0" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A12"/>
-</segment>
-</net>
-<net name="HBUS_A5" class="0">
-<segment>
-<wire x1="-68.58" y1="0" x2="-66.04" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-2.54" x2="-38.1" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-63.5" y="-2.54" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A13"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="0" x2="73.66" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-2.54" x2="104.14" y2="-2.54" width="0.1524" layer="91"/>
-<label x="76.2" y="-2.54" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A13"/>
-</segment>
-</net>
-<net name="HBUS_A6" class="0">
-<segment>
-<wire x1="-68.58" y1="-2.54" x2="-66.04" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-5.08" x2="-38.1" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-63.5" y="-5.08" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A14"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-2.54" x2="73.66" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-5.08" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
-<label x="76.2" y="-5.08" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A14"/>
-</segment>
-</net>
-<net name="HBUS_A7" class="0">
-<segment>
-<wire x1="-68.58" y1="-5.08" x2="-66.04" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-7.62" x2="-38.1" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-63.5" y="-7.62" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A15"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-5.08" x2="73.66" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-7.62" x2="104.14" y2="-7.62" width="0.1524" layer="91"/>
-<label x="76.2" y="-7.62" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A15"/>
-</segment>
-</net>
-<net name="HBUS_A8" class="0">
-<segment>
-<wire x1="-68.58" y1="-7.62" x2="-66.04" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-10.16" x2="-38.1" y2="-10.16" width="0.1524" layer="91"/>
-<label x="-63.5" y="-10.16" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A16"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-7.62" x2="73.66" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-10.16" x2="104.14" y2="-10.16" width="0.1524" layer="91"/>
-<label x="76.2" y="-10.16" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A16"/>
-</segment>
-</net>
-<net name="HBUS_A9" class="0">
-<segment>
-<wire x1="-68.58" y1="-10.16" x2="-66.04" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-12.7" x2="-38.1" y2="-12.7" width="0.1524" layer="91"/>
-<label x="-63.5" y="-12.7" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A17"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-10.16" x2="73.66" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-12.7" x2="104.14" y2="-12.7" width="0.1524" layer="91"/>
-<label x="76.2" y="-12.7" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A17"/>
-</segment>
-</net>
-<net name="HBUS_A10" class="0">
-<segment>
-<wire x1="-68.58" y1="-12.7" x2="-66.04" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-15.24" x2="-38.1" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-63.5" y="-15.24" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A18"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-12.7" x2="73.66" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-15.24" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
-<label x="76.2" y="-15.24" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A18"/>
-</segment>
-</net>
-<net name="HBUS_A11" class="0">
-<segment>
-<wire x1="-68.58" y1="-15.24" x2="-66.04" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-17.78" x2="-38.1" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-63.5" y="-17.78" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A19"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-15.24" x2="73.66" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-17.78" x2="104.14" y2="-17.78" width="0.1524" layer="91"/>
-<label x="76.2" y="-17.78" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A19"/>
-</segment>
-</net>
-<net name="HBUS_A12" class="0">
-<segment>
-<wire x1="-68.58" y1="-17.78" x2="-66.04" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-20.32" x2="-38.1" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-63.5" y="-20.32" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A20"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-17.78" x2="73.66" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-20.32" x2="104.14" y2="-20.32" width="0.1524" layer="91"/>
-<label x="76.2" y="-20.32" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A20"/>
-</segment>
-</net>
-<net name="HBUS_A13" class="0">
-<segment>
-<wire x1="-68.58" y1="-20.32" x2="-66.04" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-22.86" x2="-38.1" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-63.5" y="-22.86" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A21"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-20.32" x2="73.66" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-22.86" x2="104.14" y2="-22.86" width="0.1524" layer="91"/>
-<label x="76.2" y="-22.86" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A21"/>
-</segment>
-</net>
-<net name="HBUS_A14" class="0">
-<segment>
-<wire x1="-68.58" y1="-22.86" x2="-66.04" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-25.4" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-63.5" y="-25.4" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A22"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-22.86" x2="73.66" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-25.4" x2="104.14" y2="-25.4" width="0.1524" layer="91"/>
-<label x="76.2" y="-25.4" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A22"/>
-</segment>
-</net>
-<net name="HBUS_A15" class="0">
-<segment>
-<wire x1="-68.58" y1="-25.4" x2="-66.04" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-27.94" x2="-38.1" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-63.5" y="-27.94" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A23"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-25.4" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-27.94" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
-<label x="76.2" y="-27.94" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A23"/>
-</segment>
-</net>
-<net name="HBUS_CLK" class="0">
-<segment>
-<wire x1="-68.58" y1="-27.94" x2="-66.04" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-30.48" x2="-38.1" y2="-30.48" width="0.1524" layer="91"/>
-<label x="-63.5" y="-30.48" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A24"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-27.94" x2="73.66" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-30.48" x2="104.14" y2="-30.48" width="0.1524" layer="91"/>
-<label x="76.2" y="-30.48" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A24"/>
-</segment>
-</net>
-<net name="HBUS_D0" class="0">
-<segment>
-<wire x1="-68.58" y1="-30.48" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-33.02" x2="-38.1" y2="-33.02" width="0.1524" layer="91"/>
-<label x="-63.5" y="-33.02" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A25"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-30.48" x2="73.66" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-33.02" x2="104.14" y2="-33.02" width="0.1524" layer="91"/>
-<label x="76.2" y="-33.02" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A25"/>
-</segment>
-</net>
-<net name="HBUS_D1" class="0">
-<segment>
-<wire x1="-68.58" y1="-33.02" x2="-66.04" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-35.56" x2="-38.1" y2="-35.56" width="0.1524" layer="91"/>
-<label x="-63.5" y="-35.56" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A26"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-33.02" x2="73.66" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-35.56" x2="104.14" y2="-35.56" width="0.1524" layer="91"/>
-<label x="76.2" y="-35.56" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A26"/>
-</segment>
-</net>
-<net name="HBUS_D2" class="0">
-<segment>
-<wire x1="-68.58" y1="-35.56" x2="-66.04" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-38.1" x2="-38.1" y2="-38.1" width="0.1524" layer="91"/>
-<label x="-63.5" y="-38.1" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A27"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-35.56" x2="73.66" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-38.1" x2="104.14" y2="-38.1" width="0.1524" layer="91"/>
-<label x="76.2" y="-38.1" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A27"/>
-</segment>
-</net>
-<net name="HBUS_D3" class="0">
-<segment>
-<wire x1="-68.58" y1="-38.1" x2="-66.04" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-40.64" x2="-38.1" y2="-40.64" width="0.1524" layer="91"/>
-<label x="-63.5" y="-40.64" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A28"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-38.1" x2="73.66" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-40.64" x2="104.14" y2="-40.64" width="0.1524" layer="91"/>
-<label x="76.2" y="-40.64" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A28"/>
-</segment>
-</net>
-<net name="HBUS_D4" class="0">
-<segment>
-<wire x1="-68.58" y1="-40.64" x2="-66.04" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-43.18" x2="-38.1" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-63.5" y="-43.18" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A29"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-40.64" x2="73.66" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-43.18" x2="104.14" y2="-43.18" width="0.1524" layer="91"/>
-<label x="76.2" y="-43.18" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A29"/>
-</segment>
-</net>
-<net name="HBUS_D5" class="0">
-<segment>
-<wire x1="-68.58" y1="-43.18" x2="-66.04" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-45.72" x2="-38.1" y2="-45.72" width="0.1524" layer="91"/>
-<label x="-63.5" y="-45.72" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A30"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-43.18" x2="73.66" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-45.72" x2="104.14" y2="-45.72" width="0.1524" layer="91"/>
-<label x="76.2" y="-45.72" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A30"/>
-</segment>
-</net>
-<net name="HBUS_D6" class="0">
-<segment>
-<wire x1="-68.58" y1="-45.72" x2="-66.04" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-48.26" x2="-38.1" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-63.5" y="-48.26" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A31"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-45.72" x2="73.66" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-48.26" x2="104.14" y2="-48.26" width="0.1524" layer="91"/>
-<label x="76.2" y="-48.26" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A31"/>
-</segment>
-</net>
-<net name="HBUS_D7" class="0">
-<segment>
-<wire x1="-68.58" y1="-48.26" x2="-66.04" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-50.8" x2="-38.1" y2="-50.8" width="0.1524" layer="91"/>
-<label x="-63.5" y="-50.8" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="A32"/>
-</segment>
-<segment>
-<wire x1="71.12" y1="-48.26" x2="73.66" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-50.8" x2="104.14" y2="-50.8" width="0.1524" layer="91"/>
-<label x="76.2" y="-50.8" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="A32"/>
-</segment>
-</net>
-<net name="HBUS_!HALT!" class="0">
-<segment>
-<wire x1="17.78" y1="-22.86" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-5.08" y="-20.32" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B20"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-22.86" x2="157.48" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-20.32" x2="157.48" y2="-20.32" width="0.1524" layer="91"/>
-<label x="137.16" y="-20.32" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B20"/>
-</segment>
-</net>
-<net name="HBUS_RD4" class="0">
-<segment>
-<wire x1="17.78" y1="-30.48" x2="15.24" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-27.94" x2="15.24" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-5.08" y="-27.94" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B23"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-30.48" x2="157.48" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-27.94" x2="157.48" y2="-27.94" width="0.1524" layer="91"/>
-<label x="137.16" y="-27.94" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B23"/>
-</segment>
-</net>
-<net name="HBUS_RD5" class="0">
-<segment>
-<wire x1="17.78" y1="-33.02" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-30.48" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
-<label x="-5.08" y="-30.48" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B24"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-33.02" x2="157.48" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-30.48" x2="157.48" y2="-30.48" width="0.1524" layer="91"/>
-<label x="137.16" y="-30.48" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B24"/>
-</segment>
-</net>
-<net name="HBUS_!REF!" class="0">
-<segment>
-<wire x1="17.78" y1="-35.56" x2="15.24" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-33.02" x2="15.24" y2="-33.02" width="0.1524" layer="91"/>
-<label x="-5.08" y="-33.02" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B25"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-35.56" x2="157.48" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-33.02" x2="157.48" y2="-33.02" width="0.1524" layer="91"/>
-<label x="137.16" y="-33.02" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B25"/>
-</segment>
-</net>
-<net name="HBUS_!RST!" class="0">
-<segment>
-<wire x1="17.78" y1="-38.1" x2="15.24" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-35.56" x2="15.24" y2="-35.56" width="0.1524" layer="91"/>
-<label x="-5.08" y="-35.56" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B26"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-38.1" x2="157.48" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-35.56" x2="157.48" y2="-35.56" width="0.1524" layer="91"/>
-<label x="137.16" y="-35.56" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B26"/>
-</segment>
-</net>
-<net name="HBUS_R!W!" class="0">
-<segment>
-<wire x1="17.78" y1="-40.64" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-38.1" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
-<label x="-5.08" y="-38.1" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B27"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-40.64" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
-<label x="137.16" y="-38.1" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B27"/>
-</segment>
-</net>
-<net name="HBUS_SIO_CLK" class="0">
-<segment>
-<wire x1="17.78" y1="-43.18" x2="15.24" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-40.64" x2="15.24" y2="-40.64" width="0.1524" layer="91"/>
-<label x="-5.08" y="-40.64" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B28"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-43.18" x2="157.48" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-40.64" x2="157.48" y2="-40.64" width="0.1524" layer="91"/>
-<label x="137.16" y="-40.64" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B28"/>
-</segment>
-</net>
-<net name="HBUS_SIO_CMD" class="0">
-<segment>
-<wire x1="17.78" y1="-45.72" x2="15.24" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-43.18" x2="15.24" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-5.08" y="-43.18" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B29"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-45.72" x2="157.48" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-43.18" x2="157.48" y2="-43.18" width="0.1524" layer="91"/>
-<label x="137.16" y="-43.18" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B29"/>
-</segment>
-</net>
-<net name="HBUS_SIO_DIN" class="0">
-<segment>
-<wire x1="17.78" y1="-48.26" x2="15.24" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-45.72" x2="15.24" y2="-45.72" width="0.1524" layer="91"/>
-<label x="-5.08" y="-45.72" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B30"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-48.26" x2="157.48" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-45.72" x2="157.48" y2="-45.72" width="0.1524" layer="91"/>
-<label x="137.16" y="-45.72" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B30"/>
-</segment>
-</net>
-<net name="HBUS_SIO_DOUT" class="0">
-<segment>
-<wire x1="17.78" y1="-50.8" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-48.26" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-5.08" y="-48.26" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B31"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-50.8" x2="157.48" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-48.26" x2="157.48" y2="-48.26" width="0.1524" layer="91"/>
-<label x="137.16" y="-48.26" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B31"/>
-</segment>
-</net>
-<net name="HBUS_SIO_MTR" class="0">
-<segment>
-<wire x1="17.78" y1="-53.34" x2="15.24" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-50.8" x2="15.24" y2="-50.8" width="0.1524" layer="91"/>
-<label x="-5.08" y="-50.8" size="1.778" layer="95"/>
-<pinref part="SLOT0" gate="G$1" pin="B32"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="-53.34" x2="157.48" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-50.8" x2="157.48" y2="-50.8" width="0.1524" layer="91"/>
-<label x="137.16" y="-50.8" size="1.778" layer="95"/>
-<pinref part="SLOT1" gate="G$1" pin="B32"/>
-</segment>
-</net>
 <net name="SPI_CLK" class="0">
 <segment>
 <pinref part="SLOT0" gate="G$1" pin="B17"/>
@@ -20979,110 +20463,452 @@ GND</text>
 <label x="137.16" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STMB0" class="0">
+<net name="HOST_!EXTSEL!" class="0">
 <segment>
-<pinref part="SLOT0" gate="G$1" pin="B8"/>
-<wire x1="17.78" y1="7.62" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="91"/>
-<label x="-5.08" y="10.16" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-38.1" x2="15.24" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-35.56" x2="15.24" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-2.54" y="-35.56" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="B26"/>
 </segment>
 <segment>
-<pinref part="SLOT1" gate="G$1" pin="B8"/>
-<wire x1="160.02" y1="7.62" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="10.16" x2="129.54" y2="10.16" width="0.1524" layer="91"/>
-<label x="137.16" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STMB1" class="0">
-<segment>
-<pinref part="SLOT0" gate="G$1" pin="B9"/>
-<wire x1="17.78" y1="5.08" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="91"/>
-<label x="-5.08" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SLOT1" gate="G$1" pin="B9"/>
-<wire x1="160.02" y1="5.08" x2="157.48" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="7.62" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
-<label x="137.16" y="7.62" size="1.778" layer="95"/>
+<wire x1="160.02" y1="-38.1" x2="157.48" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-35.56" x2="157.48" y2="-35.56" width="0.1524" layer="91"/>
+<label x="139.7" y="-35.56" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="B26"/>
 </segment>
 </net>
-<net name="STMB2" class="0">
+<net name="HOST_!HALT!" class="0">
 <segment>
-<pinref part="SLOT0" gate="G$1" pin="B10"/>
-<wire x1="17.78" y1="2.54" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="5.08" x2="-12.7" y2="5.08" width="0.1524" layer="91"/>
-<label x="-5.08" y="5.08" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-40.64" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-38.1" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-2.54" y="-38.1" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="B27"/>
 </segment>
 <segment>
-<pinref part="SLOT1" gate="G$1" pin="B10"/>
-<wire x1="160.02" y1="2.54" x2="157.48" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="5.08" x2="129.54" y2="5.08" width="0.1524" layer="91"/>
-<label x="137.16" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STMB6" class="0">
-<segment>
-<pinref part="SLOT0" gate="G$1" pin="B11"/>
-<wire x1="17.78" y1="0" x2="15.24" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="2.54" x2="-12.7" y2="2.54" width="0.1524" layer="91"/>
-<label x="-5.08" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SLOT1" gate="G$1" pin="B11"/>
-<wire x1="160.02" y1="0" x2="157.48" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="2.54" x2="129.54" y2="2.54" width="0.1524" layer="91"/>
-<label x="137.16" y="2.54" size="1.778" layer="95"/>
+<wire x1="160.02" y1="-40.64" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
+<label x="139.7" y="-38.1" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="B27"/>
 </segment>
 </net>
-<net name="STMB7" class="0">
+<net name="HOST_!IRQ!" class="0">
 <segment>
-<pinref part="SLOT0" gate="G$1" pin="B12"/>
-<wire x1="17.78" y1="-2.54" x2="15.24" y2="0" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="0" x2="-12.7" y2="0" width="0.1524" layer="91"/>
-<label x="-5.08" y="0" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-43.18" x2="15.24" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-40.64" x2="15.24" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-2.54" y="-40.64" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="B28"/>
 </segment>
 <segment>
-<pinref part="SLOT1" gate="G$1" pin="B12"/>
-<wire x1="160.02" y1="-2.54" x2="157.48" y2="0" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="0" x2="129.54" y2="0" width="0.1524" layer="91"/>
-<label x="137.16" y="0" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STMB8" class="0">
-<segment>
-<pinref part="SLOT0" gate="G$1" pin="B18"/>
-<wire x1="-12.7" y1="-15.24" x2="5.08" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-5.08" y="-15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SLOT1" gate="G$1" pin="B18"/>
-<wire x1="129.54" y1="-15.24" x2="147.32" y2="-15.24" width="0.1524" layer="91"/>
-<label x="137.16" y="-15.24" size="1.778" layer="95"/>
+<wire x1="160.02" y1="-43.18" x2="157.48" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-40.64" x2="157.48" y2="-40.64" width="0.1524" layer="91"/>
+<label x="139.7" y="-40.64" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="B28"/>
 </segment>
 </net>
-<net name="STMB9" class="0">
+<net name="HOST_!MPD!" class="0">
 <segment>
-<pinref part="SLOT0" gate="G$1" pin="B19"/>
-<wire x1="-12.7" y1="-17.78" x2="5.08" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-5.08" y="-17.78" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-45.72" x2="15.24" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-43.18" x2="15.24" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-2.54" y="-43.18" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="B29"/>
 </segment>
 <segment>
-<pinref part="SLOT1" gate="G$1" pin="B19"/>
-<wire x1="129.54" y1="-17.78" x2="147.32" y2="-17.78" width="0.1524" layer="91"/>
-<label x="137.16" y="-17.78" size="1.778" layer="95"/>
+<wire x1="160.02" y1="-45.72" x2="157.48" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-43.18" x2="157.48" y2="-43.18" width="0.1524" layer="91"/>
+<label x="139.7" y="-43.18" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="B29"/>
 </segment>
 </net>
-<net name="STMB12" class="0">
+<net name="HOST_!REF!" class="0">
 <segment>
-<pinref part="SLOT0" gate="G$1" pin="B21"/>
-<wire x1="-12.7" y1="-22.86" x2="5.08" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-5.08" y="-22.86" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-48.26" x2="15.24" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-45.72" x2="15.24" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-2.54" y="-45.72" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="B30"/>
 </segment>
 <segment>
-<pinref part="SLOT1" gate="G$1" pin="B21"/>
-<wire x1="129.54" y1="-22.86" x2="147.32" y2="-22.86" width="0.1524" layer="91"/>
-<label x="137.16" y="-22.86" size="1.778" layer="95"/>
+<wire x1="160.02" y1="-48.26" x2="157.48" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-45.72" x2="157.48" y2="-45.72" width="0.1524" layer="91"/>
+<label x="139.7" y="-45.72" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="B30"/>
+</segment>
+</net>
+<net name="HOST_!RST!" class="0">
+<segment>
+<wire x1="17.78" y1="-50.8" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-48.26" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-2.54" y="-48.26" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="B31"/>
+</segment>
+<segment>
+<wire x1="160.02" y1="-50.8" x2="157.48" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-48.26" x2="157.48" y2="-48.26" width="0.1524" layer="91"/>
+<label x="139.7" y="-48.26" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="B31"/>
+</segment>
+</net>
+<net name="HOST_R/!W!" class="0">
+<segment>
+<wire x1="17.78" y1="-53.34" x2="15.24" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-50.8" x2="15.24" y2="-50.8" width="0.1524" layer="91"/>
+<label x="-2.54" y="-50.8" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="B32"/>
+</segment>
+<segment>
+<wire x1="160.02" y1="-53.34" x2="157.48" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-50.8" x2="157.48" y2="-50.8" width="0.1524" layer="91"/>
+<label x="139.7" y="-50.8" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="B32"/>
+</segment>
+</net>
+<net name="HOST_A0" class="0">
+<segment>
+<wire x1="-71.12" y1="7.62" x2="-68.58" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="10.16" x2="-38.1" y2="10.16" width="0.1524" layer="91"/>
+<label x="-66.04" y="10.16" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A8"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="7.62" x2="71.12" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
+<label x="73.66" y="10.16" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A8"/>
+</segment>
+</net>
+<net name="HOST_A1" class="0">
+<segment>
+<wire x1="-71.12" y1="5.08" x2="-68.58" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="7.62" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
+<label x="-66.04" y="7.62" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A9"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="5.08" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="7.62" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
+<label x="73.66" y="7.62" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A9"/>
+</segment>
+</net>
+<net name="HOST_A2" class="0">
+<segment>
+<wire x1="-71.12" y1="2.54" x2="-68.58" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="5.08" x2="-38.1" y2="5.08" width="0.1524" layer="91"/>
+<label x="-66.04" y="5.08" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A10"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="2.54" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="5.08" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
+<label x="73.66" y="5.08" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A10"/>
+</segment>
+</net>
+<net name="HOST_A3" class="0">
+<segment>
+<wire x1="-71.12" y1="0" x2="-68.58" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="2.54" x2="-38.1" y2="2.54" width="0.1524" layer="91"/>
+<label x="-66.04" y="2.54" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A11"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="0" x2="71.12" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="2.54" x2="104.14" y2="2.54" width="0.1524" layer="91"/>
+<label x="73.66" y="2.54" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A11"/>
+</segment>
+</net>
+<net name="HOST_A4" class="0">
+<segment>
+<wire x1="-71.12" y1="-2.54" x2="-68.58" y2="0" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="0" x2="-38.1" y2="0" width="0.1524" layer="91"/>
+<label x="-66.04" y="0" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A12"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-2.54" x2="71.12" y2="0" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="0" x2="104.14" y2="0" width="0.1524" layer="91"/>
+<label x="73.66" y="0" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A12"/>
+</segment>
+</net>
+<net name="HOST_A5" class="0">
+<segment>
+<wire x1="-71.12" y1="-5.08" x2="-68.58" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-2.54" x2="-38.1" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-66.04" y="-2.54" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A13"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-5.08" x2="71.12" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-2.54" x2="104.14" y2="-2.54" width="0.1524" layer="91"/>
+<label x="73.66" y="-2.54" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A13"/>
+</segment>
+</net>
+<net name="HOST_A6" class="0">
+<segment>
+<wire x1="-71.12" y1="-7.62" x2="-68.58" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-5.08" x2="-38.1" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-66.04" y="-5.08" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A14"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-7.62" x2="71.12" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-5.08" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
+<label x="73.66" y="-5.08" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A14"/>
+</segment>
+</net>
+<net name="HOST_A7" class="0">
+<segment>
+<wire x1="-71.12" y1="-10.16" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-7.62" x2="-38.1" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-66.04" y="-7.62" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A15"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-10.16" x2="71.12" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-7.62" x2="104.14" y2="-7.62" width="0.1524" layer="91"/>
+<label x="73.66" y="-7.62" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A15"/>
+</segment>
+</net>
+<net name="HOST_A8" class="0">
+<segment>
+<wire x1="-71.12" y1="-12.7" x2="-68.58" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-10.16" x2="-38.1" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-66.04" y="-10.16" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A16"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-12.7" x2="71.12" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-10.16" x2="104.14" y2="-10.16" width="0.1524" layer="91"/>
+<label x="73.66" y="-10.16" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A16"/>
+</segment>
+</net>
+<net name="HOST_A9" class="0">
+<segment>
+<wire x1="-71.12" y1="-15.24" x2="-68.58" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-12.7" x2="-38.1" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-66.04" y="-12.7" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A17"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-15.24" x2="71.12" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-12.7" x2="104.14" y2="-12.7" width="0.1524" layer="91"/>
+<label x="73.66" y="-12.7" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A17"/>
+</segment>
+</net>
+<net name="HOST_A10" class="0">
+<segment>
+<wire x1="-71.12" y1="-17.78" x2="-68.58" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-15.24" x2="-38.1" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-66.04" y="-15.24" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A18"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-17.78" x2="71.12" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-15.24" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
+<label x="73.66" y="-15.24" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A18"/>
+</segment>
+</net>
+<net name="HOST_A11" class="0">
+<segment>
+<wire x1="-71.12" y1="-20.32" x2="-68.58" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-17.78" x2="-38.1" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-66.04" y="-17.78" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A19"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-20.32" x2="71.12" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-17.78" x2="104.14" y2="-17.78" width="0.1524" layer="91"/>
+<label x="73.66" y="-17.78" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A19"/>
+</segment>
+</net>
+<net name="HOST_A12" class="0">
+<segment>
+<wire x1="-71.12" y1="-22.86" x2="-68.58" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-20.32" x2="-38.1" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-66.04" y="-20.32" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A20"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-22.86" x2="71.12" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-20.32" x2="104.14" y2="-20.32" width="0.1524" layer="91"/>
+<label x="73.66" y="-20.32" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A20"/>
+</segment>
+</net>
+<net name="HOST_A13" class="0">
+<segment>
+<wire x1="-71.12" y1="-25.4" x2="-68.58" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-22.86" x2="-38.1" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-66.04" y="-22.86" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A21"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-25.4" x2="71.12" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-22.86" x2="104.14" y2="-22.86" width="0.1524" layer="91"/>
+<label x="73.66" y="-22.86" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A21"/>
+</segment>
+</net>
+<net name="HOST_A14" class="0">
+<segment>
+<wire x1="-71.12" y1="-27.94" x2="-68.58" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-25.4" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-66.04" y="-25.4" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A22"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-27.94" x2="71.12" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-25.4" x2="104.14" y2="-25.4" width="0.1524" layer="91"/>
+<label x="73.66" y="-25.4" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A22"/>
+</segment>
+</net>
+<net name="HOST_A15" class="0">
+<segment>
+<wire x1="-71.12" y1="-30.48" x2="-68.58" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-27.94" x2="-38.1" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-66.04" y="-27.94" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A23"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-30.48" x2="71.12" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-27.94" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
+<label x="73.66" y="-27.94" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A23"/>
+</segment>
+</net>
+<net name="HOST_CLK" class="0">
+<segment>
+<wire x1="-71.12" y1="-33.02" x2="-68.58" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-30.48" x2="-38.1" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-66.04" y="-30.48" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A24"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-33.02" x2="71.12" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-30.48" x2="104.14" y2="-30.48" width="0.1524" layer="91"/>
+<label x="73.66" y="-30.48" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A24"/>
+</segment>
+</net>
+<net name="HOST_D0" class="0">
+<segment>
+<wire x1="-71.12" y1="-35.56" x2="-68.58" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-33.02" x2="-38.1" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-66.04" y="-33.02" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A25"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-35.56" x2="71.12" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-33.02" x2="104.14" y2="-33.02" width="0.1524" layer="91"/>
+<label x="73.66" y="-33.02" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A25"/>
+</segment>
+</net>
+<net name="HOST_D1" class="0">
+<segment>
+<wire x1="-71.12" y1="-38.1" x2="-68.58" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-35.56" x2="-38.1" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-66.04" y="-35.56" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A26"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-38.1" x2="71.12" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-35.56" x2="104.14" y2="-35.56" width="0.1524" layer="91"/>
+<label x="73.66" y="-35.56" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A26"/>
+</segment>
+</net>
+<net name="HOST_D2" class="0">
+<segment>
+<wire x1="-71.12" y1="-40.64" x2="-68.58" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-38.1" x2="-38.1" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-66.04" y="-38.1" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A27"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-40.64" x2="71.12" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-38.1" x2="104.14" y2="-38.1" width="0.1524" layer="91"/>
+<label x="73.66" y="-38.1" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A27"/>
+</segment>
+</net>
+<net name="HOST_D3" class="0">
+<segment>
+<wire x1="-71.12" y1="-43.18" x2="-68.58" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-40.64" x2="-38.1" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-66.04" y="-40.64" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A28"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-43.18" x2="71.12" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-40.64" x2="104.14" y2="-40.64" width="0.1524" layer="91"/>
+<label x="73.66" y="-40.64" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A28"/>
+</segment>
+</net>
+<net name="HOST_D4" class="0">
+<segment>
+<wire x1="-71.12" y1="-45.72" x2="-68.58" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-43.18" x2="-38.1" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-66.04" y="-43.18" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A29"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-45.72" x2="71.12" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-43.18" x2="104.14" y2="-43.18" width="0.1524" layer="91"/>
+<label x="73.66" y="-43.18" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A29"/>
+</segment>
+</net>
+<net name="HOST_D5" class="0">
+<segment>
+<wire x1="-71.12" y1="-48.26" x2="-68.58" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-45.72" x2="-38.1" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-66.04" y="-45.72" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A30"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-48.26" x2="71.12" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-45.72" x2="104.14" y2="-45.72" width="0.1524" layer="91"/>
+<label x="73.66" y="-45.72" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A30"/>
+</segment>
+</net>
+<net name="HOST_D6" class="0">
+<segment>
+<wire x1="-71.12" y1="-50.8" x2="-68.58" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-48.26" x2="-38.1" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-66.04" y="-48.26" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A31"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-50.8" x2="71.12" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-48.26" x2="104.14" y2="-48.26" width="0.1524" layer="91"/>
+<label x="73.66" y="-48.26" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A31"/>
+</segment>
+</net>
+<net name="HOST_D7" class="0">
+<segment>
+<wire x1="-71.12" y1="-53.34" x2="-68.58" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-50.8" x2="-38.1" y2="-50.8" width="0.1524" layer="91"/>
+<label x="-66.04" y="-50.8" size="1.778" layer="95"/>
+<pinref part="SLOT0" gate="G$1" pin="A32"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="-53.34" x2="71.12" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-50.8" x2="104.14" y2="-50.8" width="0.1524" layer="91"/>
+<label x="73.66" y="-50.8" size="1.778" layer="95"/>
+<pinref part="SLOT1" gate="G$1" pin="A32"/>
 </segment>
 </net>
 </nets>
@@ -21176,36 +21002,24 @@ GND</text>
 <label x="220.98" y="43.18" size="1.778" layer="95"/>
 </segment>
 </bus>
-<bus name="HBUS:HBUS_A[0..15],HBUS_CLK,HBUS_D[0..7],HBUS_!D1XX!,HBUS_!EXSEL!,HBUS_!HALT!,HBUS_!IRQ!,HBUS_!MPD!,HBUS_RD[4..5],HBUS_!REF!,HBUS_!RST!,HBUS_R!W!,HBUS_SIO_CLK,HBUS_SIO_CMD,HBUS_SIO_DIN,HBUS_SIO_DOUT,HBUS_SIO_MTR">
+<bus name="HOST:HOST_A[0..15],HOST_CLK,HOST_CTL[0..1],HOST_D[0..7],HOST_DIR[0..4],HOST_!EXTSEL!,HOST_GND,HOST_!HALT!,HOST_!IRQ!,HOST_!MPD!,HOST_!REF!,HOST_!RST!,HOST_R/!W!">
 <segment>
-<wire x1="-22.86" y1="76.2" x2="-22.86" y2="-2.54" width="0.762" layer="92"/>
-<wire x1="-22.86" y1="-2.54" x2="-20.32" y2="-5.08" width="0.762" layer="92"/>
-<wire x1="-20.32" y1="-5.08" x2="71.12" y2="-5.08" width="0.762" layer="92"/>
-<wire x1="71.12" y1="-5.08" x2="73.66" y2="-2.54" width="0.762" layer="92"/>
-<wire x1="73.66" y1="-2.54" x2="73.66" y2="45.72" width="0.762" layer="92"/>
-<label x="22.86" y="-7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="76.2" x2="121.92" y2="-2.54" width="0.762" layer="92"/>
-<wire x1="121.92" y1="-2.54" x2="124.46" y2="-5.08" width="0.762" layer="92"/>
-<wire x1="124.46" y1="-5.08" x2="213.36" y2="-5.08" width="0.762" layer="92"/>
+<wire x1="114.3" y1="71.12" x2="114.3" y2="-2.54" width="0.762" layer="92"/>
+<wire x1="114.3" y1="-2.54" x2="116.84" y2="-5.08" width="0.762" layer="92"/>
+<wire x1="116.84" y1="-5.08" x2="213.36" y2="-5.08" width="0.762" layer="92"/>
 <wire x1="213.36" y1="-5.08" x2="215.9" y2="-2.54" width="0.762" layer="92"/>
-<wire x1="215.9" y1="-2.54" x2="215.9" y2="45.72" width="0.762" layer="92"/>
-<label x="162.56" y="-7.62" size="1.778" layer="95"/>
+<wire x1="215.9" y1="-2.54" x2="215.9" y2="25.4" width="0.762" layer="92"/>
+<label x="166.37" y="-8.128" size="1.778" layer="95"/>
 </segment>
 </bus>
-<bus name="STMB:STMB[0..2],STMB[6..9],STMB12,STMB15">
+<bus name="HOST:HOST_A[0..15],HOST_CLK,HOST_CTL[0..1],HOST_D[0..7],HOST_DIR[0..4],HOST_!EXTSEL!,HOST_GND,HOST_!HALT!,HOST_!IRQ!,HOST_!MPD!,HOST_!REF!,HOST_!RST!,HOST_R/!W!">
 <segment>
-<wire x1="86.36" y1="58.42" x2="76.2" y2="58.42" width="0.762" layer="92"/>
-<wire x1="76.2" y1="58.42" x2="73.66" y2="60.96" width="0.762" layer="92"/>
-<wire x1="73.66" y1="60.96" x2="73.66" y2="71.12" width="0.762" layer="92"/>
-<label x="78.74" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="228.6" y1="58.42" x2="218.44" y2="58.42" width="0.762" layer="92"/>
-<wire x1="218.44" y1="58.42" x2="215.9" y2="60.96" width="0.762" layer="92"/>
-<wire x1="215.9" y1="60.96" x2="215.9" y2="71.12" width="0.762" layer="92"/>
-<label x="220.98" y="55.88" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="71.12" x2="-20.32" y2="-2.54" width="0.762" layer="92"/>
+<wire x1="-20.32" y1="-2.54" x2="-17.78" y2="-5.08" width="0.762" layer="92"/>
+<wire x1="-17.78" y1="-5.08" x2="71.12" y2="-5.08" width="0.762" layer="92"/>
+<wire x1="71.12" y1="-5.08" x2="73.66" y2="-2.54" width="0.762" layer="92"/>
+<wire x1="73.66" y1="-2.54" x2="73.66" y2="25.4" width="0.762" layer="92"/>
+<label x="23.114" y="-8.382" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -21450,510 +21264,6 @@ GND</text>
 <junction x="190.5" y="147.32"/>
 </segment>
 </net>
-<net name="HBUS_A0" class="0">
-<segment>
-<wire x1="-22.86" y1="76.2" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
-<label x="-17.78" y="73.66" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A8"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="76.2" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
-<label x="127" y="73.66" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A8"/>
-</segment>
-</net>
-<net name="HBUS_A1" class="0">
-<segment>
-<wire x1="-22.86" y1="73.66" x2="-20.32" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
-<label x="-17.78" y="71.12" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A9"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="73.66" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="71.12" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
-<label x="127" y="71.12" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A9"/>
-</segment>
-</net>
-<net name="HBUS_A2" class="0">
-<segment>
-<wire x1="-22.86" y1="71.12" x2="-20.32" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
-<label x="-17.78" y="68.58" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A10"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="71.12" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
-<label x="127" y="68.58" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A10"/>
-</segment>
-</net>
-<net name="HBUS_A3" class="0">
-<segment>
-<wire x1="-22.86" y1="68.58" x2="-20.32" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
-<label x="-17.78" y="66.04" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A11"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="68.58" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="66.04" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
-<label x="127" y="66.04" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A11"/>
-</segment>
-</net>
-<net name="HBUS_A4" class="0">
-<segment>
-<wire x1="-22.86" y1="66.04" x2="-20.32" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="63.5" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
-<label x="-17.78" y="63.5" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A12"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="66.04" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="63.5" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
-<label x="127" y="63.5" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A12"/>
-</segment>
-</net>
-<net name="HBUS_A5" class="0">
-<segment>
-<wire x1="-22.86" y1="63.5" x2="-20.32" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
-<label x="-17.78" y="60.96" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A13"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="63.5" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
-<label x="127" y="60.96" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A13"/>
-</segment>
-</net>
-<net name="HBUS_A6" class="0">
-<segment>
-<wire x1="-22.86" y1="60.96" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
-<label x="-17.78" y="58.42" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A14"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="60.96" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="58.42" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
-<label x="127" y="58.42" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A14"/>
-</segment>
-</net>
-<net name="HBUS_A7" class="0">
-<segment>
-<wire x1="-22.86" y1="58.42" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
-<label x="-17.78" y="55.88" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A15"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="58.42" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
-<label x="127" y="55.88" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A15"/>
-</segment>
-</net>
-<net name="HBUS_A8" class="0">
-<segment>
-<wire x1="-22.86" y1="55.88" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="53.34" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
-<label x="-17.78" y="53.34" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A16"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="55.88" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
-<label x="127" y="53.34" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A16"/>
-</segment>
-</net>
-<net name="HBUS_A9" class="0">
-<segment>
-<wire x1="-22.86" y1="53.34" x2="-20.32" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
-<label x="-17.78" y="50.8" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A17"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="53.34" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="50.8" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
-<label x="127" y="50.8" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A17"/>
-</segment>
-</net>
-<net name="HBUS_A10" class="0">
-<segment>
-<wire x1="-22.86" y1="50.8" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="48.26" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
-<label x="-17.78" y="48.26" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A18"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="50.8" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="48.26" x2="154.94" y2="48.26" width="0.1524" layer="91"/>
-<label x="127" y="48.26" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A18"/>
-</segment>
-</net>
-<net name="HBUS_A11" class="0">
-<segment>
-<wire x1="-22.86" y1="48.26" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
-<label x="-17.78" y="45.72" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A19"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="48.26" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="45.72" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
-<label x="127" y="45.72" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A19"/>
-</segment>
-</net>
-<net name="HBUS_A12" class="0">
-<segment>
-<wire x1="-22.86" y1="45.72" x2="-20.32" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
-<label x="-17.78" y="43.18" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A20"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="45.72" x2="124.46" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="43.18" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
-<label x="127" y="43.18" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A20"/>
-</segment>
-</net>
-<net name="HBUS_A13" class="0">
-<segment>
-<wire x1="-22.86" y1="43.18" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
-<label x="-17.78" y="40.64" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A21"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="43.18" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
-<label x="127" y="40.64" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A21"/>
-</segment>
-</net>
-<net name="HBUS_A14" class="0">
-<segment>
-<wire x1="-22.86" y1="40.64" x2="-20.32" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
-<label x="-17.78" y="38.1" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A22"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="40.64" x2="124.46" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="38.1" x2="154.94" y2="38.1" width="0.1524" layer="91"/>
-<label x="127" y="38.1" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A22"/>
-</segment>
-</net>
-<net name="HBUS_A15" class="0">
-<segment>
-<wire x1="-22.86" y1="38.1" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
-<label x="-17.78" y="35.56" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A23"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="38.1" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="35.56" x2="154.94" y2="35.56" width="0.1524" layer="91"/>
-<label x="127" y="35.56" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A23"/>
-</segment>
-</net>
-<net name="HBUS_CLK" class="0">
-<segment>
-<wire x1="-22.86" y1="35.56" x2="-20.32" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
-<label x="-17.78" y="33.02" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A24"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="35.56" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
-<label x="127" y="33.02" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A24"/>
-</segment>
-</net>
-<net name="HBUS_D0" class="0">
-<segment>
-<wire x1="-22.86" y1="33.02" x2="-20.32" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
-<label x="-17.78" y="30.48" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A25"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="33.02" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="30.48" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
-<label x="127" y="30.48" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A25"/>
-</segment>
-</net>
-<net name="HBUS_D1" class="0">
-<segment>
-<wire x1="-22.86" y1="30.48" x2="-20.32" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
-<label x="-17.78" y="27.94" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A26"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="30.48" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="27.94" x2="154.94" y2="27.94" width="0.1524" layer="91"/>
-<label x="127" y="27.94" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A26"/>
-</segment>
-</net>
-<net name="HBUS_D2" class="0">
-<segment>
-<wire x1="-22.86" y1="27.94" x2="-20.32" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
-<label x="-17.78" y="25.4" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A27"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="27.94" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="25.4" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
-<label x="127" y="25.4" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A27"/>
-</segment>
-</net>
-<net name="HBUS_D3" class="0">
-<segment>
-<wire x1="-22.86" y1="25.4" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
-<label x="-17.78" y="22.86" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A28"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="25.4" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="22.86" x2="154.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="127" y="22.86" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A28"/>
-</segment>
-</net>
-<net name="HBUS_D4" class="0">
-<segment>
-<wire x1="-22.86" y1="22.86" x2="-20.32" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="20.32" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
-<label x="-17.78" y="20.32" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A29"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="22.86" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="20.32" x2="154.94" y2="20.32" width="0.1524" layer="91"/>
-<label x="127" y="20.32" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A29"/>
-</segment>
-</net>
-<net name="HBUS_D5" class="0">
-<segment>
-<wire x1="-22.86" y1="20.32" x2="-20.32" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
-<label x="-17.78" y="17.78" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A30"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="20.32" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
-<label x="127" y="17.78" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A30"/>
-</segment>
-</net>
-<net name="HBUS_D6" class="0">
-<segment>
-<wire x1="-22.86" y1="17.78" x2="-20.32" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
-<label x="-17.78" y="15.24" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A31"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="17.78" x2="124.46" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="15.24" x2="154.94" y2="15.24" width="0.1524" layer="91"/>
-<label x="127" y="15.24" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A31"/>
-</segment>
-</net>
-<net name="HBUS_D7" class="0">
-<segment>
-<wire x1="-22.86" y1="15.24" x2="-20.32" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
-<label x="-17.78" y="12.7" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="A32"/>
-</segment>
-<segment>
-<wire x1="121.92" y1="15.24" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="12.7" x2="154.94" y2="12.7" width="0.1524" layer="91"/>
-<label x="127" y="12.7" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="A32"/>
-</segment>
-</net>
-<net name="HBUS_!HALT!" class="0">
-<segment>
-<wire x1="73.66" y1="40.64" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<label x="50.8" y="43.18" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B20"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="40.64" x2="213.36" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="43.18" x2="213.36" y2="43.18" width="0.1524" layer="91"/>
-<label x="193.04" y="43.18" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B20"/>
-</segment>
-</net>
-<net name="HBUS_RD4" class="0">
-<segment>
-<wire x1="73.66" y1="33.02" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
-<label x="50.8" y="35.56" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B23"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="33.02" x2="213.36" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="35.56" x2="213.36" y2="35.56" width="0.1524" layer="91"/>
-<label x="193.04" y="35.56" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B23"/>
-</segment>
-</net>
-<net name="HBUS_RD5" class="0">
-<segment>
-<wire x1="73.66" y1="30.48" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
-<label x="50.8" y="33.02" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B24"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="30.48" x2="213.36" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="33.02" x2="213.36" y2="33.02" width="0.1524" layer="91"/>
-<label x="193.04" y="33.02" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B24"/>
-</segment>
-</net>
-<net name="HBUS_!REF!" class="0">
-<segment>
-<wire x1="73.66" y1="27.94" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="30.48" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
-<label x="50.8" y="30.48" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B25"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="27.94" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="30.48" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
-<label x="193.04" y="30.48" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B25"/>
-</segment>
-</net>
-<net name="HBUS_!RST!" class="0">
-<segment>
-<wire x1="73.66" y1="25.4" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
-<label x="50.8" y="27.94" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B26"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="25.4" x2="213.36" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="27.94" x2="213.36" y2="27.94" width="0.1524" layer="91"/>
-<label x="193.04" y="27.94" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B26"/>
-</segment>
-</net>
-<net name="HBUS_R!W!" class="0">
-<segment>
-<wire x1="73.66" y1="22.86" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
-<label x="50.8" y="25.4" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B27"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="22.86" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="25.4" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
-<label x="193.04" y="25.4" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B27"/>
-</segment>
-</net>
-<net name="HBUS_SIO_CLK" class="0">
-<segment>
-<wire x1="73.66" y1="20.32" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="22.86" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
-<label x="50.8" y="22.86" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B28"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="20.32" x2="213.36" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="22.86" x2="213.36" y2="22.86" width="0.1524" layer="91"/>
-<label x="193.04" y="22.86" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B28"/>
-</segment>
-</net>
-<net name="HBUS_SIO_CMD" class="0">
-<segment>
-<wire x1="73.66" y1="17.78" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
-<label x="50.8" y="20.32" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B29"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="17.78" x2="213.36" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="20.32" x2="213.36" y2="20.32" width="0.1524" layer="91"/>
-<label x="193.04" y="20.32" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B29"/>
-</segment>
-</net>
-<net name="HBUS_SIO_DIN" class="0">
-<segment>
-<wire x1="73.66" y1="15.24" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
-<label x="50.8" y="17.78" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B30"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="15.24" x2="213.36" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="17.78" x2="213.36" y2="17.78" width="0.1524" layer="91"/>
-<label x="193.04" y="17.78" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B30"/>
-</segment>
-</net>
-<net name="HBUS_SIO_DOUT" class="0">
-<segment>
-<wire x1="73.66" y1="12.7" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
-<label x="50.8" y="15.24" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B31"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="12.7" x2="213.36" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="15.24" x2="213.36" y2="15.24" width="0.1524" layer="91"/>
-<label x="193.04" y="15.24" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B31"/>
-</segment>
-</net>
-<net name="HBUS_SIO_MTR" class="0">
-<segment>
-<wire x1="73.66" y1="10.16" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
-<label x="50.8" y="12.7" size="1.778" layer="95"/>
-<pinref part="SLOT2" gate="G$1" pin="B32"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="10.16" x2="213.36" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="12.7" x2="213.36" y2="12.7" width="0.1524" layer="91"/>
-<label x="193.04" y="12.7" size="1.778" layer="95"/>
-<pinref part="SLOT3" gate="G$1" pin="B32"/>
-</segment>
-</net>
 <net name="SPI_SS2" class="0">
 <segment>
 <pinref part="SLOT2" gate="G$1" pin="B13"/>
@@ -22045,110 +21355,452 @@ GND</text>
 <wire x1="213.36" y1="83.82" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="STMB0" class="0">
+<net name="HOST_A0" class="0">
 <segment>
-<pinref part="SLOT2" gate="G$1" pin="B8"/>
-<wire x1="73.66" y1="71.12" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
-<label x="50.8" y="73.66" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="71.12" x2="-17.78" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<label x="-15.24" y="73.66" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A8"/>
 </segment>
 <segment>
-<pinref part="SLOT3" gate="G$1" pin="B8"/>
-<wire x1="215.9" y1="71.12" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="73.66" x2="180.34" y2="73.66" width="0.1524" layer="91"/>
-<label x="193.04" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STMB1" class="0">
-<segment>
-<pinref part="SLOT2" gate="G$1" pin="B9"/>
-<wire x1="73.66" y1="68.58" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<label x="50.8" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SLOT3" gate="G$1" pin="B9"/>
-<wire x1="215.9" y1="68.58" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="71.12" x2="180.34" y2="71.12" width="0.1524" layer="91"/>
-<label x="193.04" y="71.12" size="1.778" layer="95"/>
+<wire x1="114.3" y1="71.12" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
+<label x="119.38" y="73.66" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A8"/>
 </segment>
 </net>
-<net name="STMB2" class="0">
+<net name="HOST_A1" class="0">
 <segment>
-<pinref part="SLOT2" gate="G$1" pin="B10"/>
-<wire x1="73.66" y1="66.04" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
-<label x="50.8" y="68.58" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="68.58" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
+<label x="-15.24" y="71.12" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A9"/>
 </segment>
 <segment>
-<pinref part="SLOT3" gate="G$1" pin="B10"/>
-<wire x1="215.9" y1="66.04" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
-<label x="193.04" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STMB6" class="0">
-<segment>
-<pinref part="SLOT2" gate="G$1" pin="B11"/>
-<wire x1="73.66" y1="63.5" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
-<label x="50.8" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SLOT3" gate="G$1" pin="B11"/>
-<wire x1="215.9" y1="63.5" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="66.04" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
-<label x="193.04" y="66.04" size="1.778" layer="95"/>
+<wire x1="114.3" y1="68.58" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="71.12" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
+<label x="119.38" y="71.12" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A9"/>
 </segment>
 </net>
-<net name="STMB7" class="0">
+<net name="HOST_A2" class="0">
 <segment>
-<pinref part="SLOT2" gate="G$1" pin="B12"/>
-<wire x1="73.66" y1="60.96" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
-<label x="50.8" y="63.5" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="66.04" x2="-17.78" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
+<label x="-15.24" y="68.58" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A10"/>
 </segment>
 <segment>
-<pinref part="SLOT3" gate="G$1" pin="B12"/>
-<wire x1="215.9" y1="60.96" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="63.5" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
-<label x="193.04" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STMB8" class="0">
-<segment>
-<pinref part="SLOT2" gate="G$1" pin="B18"/>
-<wire x1="38.1" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
-<label x="50.8" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SLOT3" gate="G$1" pin="B18"/>
-<wire x1="180.34" y1="48.26" x2="203.2" y2="48.26" width="0.1524" layer="91"/>
-<label x="193.04" y="48.26" size="1.778" layer="95"/>
+<wire x1="114.3" y1="66.04" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
+<label x="119.38" y="68.58" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A10"/>
 </segment>
 </net>
-<net name="STMB9" class="0">
+<net name="HOST_A3" class="0">
 <segment>
-<pinref part="SLOT2" gate="G$1" pin="B19"/>
-<wire x1="38.1" y1="45.72" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
-<label x="50.8" y="45.72" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="63.5" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
+<label x="-15.24" y="66.04" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A11"/>
 </segment>
 <segment>
-<pinref part="SLOT3" gate="G$1" pin="B19"/>
-<wire x1="180.34" y1="45.72" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
-<label x="193.04" y="45.72" size="1.778" layer="95"/>
+<wire x1="114.3" y1="63.5" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="66.04" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
+<label x="119.38" y="66.04" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A11"/>
 </segment>
 </net>
-<net name="STMB12" class="0">
+<net name="HOST_A4" class="0">
 <segment>
-<pinref part="SLOT2" gate="G$1" pin="B21"/>
-<wire x1="38.1" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
-<label x="50.8" y="40.64" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="60.96" x2="-17.78" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="63.5" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
+<label x="-15.24" y="63.5" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A12"/>
 </segment>
 <segment>
-<pinref part="SLOT3" gate="G$1" pin="B21"/>
-<wire x1="180.34" y1="40.64" x2="203.2" y2="40.64" width="0.1524" layer="91"/>
-<label x="193.04" y="40.64" size="1.778" layer="95"/>
+<wire x1="114.3" y1="60.96" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="63.5" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
+<label x="119.38" y="63.5" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A12"/>
+</segment>
+</net>
+<net name="HOST_A5" class="0">
+<segment>
+<wire x1="-20.32" y1="58.42" x2="-17.78" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
+<label x="-15.24" y="60.96" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A13"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="58.42" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<label x="119.38" y="60.96" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A13"/>
+</segment>
+</net>
+<net name="HOST_A6" class="0">
+<segment>
+<wire x1="-20.32" y1="55.88" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
+<label x="-15.24" y="58.42" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A14"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="55.88" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="58.42" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
+<label x="119.38" y="58.42" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A14"/>
+</segment>
+</net>
+<net name="HOST_A7" class="0">
+<segment>
+<wire x1="-20.32" y1="53.34" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
+<label x="-15.24" y="55.88" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A15"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="53.34" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
+<label x="119.38" y="55.88" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A15"/>
+</segment>
+</net>
+<net name="HOST_A8" class="0">
+<segment>
+<wire x1="-20.32" y1="50.8" x2="-17.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="53.34" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
+<label x="-15.24" y="53.34" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A16"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="50.8" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
+<label x="119.38" y="53.34" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A16"/>
+</segment>
+</net>
+<net name="HOST_A9" class="0">
+<segment>
+<wire x1="-20.32" y1="48.26" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
+<label x="-15.24" y="50.8" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A17"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="48.26" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="50.8" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
+<label x="119.38" y="50.8" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A17"/>
+</segment>
+</net>
+<net name="HOST_A10" class="0">
+<segment>
+<wire x1="-20.32" y1="45.72" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="48.26" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
+<label x="-15.24" y="48.26" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A18"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="45.72" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="48.26" x2="154.94" y2="48.26" width="0.1524" layer="91"/>
+<label x="119.38" y="48.26" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A18"/>
+</segment>
+</net>
+<net name="HOST_A11" class="0">
+<segment>
+<wire x1="-20.32" y1="43.18" x2="-17.78" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<label x="-15.24" y="45.72" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A19"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="43.18" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="45.72" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
+<label x="119.38" y="45.72" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A19"/>
+</segment>
+</net>
+<net name="HOST_A12" class="0">
+<segment>
+<wire x1="-20.32" y1="40.64" x2="-17.78" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<label x="-15.24" y="43.18" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A20"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="40.64" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="43.18" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
+<label x="119.38" y="43.18" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A20"/>
+</segment>
+</net>
+<net name="HOST_A13" class="0">
+<segment>
+<wire x1="-20.32" y1="38.1" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
+<label x="-15.24" y="40.64" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A21"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="38.1" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
+<label x="119.38" y="40.64" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A21"/>
+</segment>
+</net>
+<net name="HOST_A14" class="0">
+<segment>
+<wire x1="-20.32" y1="35.56" x2="-17.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
+<label x="-15.24" y="38.1" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A22"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="35.56" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="38.1" x2="154.94" y2="38.1" width="0.1524" layer="91"/>
+<label x="119.38" y="38.1" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A22"/>
+</segment>
+</net>
+<net name="HOST_A15" class="0">
+<segment>
+<wire x1="-20.32" y1="33.02" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
+<label x="-15.24" y="35.56" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A23"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="33.02" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="35.56" x2="154.94" y2="35.56" width="0.1524" layer="91"/>
+<label x="119.38" y="35.56" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A23"/>
+</segment>
+</net>
+<net name="HOST_CLK" class="0">
+<segment>
+<wire x1="-20.32" y1="30.48" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
+<label x="-15.24" y="33.02" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A24"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="30.48" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
+<label x="119.38" y="33.02" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A24"/>
+</segment>
+</net>
+<net name="HOST_D0" class="0">
+<segment>
+<wire x1="-20.32" y1="27.94" x2="-17.78" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
+<label x="-15.24" y="30.48" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A25"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="27.94" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="30.48" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
+<label x="119.38" y="30.48" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A25"/>
+</segment>
+</net>
+<net name="HOST_D1" class="0">
+<segment>
+<wire x1="-20.32" y1="25.4" x2="-17.78" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<label x="-15.24" y="27.94" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A26"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="25.4" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="27.94" x2="154.94" y2="27.94" width="0.1524" layer="91"/>
+<label x="119.38" y="27.94" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A26"/>
+</segment>
+</net>
+<net name="HOST_D2" class="0">
+<segment>
+<wire x1="-20.32" y1="22.86" x2="-17.78" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
+<label x="-15.24" y="25.4" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A27"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="22.86" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="25.4" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
+<label x="119.38" y="25.4" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A27"/>
+</segment>
+</net>
+<net name="HOST_D3" class="0">
+<segment>
+<wire x1="-20.32" y1="20.32" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<label x="-15.24" y="22.86" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A28"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="20.32" x2="116.84" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="22.86" x2="154.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="119.38" y="22.86" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A28"/>
+</segment>
+</net>
+<net name="HOST_D4" class="0">
+<segment>
+<wire x1="-20.32" y1="17.78" x2="-17.78" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="20.32" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
+<label x="-15.24" y="20.32" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A29"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="17.78" x2="116.84" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="20.32" x2="154.94" y2="20.32" width="0.1524" layer="91"/>
+<label x="119.38" y="20.32" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A29"/>
+</segment>
+</net>
+<net name="HOST_D5" class="0">
+<segment>
+<wire x1="-20.32" y1="15.24" x2="-17.78" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
+<label x="-15.24" y="17.78" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A30"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="15.24" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
+<label x="119.38" y="17.78" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A30"/>
+</segment>
+</net>
+<net name="HOST_D6" class="0">
+<segment>
+<wire x1="-20.32" y1="12.7" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
+<label x="-15.24" y="15.24" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A31"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="12.7" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="15.24" x2="154.94" y2="15.24" width="0.1524" layer="91"/>
+<label x="119.38" y="15.24" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A31"/>
+</segment>
+</net>
+<net name="HOST_D7" class="0">
+<segment>
+<wire x1="-20.32" y1="10.16" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
+<label x="-15.24" y="12.7" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="A32"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="10.16" x2="116.84" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="12.7" x2="154.94" y2="12.7" width="0.1524" layer="91"/>
+<label x="119.38" y="12.7" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="A32"/>
+</segment>
+</net>
+<net name="HOST_!EXTSEL!" class="0">
+<segment>
+<wire x1="73.66" y1="25.4" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<label x="53.34" y="27.94" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="B26"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="25.4" x2="213.36" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="27.94" x2="213.36" y2="27.94" width="0.1524" layer="91"/>
+<label x="195.58" y="27.94" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="B26"/>
+</segment>
+</net>
+<net name="HOST_!HALT!" class="0">
+<segment>
+<wire x1="73.66" y1="22.86" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
+<label x="53.34" y="25.4" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="B27"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="22.86" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="25.4" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
+<label x="195.58" y="25.4" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="B27"/>
+</segment>
+</net>
+<net name="HOST_!IRQ!" class="0">
+<segment>
+<wire x1="73.66" y1="20.32" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="22.86" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<label x="53.34" y="22.86" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="B28"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="20.32" x2="213.36" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="22.86" x2="213.36" y2="22.86" width="0.1524" layer="91"/>
+<label x="195.58" y="22.86" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="B28"/>
+</segment>
+</net>
+<net name="HOST_!MPD!" class="0">
+<segment>
+<wire x1="73.66" y1="17.78" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
+<label x="53.34" y="20.32" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="B29"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="17.78" x2="213.36" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="20.32" x2="213.36" y2="20.32" width="0.1524" layer="91"/>
+<label x="195.58" y="20.32" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="B29"/>
+</segment>
+</net>
+<net name="HOST_!REF!" class="0">
+<segment>
+<wire x1="73.66" y1="15.24" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
+<label x="53.34" y="17.78" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="B30"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="15.24" x2="213.36" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="17.78" x2="213.36" y2="17.78" width="0.1524" layer="91"/>
+<label x="195.58" y="17.78" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="B30"/>
+</segment>
+</net>
+<net name="HOST_!RST!" class="0">
+<segment>
+<wire x1="73.66" y1="12.7" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<label x="53.34" y="15.24" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="B31"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="12.7" x2="213.36" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="15.24" x2="213.36" y2="15.24" width="0.1524" layer="91"/>
+<label x="195.58" y="15.24" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="B31"/>
+</segment>
+</net>
+<net name="HOST_R/!W!" class="0">
+<segment>
+<wire x1="73.66" y1="10.16" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
+<label x="53.34" y="12.7" size="1.778" layer="95"/>
+<pinref part="SLOT2" gate="G$1" pin="B32"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="10.16" x2="213.36" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="12.7" x2="213.36" y2="12.7" width="0.1524" layer="91"/>
+<label x="195.58" y="12.7" size="1.778" layer="95"/>
+<pinref part="SLOT3" gate="G$1" pin="B32"/>
 </segment>
 </net>
 </nets>
@@ -22202,30 +21854,22 @@ GND</text>
 <instance part="SLOT4" gate="G$1" x="5.08" y="0"/>
 </instances>
 <busses>
-<bus name="HBUS:HBUS_A[0..15],HBUS_CLK,HBUS_D[0..7],HBUS_!D1XX!,HBUS_!EXSEL!,HBUS_!HALT!,HBUS_!IRQ!,HBUS_!MPD!,HBUS_RD[4..5],HBUS_!REF!,HBUS_!RST!,HBUS_R!W!,HBUS_SIO_CLK,HBUS_SIO_CMD,HBUS_SIO_DIN,HBUS_SIO_DOUT,HBUS_SIO_MTR">
-<segment>
-<wire x1="-40.64" y1="22.86" x2="-40.64" y2="-48.26" width="0.762" layer="92"/>
-<wire x1="-40.64" y1="-48.26" x2="-38.1" y2="-50.8" width="0.762" layer="92"/>
-<wire x1="-38.1" y1="-50.8" x2="48.26" y2="-50.8" width="0.762" layer="92"/>
-<wire x1="48.26" y1="-50.8" x2="50.8" y2="-48.26" width="0.762" layer="92"/>
-<wire x1="50.8" y1="-48.26" x2="50.8" y2="-7.62" width="0.762" layer="92"/>
-<label x="2.54" y="-53.34" size="1.778" layer="95"/>
-</segment>
-</bus>
-<bus name="STMB:STMB[0..2],STMB[6..9],STMB12,STMB15">
-<segment>
-<wire x1="63.5" y1="5.08" x2="53.34" y2="5.08" width="0.762" layer="92"/>
-<wire x1="53.34" y1="5.08" x2="50.8" y2="7.62" width="0.762" layer="92"/>
-<wire x1="50.8" y1="7.62" x2="50.8" y2="17.78" width="0.762" layer="92"/>
-<label x="58.42" y="2.54" size="1.778" layer="95"/>
-</segment>
-</bus>
 <bus name="SPI:SPI_CLK,SPI_IRQ[0..4],SPI_MISO,SPI_MOSI,SPI_SS[0..4]">
 <segment>
 <wire x1="63.5" y1="-7.62" x2="53.34" y2="-7.62" width="0.762" layer="92"/>
 <wire x1="53.34" y1="-7.62" x2="50.8" y2="-5.08" width="0.762" layer="92"/>
 <wire x1="50.8" y1="-5.08" x2="50.8" y2="5.08" width="0.762" layer="92"/>
 <label x="58.42" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</bus>
+<bus name="HOST:HOST_A[0..15],HOST_CLK,HOST_CTL[0..1],HOST_D[0..7],HOST_DIR[0..4],HOST_!EXTSEL!,HOST_GND,HOST_!HALT!,HOST_!IRQ!,HOST_!MPD!,HOST_!REF!,HOST_!RST!,HOST_R/!W!">
+<segment>
+<wire x1="-48.26" y1="20.32" x2="-48.26" y2="-60.96" width="0.762" layer="92"/>
+<wire x1="-48.26" y1="-60.96" x2="-45.72" y2="-63.5" width="0.762" layer="92"/>
+<wire x1="-45.72" y1="-63.5" x2="48.26" y2="-63.5" width="0.762" layer="92"/>
+<wire x1="48.26" y1="-63.5" x2="50.8" y2="-60.96" width="0.762" layer="92"/>
+<wire x1="50.8" y1="-60.96" x2="50.8" y2="-27.94" width="0.762" layer="92"/>
+<label x="0.762" y="-67.056" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -22264,10 +21908,6 @@ GND</text>
 <pinref part="SLOT4" gate="G$1" pin="A4"/>
 <pinref part="SLOT4" gate="G$1" pin="A5"/>
 <pinref part="SLOT4" gate="G$1" pin="A6"/>
-<pinref part="SLOT4" gate="G$1" pin="A7"/>
-<wire x1="-7.62" y1="22.86" x2="-15.24" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="22.86" x2="-15.24" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-15.24" y="25.4"/>
 </segment>
 <segment>
 <wire x1="-7.62" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
@@ -22349,294 +21989,6 @@ GND</text>
 <junction x="27.94" y="96.52"/>
 </segment>
 </net>
-<net name="HBUS_A0" class="0">
-<segment>
-<wire x1="-40.64" y1="22.86" x2="-38.1" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
-<label x="-35.56" y="20.32" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A8"/>
-</segment>
-</net>
-<net name="HBUS_A1" class="0">
-<segment>
-<wire x1="-40.64" y1="20.32" x2="-38.1" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="17.78" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
-<label x="-35.56" y="17.78" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A9"/>
-</segment>
-</net>
-<net name="HBUS_A2" class="0">
-<segment>
-<wire x1="-40.64" y1="17.78" x2="-38.1" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="15.24" x2="-7.62" y2="15.24" width="0.1524" layer="91"/>
-<label x="-35.56" y="15.24" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A10"/>
-</segment>
-</net>
-<net name="HBUS_A3" class="0">
-<segment>
-<wire x1="-40.64" y1="15.24" x2="-38.1" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="12.7" x2="-7.62" y2="12.7" width="0.1524" layer="91"/>
-<label x="-35.56" y="12.7" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A11"/>
-</segment>
-</net>
-<net name="HBUS_A4" class="0">
-<segment>
-<wire x1="-40.64" y1="12.7" x2="-38.1" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
-<label x="-35.56" y="10.16" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A12"/>
-</segment>
-</net>
-<net name="HBUS_A5" class="0">
-<segment>
-<wire x1="-40.64" y1="10.16" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
-<label x="-35.56" y="7.62" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A13"/>
-</segment>
-</net>
-<net name="HBUS_A6" class="0">
-<segment>
-<wire x1="-40.64" y1="7.62" x2="-38.1" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="91"/>
-<label x="-35.56" y="5.08" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A14"/>
-</segment>
-</net>
-<net name="HBUS_A7" class="0">
-<segment>
-<wire x1="-40.64" y1="5.08" x2="-38.1" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="91"/>
-<label x="-35.56" y="2.54" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A15"/>
-</segment>
-</net>
-<net name="HBUS_A8" class="0">
-<segment>
-<wire x1="-40.64" y1="2.54" x2="-38.1" y2="0" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="0" x2="-7.62" y2="0" width="0.1524" layer="91"/>
-<label x="-35.56" y="0" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A16"/>
-</segment>
-</net>
-<net name="HBUS_A9" class="0">
-<segment>
-<wire x1="-40.64" y1="0" x2="-38.1" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-35.56" y="-2.54" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A17"/>
-</segment>
-</net>
-<net name="HBUS_A10" class="0">
-<segment>
-<wire x1="-40.64" y1="-2.54" x2="-38.1" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-35.56" y="-5.08" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A18"/>
-</segment>
-</net>
-<net name="HBUS_A11" class="0">
-<segment>
-<wire x1="-40.64" y1="-5.08" x2="-38.1" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-35.56" y="-7.62" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A19"/>
-</segment>
-</net>
-<net name="HBUS_A12" class="0">
-<segment>
-<wire x1="-40.64" y1="-7.62" x2="-38.1" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-10.16" x2="-7.62" y2="-10.16" width="0.1524" layer="91"/>
-<label x="-35.56" y="-10.16" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A20"/>
-</segment>
-</net>
-<net name="HBUS_A13" class="0">
-<segment>
-<wire x1="-40.64" y1="-10.16" x2="-38.1" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="91"/>
-<label x="-35.56" y="-12.7" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A21"/>
-</segment>
-</net>
-<net name="HBUS_A14" class="0">
-<segment>
-<wire x1="-40.64" y1="-12.7" x2="-38.1" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-35.56" y="-15.24" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A22"/>
-</segment>
-</net>
-<net name="HBUS_A15" class="0">
-<segment>
-<wire x1="-40.64" y1="-15.24" x2="-38.1" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-17.78" x2="-7.62" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-35.56" y="-17.78" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A23"/>
-</segment>
-</net>
-<net name="HBUS_CLK" class="0">
-<segment>
-<wire x1="-40.64" y1="-17.78" x2="-38.1" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-20.32" x2="-7.62" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-35.56" y="-20.32" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A24"/>
-</segment>
-</net>
-<net name="HBUS_D0" class="0">
-<segment>
-<wire x1="-40.64" y1="-20.32" x2="-38.1" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-22.86" x2="-7.62" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-35.56" y="-22.86" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A25"/>
-</segment>
-</net>
-<net name="HBUS_D1" class="0">
-<segment>
-<wire x1="-40.64" y1="-22.86" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-25.4" x2="-7.62" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-35.56" y="-25.4" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A26"/>
-</segment>
-</net>
-<net name="HBUS_D2" class="0">
-<segment>
-<wire x1="-40.64" y1="-25.4" x2="-38.1" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-27.94" x2="-7.62" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-35.56" y="-27.94" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A27"/>
-</segment>
-</net>
-<net name="HBUS_D3" class="0">
-<segment>
-<wire x1="-40.64" y1="-27.94" x2="-38.1" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-30.48" x2="-7.62" y2="-30.48" width="0.1524" layer="91"/>
-<label x="-35.56" y="-30.48" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A28"/>
-</segment>
-</net>
-<net name="HBUS_D4" class="0">
-<segment>
-<wire x1="-40.64" y1="-30.48" x2="-38.1" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-33.02" x2="-7.62" y2="-33.02" width="0.1524" layer="91"/>
-<label x="-35.56" y="-33.02" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A29"/>
-</segment>
-</net>
-<net name="HBUS_D5" class="0">
-<segment>
-<wire x1="-40.64" y1="-33.02" x2="-38.1" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-35.56" x2="-7.62" y2="-35.56" width="0.1524" layer="91"/>
-<label x="-35.56" y="-35.56" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A30"/>
-</segment>
-</net>
-<net name="HBUS_D6" class="0">
-<segment>
-<wire x1="-40.64" y1="-35.56" x2="-38.1" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-38.1" x2="-7.62" y2="-38.1" width="0.1524" layer="91"/>
-<label x="-35.56" y="-38.1" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A31"/>
-</segment>
-</net>
-<net name="HBUS_D7" class="0">
-<segment>
-<wire x1="-40.64" y1="-38.1" x2="-38.1" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-40.64" x2="-7.62" y2="-40.64" width="0.1524" layer="91"/>
-<label x="-35.56" y="-40.64" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="A32"/>
-</segment>
-</net>
-<net name="HBUS_!HALT!" class="0">
-<segment>
-<wire x1="50.8" y1="-12.7" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-10.16" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
-<label x="27.94" y="-10.16" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B20"/>
-</segment>
-</net>
-<net name="HBUS_RD4" class="0">
-<segment>
-<wire x1="50.8" y1="-20.32" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-17.78" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
-<label x="27.94" y="-17.78" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B23"/>
-</segment>
-</net>
-<net name="HBUS_RD5" class="0">
-<segment>
-<wire x1="50.8" y1="-22.86" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-20.32" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
-<label x="27.94" y="-20.32" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B24"/>
-</segment>
-</net>
-<net name="HBUS_!REF!" class="0">
-<segment>
-<wire x1="50.8" y1="-25.4" x2="48.26" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-22.86" x2="48.26" y2="-22.86" width="0.1524" layer="91"/>
-<label x="27.94" y="-22.86" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B25"/>
-</segment>
-</net>
-<net name="HBUS_!RST!" class="0">
-<segment>
-<wire x1="50.8" y1="-27.94" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-25.4" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
-<label x="27.94" y="-25.4" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B26"/>
-</segment>
-</net>
-<net name="HBUS_R!W!" class="0">
-<segment>
-<wire x1="50.8" y1="-30.48" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-27.94" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
-<label x="27.94" y="-27.94" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B27"/>
-</segment>
-</net>
-<net name="HBUS_SIO_CLK" class="0">
-<segment>
-<wire x1="50.8" y1="-33.02" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-30.48" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
-<label x="27.94" y="-30.48" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B28"/>
-</segment>
-</net>
-<net name="HBUS_SIO_CMD" class="0">
-<segment>
-<wire x1="50.8" y1="-35.56" x2="48.26" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-33.02" x2="48.26" y2="-33.02" width="0.1524" layer="91"/>
-<label x="27.94" y="-33.02" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B29"/>
-</segment>
-</net>
-<net name="HBUS_SIO_DIN" class="0">
-<segment>
-<wire x1="50.8" y1="-38.1" x2="48.26" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-35.56" x2="48.26" y2="-35.56" width="0.1524" layer="91"/>
-<label x="27.94" y="-35.56" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B30"/>
-</segment>
-</net>
-<net name="HBUS_SIO_DOUT" class="0">
-<segment>
-<wire x1="50.8" y1="-40.64" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-38.1" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
-<label x="27.94" y="-38.1" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B31"/>
-</segment>
-</net>
-<net name="HBUS_SIO_MTR" class="0">
-<segment>
-<wire x1="50.8" y1="-43.18" x2="48.26" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-40.64" x2="48.26" y2="-40.64" width="0.1524" layer="91"/>
-<label x="27.94" y="-40.64" size="1.778" layer="95"/>
-<pinref part="SLOT4" gate="G$1" pin="B32"/>
-</segment>
-</net>
 <net name="SPI_SS4" class="0">
 <segment>
 <pinref part="SLOT4" gate="G$1" pin="B13"/>
@@ -22685,65 +22037,260 @@ GND</text>
 <wire x1="50.8" y1="30.48" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="STMB0" class="0">
+<net name="HOST_A0" class="0">
 <segment>
-<pinref part="SLOT4" gate="G$1" pin="B8"/>
-<wire x1="50.8" y1="17.78" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
-<label x="27.94" y="20.32" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="20.32" x2="-45.72" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
+<label x="-43.18" y="22.86" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A7"/>
 </segment>
 </net>
-<net name="STMB1" class="0">
+<net name="HOST_A1" class="0">
 <segment>
-<pinref part="SLOT4" gate="G$1" pin="B9"/>
-<wire x1="50.8" y1="15.24" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="17.78" x2="17.78" y2="17.78" width="0.1524" layer="91"/>
-<label x="27.94" y="17.78" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="17.78" x2="-45.72" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
+<label x="-43.18" y="20.32" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A8"/>
 </segment>
 </net>
-<net name="STMB2" class="0">
+<net name="HOST_A2" class="0">
 <segment>
-<pinref part="SLOT4" gate="G$1" pin="B10"/>
-<wire x1="50.8" y1="12.7" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="15.24" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
-<label x="27.94" y="15.24" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="15.24" x2="-45.72" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="17.78" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
+<label x="-43.18" y="17.78" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A9"/>
 </segment>
 </net>
-<net name="STMB6" class="0">
+<net name="HOST_A3" class="0">
 <segment>
-<pinref part="SLOT4" gate="G$1" pin="B11"/>
-<wire x1="50.8" y1="10.16" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="12.7" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
-<label x="27.94" y="12.7" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="12.7" x2="-45.72" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="15.24" x2="-7.62" y2="15.24" width="0.1524" layer="91"/>
+<label x="-43.18" y="15.24" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A10"/>
 </segment>
 </net>
-<net name="STMB7" class="0">
+<net name="HOST_A4" class="0">
 <segment>
-<pinref part="SLOT4" gate="G$1" pin="B12"/>
-<wire x1="50.8" y1="7.62" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="10.16" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
-<label x="27.94" y="10.16" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="10.16" x2="-45.72" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="12.7" x2="-7.62" y2="12.7" width="0.1524" layer="91"/>
+<label x="-43.18" y="12.7" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A11"/>
 </segment>
 </net>
-<net name="STMB8" class="0">
+<net name="HOST_A5" class="0">
 <segment>
-<pinref part="SLOT4" gate="G$1" pin="B18"/>
-<wire x1="17.78" y1="-5.08" x2="40.64" y2="-5.08" width="0.1524" layer="91"/>
-<label x="27.94" y="-5.08" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="7.62" x2="-45.72" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
+<label x="-43.18" y="10.16" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A12"/>
 </segment>
 </net>
-<net name="STMB9" class="0">
+<net name="HOST_A6" class="0">
 <segment>
-<pinref part="SLOT4" gate="G$1" pin="B19"/>
-<wire x1="17.78" y1="-7.62" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
-<label x="27.94" y="-7.62" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="5.08" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
+<label x="-43.18" y="7.62" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A13"/>
 </segment>
 </net>
-<net name="STMB12" class="0">
+<net name="HOST_A7" class="0">
 <segment>
-<pinref part="SLOT4" gate="G$1" pin="B21"/>
-<wire x1="17.78" y1="-12.7" x2="40.64" y2="-12.7" width="0.1524" layer="91"/>
-<label x="27.94" y="-12.7" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="2.54" x2="-45.72" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="91"/>
+<label x="-43.18" y="5.08" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A14"/>
+</segment>
+</net>
+<net name="HOST_A8" class="0">
+<segment>
+<wire x1="-48.26" y1="0" x2="-45.72" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="91"/>
+<label x="-43.18" y="2.54" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A15"/>
+</segment>
+</net>
+<net name="HOST_A9" class="0">
+<segment>
+<wire x1="-48.26" y1="-2.54" x2="-45.72" y2="0" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="0" x2="-7.62" y2="0" width="0.1524" layer="91"/>
+<label x="-43.18" y="0" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A16"/>
+</segment>
+</net>
+<net name="HOST_A10" class="0">
+<segment>
+<wire x1="-48.26" y1="-5.08" x2="-45.72" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-43.18" y="-2.54" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A17"/>
+</segment>
+</net>
+<net name="HOST_A11" class="0">
+<segment>
+<wire x1="-48.26" y1="-7.62" x2="-45.72" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-43.18" y="-5.08" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A18"/>
+</segment>
+</net>
+<net name="HOST_A12" class="0">
+<segment>
+<wire x1="-48.26" y1="-10.16" x2="-45.72" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-43.18" y="-7.62" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A19"/>
+</segment>
+</net>
+<net name="HOST_A13" class="0">
+<segment>
+<wire x1="-48.26" y1="-12.7" x2="-45.72" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-10.16" x2="-7.62" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-43.18" y="-10.16" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A20"/>
+</segment>
+</net>
+<net name="HOST_A14" class="0">
+<segment>
+<wire x1="-48.26" y1="-15.24" x2="-45.72" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-43.18" y="-12.7" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A21"/>
+</segment>
+</net>
+<net name="HOST_A15" class="0">
+<segment>
+<wire x1="-48.26" y1="-17.78" x2="-45.72" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-43.18" y="-15.24" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A22"/>
+</segment>
+</net>
+<net name="HOST_CLK" class="0">
+<segment>
+<wire x1="-48.26" y1="-20.32" x2="-45.72" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-17.78" x2="-7.62" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-43.18" y="-17.78" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A23"/>
+</segment>
+</net>
+<net name="HOST_D0" class="0">
+<segment>
+<wire x1="-48.26" y1="-22.86" x2="-45.72" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-20.32" x2="-7.62" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-43.18" y="-20.32" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A24"/>
+</segment>
+</net>
+<net name="HOST_D1" class="0">
+<segment>
+<wire x1="-48.26" y1="-25.4" x2="-45.72" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-22.86" x2="-7.62" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-43.18" y="-22.86" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A25"/>
+</segment>
+</net>
+<net name="HOST_D2" class="0">
+<segment>
+<wire x1="-48.26" y1="-27.94" x2="-45.72" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-25.4" x2="-7.62" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-43.18" y="-25.4" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A26"/>
+</segment>
+</net>
+<net name="HOST_D3" class="0">
+<segment>
+<wire x1="-48.26" y1="-30.48" x2="-45.72" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-27.94" x2="-7.62" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-43.18" y="-27.94" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A27"/>
+</segment>
+</net>
+<net name="HOST_D4" class="0">
+<segment>
+<wire x1="-48.26" y1="-33.02" x2="-45.72" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-30.48" x2="-7.62" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-43.18" y="-30.48" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A28"/>
+</segment>
+</net>
+<net name="HOST_D5" class="0">
+<segment>
+<wire x1="-48.26" y1="-35.56" x2="-45.72" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-33.02" x2="-7.62" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-43.18" y="-33.02" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A29"/>
+</segment>
+</net>
+<net name="HOST_D6" class="0">
+<segment>
+<wire x1="-48.26" y1="-38.1" x2="-45.72" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-35.56" x2="-7.62" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-43.18" y="-35.56" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A30"/>
+</segment>
+</net>
+<net name="HOST_D7" class="0">
+<segment>
+<wire x1="-48.26" y1="-40.64" x2="-45.72" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-38.1" x2="-7.62" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-43.18" y="-38.1" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="A31"/>
+</segment>
+</net>
+<net name="HOST_!EXTSEL!" class="0">
+<segment>
+<wire x1="50.8" y1="-27.94" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-25.4" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
+<label x="30.48" y="-25.4" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="B26"/>
+</segment>
+</net>
+<net name="HOST_!HALT!" class="0">
+<segment>
+<wire x1="50.8" y1="-30.48" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-27.94" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
+<label x="30.48" y="-27.94" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="B27"/>
+</segment>
+</net>
+<net name="HOST_!IRQ!" class="0">
+<segment>
+<wire x1="50.8" y1="-33.02" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-30.48" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
+<label x="30.48" y="-30.48" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="B28"/>
+</segment>
+</net>
+<net name="HOST_!MPD!" class="0">
+<segment>
+<wire x1="50.8" y1="-35.56" x2="48.26" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-33.02" x2="48.26" y2="-33.02" width="0.1524" layer="91"/>
+<label x="30.48" y="-33.02" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="B29"/>
+</segment>
+</net>
+<net name="HOST_!REF!" class="0">
+<segment>
+<wire x1="50.8" y1="-38.1" x2="48.26" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-35.56" x2="48.26" y2="-35.56" width="0.1524" layer="91"/>
+<label x="30.48" y="-35.56" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="B30"/>
+</segment>
+</net>
+<net name="HOST_!RST!" class="0">
+<segment>
+<wire x1="50.8" y1="-40.64" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-38.1" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
+<label x="30.48" y="-38.1" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="B31"/>
+</segment>
+</net>
+<net name="HOST_R/!W!" class="0">
+<segment>
+<wire x1="50.8" y1="-43.18" x2="48.26" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-40.64" x2="48.26" y2="-40.64" width="0.1524" layer="91"/>
+<label x="30.48" y="-40.64" size="1.778" layer="95"/>
+<pinref part="SLOT4" gate="G$1" pin="B32"/>
 </segment>
 </net>
 </nets>
