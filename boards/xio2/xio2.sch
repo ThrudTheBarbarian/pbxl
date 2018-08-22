@@ -32679,7 +32679,7 @@ LED</text>
 <approved hash="113,14,-2.009,0.531,FRAME12,,,,,"/>
 <approved hash="113,15,-7.089,5.611,FRAME15,,,,,"/>
 <approved hash="113,17,-2.009,0.531,FRAME17,,,,,"/>
-<approved hash="113,15,97.7477,-15.0139,CART_SLOT,,,,,"/>
+<approved hash="113,15,105.368,5.30606,CART_SLOT,,,,,"/>
 <approved hash="113,16,-2.009,3.071,FRAME14,,,,,"/>
 <approved hash="113,18,-7.089,-7.089,FRAME16,,,,,"/>
 <approved hash="113,3,-26.9497,-21.3639,SPI_DBG,,,,,"/>
