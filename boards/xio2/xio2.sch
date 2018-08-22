@@ -18597,10 +18597,10 @@ Source: www.kingbright.com</description>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="10uF"/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="Y2" library="microbuilder" deviceset="CRYSTAL" device="THIN" value="NX3225SA-12.000MHZ-STD-CSR-1"/>
+<part name="Y2" library="microbuilder" deviceset="CRYSTAL" device="THIN" value="FA-238 25.0000MB-K3"/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
-<part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="12pF"/>
-<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="12pF"/>
+<part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="16pF"/>
+<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="16pF"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF"/>
 <part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="2.2uF"/>
@@ -19695,7 +19695,7 @@ Layer 14 given over to 5v power plane</text>
 to VDDA pin</text>
 <text x="-66.04" y="-76.2" size="1.778" layer="97">Caps placed close 
 to VCAP pins</text>
-<text x="134.62" y="-31.496" size="1.27" layer="97">(Load Cap 8pF)</text>
+<text x="134.62" y="-31.496" size="1.27" layer="97">(Load Cap 10pF, stray Cap 2pF)</text>
 <wire x1="-111.76" y1="20.32" x2="-111.76" y2="83.82" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="-111.76" y1="83.82" x2="-187.96" y2="83.82" width="0.1524" layer="94" style="shortdash"/>
 <text x="-129.54" y="78.74" size="1.778" layer="94">Pullups</text>
@@ -19708,6 +19708,8 @@ to VCAP pins</text>
 <wire x1="-72.39" y1="-2.54" x2="-73.025" y2="-1.905" width="0.1524" layer="94"/>
 <text x="-53.34" y="12.7" size="1.778" layer="97">Pullups etc. in
 panel to left</text>
+<text x="127" y="-48.26" size="1.778" layer="97">C.res1 = C.res2 
+= 2(C.load - C.stray)</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="-86.36" y="106.68"/>
