@@ -18991,7 +18991,7 @@ Source: www.kingbright.com</description>
 <part name="R81" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="60R"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="LTST-S270GKT"/>
 <part name="SUPPLY90" library="supply2" deviceset="GND" device=""/>
-<part name="U$14" library="sjg-power" deviceset="TPS876" device="" package3d_urn="urn:adsk.eagle:package:4768344/1" value="TPS78633DCQR"/>
+<part name="FPGA_VCCO" library="sjg-power" deviceset="TPS876" device="" package3d_urn="urn:adsk.eagle:package:4768344/1" value="TPS78633DCQR"/>
 <part name="C107" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF"/>
 <part name="C103" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="4.7uF"/>
 <part name="R82" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0R"/>
@@ -21364,6 +21364,7 @@ Sends IRQ when bus is valid to read/write</text>
 <junction x="101.6" y="93.98"/>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
 <wire x1="96.52" y1="93.98" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<label x="93.98" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="9">
@@ -24659,6 +24660,7 @@ Config</text>
 <wire x1="-132.08" y1="76.2" x2="-124.46" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="76.2" x2="-124.46" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-124.46" y="78.74"/>
+<label x="-127" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PID" gate="A" pin="6"/>
@@ -24673,6 +24675,7 @@ Config</text>
 <wire x1="-134.62" y1="-35.56" x2="-127" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-127" y1="-35.56" x2="-127" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="-127" y="-33.02"/>
+<label x="-129.54" y="-20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MEM_ID" gate="G$1" pin="4"/>
@@ -24683,6 +24686,7 @@ Config</text>
 <wire x1="-134.62" y1="22.86" x2="-127" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-127" y1="22.86" x2="-127" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-127" y="25.4"/>
+<label x="-129.54" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PID0" class="0">
@@ -27645,7 +27649,7 @@ All regulators are stable with ceramic caps</text>
 <instance part="U$5" gate="G$1" x="-76.2" y="-60.96"/>
 <instance part="U$7" gate="G$1" x="73.66" y="63.5"/>
 <instance part="U$8" gate="G$1" x="73.66" y="104.14"/>
-<instance part="U$14" gate="G$1" x="-124.46" y="-86.36"/>
+<instance part="FPGA_VCCO" gate="G$1" x="-124.46" y="-86.36"/>
 <instance part="C107" gate="G$1" x="-88.9" y="-93.98" rot="MR0"/>
 <instance part="C103" gate="G$1" x="-157.48" y="-86.36" rot="MR0"/>
 <instance part="R82" gate="G$1" x="-76.2" y="-68.58" rot="R270"/>
@@ -28031,9 +28035,9 @@ All regulators are stable with ceramic caps</text>
 <wire x1="-104.14" y1="-93.98" x2="-99.06" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="-93.98" x2="-99.06" y2="-96.52" width="0.1524" layer="91"/>
 <junction x="-99.06" y="-96.52"/>
-<pinref part="U$14" gate="G$1" pin="GND@TAB"/>
+<pinref part="FPGA_VCCO" gate="G$1" pin="GND@TAB"/>
 <junction x="-104.14" y="-96.52"/>
-<pinref part="U$14" gate="G$1" pin="GND@3"/>
+<pinref part="FPGA_VCCO" gate="G$1" pin="GND@3"/>
 <junction x="-104.14" y="-93.98"/>
 <pinref part="C107" gate="G$1" pin="2"/>
 <wire x1="-88.9" y1="-99.06" x2="-88.9" y2="-104.14" width="0.1524" layer="91"/>
@@ -28187,7 +28191,7 @@ All regulators are stable with ceramic caps</text>
 <wire x1="-142.24" y1="-96.52" x2="-144.78" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-96.52" x2="-144.78" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="VCCAUX"/>
-<pinref part="U$14" gate="G$1" pin="EN@1"/>
+<pinref part="FPGA_VCCO" gate="G$1" pin="EN@1"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VCCAUX"/>
@@ -28235,7 +28239,7 @@ All regulators are stable with ceramic caps</text>
 <wire x1="-157.48" y1="-76.2" x2="-157.48" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-157.48" y1="-83.82" x2="-157.48" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="C103" gate="G$1" pin="1"/>
-<pinref part="U$14" gate="G$1" pin="VIN@2"/>
+<pinref part="FPGA_VCCO" gate="G$1" pin="VIN@2"/>
 <wire x1="-157.48" y1="-78.74" x2="-157.48" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-78.74" x2="-157.48" y2="-78.74" width="0.1524" layer="91"/>
 <junction x="-157.48" y="-78.74"/>
@@ -28310,7 +28314,7 @@ All regulators are stable with ceramic caps</text>
 <net name="N$88" class="0">
 <segment>
 <pinref part="C107" gate="G$1" pin="1"/>
-<pinref part="U$14" gate="G$1" pin="FB@5"/>
+<pinref part="FPGA_VCCO" gate="G$1" pin="FB@5"/>
 <wire x1="-88.9" y1="-91.44" x2="-88.9" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="-86.36" x2="-104.14" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
@@ -28320,7 +28324,7 @@ All regulators are stable with ceramic caps</text>
 <wire x1="-76.2" y1="-76.2" x2="-76.2" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="C105" gate="G$1" pin="1"/>
 <wire x1="-76.2" y1="-83.82" x2="-76.2" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="U$14" gate="G$1" pin="VOUT@4"/>
+<pinref part="FPGA_VCCO" gate="G$1" pin="VOUT@4"/>
 <wire x1="-76.2" y1="-78.74" x2="-76.2" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-78.74" x2="-76.2" y2="-78.74" width="0.1524" layer="91"/>
 <junction x="-76.2" y="-78.74"/>
@@ -29024,17 +29028,19 @@ Differential impedance</text>
 <wire x1="-187.96" y1="96.52" x2="-187.96" y2="121.92" width="0.1524" layer="97"/>
 <text x="-185.42" y="119.38" size="1.778" layer="94">USB3 connections</text>
 <text x="143.51" y="-103.886" size="2.1844" layer="94">FPGA Bank 14</text>
-<text x="-160.02" y="-101.6" size="1.778" layer="97">TMDS_33 signalling requires 50R
+<text x="-160.02" y="-106.68" size="1.778" layer="97">TMDS_33 signalling requires 50R
 pull-ups to 3.3v on all inputs.
 
 Labels {RX*,TX*} are from perspective
 of the host board, so need to add
-pull-ups to TX* lines on this board.</text>
+pull-ups to TX* lines on this board.
+
+Will dissipate 66mA, so need to be 0603</text>
 <text x="-160.02" y="-83.82" size="1.778" layer="94">Pull-up specification</text>
 <wire x1="-162.56" y1="-78.74" x2="-111.76" y2="-78.74" width="0.1524" layer="97"/>
-<wire x1="-111.76" y1="-78.74" x2="-111.76" y2="-104.14" width="0.1524" layer="97"/>
-<wire x1="-111.76" y1="-104.14" x2="-162.56" y2="-104.14" width="0.1524" layer="97"/>
-<wire x1="-162.56" y1="-104.14" x2="-162.56" y2="-78.74" width="0.1524" layer="97"/>
+<wire x1="-111.76" y1="-78.74" x2="-111.76" y2="-109.22" width="0.1524" layer="97"/>
+<wire x1="-111.76" y1="-109.22" x2="-162.56" y2="-109.22" width="0.1524" layer="97"/>
+<wire x1="-162.56" y1="-109.22" x2="-162.56" y2="-78.74" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME15" gate="G$1" x="-200.66" y="-124.46"/>
