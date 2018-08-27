@@ -5461,7 +5461,7 @@ design rules under a new name.
 <attribute name="NAME" x="127" y="4.1275" size="1.016" layer="25" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="124.46" y="4.1275" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U$14" library="sjg-power" package="TO170P1524X483-6" package3d_urn="urn:adsk.eagle:package:4768344/1" value="TPS876" x="142" y="10" smashed="yes" rot="R270">
+<element name="U$14" library="sjg-power" package="TO170P1524X483-6" package3d_urn="urn:adsk.eagle:package:4768344/1" value="TPS78633DCQR" x="142" y="10" smashed="yes" rot="R270">
 <attribute name="NAME" x="148.272" y="10" size="1.016" layer="25" ratio="15" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="135.728" y="10" size="1.27" layer="27" rot="R270" align="top-center"/>
 </element>

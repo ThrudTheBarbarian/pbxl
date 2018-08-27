@@ -18991,7 +18991,7 @@ Source: www.kingbright.com</description>
 <part name="R81" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="60R"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="LTST-S270GKT"/>
 <part name="SUPPLY90" library="supply2" deviceset="GND" device=""/>
-<part name="U$14" library="sjg-power" deviceset="TPS876" device="" package3d_urn="urn:adsk.eagle:package:4768344/1"/>
+<part name="U$14" library="sjg-power" deviceset="TPS876" device="" package3d_urn="urn:adsk.eagle:package:4768344/1" value="TPS78633DCQR"/>
 <part name="C107" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF"/>
 <part name="C103" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="4.7uF"/>
 <part name="R82" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0R"/>
