@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5205,9 +5205,9 @@ design rules under a new name.
 <attribute name="SPICEPREFIX" value="R" x="22.5" y="57" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="23.135" y="58.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="HOST_IO" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X20/90" package3d_urn="urn:adsk.eagle:package:22440/2" value="" x="85.138" y="1.2319" smashed="yes" rot="R180">
-<attribute name="NAME" x="111.173" y="5.0419" size="1.016" layer="25" ratio="15" rot="R270"/>
-<attribute name="VALUE" x="57.833" y="5.0419" size="1.27" layer="27" rot="R270"/>
+<element name="HOST_IO" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X20/90" package3d_urn="urn:adsk.eagle:package:22440/2" value="" x="83.338" y="1.2319" smashed="yes" rot="R180">
+<attribute name="NAME" x="109.373" y="5.0419" size="1.016" layer="25" ratio="15" rot="R270"/>
+<attribute name="VALUE" x="56.033" y="5.0419" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.47uF" x="89.5" y="43.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="88.865" y="42.865" size="1.016" layer="25" ratio="15" rot="R90"/>
@@ -6740,7 +6740,7 @@ design rules under a new name.
 <wire x1="44.66" y1="3.3875" x2="45.02" y2="9.3375" width="0" layer="19" extent="1-1"/>
 <wire x1="40.7056" y1="2.2838" x2="44.66" y2="3.3875" width="0" layer="19" extent="1-1"/>
 <wire x1="33.6075" y1="3.815" x2="40.7056" y2="2.2838" width="0" layer="19" extent="1-1"/>
-<wire x1="61.008" y1="5.0419" x2="53.64" y2="3.3875" width="0" layer="19" extent="1-1"/>
+<wire x1="59.208" y1="5.0419" x2="53.64" y2="3.3875" width="0" layer="19" extent="1-1"/>
 <wire x1="154.305" y1="18.415" x2="144" y2="20.35" width="0" layer="19" extent="1-1"/>
 <wire x1="148.626" y1="76.2568" x2="139" y2="72.06" width="0" layer="19" extent="1-1"/>
 <wire x1="150.241" y1="75.8718" x2="148.626" y2="76.2568" width="0" layer="19" extent="1-1"/>
@@ -9067,7 +9067,7 @@ design rules under a new name.
 <wire x1="63.5" y1="67.06" x2="83.5" y2="67.06" width="0" layer="19" extent="1-1"/>
 <wire x1="138.4444" y1="33.0193" x2="141.5" y2="68.06" width="0" layer="19" extent="1-1"/>
 <wire x1="90.5" y1="29.5" x2="83.5" y2="67.06" width="0" layer="19" extent="1-1"/>
-<wire x1="68.628" y1="7.5819" x2="90.5" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="66.828" y1="7.5819" x2="90.5" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_R/!W!">
 <contactref element="HOST_IO" pad="38"/>
@@ -9084,7 +9084,7 @@ design rules under a new name.
 <wire x1="57" y1="59.06" x2="77" y2="59.06" width="0" layer="19" extent="1-1"/>
 <wire x1="143.1019" y1="34.5193" x2="137" y2="59.06" width="0" layer="19" extent="1-1"/>
 <wire x1="93.5" y1="29.5" x2="97" y2="59.06" width="0" layer="19" extent="1-1"/>
-<wire x1="63.548" y1="5.0419" x2="93.5" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="61.748" y1="5.0419" x2="93.5" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A0">
 <contactref element="HOST_IO" pad="1"/>
@@ -9102,8 +9102,8 @@ design rules under a new name.
 <wire x1="63.5" y1="85.06" x2="83.5" y2="85.06" width="0" layer="19" extent="1-1"/>
 <wire x1="37.2" y1="63.4" x2="63.5" y2="85.06" width="0" layer="19" extent="1-1"/>
 <wire x1="93.5" y1="30.5" x2="103.5" y2="85.06" width="0" layer="19" extent="1-1"/>
-<wire x1="109.268" y1="7.5819" x2="93.5" y2="30.5" width="0" layer="19" extent="1-1"/>
-<wire x1="139.5085" y1="24.3692" x2="109.268" y2="7.5819" width="0" layer="19" extent="1-1"/>
+<wire x1="107.468" y1="7.5819" x2="93.5" y2="30.5" width="0" layer="19" extent="1-1"/>
+<wire x1="139.5085" y1="24.3692" x2="107.468" y2="7.5819" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A1">
 <contactref element="HOST_IO" pad="3"/>
@@ -9121,8 +9121,8 @@ design rules under a new name.
 <wire x1="61.5" y1="84.06" x2="81.5" y2="84.06" width="0" layer="19" extent="1-1"/>
 <wire x1="37.2" y1="62.6" x2="61.5" y2="84.06" width="0" layer="19" extent="1-1"/>
 <wire x1="94.5" y1="30.5" x2="101.5" y2="84.06" width="0" layer="19" extent="1-1"/>
-<wire x1="106.728" y1="7.5819" x2="94.5" y2="30.5" width="0" layer="19" extent="1-1"/>
-<wire x1="140.1585" y1="24.3692" x2="106.728" y2="7.5819" width="0" layer="19" extent="1-1"/>
+<wire x1="104.928" y1="7.5819" x2="94.5" y2="30.5" width="0" layer="19" extent="1-1"/>
+<wire x1="140.1585" y1="24.3692" x2="104.928" y2="7.5819" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A2">
 <contactref element="HOST_IO" pad="5"/>
@@ -9140,8 +9140,8 @@ design rules under a new name.
 <wire x1="63.5" y1="83.06" x2="83.5" y2="83.06" width="0" layer="19" extent="1-1"/>
 <wire x1="36.4" y1="61.8" x2="63.5" y2="83.06" width="0" layer="19" extent="1-1"/>
 <wire x1="94.5" y1="28.5" x2="103.5" y2="83.06" width="0" layer="19" extent="1-1"/>
-<wire x1="104.188" y1="7.5819" x2="94.5" y2="28.5" width="0" layer="19" extent="1-1"/>
-<wire x1="140.8085" y1="24.3692" x2="104.188" y2="7.5819" width="0" layer="19" extent="1-1"/>
+<wire x1="102.388" y1="7.5819" x2="94.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="140.8085" y1="24.3692" x2="102.388" y2="7.5819" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A3">
 <contactref element="HOST_IO" pad="7"/>
@@ -9159,8 +9159,8 @@ design rules under a new name.
 <wire x1="61.5" y1="82.06" x2="81.5" y2="82.06" width="0" layer="19" extent="1-1"/>
 <wire x1="36.4" y1="52.2" x2="61.5" y2="82.06" width="0" layer="19" extent="1-1"/>
 <wire x1="94.5" y1="27.5" x2="101.5" y2="82.06" width="0" layer="19" extent="1-1"/>
-<wire x1="101.648" y1="7.5819" x2="94.5" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="141.4585" y1="24.3692" x2="101.648" y2="7.5819" width="0" layer="19" extent="1-1"/>
+<wire x1="99.848" y1="7.5819" x2="94.5" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="141.4585" y1="24.3692" x2="99.848" y2="7.5819" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A4">
 <contactref element="HOST_IO" pad="9"/>
@@ -9178,8 +9178,8 @@ design rules under a new name.
 <wire x1="63.5" y1="79.06" x2="83.5" y2="79.06" width="0" layer="19" extent="1-1"/>
 <wire x1="35.6" y1="51.4" x2="63.5" y2="79.06" width="0" layer="19" extent="1-1"/>
 <wire x1="93.5" y1="27.5" x2="103.5" y2="79.06" width="0" layer="19" extent="1-1"/>
-<wire x1="99.108" y1="7.5819" x2="93.5" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="142.1085" y1="24.3692" x2="99.108" y2="7.5819" width="0" layer="19" extent="1-1"/>
+<wire x1="97.308" y1="7.5819" x2="93.5" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="142.1085" y1="24.3692" x2="97.308" y2="7.5819" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A5">
 <contactref element="HOST_IO" pad="11"/>
@@ -9197,8 +9197,8 @@ design rules under a new name.
 <wire x1="61.5" y1="78.06" x2="81.5" y2="78.06" width="0" layer="19" extent="1-1"/>
 <wire x1="37.2" y1="50.6" x2="61.5" y2="78.06" width="0" layer="19" extent="1-1"/>
 <wire x1="93.5" y1="26.5" x2="101.5" y2="78.06" width="0" layer="19" extent="1-1"/>
-<wire x1="96.568" y1="7.5819" x2="93.5" y2="26.5" width="0" layer="19" extent="1-1"/>
-<wire x1="142.7585" y1="24.3692" x2="96.568" y2="7.5819" width="0" layer="19" extent="1-1"/>
+<wire x1="94.768" y1="7.5819" x2="93.5" y2="26.5" width="0" layer="19" extent="1-1"/>
+<wire x1="142.7585" y1="24.3692" x2="94.768" y2="7.5819" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A6">
 <contactref element="HOST_IO" pad="13"/>
@@ -9216,7 +9216,7 @@ design rules under a new name.
 <wire x1="63.5" y1="77.06" x2="83.5" y2="77.06" width="0" layer="19" extent="1-1"/>
 <wire x1="37.2" y1="51.4" x2="63.5" y2="77.06" width="0" layer="19" extent="1-1"/>
 <wire x1="92.5" y1="28.5" x2="83.5" y2="77.06" width="0" layer="19" extent="1-1"/>
-<wire x1="94.028" y1="7.5819" x2="92.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="92.228" y1="7.5819" x2="92.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 <wire x1="143.4085" y1="24.3692" x2="92.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A7">
@@ -9235,7 +9235,7 @@ design rules under a new name.
 <wire x1="61.5" y1="76.06" x2="81.5" y2="76.06" width="0" layer="19" extent="1-1"/>
 <wire x1="37.2" y1="52.2" x2="61.5" y2="76.06" width="0" layer="19" extent="1-1"/>
 <wire x1="89.5" y1="28.5" x2="81.5" y2="76.06" width="0" layer="19" extent="1-1"/>
-<wire x1="91.488" y1="7.5819" x2="89.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="89.688" y1="7.5819" x2="89.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 <wire x1="144.0585" y1="24.3692" x2="143.5" y2="77.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A8">
@@ -9255,7 +9255,7 @@ design rules under a new name.
 <wire x1="139.1709" y1="48.7532" x2="141.5" y2="76.06" width="0" layer="19" extent="1-1"/>
 <wire x1="37.2" y1="53" x2="63.5" y2="75.06" width="0" layer="19" extent="1-1"/>
 <wire x1="90.5" y1="28.5" x2="83.5" y2="75.06" width="0" layer="19" extent="1-1"/>
-<wire x1="88.948" y1="7.5819" x2="90.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="87.148" y1="7.5819" x2="90.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A9">
 <contactref element="HOST_IO" pad="19"/>
@@ -9274,7 +9274,7 @@ design rules under a new name.
 <wire x1="139.8209" y1="48.7532" x2="143.5" y2="75.06" width="0" layer="19" extent="1-1"/>
 <wire x1="38" y1="53" x2="61.5" y2="74.06" width="0" layer="19" extent="1-1"/>
 <wire x1="91.5" y1="28.5" x2="101.5" y2="74.06" width="0" layer="19" extent="1-1"/>
-<wire x1="86.408" y1="7.5819" x2="91.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="84.608" y1="7.5819" x2="91.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A10">
 <contactref element="HOST_IO" pad="21"/>
@@ -9293,7 +9293,7 @@ design rules under a new name.
 <wire x1="140.4709" y1="48.7532" x2="141.5" y2="74.06" width="0" layer="19" extent="1-1"/>
 <wire x1="32.4" y1="61" x2="63.5" y2="73.06" width="0" layer="19" extent="1-1"/>
 <wire x1="91.5" y1="27.5" x2="83.5" y2="73.06" width="0" layer="19" extent="1-1"/>
-<wire x1="83.868" y1="7.5819" x2="91.5" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="82.068" y1="7.5819" x2="91.5" y2="27.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A11">
 <contactref element="HOST_IO" pad="23"/>
@@ -9312,7 +9312,7 @@ design rules under a new name.
 <wire x1="141.1209" y1="48.7532" x2="143.5" y2="73.06" width="0" layer="19" extent="1-1"/>
 <wire x1="31.6" y1="61" x2="61.5" y2="72.06" width="0" layer="19" extent="1-1"/>
 <wire x1="88.5" y1="26.5" x2="81.5" y2="72.06" width="0" layer="19" extent="1-1"/>
-<wire x1="81.328" y1="7.5819" x2="88.5" y2="26.5" width="0" layer="19" extent="1-1"/>
+<wire x1="79.528" y1="7.5819" x2="88.5" y2="26.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A12">
 <contactref element="HOST_IO" pad="25"/>
@@ -9331,7 +9331,7 @@ design rules under a new name.
 <wire x1="141.7709" y1="48.7532" x2="141.5" y2="72.06" width="0" layer="19" extent="1-1"/>
 <wire x1="30" y1="62.6" x2="63.5" y2="71.06" width="0" layer="19" extent="1-1"/>
 <wire x1="89.5" y1="26.5" x2="83.5" y2="71.06" width="0" layer="19" extent="1-1"/>
-<wire x1="78.788" y1="7.5819" x2="89.5" y2="26.5" width="0" layer="19" extent="1-1"/>
+<wire x1="76.988" y1="7.5819" x2="89.5" y2="26.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A13">
 <contactref element="HOST_IO" pad="27"/>
@@ -9348,7 +9348,7 @@ design rules under a new name.
 <wire x1="61.5" y1="70.06" x2="81.5" y2="70.06" width="0" layer="19" extent="1-1"/>
 <wire x1="30" y1="63.4" x2="61.5" y2="70.06" width="0" layer="19" extent="1-1"/>
 <wire x1="89.5" y1="27.5" x2="81.5" y2="70.06" width="0" layer="19" extent="1-1"/>
-<wire x1="76.248" y1="7.5819" x2="89.5" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="74.448" y1="7.5819" x2="89.5" y2="27.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A14">
 <contactref element="HOST_IO" pad="29"/>
@@ -9365,7 +9365,7 @@ design rules under a new name.
 <wire x1="63.5" y1="69.06" x2="83.5" y2="69.06" width="0" layer="19" extent="1-1"/>
 <wire x1="29.2" y1="63.4" x2="63.5" y2="69.06" width="0" layer="19" extent="1-1"/>
 <wire x1="90.5" y1="27.5" x2="83.5" y2="69.06" width="0" layer="19" extent="1-1"/>
-<wire x1="73.708" y1="7.5819" x2="90.5" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="71.908" y1="7.5819" x2="90.5" y2="27.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_A15">
 <contactref element="HOST_IO" pad="31"/>
@@ -9382,7 +9382,7 @@ design rules under a new name.
 <wire x1="61.5" y1="68.06" x2="81.5" y2="68.06" width="0" layer="19" extent="1-1"/>
 <wire x1="29.2" y1="62.6" x2="61.5" y2="68.06" width="0" layer="19" extent="1-1"/>
 <wire x1="91.5" y1="26.5" x2="101.5" y2="68.06" width="0" layer="19" extent="1-1"/>
-<wire x1="71.168" y1="7.5819" x2="91.5" y2="26.5" width="0" layer="19" extent="1-1"/>
+<wire x1="69.368" y1="7.5819" x2="91.5" y2="26.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_D0">
 <contactref element="HOST_IO" pad="6"/>
@@ -9399,7 +9399,7 @@ design rules under a new name.
 <wire x1="61.5" y1="66.06" x2="81.5" y2="66.06" width="0" layer="19" extent="1-1"/>
 <wire x1="139.0333" y1="37.1708" x2="143.5" y2="67.06" width="0" layer="19" extent="1-1"/>
 <wire x1="92.5" y1="26.5" x2="101.5" y2="66.06" width="0" layer="19" extent="1-1"/>
-<wire x1="104.188" y1="5.0419" x2="92.5" y2="26.5" width="0" layer="19" extent="1-1"/>
+<wire x1="102.388" y1="5.0419" x2="92.5" y2="26.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_D1">
 <contactref element="HOST_IO" pad="8"/>
@@ -9416,7 +9416,7 @@ design rules under a new name.
 <wire x1="63.5" y1="65.06" x2="83.5" y2="65.06" width="0" layer="19" extent="1-1"/>
 <wire x1="139.6833" y1="37.1708" x2="141.5" y2="66.06" width="0" layer="19" extent="1-1"/>
 <wire x1="88.5" y1="29.5" x2="83.5" y2="65.06" width="0" layer="19" extent="1-1"/>
-<wire x1="101.648" y1="5.0419" x2="88.5" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="99.848" y1="5.0419" x2="88.5" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_D2">
 <contactref element="HOST_IO" pad="10"/>
@@ -9433,7 +9433,7 @@ design rules under a new name.
 <wire x1="61.5" y1="64.06" x2="81.5" y2="64.06" width="0" layer="19" extent="1-1"/>
 <wire x1="140.3333" y1="37.1708" x2="143.5" y2="65.06" width="0" layer="19" extent="1-1"/>
 <wire x1="89.5" y1="29.5" x2="81.5" y2="64.06" width="0" layer="19" extent="1-1"/>
-<wire x1="99.108" y1="5.0419" x2="89.5" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="97.308" y1="5.0419" x2="89.5" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_D3">
 <contactref element="HOST_IO" pad="12"/>
@@ -9450,7 +9450,7 @@ design rules under a new name.
 <wire x1="63.5" y1="63.06" x2="83.5" y2="63.06" width="0" layer="19" extent="1-1"/>
 <wire x1="140.9833" y1="37.1708" x2="141.5" y2="64.06" width="0" layer="19" extent="1-1"/>
 <wire x1="87.5" y1="29.5" x2="83.5" y2="63.06" width="0" layer="19" extent="1-1"/>
-<wire x1="96.568" y1="5.0419" x2="87.5" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="94.768" y1="5.0419" x2="87.5" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_D4">
 <contactref element="HOST_IO" pad="14"/>
@@ -9467,7 +9467,7 @@ design rules under a new name.
 <wire x1="61.5" y1="62.06" x2="81.5" y2="62.06" width="0" layer="19" extent="1-1"/>
 <wire x1="141.6333" y1="37.1708" x2="143.5" y2="63.06" width="0" layer="19" extent="1-1"/>
 <wire x1="87.5" y1="28.5" x2="81.5" y2="62.06" width="0" layer="19" extent="1-1"/>
-<wire x1="94.028" y1="5.0419" x2="87.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="92.228" y1="5.0419" x2="87.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_D5">
 <contactref element="HOST_IO" pad="16"/>
@@ -9484,7 +9484,7 @@ design rules under a new name.
 <wire x1="63.5" y1="61.06" x2="83.5" y2="61.06" width="0" layer="19" extent="1-1"/>
 <wire x1="142.2833" y1="37.1708" x2="141.5" y2="62.06" width="0" layer="19" extent="1-1"/>
 <wire x1="83.5" y1="27.5" x2="83.5" y2="61.06" width="0" layer="19" extent="1-1"/>
-<wire x1="91.488" y1="5.0419" x2="83.5" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="89.688" y1="5.0419" x2="83.5" y2="27.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_D6">
 <contactref element="HOST_IO" pad="18"/>
@@ -9501,7 +9501,7 @@ design rules under a new name.
 <wire x1="61.5" y1="60.06" x2="81.5" y2="60.06" width="0" layer="19" extent="1-1"/>
 <wire x1="142.9333" y1="37.1708" x2="143.5" y2="61.06" width="0" layer="19" extent="1-1"/>
 <wire x1="84.5" y1="28.5" x2="81.5" y2="60.06" width="0" layer="19" extent="1-1"/>
-<wire x1="88.948" y1="5.0419" x2="84.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="87.148" y1="5.0419" x2="84.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_D7">
 <contactref element="HOST_IO" pad="20"/>
@@ -9518,7 +9518,7 @@ design rules under a new name.
 <wire x1="63.5" y1="59.06" x2="83.5" y2="59.06" width="0" layer="19" extent="1-1"/>
 <wire x1="143.5833" y1="37.1708" x2="141.5" y2="60.06" width="0" layer="19" extent="1-1"/>
 <wire x1="84.5" y1="27.5" x2="83.5" y2="59.06" width="0" layer="19" extent="1-1"/>
-<wire x1="86.408" y1="5.0419" x2="84.5" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="84.608" y1="5.0419" x2="84.5" y2="27.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_!EXTSEL!">
 <contactref element="HOST_IO" pad="35"/>
@@ -9533,7 +9533,7 @@ design rules under a new name.
 <wire x1="77" y1="65.06" x2="97" y2="65.06" width="0" layer="19" extent="1-1"/>
 <wire x1="57" y1="65.06" x2="77" y2="65.06" width="0" layer="19" extent="1-1"/>
 <wire x1="86.5" y1="29.5" x2="77" y2="65.06" width="0" layer="19" extent="1-1"/>
-<wire x1="66.088" y1="7.5819" x2="86.5" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="64.288" y1="7.5819" x2="86.5" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_!HALT!">
 <contactref element="HOST_IO" pad="37"/>
@@ -9548,7 +9548,7 @@ design rules under a new name.
 <wire x1="79" y1="64.06" x2="99" y2="64.06" width="0" layer="19" extent="1-1"/>
 <wire x1="59" y1="64.06" x2="79" y2="64.06" width="0" layer="19" extent="1-1"/>
 <wire x1="86.5" y1="28.5" x2="79" y2="64.06" width="0" layer="19" extent="1-1"/>
-<wire x1="63.548" y1="7.5819" x2="86.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="61.748" y1="7.5819" x2="86.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_!IRQ!">
 <contactref element="HOST_IO" pad="39"/>
@@ -9563,7 +9563,7 @@ design rules under a new name.
 <wire x1="77" y1="63.06" x2="97" y2="63.06" width="0" layer="19" extent="1-1"/>
 <wire x1="57" y1="63.06" x2="77" y2="63.06" width="0" layer="19" extent="1-1"/>
 <wire x1="85.5" y1="29.5" x2="77" y2="63.06" width="0" layer="19" extent="1-1"/>
-<wire x1="61.008" y1="7.5819" x2="85.5" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="59.208" y1="7.5819" x2="85.5" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_!MPD!">
 <contactref element="HOST_IO" pad="32"/>
@@ -9578,7 +9578,7 @@ design rules under a new name.
 <wire x1="79" y1="62.06" x2="99" y2="62.06" width="0" layer="19" extent="1-1"/>
 <wire x1="59" y1="62.06" x2="79" y2="62.06" width="0" layer="19" extent="1-1"/>
 <wire x1="85.5" y1="28.5" x2="79" y2="62.06" width="0" layer="19" extent="1-1"/>
-<wire x1="71.168" y1="5.0419" x2="85.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="69.368" y1="5.0419" x2="85.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_!REF!">
 <contactref element="HOST_IO" pad="34"/>
@@ -9593,7 +9593,7 @@ design rules under a new name.
 <wire x1="77" y1="61.06" x2="97" y2="61.06" width="0" layer="19" extent="1-1"/>
 <wire x1="57" y1="61.06" x2="77" y2="61.06" width="0" layer="19" extent="1-1"/>
 <wire x1="83.5" y1="29.5" x2="77" y2="61.06" width="0" layer="19" extent="1-1"/>
-<wire x1="68.628" y1="5.0419" x2="83.5" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="66.828" y1="5.0419" x2="83.5" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_!RST!">
 <contactref element="HOST_IO" pad="36"/>
@@ -9608,44 +9608,44 @@ design rules under a new name.
 <wire x1="79" y1="60.06" x2="99" y2="60.06" width="0" layer="19" extent="1-1"/>
 <wire x1="59" y1="60.06" x2="79" y2="60.06" width="0" layer="19" extent="1-1"/>
 <wire x1="83.5" y1="28.5" x2="79" y2="60.06" width="0" layer="19" extent="1-1"/>
-<wire x1="66.088" y1="5.0419" x2="83.5" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="64.288" y1="5.0419" x2="83.5" y2="28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_CTL0">
 <contactref element="HOST_IO" pad="2"/>
 <contactref element="S7-25" pad="N10"/>
-<wire x1="82.5" y1="30.5" x2="109.268" y2="5.0419" width="0" layer="19" extent="1-1"/>
+<wire x1="82.5" y1="30.5" x2="107.468" y2="5.0419" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_CTL1">
 <contactref element="HOST_IO" pad="4"/>
 <contactref element="S7-25" pad="N11"/>
-<wire x1="82.5" y1="29.5" x2="106.728" y2="5.0419" width="0" layer="19" extent="1-1"/>
+<wire x1="82.5" y1="29.5" x2="104.928" y2="5.0419" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_DIR0">
 <contactref element="HOST_IO" pad="22"/>
 <contactref element="LVL_D" pad="2"/>
 <contactref element="S7-25" pad="B6"/>
 <wire x1="93.5" y1="34.5" x2="138.3833" y2="37.1708" width="0" layer="19" extent="1-1"/>
-<wire x1="83.868" y1="5.0419" x2="93.5" y2="34.5" width="0" layer="19" extent="1-1"/>
+<wire x1="82.068" y1="5.0419" x2="93.5" y2="34.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_DIR1">
 <contactref element="HOST_IO" pad="24"/>
 <contactref element="S7-25" pad="D3"/>
-<wire x1="81.328" y1="5.0419" x2="91.5" y2="37.5" width="0" layer="19" extent="1-1"/>
+<wire x1="79.528" y1="5.0419" x2="91.5" y2="37.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_DIR2">
 <contactref element="HOST_IO" pad="26"/>
 <contactref element="S7-25" pad="C3"/>
-<wire x1="78.788" y1="5.0419" x2="92.5" y2="37.5" width="0" layer="19" extent="1-1"/>
+<wire x1="76.988" y1="5.0419" x2="92.5" y2="37.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_DIR3">
 <contactref element="HOST_IO" pad="28"/>
 <contactref element="S7-25" pad="A4"/>
-<wire x1="76.248" y1="5.0419" x2="94.5" y2="36.5" width="0" layer="19" extent="1-1"/>
+<wire x1="74.448" y1="5.0419" x2="94.5" y2="36.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HOST_DIR4">
 <contactref element="HOST_IO" pad="30"/>
 <contactref element="S7-25" pad="A3"/>
-<wire x1="73.708" y1="5.0419" x2="94.5" y2="37.5" width="0" layer="19" extent="1-1"/>
+<wire x1="71.908" y1="5.0419" x2="94.5" y2="37.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STMDATA_A0">
 <contactref element="MUX-LO" pad="2"/>
