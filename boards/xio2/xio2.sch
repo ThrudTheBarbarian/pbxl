@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -22265,7 +22265,7 @@ panel to left</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
@@ -23818,7 +23818,7 @@ Sends IRQ when bus is valid to read/write</text>
 <label x="93.98" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="VREG_MON" gate="G$1" pin="GND@2"/>
 <pinref part="SUPPLY48" gate="GND" pin="GND"/>
@@ -24235,7 +24235,7 @@ Sends IRQ when bus is valid to read/write</text>
 <junction x="154.94" y="66.04"/>
 </segment>
 </net>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="C167" gate="G$1" pin="2"/>
 <pinref part="SUPPLY124" gate="GND" pin="GND"/>
@@ -25221,7 +25221,7 @@ that it has ESD protection built in</text>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="SERIAL_BUF0" gate="P" pin="GND"/>
 <pinref part="SUPPLY75" gate="GND" pin="GND"/>
@@ -25698,7 +25698,7 @@ Differential impedance</text>
 <label x="-152.4" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="PSW" gate="G$1" pin="GND@2"/>
 <pinref part="SUPPLY126" gate="GND" pin="GND"/>
@@ -26374,7 +26374,7 @@ Differential impedance</text>
 <pinref part="VGA_BLU" gate="G$1" pin="B3@17"/>
 </segment>
 </net>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="VGA_RED" gate="G$1" pin="GND@10"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
@@ -27020,7 +27020,7 @@ Config</text>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY46" gate="GND" pin="GND"/>
@@ -27654,7 +27654,7 @@ GND</text>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <pinref part="C53" gate="G$1" pin="2"/>
@@ -28750,7 +28750,7 @@ GND</text>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="C41" gate="G$1" pin="2"/>
 <pinref part="SUPPLY31" gate="GND" pin="GND"/>
@@ -29785,7 +29785,7 @@ GND</text>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="C45" gate="G$1" pin="2"/>
 <pinref part="SUPPLY40" gate="GND" pin="GND"/>
@@ -30421,7 +30421,7 @@ least 1%, preferably 0.1% resistors</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 <wire x1="-30.48" y1="-104.14" x2="-35.56" y2="-104.14" width="0.1524" layer="91"/>
@@ -31358,7 +31358,7 @@ Master SPI : Set M[2:0] to 001</text>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="FPGA_CFG" gate="G$1" pin="VSS"/>
 <pinref part="C25" gate="G$1" pin="2"/>
@@ -32057,7 +32057,7 @@ Will dissipate 66mA, so need to be 0603</text>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="SHIELD"/>
 <pinref part="SUPPLY44" gate="GND" pin="GND"/>
@@ -33280,7 +33280,7 @@ board mount</text>
 <pinref part="MUX-HI" gate="G$1" pin="B3@13"/>
 </segment>
 </net>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY79" gate="GND" pin="GND"/>
 <pinref part="MUX-LO" gate="G$1" pin="GND@8"/>
@@ -33916,7 +33916,7 @@ tPD_BA : 0.6 .. 6ns</text>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="LVL_ALO" gate="G$1" pin="!OE!@22"/>
 <pinref part="SUPPLY57" gate="GND" pin="GND"/>
@@ -35183,7 +35183,7 @@ LED</text>
 <wire x1="-167.64" y1="86.36" x2="-167.64" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="9">
+<net name="GND" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="E"/>
 <pinref part="SUPPLY88" gate="GND" pin="GND"/>
