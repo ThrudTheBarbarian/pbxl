@@ -21453,7 +21453,7 @@ Source: www.kingbright.com</description>
 <part name="LED22" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="LTST-S270GKT"/>
 <part name="SUPPLY112" library="supply2" deviceset="GND" device=""/>
 <part name="+3V34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="U$15" library="sjg-logic" deviceset="MCP23S08" device=""/>
+<part name="XPND" library="sjg-logic" deviceset="MCP23S08" device=""/>
 <part name="+3V35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY113" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY114" library="supply2" deviceset="GND" device=""/>
@@ -21493,7 +21493,7 @@ Source: www.kingbright.com</description>
 <part name="U$14" library="sjg-power" deviceset="VCCO" device=""/>
 <part name="P+31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="U$19" library="sjg-power" deviceset="TLV62095" device="" package3d_urn="urn:adsk.eagle:package:4886866/1"/>
+<part name="FPGA_1_0" library="sjg-power" deviceset="TLV62095" device="" package3d_urn="urn:adsk.eagle:package:4886866/1"/>
 <part name="C109" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
 <part name="C110" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
 <part name="SUPPLY74" library="supply2" deviceset="GND" device=""/>
@@ -25133,7 +25133,7 @@ that it has ESD protection built in</text>
 <attribute name="VALUE" x="-50.8" y="109.22" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="XIO" gate="-UART" x="-111.76" y="55.88" rot="MR0"/>
-<instance part="U$15" gate="G$1" x="-17.78" y="-60.96"/>
+<instance part="XPND" gate="G$1" x="-17.78" y="-60.96"/>
 <instance part="+3V35" gate="G$1" x="7.62" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="10.16" y="-12.7" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -25221,17 +25221,17 @@ that it has ESD protection built in</text>
 <junction x="38.1" y="53.34"/>
 </segment>
 <segment>
-<pinref part="U$15" gate="G$1" pin="VSS@9"/>
+<pinref part="XPND" gate="G$1" pin="VSS@9"/>
 <pinref part="SUPPLY113" gate="GND" pin="GND"/>
 <wire x1="2.54" y1="-76.2" x2="7.62" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-76.2" x2="7.62" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$15" gate="G$1" pin="A0@5"/>
+<pinref part="XPND" gate="G$1" pin="A0@5"/>
 <pinref part="SUPPLY114" gate="GND" pin="GND"/>
 <wire x1="-35.56" y1="-55.88" x2="-40.64" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-55.88" x2="-40.64" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="A1@4"/>
+<pinref part="XPND" gate="G$1" pin="A1@4"/>
 <wire x1="-35.56" y1="-53.34" x2="-40.64" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-53.34" x2="-40.64" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-40.64" y="-55.88"/>
@@ -25264,7 +25264,7 @@ that it has ESD protection built in</text>
 <wire x1="-53.34" y1="96.52" x2="-53.34" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$15" gate="G$1" pin="VDD@18"/>
+<pinref part="XPND" gate="G$1" pin="VDD@18"/>
 <pinref part="+3V35" gate="G$1" pin="+3V3"/>
 <wire x1="2.54" y1="-43.18" x2="7.62" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-43.18" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
@@ -25451,28 +25451,28 @@ that it has ESD protection built in</text>
 </net>
 <net name="!IO_EXP_IRQ!" class="11">
 <segment>
-<pinref part="U$15" gate="G$1" pin="INT@8"/>
+<pinref part="XPND" gate="G$1" pin="INT@8"/>
 <wire x1="-35.56" y1="-71.12" x2="-43.18" y2="-71.12" width="0.1524" layer="91"/>
 <label x="-43.688" y="-70.612" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="!IO_EXP_SEL!" class="11">
 <segment>
-<pinref part="U$15" gate="G$1" pin="!CS!@7"/>
+<pinref part="XPND" gate="G$1" pin="!CS!@7"/>
 <wire x1="-35.56" y1="-76.2" x2="-43.18" y2="-76.2" width="0.1524" layer="91"/>
 <label x="-43.688" y="-75.692" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="!RESET!" class="0">
 <segment>
-<pinref part="U$15" gate="G$1" pin="!RESET!@6"/>
+<pinref part="XPND" gate="G$1" pin="!RESET!@6"/>
 <wire x1="-35.56" y1="-66.04" x2="-43.18" y2="-66.04" width="0.1524" layer="91"/>
 <label x="-43.688" y="-65.532" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SPI_CLK" class="11">
 <segment>
-<pinref part="U$15" gate="G$1" pin="SCK@1"/>
+<pinref part="XPND" gate="G$1" pin="SCK@1"/>
 <wire x1="-58.42" y1="-40.64" x2="-55.88" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-43.18" x2="-35.56" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-53.34" y="-43.18" size="1.778" layer="95"/>
@@ -25480,7 +25480,7 @@ that it has ESD protection built in</text>
 </net>
 <net name="SPI_MISO" class="11">
 <segment>
-<pinref part="U$15" gate="G$1" pin="MOSI@2"/>
+<pinref part="XPND" gate="G$1" pin="MOSI@2"/>
 <wire x1="-58.42" y1="-43.18" x2="-55.88" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-45.72" x2="-35.56" y2="-45.72" width="0.1524" layer="91"/>
 <label x="-53.34" y="-45.72" size="1.778" layer="95"/>
@@ -25488,7 +25488,7 @@ that it has ESD protection built in</text>
 </net>
 <net name="SPI_MOSI" class="11">
 <segment>
-<pinref part="U$15" gate="G$1" pin="MISO@3"/>
+<pinref part="XPND" gate="G$1" pin="MISO@3"/>
 <wire x1="-58.42" y1="-45.72" x2="-55.88" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-48.26" x2="-35.56" y2="-48.26" width="0.1524" layer="91"/>
 <label x="-53.34" y="-48.26" size="1.778" layer="95"/>
@@ -25499,7 +25499,7 @@ that it has ESD protection built in</text>
 <wire x1="35.56" y1="-48.26" x2="33.02" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-50.8" x2="33.02" y2="-50.8" width="0.1524" layer="91"/>
 <label x="15.24" y="-50.8" size="1.778" layer="95"/>
-<pinref part="U$15" gate="G$1" pin="GP0@10"/>
+<pinref part="XPND" gate="G$1" pin="GP0@10"/>
 </segment>
 </net>
 <net name="S1_PRESENT" class="0">
@@ -25507,7 +25507,7 @@ that it has ESD protection built in</text>
 <wire x1="35.56" y1="-50.8" x2="33.02" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-53.34" x2="33.02" y2="-53.34" width="0.1524" layer="91"/>
 <label x="15.24" y="-53.34" size="1.778" layer="95"/>
-<pinref part="U$15" gate="G$1" pin="GP1@11"/>
+<pinref part="XPND" gate="G$1" pin="GP1@11"/>
 </segment>
 </net>
 <net name="S2_PRESENT" class="0">
@@ -25515,7 +25515,7 @@ that it has ESD protection built in</text>
 <wire x1="35.56" y1="-53.34" x2="33.02" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-55.88" x2="33.02" y2="-55.88" width="0.1524" layer="91"/>
 <label x="15.24" y="-55.88" size="1.778" layer="95"/>
-<pinref part="U$15" gate="G$1" pin="GP2@12"/>
+<pinref part="XPND" gate="G$1" pin="GP2@12"/>
 </segment>
 </net>
 <net name="S3_PRESENT" class="0">
@@ -25523,7 +25523,7 @@ that it has ESD protection built in</text>
 <wire x1="35.56" y1="-55.88" x2="33.02" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-58.42" x2="33.02" y2="-58.42" width="0.1524" layer="91"/>
 <label x="15.24" y="-58.42" size="1.778" layer="95"/>
-<pinref part="U$15" gate="G$1" pin="GP3@13"/>
+<pinref part="XPND" gate="G$1" pin="GP3@13"/>
 </segment>
 </net>
 <net name="S4_PRESENT" class="0">
@@ -25531,7 +25531,7 @@ that it has ESD protection built in</text>
 <wire x1="35.56" y1="-58.42" x2="33.02" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-60.96" x2="33.02" y2="-60.96" width="0.1524" layer="91"/>
 <label x="15.24" y="-60.96" size="1.778" layer="95"/>
-<pinref part="U$15" gate="G$1" pin="GP4@14"/>
+<pinref part="XPND" gate="G$1" pin="GP4@14"/>
 </segment>
 </net>
 <net name="EXT_IO0" class="0">
@@ -25539,7 +25539,7 @@ that it has ESD protection built in</text>
 <wire x1="35.56" y1="-60.96" x2="33.02" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-63.5" x2="33.02" y2="-63.5" width="0.1524" layer="91"/>
 <label x="20.32" y="-63.5" size="1.778" layer="95"/>
-<pinref part="U$15" gate="G$1" pin="GP5@15"/>
+<pinref part="XPND" gate="G$1" pin="GP5@15"/>
 </segment>
 </net>
 <net name="EXT_IO1" class="0">
@@ -25547,7 +25547,7 @@ that it has ESD protection built in</text>
 <wire x1="35.56" y1="-63.5" x2="33.02" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-66.04" x2="33.02" y2="-66.04" width="0.1524" layer="91"/>
 <label x="20.32" y="-66.04" size="1.778" layer="95"/>
-<pinref part="U$15" gate="G$1" pin="GP6@16"/>
+<pinref part="XPND" gate="G$1" pin="GP6@16"/>
 </segment>
 </net>
 <net name="EXT_IO2" class="0">
@@ -25555,7 +25555,7 @@ that it has ESD protection built in</text>
 <wire x1="35.56" y1="-66.04" x2="33.02" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-68.58" x2="33.02" y2="-68.58" width="0.1524" layer="91"/>
 <label x="20.32" y="-68.58" size="1.778" layer="95"/>
-<pinref part="U$15" gate="G$1" pin="GP7@17"/>
+<pinref part="XPND" gate="G$1" pin="GP7@17"/>
 </segment>
 </net>
 </nets>
@@ -30121,7 +30121,7 @@ least 1%, preferably 0.1% resistors</text>
 <instance part="R82" gate="G$1" x="-73.66" y="-58.42" rot="R270"/>
 <instance part="R95" gate="G$1" x="-73.66" y="33.02" rot="R270"/>
 <instance part="S7-25" gate="-PWR" x="5.08" y="-38.1" rot="MR0"/>
-<instance part="U$19" gate="G$1" x="-134.62" y="88.9"/>
+<instance part="FPGA_1_0" gate="G$1" x="-134.62" y="88.9"/>
 <instance part="C109" gate="G$1" x="-172.72" y="96.52"/>
 <instance part="C110" gate="G$1" x="-55.88" y="101.6"/>
 <instance part="SUPPLY74" gate="GND" x="-172.72" y="83.82"/>
@@ -30549,18 +30549,18 @@ least 1%, preferably 0.1% resistors</text>
 <wire x1="-86.36" y1="66.04" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="66.04" x2="-99.06" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-86.36" y="66.04"/>
-<pinref part="U$19" gate="G$1" pin="PGND@14"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="PGND@14"/>
 <wire x1="-99.06" y1="66.04" x2="-109.22" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="66.04" x2="-114.3" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="PGND@15"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="PGND@15"/>
 <wire x1="-114.3" y1="68.58" x2="-109.22" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="68.58" x2="-109.22" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-109.22" y="66.04"/>
-<pinref part="U$19" gate="G$1" pin="AGND@PAD"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="AGND@PAD"/>
 <wire x1="-114.3" y1="73.66" x2="-109.22" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="73.66" x2="-109.22" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-109.22" y="68.58"/>
-<pinref part="U$19" gate="G$1" pin="AGND@6"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="AGND@6"/>
 <wire x1="-114.3" y1="76.2" x2="-109.22" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="76.2" x2="-109.22" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-109.22" y="73.66"/>
@@ -30671,7 +30671,7 @@ least 1%, preferably 0.1% resistors</text>
 <pinref part="C110" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="104.14" x2="-55.88" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-55.88" y="106.68"/>
-<pinref part="U$19" gate="G$1" pin="VOS@16"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="VOS@16"/>
 <wire x1="-114.3" y1="96.52" x2="-81.28" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="96.52" x2="-81.28" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-81.28" y="106.68"/>
@@ -30762,10 +30762,10 @@ least 1%, preferably 0.1% resistors</text>
 </segment>
 <segment>
 <pinref part="P+33" gate="1" pin="+5V"/>
-<pinref part="U$19" gate="G$1" pin="PVIN@12"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="PVIN@12"/>
 <wire x1="-172.72" y1="116.84" x2="-172.72" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-172.72" y1="106.68" x2="-162.56" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="PVIN@11"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="PVIN@11"/>
 <wire x1="-162.56" y1="106.68" x2="-154.94" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="104.14" x2="-162.56" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="104.14" x2="-162.56" y2="106.68" width="0.1524" layer="91"/>
@@ -30773,15 +30773,15 @@ least 1%, preferably 0.1% resistors</text>
 <pinref part="C109" gate="G$1" pin="1"/>
 <wire x1="-172.72" y1="99.06" x2="-172.72" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-172.72" y="106.68"/>
-<pinref part="U$19" gate="G$1" pin="AVIN@10"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="AVIN@10"/>
 <wire x1="-154.94" y1="96.52" x2="-162.56" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="96.52" x2="-162.56" y2="104.14" width="0.1524" layer="91"/>
 <junction x="-162.56" y="104.14"/>
-<pinref part="U$19" gate="G$1" pin="DEF@3"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="DEF@3"/>
 <wire x1="-154.94" y1="91.44" x2="-162.56" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="91.44" x2="-162.56" y2="96.52" width="0.1524" layer="91"/>
 <junction x="-162.56" y="96.52"/>
-<pinref part="U$19" gate="G$1" pin="EN@13"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="EN@13"/>
 <wire x1="-154.94" y1="86.36" x2="-162.56" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="86.36" x2="-162.56" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-162.56" y="91.44"/>
@@ -30896,7 +30896,7 @@ least 1%, preferably 0.1% resistors</text>
 </net>
 <net name="N$64" class="0">
 <segment>
-<pinref part="U$19" gate="G$1" pin="CP@7"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="CP@7"/>
 <pinref part="C111" gate="G$1" pin="1"/>
 <wire x1="-154.94" y1="81.28" x2="-165.1" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="81.28" x2="-165.1" y2="76.2" width="0.1524" layer="91"/>
@@ -30904,7 +30904,7 @@ least 1%, preferably 0.1% resistors</text>
 </net>
 <net name="N$72" class="0">
 <segment>
-<pinref part="U$19" gate="G$1" pin="CN@8"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="CN@8"/>
 <pinref part="C111" gate="G$1" pin="2"/>
 <wire x1="-154.94" y1="66.04" x2="-165.1" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="66.04" x2="-165.1" y2="68.58" width="0.1524" layer="91"/>
@@ -30912,10 +30912,10 @@ least 1%, preferably 0.1% resistors</text>
 </net>
 <net name="N$73" class="0">
 <segment>
-<pinref part="U$19" gate="G$1" pin="SW@1"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="SW@1"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="-114.3" y1="106.68" x2="-104.14" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="SW@2"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="SW@2"/>
 <wire x1="-104.14" y1="106.68" x2="-99.06" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-114.3" y1="104.14" x2="-104.14" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="104.14" x2="-104.14" y2="106.68" width="0.1524" layer="91"/>
@@ -30924,7 +30924,7 @@ least 1%, preferably 0.1% resistors</text>
 </net>
 <net name="PGOOD_10" class="0">
 <segment>
-<pinref part="U$19" gate="G$1" pin="PG@4"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="PG@4"/>
 <pinref part="R129" gate="G$1" pin="2"/>
 <wire x1="-114.3" y1="91.44" x2="-86.36" y2="91.44" width="0.1524" layer="91"/>
 <label x="-106.426" y="92.202" size="1.778" layer="95"/>
@@ -30944,7 +30944,7 @@ least 1%, preferably 0.1% resistors</text>
 <pinref part="R131" gate="G$1" pin="1"/>
 <pinref part="R130" gate="G$1" pin="2"/>
 <wire x1="-66.04" y1="81.28" x2="-66.04" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="FB@5"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="FB@5"/>
 <wire x1="-66.04" y1="86.36" x2="-66.04" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="-114.3" y1="86.36" x2="-66.04" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-66.04" y="86.36"/>
@@ -30952,7 +30952,7 @@ least 1%, preferably 0.1% resistors</text>
 </net>
 <net name="N$98" class="0">
 <segment>
-<pinref part="U$19" gate="G$1" pin="SS@9"/>
+<pinref part="FPGA_1_0" gate="G$1" pin="SS@9"/>
 <pinref part="C112" gate="G$1" pin="1"/>
 <wire x1="-114.3" y1="81.28" x2="-86.36" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="81.28" x2="-86.36" y2="78.74" width="0.1524" layer="91"/>
