@@ -44,6 +44,7 @@ recorner diagonal 1 1 1
 recorner diagonal .1 .1 .1
 recorner diagonal .006 .006 .006
 recorner diagonal .003 .003 .003
+gloss
 
 report status
 unprotect all wires

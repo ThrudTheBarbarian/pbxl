@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -64,6 +64,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -90,8 +92,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="no" active="no"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -100,15 +107,26 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="top_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -135,6 +153,12 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="no"/>
 <layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
@@ -143,6 +167,7 @@
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="Accent" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -10421,6 +10446,51 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </polygon>
 <smd name="PAD" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
 </package>
+<package name="DCJ3P-14.2X11.0X9.0MM">
+<wire x1="-10.795" y1="3.175" x2="3.175" y2="3.175" width="0.127" layer="21"/>
+<wire x1="3.175" y1="3.175" x2="3.175" y2="-4.953" width="0.127" layer="51"/>
+<wire x1="3.175" y1="-4.953" x2="-10.795" y2="-4.953" width="0.127" layer="51"/>
+<wire x1="-10.795" y1="-4.953" x2="-10.795" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-10.795" y1="3.175" x2="3.175" y2="3.175" width="0" layer="39"/>
+<wire x1="3.175" y1="3.175" x2="3.175" y2="-4.953" width="0" layer="39"/>
+<wire x1="3.175" y1="-4.953" x2="-10.795" y2="-4.953" width="0" layer="39"/>
+<wire x1="-10.795" y1="-4.953" x2="-10.795" y2="3.175" width="0" layer="39"/>
+<wire x1="7.239" y1="-1.397" x2="5.207" y2="-1.397" width="0.127" layer="22" curve="270"/>
+<wire x1="6.223" y1="-1.143" x2="6.223" y2="-1.905" width="0.127" layer="22"/>
+<wire x1="6.223" y1="-1.143" x2="6.477" y2="-1.524" width="0.127" layer="22"/>
+<wire x1="6.223" y1="-1.143" x2="5.969" y2="-1.524" width="0.127" layer="22"/>
+<wire x1="6.223" y1="-0.508" x2="6.223" y2="-0.254" width="0.127" layer="22"/>
+<wire x1="6.223" y1="-0.254" x2="6.096" y2="-0.381" width="0.127" layer="22"/>
+<wire x1="6.096" y1="-0.381" x2="6.223" y2="-0.508" width="0.127" layer="22"/>
+<wire x1="6.223" y1="-0.508" x2="6.35" y2="-0.381" width="0.127" layer="22"/>
+<wire x1="6.35" y1="-0.381" x2="6.223" y2="-0.254" width="0.127" layer="22"/>
+<wire x1="7.239" y1="-1.397" x2="5.207" y2="-1.397" width="0.127" layer="22" curve="270"/>
+<wire x1="6.223" y1="1.143" x2="6.223" y2="1.905" width="0.127" layer="22"/>
+<wire x1="6.223" y1="1.143" x2="6.477" y2="1.524" width="0.127" layer="22"/>
+<wire x1="6.223" y1="1.143" x2="5.969" y2="1.524" width="0.127" layer="22"/>
+<wire x1="6.223" y1="-3.175" x2="6.223" y2="-2.159" width="0.127" layer="22"/>
+<wire x1="5.715" y1="-2.667" x2="6.731" y2="-2.667" width="0.127" layer="22"/>
+<wire x1="6.223" y1="2.159" x2="6.223" y2="3.175" width="0.127" layer="22"/>
+<circle x="6.223" y="-0.381" radius="0.6839" width="0.127" layer="22"/>
+<circle x="6.223" y="-0.381" radius="0.1796" width="0.127" layer="22"/>
+<circle x="6.223" y="-2.667" radius="0.7405" width="0.127" layer="22"/>
+<circle x="6.223" y="2.667" radius="0.7405" width="0.127" layer="22"/>
+<circle x="6.223" y="-0.381" radius="0.6839" width="0.127" layer="22"/>
+<circle x="6.223" y="-0.381" radius="0.1796" width="0.127" layer="22"/>
+<circle x="6.223" y="-2.667" radius="0.7405" width="0.127" layer="22"/>
+<circle x="6.223" y="2.667" radius="0.7405" width="0.127" layer="22"/>
+<pad name="-1" x="-3.048" y="0" drill="1.0668" diameter="2.032" shape="long" rot="R90"/>
+<pad name="+" x="3.175" y="0" drill="1.0668" diameter="2.032" shape="long" rot="R90"/>
+<pad name="-2" x="0" y="-4.953" drill="1.0668" diameter="2.032" shape="long" rot="R180"/>
+<text x="-9.525" y="3.81" size="0.889" layer="25" ratio="11">&gt;name</text>
+<text x="-9.525" y="-0.635" size="0.889" layer="27" ratio="11">&gt;value</text>
+<text x="0" y="-0.635" size="0.254" layer="33" ratio="10" rot="R90">&gt;name</text>
+<wire x1="-2.2" y1="-5" x2="-10.8" y2="-5" width="0.127" layer="21"/>
+<wire x1="-10.8" y1="-5" x2="-10.8" y2="-4.9" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-5" x2="3.2" y2="-5" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-5" x2="3.2" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="3.2" y1="2.2" x2="3.2" y2="3.175" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO170P1524X483-6" urn="urn:adsk.eagle:package:4768344/1" locally_modified="yes" type="model">
@@ -10453,17 +10523,17 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <symbol name="NCP380">
 <description>NCP380: 
 Fixed/Adjustable Current‐Limiting Power‐Distribution Switches</description>
-<pin name="IN@1" x="-17.78" y="10.16" length="middle"/>
+<pin name="IN@1" x="-17.78" y="20.32" length="middle"/>
 <pin name="GND@2" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <pin name="EN@3" x="-17.78" y="2.54" length="middle"/>
 <pin name="OUT@6" x="17.78" y="10.16" length="middle" rot="R180"/>
 <pin name="NC@5" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="!FLAG!@4" x="-17.78" y="-5.08" length="middle"/>
-<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<pin name="!FLAG!@4" x="-17.78" y="10.16" length="middle"/>
+<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<text x="-12.7" y="16.002" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<text x="-12.7" y="23.622" size="1.778" layer="94">&gt;NAME</text>
 <text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="TPS3808">
@@ -10541,6 +10611,39 @@ Fixed/Adjustable Current‐Limiting Power‐Distribution Switches</description>
 <text x="-15.24" y="21.082" size="1.778" layer="94">&gt;NAME</text>
 <text x="-15.24" y="-27.94" size="1.778" layer="94">&gt;VALUE</text>
 <pin name="AGND@PAD" x="20.32" y="-15.24" length="middle" rot="R180"/>
+</symbol>
+<symbol name="POWER-JACK-DC">
+<wire x1="5.08" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="3.175" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="3.175" x2="1.016" y2="3.175" width="0.1524" layer="91"/>
+<wire x1="1.016" y1="3.175" x2="1.016" y2="3.048" width="0.1524" layer="91"/>
+<wire x1="1.016" y1="3.048" x2="-0.762" y2="3.048" width="0.1524" layer="91"/>
+<wire x1="-0.762" y1="3.048" x2="-1.27" y2="2.54" width="0.1524" layer="91" curve="90"/>
+<wire x1="-1.27" y1="2.54" x2="-0.762" y2="2.032" width="0.1524" layer="91" curve="90"/>
+<wire x1="-0.762" y1="2.032" x2="1.016" y2="2.032" width="0.1524" layer="91"/>
+<wire x1="1.016" y1="2.032" x2="1.016" y2="1.905" width="0.1524" layer="91"/>
+<wire x1="1.016" y1="1.905" x2="1.27" y2="1.905" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="1.016" y1="3.048" x2="1.016" y2="2.032" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="0" x2="1.27" y2="0" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="-2.54" x2="1.016" y2="-1.905" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="-2.54" x2="1.524" y2="-1.905" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="0" y1="-2.54" x2="-0.635" y2="-1.905" width="0.1524" layer="91"/>
+<wire x1="-0.635" y1="-1.905" x2="-1.27" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-3.81" y1="3.81" x2="5.08" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-3.81" x2="-3.81" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-3.81" x2="-3.81" y2="3.81" width="0.1524" layer="94"/>
+<text x="-6.35" y="1.905" size="1.27" layer="93" ratio="10">+</text>
+<text x="-6.35" y="-3.175" size="1.27" layer="93" ratio="10">-</text>
+<text x="-7.62" y="-0.508" size="1.016" layer="93" ratio="10">CDN</text>
+<text x="-5.08" y="5.08" size="1.27" layer="95" ratio="10">&gt;name</text>
+<text x="-5.08" y="-5.588" size="1.27" layer="96" ratio="10">&gt;value</text>
+<pin name="+" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="CDN" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10690,6 +10793,27 @@ http://www.digikey.com/product-detail/en/AP7363-10D-13/AP7363-10D-13CT-ND/382939
 </package3dinstances>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONN-POWER-JACK-2.1MM(DC-005)" prefix="J" uservalue="yes">
+<description>320120003</description>
+<gates>
+<gate name="JACK" symbol="POWER-JACK-DC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DCJ3P-14.2X11.0X9.0MM">
+<connects>
+<connect gate="JACK" pin="+" pad="+"/>
+<connect gate="JACK" pin="-" pad="-1"/>
+<connect gate="JACK" pin="CDN" pad="-2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="DC-005" constant="no"/>
+<attribute name="VALUE" value="DC-005"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11040,125 +11164,6 @@ http://www.digikey.com/product-detail/en/AP7363-10D-13/AP7363-10D-13CT-ND/382939
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14279/1"/>
 </package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="adafruit">
-<packages>
-<package name="PJ-102A">
-<wire x1="-4.6" y1="4.4" x2="4.4" y2="4.4" width="0.127" layer="21"/>
-<wire x1="4.4" y1="4.4" x2="4.4" y2="-10.2" width="0.127" layer="21"/>
-<wire x1="4.4" y1="-10.2" x2="-4.6" y2="-10.2" width="0.127" layer="21"/>
-<wire x1="-4.6" y1="-10.2" x2="-4.6" y2="4.4" width="0.127" layer="21"/>
-<pad name="RING_SW" x="-4.6" y="-6.29" drill="3" diameter="4.8" rot="R180"/>
-<pad name="TIP" x="0.1" y="-9.29" drill="3" diameter="4.8" rot="R180"/>
-<pad name="RING" x="0.1" y="-3.39" drill="3" diameter="4.8" rot="R180"/>
-</package>
-<package name="DCJACK_2MM_SMT">
-<description>2.0/2.1mm DC Jack - SMT
-&lt;p&gt;4UConnector: 03267&lt;/p&gt;
-&lt;p&gt;Note: Small tRestrict polygon's were added to the ground pads to improve solderability when this part is used in combination with a ground pour.  By default, Eagle will product four large bridges to the ground pour significantly increasing the heat distribution on the pads and preventing lead-free solder from reflowing in certain situations.  For more details, see: http://www.microbuilder.eu/Blog/09-12-14/Reducing_Thermals_for_Large_Pads_in_Eagle.aspx&lt;/p&gt;</description>
-<wire x1="-4" y1="4.5" x2="-5" y2="3.5" width="0.127" layer="51" curve="90"/>
-<wire x1="-5" y1="3.5" x2="-5" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="-5" y1="-3.5" x2="-4" y2="-4.5" width="0.127" layer="51" curve="90"/>
-<wire x1="-4" y1="-4.5" x2="10.254" y2="-4.5" width="0.127" layer="51"/>
-<wire x1="10.254" y1="-4.5" x2="10.254" y2="-1.492" width="0.127" layer="51"/>
-<wire x1="10.254" y1="-1.492" x2="9" y2="-1.492" width="0.127" layer="51"/>
-<wire x1="9" y1="-1.492" x2="9" y2="4.5" width="0.127" layer="51"/>
-<wire x1="9" y1="4.5" x2="-4" y2="4.5" width="0.127" layer="51"/>
-<wire x1="-4" y1="4.5" x2="-5" y2="3.5" width="0.127" layer="21" curve="90"/>
-<wire x1="-5" y1="3.5" x2="-5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="-5" y1="-3.5" x2="-4" y2="-4.5" width="0.127" layer="21" curve="90"/>
-<wire x1="10.254" y1="-4.5" x2="10.254" y2="-1.492" width="0.127" layer="21"/>
-<wire x1="10.254" y1="-1.492" x2="9" y2="-1.492" width="0.127" layer="21"/>
-<wire x1="9" y1="-1.492" x2="9" y2="4.5" width="0.127" layer="21"/>
-<wire x1="-1.668" y1="4.5" x2="-4" y2="4.5" width="0.127" layer="21"/>
-<wire x1="4.682" y1="4.5" x2="1.588" y2="4.5" width="0.127" layer="21"/>
-<wire x1="9" y1="4.5" x2="7.938" y2="4.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="-4.5" x2="-1.684" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="1.588" y1="-4.5" x2="4.666" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="7.938" y1="-4.5" x2="10.254" y2="-4.5" width="0.127" layer="21"/>
-<smd name="PWR1" x="0" y="5.5" dx="2.4" dy="2" layer="1"/>
-<smd name="PWR2" x="6.2" y="5.5" dx="2.4" dy="2" layer="1"/>
-<smd name="GNDBREAK" x="6.2" y="-5.5" dx="2.4" dy="2" layer="1"/>
-<smd name="GND" x="0" y="-5.5" dx="2.4" dy="2" layer="1"/>
-<text x="0.762" y="2.794" size="1.4224" layer="21" ratio="12" rot="R90">+</text>
-<text x="-1.016" y="-3.81" size="0.8128" layer="21">GND</text>
-<hole x="0" y="0" drill="1.6"/>
-<hole x="4.5" y="0" drill="1.8"/>
-<polygon width="0.0254" layer="41" spacing="0.254">
-<vertex x="1.27" y="-5.7404"/>
-<vertex x="1.27" y="-5.2578"/>
-<vertex x="1.2954" y="-5.2578"/>
-<vertex x="1.2954" y="-5.7404"/>
-</polygon>
-<polygon width="0.0254" layer="41" spacing="0.254">
-<vertex x="-0.254" y="-4.4196"/>
-<vertex x="0.2286" y="-4.4196"/>
-<vertex x="0.2286" y="-4.445"/>
-<vertex x="-0.254" y="-4.445"/>
-</polygon>
-<polygon width="0.0254" layer="41" spacing="0.254">
-<vertex x="4.9022" y="-5.7404"/>
-<vertex x="4.9022" y="-5.2578"/>
-<vertex x="4.9276" y="-5.2578"/>
-<vertex x="4.9276" y="-5.7404"/>
-</polygon>
-<polygon width="0.0254" layer="41" spacing="0.254">
-<vertex x="6.4262" y="-4.445"/>
-<vertex x="5.9436" y="-4.445"/>
-<vertex x="5.9436" y="-4.4196"/>
-<vertex x="6.4262" y="-4.4196"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="POWERJACK-1">
-<wire x1="2.54" y1="3.175" x2="0" y2="3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="3.175" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="0" y2="1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="1.905" x2="2.54" y2="1.905" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.905" x2="2.54" y2="3.175" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="1.27" layer="95">&gt;NAME</text>
-<pin name="TIP" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
-<pin name="RING" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="RING_SW" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2.1MMJACK">
-<description>2.1mm x 5.5mm THM DC jack with internal switch. Digikey part #PJ-102A, 4UCON part #05537 &lt;br&gt;
-2.1mm x 5.5mm SMT DC jack with internal switch. Digikey part #PJ-002A-SMT, 4UCON part #03267
-&lt;p&gt;By microbuilder.eu &amp; adafruit.com&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="POWERJACK-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="THM" package="PJ-102A">
-<connects>
-<connect gate="G$1" pin="RING" pad="RING"/>
-<connect gate="G$1" pin="RING_SW" pad="RING_SW"/>
-<connect gate="G$1" pin="TIP" pad="TIP"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMT" package="DCJACK_2MM_SMT">
-<connects>
-<connect gate="G$1" pin="RING" pad="GND"/>
-<connect gate="G$1" pin="RING_SW" pad="GNDBREAK"/>
-<connect gate="G$1" pin="TIP" pad="PWR2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -20921,7 +20926,6 @@ Source: www.kingbright.com</description>
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
-<part name="PJ-102AH" library="adafruit" deviceset="2.1MMJACK" device="THM" value="PJ-102AH"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -21381,7 +21385,7 @@ Source: www.kingbright.com</description>
 <part name="FPGA_VCCO" library="sjg-power" deviceset="TPS876" device="" package3d_urn="urn:adsk.eagle:package:4768344/1" value="TPS78633DCQR"/>
 <part name="C107" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF"/>
 <part name="C103" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="4.7uF"/>
-<part name="R82" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0R"/>
+<part name="R82" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R"/>
 <part name="R86" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="60R"/>
 <part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="LTST-S270GKT"/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
@@ -21391,7 +21395,7 @@ Source: www.kingbright.com</description>
 <part name="R94" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="130R"/>
 <part name="LED6" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="LTST-C191KRKT"/>
 <part name="SUPPLY92" library="supply2" deviceset="GND" device=""/>
-<part name="R95" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0R"/>
+<part name="R95" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R"/>
 <part name="R97" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="60R"/>
 <part name="LED7" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="LTST-S270GKT"/>
 <part name="SUPPLY93" library="supply2" deviceset="GND" device=""/>
@@ -21537,6 +21541,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY42" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY121" library="supply2" deviceset="GND" device=""/>
 <part name="P+34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="J2" library="sjg-power" deviceset="CONN-POWER-JACK-2.1MM(DC-005)" device="" value="DC-005"/>
 </parts>
 <sheets>
 <sheet>
@@ -22201,9 +22206,6 @@ panel to left</text>
 <attribute name="VALUE" x="-132.08" y="-50.8" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+1" gate="1" x="-180.34" y="-58.42"/>
-<instance part="PJ-102AH" gate="G$1" x="-147.32" y="-10.16" smashed="yes">
-<attribute name="NAME" x="-149.86" y="-5.08" size="1.27" layer="95"/>
-</instance>
 <instance part="P+3" gate="1" x="-134.62" y="0"/>
 <instance part="SUPPLY13" gate="GND" x="-134.62" y="-17.78"/>
 <instance part="FRAME2" gate="G$1" x="-193.04" y="-127"/>
@@ -22261,6 +22263,7 @@ panel to left</text>
 <instance part="SUPPLY84" gate="GND" x="-172.72" y="30.48"/>
 <instance part="C99" gate="G$1" x="-45.72" y="-50.8"/>
 <instance part="XIO" gate="-POWER" x="43.18" y="-12.7"/>
+<instance part="J2" gate="JACK" x="-149.86" y="-10.16"/>
 </instances>
 <busses>
 </busses>
@@ -22286,9 +22289,9 @@ panel to left</text>
 </segment>
 <segment>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<pinref part="PJ-102AH" gate="G$1" pin="RING"/>
 <wire x1="-134.62" y1="-15.24" x2="-134.62" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-134.62" y1="-12.7" x2="-142.24" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="J2" gate="JACK" pin="-"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -22835,10 +22838,10 @@ panel to left</text>
 <junction x="-180.34" y="-73.66"/>
 </segment>
 <segment>
-<pinref part="PJ-102AH" gate="G$1" pin="TIP"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="-142.24" y1="-7.62" x2="-134.62" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-134.62" y1="-7.62" x2="-134.62" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="J2" gate="JACK" pin="+"/>
 </segment>
 </net>
 <net name="XIO_CLK_OUT" class="10">
@@ -25649,7 +25652,7 @@ Differential impedance</text>
 <segment>
 <pinref part="PSW" gate="G$1" pin="IN@1"/>
 <pinref part="P+41" gate="1" pin="+5V"/>
-<wire x1="68.58" y1="35.56" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="45.72" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C173" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="66.04" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
@@ -25749,7 +25752,7 @@ Differential impedance</text>
 <net name="N$65" class="0">
 <segment>
 <pinref part="PSW" gate="G$1" pin="!FLAG!@4"/>
-<wire x1="68.58" y1="20.32" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="XIO" gate="-USB" pin="PD7@C11"/>
 <pinref part="R119" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="35.56" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
