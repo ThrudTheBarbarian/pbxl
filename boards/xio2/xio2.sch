@@ -21239,7 +21239,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21248,7 +21248,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21257,7 +21257,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21266,7 +21266,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21275,7 +21275,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21284,7 +21284,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21293,7 +21293,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21302,7 +21302,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
@@ -21313,7 +21313,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21322,7 +21322,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21331,7 +21331,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21340,7 +21340,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="10uF">
 <spice>
@@ -21358,7 +21358,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1">
 <attribute name="NOSTUFF" value="true"/>
@@ -21481,7 +21481,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C90" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21490,7 +21490,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C91" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21499,7 +21499,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C92" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21508,7 +21508,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY72" library="supply2" deviceset="GND" device=""/>
 <part name="+3V25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -21520,7 +21520,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SERIAL0" library="SparkFun" deviceset="DB9" device="" value="9-way D">
 <attribute name="USE" value="D09P33E4GX00LF"/>
@@ -21655,7 +21655,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="Y2" library="microbuilder" deviceset="CRYSTAL" device="THIN" value="FA-238 25.0000MB-K3">
@@ -21688,7 +21688,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="2.2uF">
 <spice>
@@ -21776,7 +21776,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21785,7 +21785,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21794,7 +21794,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 <part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="33R">
@@ -21832,7 +21832,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="C54" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
@@ -21842,7 +21842,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
@@ -21853,7 +21853,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY47" library="supply2" deviceset="GND" device=""/>
 <part name="C56" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
@@ -21863,7 +21863,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="C81" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
@@ -21873,7 +21873,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C134" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21882,7 +21882,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="R53" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="0R">
 <spice>
@@ -21949,7 +21949,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY54" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME10" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -21960,7 +21960,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C168" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21969,7 +21969,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C169" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21978,7 +21978,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C170" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21987,7 +21987,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C171" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21996,7 +21996,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C172" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22005,7 +22005,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="+3V67" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY124" library="supply2" deviceset="GND" device=""/>
@@ -22073,7 +22073,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22082,7 +22082,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22091,7 +22091,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22100,7 +22100,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22109,7 +22109,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22118,7 +22118,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
@@ -22448,7 +22448,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="R54" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="2.4K">
 <spice>
@@ -22496,7 +22496,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY44" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME15" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -22574,7 +22574,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C62" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22583,7 +22583,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C63" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22592,7 +22592,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C64" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22601,7 +22601,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="+3V38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY64" library="supply2" deviceset="GND" device=""/>
@@ -22612,7 +22612,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C68" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22621,7 +22621,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C69" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22630,7 +22630,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C70" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22639,7 +22639,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C71" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22648,7 +22648,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY65" library="supply2" deviceset="GND" device=""/>
 <part name="C72" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
@@ -22658,7 +22658,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="P+25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.47uF">
@@ -22752,7 +22752,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C97" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="1uF">
 <spice>
@@ -22798,7 +22798,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY84" library="supply2" deviceset="GND" device=""/>
 <part name="C99" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="2.2uF">
@@ -23104,7 +23104,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C60" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23113,7 +23113,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C66" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23122,7 +23122,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C67" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23131,7 +23131,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C88" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23140,7 +23140,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C100" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23149,7 +23149,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="+3V51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY86" library="supply2" deviceset="GND" device=""/>
@@ -23424,7 +23424,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY115" library="supply2" deviceset="GND" device=""/>
 <part name="EXPANSION" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X6" device="" package3d_urn="urn:adsk.eagle:package:22474/2">
@@ -23685,7 +23685,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C87" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23694,7 +23694,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C113" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23703,7 +23703,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C114" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23712,7 +23712,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C115" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23721,7 +23721,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C116" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23730,7 +23730,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C117" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23739,7 +23739,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C118" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23748,7 +23748,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C119" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23757,7 +23757,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C120" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23766,7 +23766,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C121" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23775,7 +23775,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C122" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23784,7 +23784,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C123" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23793,7 +23793,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C124" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23802,7 +23802,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C125" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23811,7 +23811,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C126" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23820,7 +23820,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C127" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23829,7 +23829,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C128" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23838,7 +23838,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C129" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23847,7 +23847,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C130" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23856,7 +23856,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C131" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23865,7 +23865,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C132" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23874,7 +23874,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C133" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23883,7 +23883,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="C138" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -23892,7 +23892,7 @@ molded</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="+3V33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY42" library="supply2" deviceset="GND" device=""/>
