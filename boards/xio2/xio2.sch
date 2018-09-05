@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -10496,25 +10496,6 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
 <smd name="TAB" x="0" y="0" dx="4.55" dy="3.32" layer="1"/>
 </package>
-<package name="L5650M" urn="urn:adsk.eagle:footprint:22989/1" locally_modified="yes">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-molded</description>
-<wire x1="-2.973" y1="2.983" x2="2.973" y2="2.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-2.983" x2="-2.973" y2="-2.983" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-2.983" x2="-2.973" y2="2.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="2.983" x2="2.973" y2="-2.983" width="0.0508" layer="39"/>
-<wire x1="-2.64" y1="-2.74" x2="2.64" y2="-2.74" width="0.1524" layer="51"/>
-<wire x1="2.64" y1="2.74" x2="-2.64" y2="2.74" width="0.1524" layer="51"/>
-<wire x1="2.7" y1="2.032" x2="2.7" y2="-2.032" width="0.1524" layer="51"/>
-<wire x1="-2.7" y1="2.032" x2="-2.7" y2="-2.032" width="0.1524" layer="51"/>
-<wire x1="-2.64" y1="2.74" x2="-2.64" y2="-2.74" width="0.1524" layer="51"/>
-<wire x1="2.64" y1="2.74" x2="2.64" y2="-2.74" width="0.1524" layer="51"/>
-<smd name="1" x="-1.655" y="0" dx="1.18" dy="4.7" layer="1"/>
-<smd name="2" x="1.655" y="0" dx="1.18" dy="4.7" layer="1"/>
-<text x="-1.905" y="3.175" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
 <package name="L0603">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
 molded</description>
@@ -10792,22 +10773,6 @@ Fixed/Adjustable Current‐Limiting Power‐Distribution Switches</description>
 <connect gate="G$1" pin="SW@14" pad="14"/>
 <connect gate="G$1" pin="SW@15" pad="15"/>
 <connect gate="G$1" pin="SW@16" pad="16"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="XAL5030-601MEB">
-<gates>
-<gate name="G$1" symbol="L-EU" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="L5650M">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -21183,6 +21148,56 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="sjg-inductor">
+<packages>
+<package name="L686X647">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
+molded</description>
+<wire x1="-4.173" y1="3.383" x2="4.273" y2="3.383" width="0.0508" layer="39"/>
+<wire x1="4.273" y1="-3.383" x2="-4.173" y2="-3.383" width="0.0508" layer="39"/>
+<wire x1="-4.173" y1="-3.383" x2="-4.173" y2="3.383" width="0.0508" layer="39"/>
+<wire x1="4.273" y1="3.383" x2="4.273" y2="-3.383" width="0.0508" layer="39"/>
+<wire x1="-3.43" y1="-3.235" x2="3.43" y2="-3.235" width="0.1524" layer="51"/>
+<wire x1="3.43" y1="3.235" x2="-3.43" y2="3.235" width="0.1524" layer="51"/>
+<wire x1="3.5" y1="2.132" x2="3.5" y2="-1.932" width="0.1524" layer="51"/>
+<wire x1="-3.5" y1="2.032" x2="-3.5" y2="-2.032" width="0.1524" layer="51"/>
+<wire x1="-3.43" y1="3.235" x2="-3.43" y2="-3.235" width="0.1524" layer="51"/>
+<wire x1="3.43" y1="3.235" x2="3.43" y2="-3.235" width="0.1524" layer="51"/>
+<smd name="1" x="-2.921" y="0" dx="2.413" dy="3.429" layer="1"/>
+<smd name="2" x="2.921" y="0" dx="2.413" dy="3.429" layer="1"/>
+<text x="-3.105" y="3.975" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.305" y="-4.945" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+</package>
+</packages>
+<symbols>
+<symbol name="L-EU">
+<text x="-1.4986" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.302" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.016" y1="-3.556" x2="1.016" y2="3.556" layer="94"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IHLP2525EZERR56M01">
+<gates>
+<gate name="G$1" symbol="L-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L686X647">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21640,7 +21655,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="Y2" library="microbuilder" deviceset="CRYSTAL" device="THIN" value="FA-238 25.0000MB-K3">
@@ -21945,7 +21960,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C168" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21954,7 +21969,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C169" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21963,7 +21978,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C170" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21972,7 +21987,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C171" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21981,7 +21996,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C172" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -21990,7 +22005,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="+3V67" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY124" library="supply2" deviceset="GND" device=""/>
@@ -22017,7 +22032,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R61A104ME15D"/>
+<attribute name="USE" value="CL03A105MP3ZSNH"/>
 </part>
 <part name="SUPPLY127" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME21" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
@@ -22058,7 +22073,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22067,7 +22082,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22076,7 +22091,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22085,7 +22100,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22094,7 +22109,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -22103,7 +22118,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155C80J106ME11D"/>
+<attribute name="USE" value="GRM033R61A104ME15D"/>
 </part>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
@@ -22512,7 +22527,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM155R60J475ME87D"/>
+<attribute name="USE" value="GRM033R60J474KE90D"/>
 </part>
 <part name="C59" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="4.7uF">
 <spice>
@@ -22746,7 +22761,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="GRM033R60J105MEA2D"/>
+<attribute name="USE" value="CL03A105MP3ZSNH"/>
 </part>
 <part name="R71" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="4.7K">
 <spice>
@@ -23550,7 +23565,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="RMCF0402JT47K0"/>
+<attribute name="USE" value="RMCF0201JT47K0"/>
 </part>
 <part name="R126" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="47K">
 <spice>
@@ -23559,7 +23574,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="RMCF0402JT47K0"/>
+<attribute name="USE" value="RMCF0201JT47K0"/>
 </part>
 <part name="R127" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="47K">
 <spice>
@@ -23568,7 +23583,7 @@ Source: www.kingbright.com</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="RMCF0402JT47K0"/>
+<attribute name="USE" value="RMCF0201JT47K0"/>
 </part>
 <part name="SUPPLY119" library="supply2" deviceset="GND" device=""/>
 <part name="R128" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="1K">
@@ -23891,35 +23906,32 @@ Source: www.kingbright.com</description>
 <attribute name="USE" value="LM21212MHX-2/NOPB"/>
 </part>
 <part name="P+35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="L2" library="sjg-power" deviceset="XAL5030-601MEB" device="" value="600mH">
-<attribute name="USE" value="XAL5030-601ME"/>
-</part>
-<part name="C139" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C2012" package3d_urn="urn:adsk.eagle:package:23625/2" value="33uF">
+<part name="C139" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="47uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="C2012X5R1A336M125AC"/>
+<attribute name="USE" value="GRM32ER60J476ME20L"/>
 </part>
-<part name="C140" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C2012" package3d_urn="urn:adsk.eagle:package:23625/2" value="33uF">
+<part name="C140" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="47uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="C2012X5R1A336M125AC"/>
+<attribute name="USE" value="GRM32ER60J476ME20L"/>
 </part>
-<part name="C141" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C2012" package3d_urn="urn:adsk.eagle:package:23625/2" value="33uF">
+<part name="C141" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="47uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="USE" value="C2012X5R1A336M125AC"/>
+<attribute name="USE" value="GRM32ER60J476ME20L"/>
 </part>
 <part name="R133" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10.5R">
 <spice>
@@ -24175,6 +24187,9 @@ Source: www.kingbright.com</description>
 </part>
 <part name="PEXT_33" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X2" device="" package3d_urn="urn:adsk.eagle:package:22455/2">
 <attribute name="NOSTUFF" value="true"/>
+</part>
+<part name="L2" library="sjg-inductor" deviceset="IHLP2525EZERR56M01" device="" value="560nH">
+<attribute name="USE" value="IHLP2525EZERR56M01"/>
 </part>
 </parts>
 <sheets>
@@ -32942,7 +32957,7 @@ GND</text>
 <sheet>
 <description>FPGA power supplies</description>
 <plain>
-<text x="-139.7" y="7.62" size="1.778" layer="97">C139
+<text x="-170.18" y="12.7" size="1.778" layer="97">C139
 C140
 C141
 C142
@@ -32958,11 +32973,11 @@ R137
 R138
 R139
 L2</text>
-<text x="-139.7" y="53.34" size="1.778" layer="94">Recommended Parts</text>
-<wire x1="-142.24" y1="58.42" x2="-142.24" y2="5.08" width="0.1524" layer="97"/>
-<wire x1="-142.24" y1="5.08" x2="-99.06" y2="5.08" width="0.1524" layer="97"/>
-<wire x1="-99.06" y1="5.08" x2="-99.06" y2="58.42" width="0.1524" layer="97"/>
-<wire x1="-99.06" y1="58.42" x2="-142.24" y2="58.42" width="0.1524" layer="97"/>
+<text x="-170.18" y="58.42" size="1.778" layer="94">Recommended Parts</text>
+<wire x1="-172.72" y1="63.5" x2="-172.72" y2="10.16" width="0.1524" layer="97"/>
+<wire x1="-172.72" y1="10.16" x2="-129.54" y2="10.16" width="0.1524" layer="97"/>
+<wire x1="-129.54" y1="10.16" x2="-129.54" y2="63.5" width="0.1524" layer="97"/>
+<wire x1="-129.54" y1="63.5" x2="-172.72" y2="63.5" width="0.1524" layer="97"/>
 <wire x1="-182.88" y1="-10.16" x2="-20.32" y2="-10.16" width="0.1524" layer="94" style="shortdash"/>
 <text x="132.08" y="-58.42" size="1.778" layer="97">C11
 C12
@@ -32991,6 +33006,8 @@ All regulators are stable with ceramic caps</text>
 <wire x1="-172.72" y1="83.82" x2="-172.72" y2="121.92" width="0.1524" layer="97"/>
 <text x="-170.18" y="86.36" size="1.778" layer="97">R131 and R130 ought to be at
 least 1%, preferably 0.1% resistors</text>
+<text x="12.7" y="116.84" size="1.778" layer="94">Change C139,C140,C141 to 47uF (C146)
+Change L2 to 560nH (IHLP2525EZERR56M01)</text>
 </plain>
 <instances>
 <instance part="FRAME18" gate="G$1" x="-187.96" y="-129.54"/>
@@ -32998,55 +33015,52 @@ least 1%, preferably 0.1% resistors</text>
 <attribute name="USE" x="27.94" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+35" gate="1" x="-58.42" y="111.76"/>
-<instance part="L2" gate="G$1" x="91.44" y="96.52" rot="R270">
-<attribute name="USE" x="-132.08" y="7.62" size="1.778" layer="96"/>
-</instance>
 <instance part="C139" gate="G$1" x="-58.42" y="83.82">
-<attribute name="USE" x="-132.08" y="47.752" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="52.832" size="1.778" layer="96"/>
 </instance>
 <instance part="C140" gate="G$1" x="-45.72" y="83.82">
-<attribute name="USE" x="-132.08" y="42.164" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="47.244" size="1.778" layer="96"/>
 <attribute name="SPICEPREFIX" x="-45.72" y="83.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C141" gate="G$1" x="-33.02" y="83.82">
-<attribute name="USE" x="-132.08" y="45.212" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="50.292" size="1.778" layer="96"/>
 </instance>
 <instance part="R133" gate="G$1" x="-17.78" y="76.2" rot="R90">
-<attribute name="USE" x="-132.08" y="26.162" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="31.242" size="1.778" layer="96"/>
 </instance>
 <instance part="C142" gate="G$1" x="-17.78" y="55.88">
-<attribute name="USE" x="-132.08" y="39.624" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="44.704" size="1.778" layer="96"/>
 </instance>
 <instance part="R134" gate="G$1" x="5.08" y="20.32" rot="R90">
-<attribute name="USE" x="-132.08" y="23.622" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="28.702" size="1.778" layer="96"/>
 </instance>
 <instance part="C143" gate="G$1" x="83.82" y="53.34" rot="R90">
-<attribute name="USE" x="-132.08" y="36.83" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="41.91" size="1.778" layer="96"/>
 </instance>
 <instance part="C144" gate="G$1" x="93.98" y="43.18" rot="R90">
-<attribute name="USE" x="-132.08" y="34.29" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="39.37" size="1.778" layer="96"/>
 </instance>
 <instance part="R135" gate="G$1" x="106.68" y="53.34" rot="R180">
-<attribute name="USE" x="-132.08" y="20.828" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="25.908" size="1.778" layer="96"/>
 </instance>
 <instance part="R136" gate="G$1" x="127" y="81.28" rot="R270">
-<attribute name="USE" x="-132.08" y="18.288" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="23.368" size="1.778" layer="96"/>
 </instance>
 <instance part="R137" gate="G$1" x="127" y="30.48" rot="R270">
-<attribute name="USE" x="-132.08" y="15.494" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="20.574" size="1.778" layer="96"/>
 </instance>
 <instance part="C145" gate="G$1" x="139.7" y="86.36">
-<attribute name="USE" x="-132.08" y="31.75" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="36.83" size="1.778" layer="96"/>
 </instance>
 <instance part="R138" gate="G$1" x="139.7" y="68.58" rot="R270">
-<attribute name="USE" x="-132.08" y="12.954" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="18.034" size="1.778" layer="96"/>
 <attribute name="SPICEPREFIX" x="139.7" y="68.58" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C146" gate="G$1" x="154.94" y="83.82">
-<attribute name="USE" x="-132.08" y="28.956" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="34.036" size="1.778" layer="96"/>
 </instance>
 <instance part="R139" gate="G$1" x="66.04" y="30.48" rot="R270">
-<attribute name="USE" x="-132.08" y="10.16" size="1.778" layer="96"/>
+<attribute name="USE" x="-162.56" y="15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY122" gate="GND" x="35.56" y="2.54"/>
 <instance part="+3V49" gate="G$1" x="154.94" y="111.76" smashed="yes">
@@ -33119,6 +33133,9 @@ least 1%, preferably 0.1% resistors</text>
 </instance>
 <instance part="PEXT_33" gate="A" x="167.64" y="101.6">
 <attribute name="NOSTUFF" x="165.1" y="96.52" size="1.778" layer="96" display="name"/>
+</instance>
+<instance part="L2" gate="G$1" x="91.44" y="96.52" rot="R90">
+<attribute name="USE" x="-162.56" y="12.7" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -33203,7 +33220,6 @@ least 1%, preferably 0.1% resistors</text>
 <net name="SW_OUT" class="0">
 <segment>
 <pinref part="VREG_33" gate="G$1" pin="SW@11"/>
-<pinref part="L2" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="VREG_33" gate="G$1" pin="SW@12"/>
 <wire x1="58.42" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
@@ -33226,11 +33242,11 @@ least 1%, preferably 0.1% resistors</text>
 <wire x1="48.26" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="83.82" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
 <junction x="58.42" y="86.36"/>
+<pinref part="L2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+3V3" class="9">
 <segment>
-<pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="96.52" x2="127" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="127" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="96.52" x2="154.94" y2="96.52" width="0.1524" layer="91"/>
@@ -33259,6 +33275,7 @@ least 1%, preferably 0.1% resistors</text>
 <pinref part="PEXT_33" gate="A" pin="4"/>
 <wire x1="170.18" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
 <junction x="162.56" y="101.6"/>
+<pinref part="L2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$113" class="0">
