@@ -1,0 +1,36 @@
+	MOVI #0, , a
+	MOVI #90, , b
+	MOVI #0, , res
+	MOVI #5, , a
+while_1:
+	JMPNZ a, , stat_while_1
+	JMP , ,end_while_1
+stat_while_1:
+	SUBI #1, a, a
+	JMP , ,while_1
+end_while_1:
+while_2:
+	JMPNZ #1, , stat_while_2
+	JMP , ,end_while_2
+stat_while_2:
+	SUBI b, 3, b
+	JMPLT b, #0, if_1
+	JMP , , end_if_1
+if_1:
+	JMP , ,end_while_2
+end_if_1:
+	JMP , ,while_2
+end_while_2:
+while_3:
+	CMPIGT a, #0, TEMPI1
+	CMPILT a, #10, TEMPI2
+	CMPNZ TEMPI1, , TEMPI3
+	CMPNZ TEMPI2, , TEMPI4
+	ANDL TEMPI3, TEMPI4, TEMPI5
+	JMPNZ TEMPI5, , stat_while_3
+	JMP , ,end_while_3
+stat_while_3:
+	MULTI a, b, TEMPI1
+	MOVI TEMPI1, , res
+	JMP , ,while_3
+end_while_3:

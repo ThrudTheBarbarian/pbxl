@@ -1,0 +1,6 @@
+
+local scope 0, parent scope 0 e maximum scope 0
+local scope 1, parent scope 0 e maximum scope 1
+local scope 2, parent scope 1 e maximum scope 2
+local scope 3, parent scope 1 e maximum scope 3
+local scope 4, parent scope 1 e maximum scope 4
