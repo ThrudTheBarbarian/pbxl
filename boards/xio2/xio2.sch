@@ -22679,7 +22679,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 </part>
 <part name="FRAME12" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FPGA_CFG" library="microbuilder" deviceset="SPIFLASH_SOIC8" device="" value="W25Q80DVSNIG">
-<attribute name="USE" value="MX25L3206EM2I-12G"/>
+<attribute name="USE" value="MT25QU128ABA1ESE-0SIT TR"/>
 </part>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 <part name="+3V27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
