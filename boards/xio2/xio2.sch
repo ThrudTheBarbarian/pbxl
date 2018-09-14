@@ -28897,6 +28897,7 @@ Differential impedance</text>
 <description>LTDC VGA</description>
 <plain>
 <text x="153.67" y="-109.22" size="2.1844" layer="94">LCD to VGA</text>
+<text x="-35.56" y="-139.7" size="1.778" layer="94">Use MAX4382EUD as op-amp. Cheaper.</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="-190.5" y="-129.54"/>
