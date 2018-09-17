@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -30701,26 +30701,23 @@ voltage-rated</text>
 Logic high input = 2v
 Transition time  = 10ns, or 100MHz
 </text>
-<text x="-73.66" y="-81.28" size="1.778" layer="94">Octal Buffer stats</text>
+<text x="-73.66" y="-81.28" size="1.778" layer="94">Octal Buffer notes</text>
 <wire x1="-76.2" y1="-76.2" x2="-27.94" y2="-76.2" width="0.1524" layer="97"/>
 <wire x1="-27.94" y1="-76.2" x2="-27.94" y2="-93.98" width="0.1524" layer="97"/>
 <wire x1="-27.94" y1="-93.98" x2="-76.2" y2="-93.98" width="0.1524" layer="97"/>
 <wire x1="-76.2" y1="-93.98" x2="-76.2" y2="-76.2" width="0.1524" layer="97"/>
-<text x="139.7" y="35.56" size="1.778" layer="97">Output impedance 
+<text x="48.26" y="17.78" size="1.778" layer="97">MAX4382 b/w is 210 MHz at -3dB
+  - signal freq is 25MHz -&gt; 75MHz
+
+MAX4382 output impedance 
   = 5R at 25 MHz
   = 9R at 75 MHz
   =&gt; use 75-7 = 68R resistor</text>
-<text x="139.7" y="48.26" size="1.778" layer="94">Setting output impedance</text>
-<wire x1="137.16" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="97"/>
-<wire x1="177.8" y1="53.34" x2="177.8" y2="33.02" width="0.1524" layer="97"/>
-<wire x1="177.8" y1="33.02" x2="137.16" y2="33.02" width="0.1524" layer="97"/>
-<wire x1="137.16" y1="33.02" x2="137.16" y2="53.34" width="0.1524" layer="97"/>
-<text x="48.26" y="33.02" size="1.778" layer="97">MAX4382 b/w is 210 MHz at -3dB</text>
-<text x="48.26" y="38.1" size="1.778" layer="94">Op-Amp stats</text>
+<text x="48.26" y="38.1" size="1.778" layer="94">Op-Amp notes</text>
 <wire x1="45.72" y1="43.18" x2="91.44" y2="43.18" width="0.1524" layer="97"/>
-<wire x1="91.44" y1="43.18" x2="91.44" y2="30.48" width="0.1524" layer="97"/>
-<wire x1="91.44" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="97"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="43.18" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="43.18" x2="91.44" y2="15.24" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="97"/>
+<wire x1="45.72" y1="15.24" x2="45.72" y2="43.18" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="-190.5" y="-129.54"/>
