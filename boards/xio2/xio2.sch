@@ -22412,6 +22412,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </class>
 <class number="11" name="spi" width="0" drill="0">
 </class>
+<class number="12" name="xspi5" width="0" drill="0">
+</class>
+<class number="13" name="xspi6" width="0" drill="0">
+</class>
+<class number="14" name="qspi" width="0.2032" drill="0">
+</class>
 </classes>
 <parts>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
@@ -27248,7 +27254,7 @@ Sends IRQ when bus is valid to read/write</text>
 <pinref part="XIO" gate="-SPI" pin="PG11@B9"/>
 </segment>
 </net>
-<net name="XSPI6_SCK_R" class="11">
+<net name="XSPI6_SCK_R" class="0">
 <segment>
 <pinref part="R92" gate="G$1" pin="1"/>
 <wire x1="-83.82" y1="73.66" x2="-106.68" y2="73.66" width="0.1524" layer="91"/>
@@ -27256,7 +27262,7 @@ Sends IRQ when bus is valid to read/write</text>
 <pinref part="XIO" gate="-XSPI" pin="PG13@D9"/>
 </segment>
 </net>
-<net name="XSPI6_MOSI_R" class="11">
+<net name="XSPI6_MOSI_R" class="0">
 <segment>
 <pinref part="R93" gate="G$1" pin="1"/>
 <wire x1="-83.82" y1="68.58" x2="-106.68" y2="68.58" width="0.1524" layer="91"/>
@@ -27271,7 +27277,7 @@ Sends IRQ when bus is valid to read/write</text>
 <pinref part="XIO" gate="-SPI" pin="PH3@P2"/>
 </segment>
 </net>
-<net name="XSPI5_MISO_R" class="11">
+<net name="XSPI5_MISO_R" class="0">
 <segment>
 <pinref part="R91" gate="G$1" pin="1"/>
 <wire x1="-83.82" y1="91.44" x2="-106.68" y2="91.44" width="0.1524" layer="91"/>
@@ -27500,7 +27506,7 @@ Sends IRQ when bus is valid to read/write</text>
 <pinref part="XIO" gate="-HOST" pin="PC2@M3"/>
 </segment>
 </net>
-<net name="XSPI5_SCK" class="11">
+<net name="XSPI5_SCK" class="12">
 <segment>
 <wire x1="-50.8" y1="96.52" x2="-53.34" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="93.98" x2="-106.68" y2="93.98" width="0.1524" layer="91"/>
@@ -27514,7 +27520,7 @@ Sends IRQ when bus is valid to read/write</text>
 <label x="-45.72" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XSPI5_MISO" class="11">
+<net name="XSPI5_MISO" class="12">
 <segment>
 <pinref part="R91" gate="G$1" pin="2"/>
 <wire x1="-50.8" y1="93.98" x2="-53.34" y2="91.44" width="0.1524" layer="91"/>
@@ -27528,7 +27534,7 @@ Sends IRQ when bus is valid to read/write</text>
 <label x="-45.72" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XSPI5_MOSI" class="11">
+<net name="XSPI5_MOSI" class="12">
 <segment>
 <wire x1="-50.8" y1="91.44" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="88.9" x2="-106.68" y2="88.9" width="0.1524" layer="91"/>
@@ -27542,7 +27548,7 @@ Sends IRQ when bus is valid to read/write</text>
 <label x="-45.72" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XSPI6_SCK" class="11">
+<net name="XSPI6_SCK" class="13">
 <segment>
 <pinref part="R92" gate="G$1" pin="2"/>
 <wire x1="-50.8" y1="76.2" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
@@ -27556,7 +27562,7 @@ Sends IRQ when bus is valid to read/write</text>
 <label x="-45.72" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XSPI6_MISO" class="11">
+<net name="XSPI6_MISO" class="13">
 <segment>
 <wire x1="-50.8" y1="73.66" x2="-53.34" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="71.12" x2="-106.68" y2="71.12" width="0.1524" layer="91"/>
@@ -27570,7 +27576,7 @@ Sends IRQ when bus is valid to read/write</text>
 <label x="-45.72" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XSPI6_MOSI" class="11">
+<net name="XSPI6_MOSI" class="13">
 <segment>
 <pinref part="R93" gate="G$1" pin="2"/>
 <wire x1="-50.8" y1="71.12" x2="-53.34" y2="68.58" width="0.1524" layer="91"/>
@@ -36413,7 +36419,7 @@ Master SPI : Set M[2:0] to 001</text>
 <label x="-43.18" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="5">
+<net name="N$4" class="14">
 <segment>
 <pinref part="FPGA_CFG" gate="G$1" pin="SCK"/>
 <wire x1="137.16" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
@@ -36422,7 +36428,7 @@ Master SPI : Set M[2:0] to 001</text>
 <wire x1="127" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$62" class="5">
+<net name="N$62" class="14">
 <segment>
 <pinref part="FPGA_CFG" gate="G$1" pin="MOSI"/>
 <wire x1="137.16" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
@@ -36431,7 +36437,7 @@ Master SPI : Set M[2:0] to 001</text>
 <wire x1="124.46" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$63" class="5">
+<net name="N$63" class="14">
 <segment>
 <pinref part="FPGA_CFG" gate="G$1" pin="MISO"/>
 <wire x1="137.16" y1="20.32" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
@@ -36440,7 +36446,7 @@ Master SPI : Set M[2:0] to 001</text>
 <wire x1="121.92" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$66" class="5">
+<net name="N$66" class="14">
 <segment>
 <pinref part="FPGA_CFG" gate="G$1" pin="SSEL"/>
 <wire x1="137.16" y1="17.78" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
@@ -36449,7 +36455,7 @@ Master SPI : Set M[2:0] to 001</text>
 <wire x1="121.92" y1="15.24" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$67" class="5">
+<net name="N$67" class="14">
 <segment>
 <pinref part="FPGA_CFG" gate="G$1" pin="#WP/IO2"/>
 <wire x1="137.16" y1="15.24" x2="124.46" y2="15.24" width="0.1524" layer="91"/>
@@ -36458,7 +36464,7 @@ Master SPI : Set M[2:0] to 001</text>
 <wire x1="124.46" y1="5.08" x2="116.84" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$68" class="5">
+<net name="N$68" class="14">
 <segment>
 <pinref part="FPGA_CFG" gate="G$1" pin="#HOLD/IO3"/>
 <wire x1="137.16" y1="12.7" x2="127" y2="12.7" width="0.1524" layer="91"/>
@@ -38493,7 +38499,7 @@ board mount</text>
 <pinref part="XC7S25" gate="-BANK34" pin="IO_L20P_T3_34@P2"/>
 </segment>
 </net>
-<net name="XSPI5_MOSI" class="11">
+<net name="XSPI5_MOSI" class="12">
 <segment>
 <wire x1="-106.68" y1="-91.44" x2="-104.14" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-88.9" x2="-81.28" y2="-88.9" width="0.1524" layer="91"/>
@@ -38502,7 +38508,7 @@ board mount</text>
 <label x="-101.6" y="-88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XSPI5_MISO" class="11">
+<net name="XSPI5_MISO" class="12">
 <segment>
 <wire x1="-106.68" y1="-93.98" x2="-104.14" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-91.44" x2="-81.28" y2="-91.44" width="0.1524" layer="91"/>
@@ -38515,7 +38521,7 @@ board mount</text>
 <pinref part="XC7S25" gate="-BANK34" pin="IO_L21N_T3_DQS_34@P3"/>
 </segment>
 </net>
-<net name="XSPI5_SCK" class="11">
+<net name="XSPI5_SCK" class="12">
 <segment>
 <wire x1="-106.68" y1="-96.52" x2="-104.14" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-93.98" x2="-78.74" y2="-93.98" width="0.1524" layer="91"/>
@@ -38525,7 +38531,7 @@ board mount</text>
 <label x="-101.6" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XSPI6_MOSI" class="11">
+<net name="XSPI6_MOSI" class="13">
 <segment>
 <wire x1="-106.68" y1="-104.14" x2="-104.14" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-101.6" x2="-63.5" y2="-101.6" width="0.1524" layer="91"/>
@@ -38536,7 +38542,7 @@ board mount</text>
 <pinref part="XC7S25" gate="-BANK34" pin="IO_L20N_T3_34@N1"/>
 </segment>
 </net>
-<net name="XSPI6_MISO" class="11">
+<net name="XSPI6_MISO" class="13">
 <segment>
 <wire x1="-106.68" y1="-106.68" x2="-104.14" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-104.14" x2="-60.96" y2="-104.14" width="0.1524" layer="91"/>
@@ -38545,7 +38551,7 @@ board mount</text>
 <label x="-101.6" y="-104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XSPI6_SCK" class="11">
+<net name="XSPI6_SCK" class="13">
 <segment>
 <wire x1="-106.68" y1="-109.22" x2="-104.14" y2="-106.68" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-106.68" x2="-58.42" y2="-106.68" width="0.1524" layer="91"/>
