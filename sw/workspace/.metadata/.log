@@ -1,0 +1,16 @@
+!SESSION 2018-12-13 09:20:44.568 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -pluginCustomization ../Eclipse/configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -keyring /Users/simon/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -pluginCustomization ../Eclipse/configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -keyring /Users/simon/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-12-13 09:21:02.768
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-12-13 09:21:08.030
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-13 09:23:28.574
+!MESSAGE Indexed 'arm' (52 sources, 114 headers) in 5.45 sec: 12,644 declarations; 94,523 references; 0 unresolved inclusions; 116 syntax errors; 0 unresolved names (0%)
