@@ -1,0 +1,19 @@
+Basic idea is a 2D double-buffered framebuffer, with a windowing system sitting
+on top, that writes to the back-buffer.
+
+Need 2 tasks (or possibly combine into 1 for speed)
+
+1) Framebuffer:
+	- Has primitives for line, rect, fill etc
+	- Uses DMA2D for scaling and blit
+	- Based on (a) or (b)
+
+2) WindowServer
+	- Higher level of abstraction, provides windows, menus, pointer etc.
+	- Calls through to Framebuffer to ger-er-done
+	- Always writes to back-buffer
+	
+	
+a:https://stm32f4-discovery.net/2015/01/library-51-chrom-art-accelerator-dma2d-graphic-library-on-stm32f429-discovery/
+b:http://www.ferzkopp.net/wordpress/2016/01/02/sdl_gfx-sdl2_gfx/
+

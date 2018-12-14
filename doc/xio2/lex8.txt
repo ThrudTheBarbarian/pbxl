@@ -1,0 +1,264 @@
+Lex8 language
+
+Literals:
+	65535		decimal
+	$123a		hex
+	“chars”		string
+
+	- can use _ within number literals (hex, dec)
+
+Terminators:
+	- Statements are terminated with a ; character
+
+Comments:	
+	- Use // to indicate comment to end of line
+	- Use /* … */ for multi-line comments
+
+Identifiers:
+	- Must start with letter
+	- Can contain ‘ or _  or letters or numbers
+
+Blocks:
+	- square brackets block:			if x then [ a = 4; b = 5; ]
+	
+	- indent blocks must have next line indented more, and last until indent decreases
+	- indent block					if x then
+									a = 4;
+									b = 5;
+
+Built-in Types:
+	u8, s8		: unsigned, signed 8-bit integer
+	u16,s16		: unsigned, signed 16-bit integer
+	u32,s32		: unsigned, signed 32-bit integer
+	float			: 4-byte IEEE float
+	ptr			: 2-byte pointer
+
+Sequences:
+	defined as <number>..<number>
+
+Variable declaration:
+	<qualifier> <type> <name> [@ address]  [(sequence [,sequence])] [= value [,value[,…]]]
+		- type must be a predefined type or a user-defined type
+		- name must follow identifier rule above
+		- optional [@address] allows variable to be located at a given address, usually to alias to hardware
+		- 1D arrays are defined by a single round bracket, number, close bracket
+		- 2D arrays are defined by a single round bracket, number, comma, number, close bracket
+		- optional value list
+
+variable qualifiers:
+	const		: variable is read-only - can contain compile-time expression though
+	volatile		: variable access should not be optimised
+
+variable assignment:
+	x 	= y;		: any down-shift in storage will be a warning, inc signed/unsigned. Upshift (8-bit to 16-bit) ok
+	x,y	= 2,3	: number of bytes copied defined by variables
+	x,y	= cursor	: As long as bytes to copy = same on both sides, this will work
+
+enumerations:
+	enum <type> <name> = <block>
+
+classes:
+	class <name> = <block>
+
+	- variable declarations within the class scope will become instance-vars
+	- function declarations within the class are available as <name>.<function-name>
+	- variable declarations within the class are available as <name>.<instance-name>
+	- all instance-vars for every instance of a given class are stored in the function-RAM area, shared with the code.
+
+operators:
+	In precedence:
+		( )		: parentheses
+		* / %		: multiply, divide, modulus
+		+ -		: add, subtract
+		&		: bitwise and
+		| ^		: bitwise or, xor
+
+conditions:
+	In precedence
+		not				: logical not
+		&& ||			: logical and, or
+		== <> < > <= >=	: equals, not equal to, less than, greater than, less-than-or-equal-to, greater-than-or-equal-to
+		
+		logical ops are evaluated using short-circuit evaluation
+
+conditional execution:
+	if (<condition>) [then] <block> [else if <condition> [then] <block> [else <block>]]
+	unless is the same as ‘if’ but the condition is negated
+
+		unless  x==0 dec x
+
+loop expressions:
+	for <type> <name> in <array name> <block>
+	for <type>var in <sequence>|<function-returning-two-values> <block>
+	while <expression> <block>
+	until <expression> <block>
+
+	can ‘break’ out of a loop using if <condition> break
+
+functions:
+	function|method <name>([<type> var [,<type> var2 [,…]]]) <block>
+	function|method <name> @ address(<calling spec>)
+
+	- to call a function, just call name with parameters. To call a function within a class, prepend the class name and a .
+	- functions can return values using ‘return x[,y[,…]]’
+	- all return statements in a function must have same signature
+	- limit of 16 bytes per function return
+	- function arguments can be given default values with ‘=<value>’ and the code will generate the default value if none given
+	- default values must be left-aligned
+	- variadic functions supported by passing all args on data-stack, and caller pushing arg-sizes as well as total number
+	
+
+
+Memory available:
+
+$2C .. $2D		: BASIC use
+$2F				: Spare byte
+$80 .. $CA		: BASIC use
+$CB .. $D1		: Unused
+$D2 .. $FF		: Floating point routines
+
+$480 .. $5FF		: free
+$600 .. $6FF		: (left empty)
+$2000 .. $5FFF	: main program RAM, (16K)
+$6000 .. $9FFF	: function RAM (16K)
+$A000 .. $BFFF	: data-stack RAM (8K)
+
+
+Memory use:
+
+$2C .. $2D		: Used for function call thunking
+$2F				: Used as temp register for function-page
+$80 .. $8F		: Along with X,Y. Used as parameters to function. Any more than this are spilled to the data-stack
+$90 .. $9F		: Used as function return values, up to 14 bytes of return. If more are needed, need to return pointer
+$A0 .. $BF		: Global variables.
+$C0 .. $FF		: Interrupt scope variables, or function variables, one quarter-page per function
+
+$2000 .. $5FFF	: Main program RAM, and any global vars that didn’t fit. Vars extend from $5FFF downwards, program starts
+				  at $2000.
+
+$6000 .. $9FFF	: Function RAM. Each function is allocated to start within this 16K of space, places limit on function size but
+				  this ought to be acceptable. The same register that is called to map the function data into place also maps
+				  the function itself into this space
+
+$A000 .. $BFFF	: Data-stack. Functions that don’t use the data-stack, or that can live without it for a period of time, can map
+				  other memory into this space without any other consequences
+
+There can be up to 256 functions in a program (to start with, we can make it extend to 65536 on demand), which maps the memory range from 0x100,000 to 0x500,000 in SDRAM. The peripherals get the first 1MB of RAM, leaving 27MB for frame-buffer, images etc.
+ 
+Variable assignment:
+
+Global variables get added into the 48 bytes above by LRU. Loop-vars are given a constant value (100) to count as variable use.
+
+As part of function prologue, top 64 bytes of page 0 are swapped on entry, provides a quarter-page (64 bytes) of private data for function’s use. Functions are indexed by a table, and writing a register will swap to the address in that table. Writing 0 will give you 
+the global interrupt-scope. The same register also maps the function itself into $6000…$9FFF. 
+
+Variables in the function scope area are only ever initialised once, and only then if they are declared ‘static’. Assume garbage otherwise.
+
+Parameters to functions are passed as A then X then $80..$8F then spilled onto the global data-stack. Functions that take more than 18 bytes of argument suffer this invocation penalty
+
+Applications:
+
+Apps are stored on disk as a folder.app, with each function getting a ‘.bin’ file within, so ‘main.bin’ is always there, and any other function names are stored as ‘xxx.bin’. All functions are loaded into SDRAM when the app is launched. There is a manifest.txt which shows the mapping of which function.bin to which address in SDRAM. 
+
+The compiler just creates assembly for each function with $ORG at $6000, then calls the assembler to assemble the compiler output into the .bin file. 
+
+Classes:
+
+Classes are introduced by the ‘class’ keyword, and can define instance variables, methods, and static methods. The ‘class’ statement introduces a block, which block defines the extent of the class.
+
+Example:
+
+	class Gfx
+		Colour _drawColour;
+		Colour _fillColour;
+		
+		void line(Point p1, Point p2)
+			…
+
+		void floodFill(Point p, Colour c)
+			…
+
+		void setDrawColour(Colour c)
+			_drawColour = c;
+
+	// The end of the class
+
+A class consists of:
+	- A <name>.l8 file containing the class definition,
+	- An optional <name.asm> file that is prepended to the generated assembly of any function that uses the class
+
+If there is assembly code that only needs to be in the application one time, wrap it within a ‘#ifdef MAIN_APP’ block, and this will only be included when the function ‘main’ is being output.
+
+Each class must fit within 16K, as all the methods are linked to the ‘function page’ associated with the class. This means they share function RAM and function variables (which is where i-vars are stored). Calling a method is a matter of:
+
+- push A,X,Y to 6502 stack
+- prepare function parameters into X,Y,${80..8F}
+- push the current function page onto the 6502 stack
+- write the routine address to ${2C,2D}
+- store function-page-id in A
+- call JSR to the thunk-enter routine
+-   page-swap by writing A to the function-page register
+-   JMP through indirect vector at ${2C,2D} 
+-   (routine exits via JMP to thunk-exit routine, which…)
+- pop the previous function page off the 6502 stack
+- page-swap back to that function-page
+- pop Y,X,A
+- execute RTS
+
+Calls within a class to other methods of that class are:
+
+- push A,X,Y to 6502 stack
+- prepare function parameters into X,Y,${80..8F}
+- push current function page to 6502 stack
+- JSR to routine address
+-   (routine exits via JMP to thunk-exit routine, which…)
+- pop the current function page off the 6502 stack
+- page-swap back to that function-page
+- pop Y,X,A
+- execute RTS
+
+Void function overhead 
+
+	PHA					3
+	TXA					2
+	PHA					3
+	TYA					2
+	PHA					3
+	
+	LDA #17				2
+	PHA					3
+	
+	LDA #lo				2
+	STA $2C				3
+	LDA #hi				2
+	STA $2D				3
+	
+	LDA #20				2
+	
+	JSR thunk_enter		6
+	
+
+thunk_enter:
+	STA	func_page		4
+	
+	JMP ($2C)			5
+	
+		...
+		JMP thunk_exit	6
+	
+
+thunk_exit:
+	PLA					4
+	
+	STA func_page		4
+	
+	PLA					4
+	TAY					2
+	PLA					4
+	TAX					2
+	PLA					4
+	
+	RTS					6
+	
+
+void function overhead:	81 cycles

@@ -1,0 +1,48 @@
+Do we need a real dynamic linker ?
+
+How about Framework-style libraries, 
+	
+	- contained within System/Frameworks/
+	- loaded at fixed address, known entry points
+	- header file functions are just call-to-address
+
+Typically used for things like:
+
+	- Graphics server
+		- swapBuffer()
+		- line()
+		- lineTo()
+		- blit()
+		- plot()
+		...
+	
+	- GUM (Gem Clone)
+		- VDI()
+		- GEMDOS()
+		...
+
+	- libc
+		- strlen()
+		- fopen()
+		...
+		
+
+
+Or we could implement things as tasks, and provide a header file definition for a function that sends data in a message to the task, in lieu of a function call. Definitely slower but supported by default
+
+
+Or:
+
+	- libc, graphics server, windo server all in flash with known offset
+	- system task also in flash. Runs by default
+	- creates GUI desktop shell as first task
+
+	- Apps are bundle-like application format, app-is-a-folder
+	- Contains binary, jump-table, resources folder
+	- Loadable binaries are chunked into 512KB slots, 64 slots available
+	- All non-relative jumps to within binary are tabulated to file
+	- Entry point also there
+	- patch binary with absolute 32-bit offsets on binary-load
+	- create a task that then jsr's to the entry point
+	- slots marked as empty once program exits
+	

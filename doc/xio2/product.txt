@@ -1,0 +1,12 @@
+- maybe get an Atari-ST-like box
+	- have hole cut for keyboard
+		- need PCB for keyboard, or "slot in" standard cherry keyboard -> usb
+		- use custom keycaps (b) for fn keys, placed in group-of-6 area
+		- good resource (a)
+		
+	- mountings for 1088XEL and PCIe board
+		- just use 2 sides, not need cartridge and serial could be extended
+
+
+a: https://deskthority.net/wiki/Double-shot_moulding
+b: http://www.fentek-ind.com/keys.htm#.XBQpby2ZOG4/
