@@ -14,3 +14,123 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -pluginCustomization 
 
 !ENTRY org.eclipse.cdt.core 1 0 2018-12-13 09:23:28.574
 !MESSAGE Indexed 'arm' (52 sources, 114 headers) in 5.45 sec: 12,644 declarations; 94,523 references; 0 unresolved inclusions; 116 syntax errors; 0 unresolved names (0%)
+!SESSION 2018-12-14 06:50:05.935 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -pluginCustomization ../Eclipse/configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -keyring /Users/simon/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -pluginCustomization ../Eclipse/configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -keyring /Users/simon/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-12-14 06:50:09.805
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-12-14 06:50:17.634
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-12-14 06:50:42.210
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-12-14 06:50:42.211
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.jobs 4 2 2018-12-14 06:50:44.579
+!MESSAGE An internal error occurred during: "Launching New_configuration".
+!STACK 0
+java.lang.NullPointerException
+	at fr.ac6.mcu.debug.openocd.engine.generator.MCUOpenOCDCmdGenerator.doGetRunCmd(MCUOpenOCDCmdGenerator.java:163)
+	at fr.ac6.mcu.debug.openocd.engine.generator.MCUOpenOCDCmdGenerator.getRunCmd(MCUOpenOCDCmdGenerator.java:104)
+	at fr.ac6.mcu.debug.launching.MCUGdbLaunch.createOpenOCDProcess(MCUGdbLaunch.java:196)
+	at fr.ac6.mcu.debug.launching.MCUGdbLaunch.addOpenOCDProcess(MCUGdbLaunch.java:128)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:291)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2018-12-14 06:52:40.122
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:258)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2018-12-14 06:52:40.123
+!MESSAGE Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2018-12-14 06:57:14.531
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:258)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2018-12-14 06:57:14.531
+!MESSAGE Failed to execute MI command:
+-exec-continue
+
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 1.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SESSION 2018-12-14 07:18:09.461 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -pluginCustomization ../Eclipse/configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -keyring /Users/simon/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -pluginCustomization ../Eclipse/configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -keyring /Users/simon/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-14 07:18:11.380
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2018-12-14 07:18:11.792
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-12-14 07:18:20.509
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-12-14 07:18:38.952
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-12-14 07:18:38.953
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
