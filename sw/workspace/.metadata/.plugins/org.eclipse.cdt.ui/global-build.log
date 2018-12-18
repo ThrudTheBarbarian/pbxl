@@ -1,9 +1,14 @@
-07:20:24 **** Incremental Build of configuration Debug for project arm ****
+18:04:19 **** Incremental Build of configuration Debug for project arm ****
 make all 
 Building file: ../Core/Src/main.c
 Invoking: MCU GCC Compiler
-/Users/simon/Documents/eagle/pbxl/sw/arm/Debug
-arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32H743xx -I"/Users/simon/Documents/eagle/pbxl/sw/arm/FATFS/Target" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/FATFS/App" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Core/Inc" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Drivers/STM32H7xx_HAL_Driver/Inc" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Utilities/JPEG" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FatFs/src" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32H743xx -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/FATFS/Target" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/FATFS/App" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Core/Inc" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Drivers/STM32H7xx_HAL_Driver/Inc" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Utilities/JPEG" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FatFs/src" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"/Volumes/home/simon/Documents/eagle/pbxl/sw/arm/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:879:1: warning: implicit declaration of function '_write'; did you mean 'f_write'? [-Wimplicit-function-declaration]
+ _write(NULL, "*$*$*$*", 7);
+ ^~~~~~
+ f_write
 Finished building: ../Core/Src/main.c
  
 Building target: arm.elf
@@ -16,40 +21,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "arm.elf" "arm.hex"
 arm-none-eabi-size "arm.elf"
    text	   data	    bss	    dec	    hex	filename
-  31280	     32	  19576	  50888	   c6c8	arm.elf
+  33408	    132	  19596	  53136	   cf90	arm.elf
  
-07:20:36 **** Incremental Build of configuration Debug for project arm ****
-make all 
-make: Nothing to be done for `all'.
-09:34:07 **** Incremental Build of configuration Debug for project arm ****
-make all 
-make: Nothing to be done for `all'.
-09:34:40 **** Incremental Build of configuration Debug for project arm ****
-make all 
-Building file: ../Core/Src/main.c
-Invoking: MCU GCC Compiler
-/Users/simon/Documents/eagle/pbxl/sw/arm/Debug
-arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32H743xx -I"/Users/simon/Documents/eagle/pbxl/sw/arm/FATFS/Target" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/FATFS/App" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Core/Inc" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Drivers/STM32H7xx_HAL_Driver/Inc" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Utilities/JPEG" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FatFs/src" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"/Users/simon/Documents/eagle/pbxl/sw/arm/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
-Finished building: ../Core/Src/main.c
- 
-Building target: arm.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32H743XIHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "arm.elf" @"objects.list"   -lm
-Finished building target: arm.elf
- 
-/Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory post-build
-Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "arm.elf" "arm.hex"
-arm-none-eabi-size "arm.elf"
-   text	   data	    bss	    dec	    hex	filename
-  31280	     32	  19576	  50888	   c6c8	arm.elf
- 
-10:43:50 **** Incremental Build of configuration Debug for project arm ****
-make all 
-make: Nothing to be done for `all'.
-10:44:46 **** Incremental Build of configuration Debug for project arm ****
-make all 
-make: Nothing to be done for `all'.
-10:46:21 **** Incremental Build of configuration Debug for project arm ****
+18:04:37 **** Incremental Build of configuration Debug for project arm ****
 make all 
 make: Nothing to be done for `all'.

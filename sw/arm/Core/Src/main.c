@@ -52,6 +52,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "fatfs.h"
+#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -116,6 +117,16 @@ void StartDefaultTask(void const * argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+int _write(int file, char *ptr, int len);
+
+void __io_putchar(uint8_t ch)
+	{
+	if ((char)ch == '\n')
+		HAL_UART_Transmit(&huart6,(uint8_t*)"\r",1,1);
+
+	HAL_UART_Transmit(&huart6,(uint8_t*)&ch,1,1);
+	}
+
 
 /* USER CODE END 0 */
 
@@ -157,7 +168,9 @@ int main(void)
   MX_SPI6_Init();
   MX_LTDC_Init();
   MX_JPEG_Init();
+
   /* USER CODE BEGIN 2 */
+  setbuf(stdout, NULL);
 
   /* USER CODE END 2 */
 
@@ -589,7 +602,7 @@ static void MX_USART2_UART_Init(void)
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;
   huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_RTS_CTS;
+  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
   huart2.Init.OverSampling = UART_OVERSAMPLING_16;
   huart2.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
   huart2.Init.Prescaler = UART_PRESCALER_DIV1;
@@ -842,7 +855,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
 }
 
@@ -863,6 +876,9 @@ void StartDefaultTask(void const * argument)
   MX_FATFS_Init();
 
   /* USER CODE BEGIN 5 */
+
+_write(NULL, "*$*$*$*", 7);
+
   /* Infinite loop */
   for(;;)
   {
