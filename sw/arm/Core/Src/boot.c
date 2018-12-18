@@ -10,6 +10,72 @@
 
 #include "boot.h"
 
+extern SDRAM_HandleTypeDef hsdram1;
+
+
+/*****************************************************************************\
+|* Initialise the SDRAM command interface
+\*****************************************************************************/
+void bootMemInit(void)
+	{
+	FMC_SDRAM_CommandTypeDef cmd;
+
+    __IO uint32_t tmpmrd =0;
+    /* Configure a clock configuration enable command */
+    cmd.CommandMode            = FMC_SDRAM_CMD_CLK_ENABLE;
+    cmd.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK2;
+    cmd.AutoRefreshNumber      = 1;
+    cmd.ModeRegisterDefinition = 0;
+
+    /* Send the command */
+    HAL_SDRAM_SendCommand(&hsdram1, &cmd, 0x1000);
+
+    /* Insert 100 ms delay */
+    HAL_Delay(100);
+
+    /* Configure a PALL (precharge all) command */
+    cmd.CommandMode            = FMC_SDRAM_CMD_PALL;
+  	cmd.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK2;
+  	cmd.AutoRefreshNumber      = 1;
+  	cmd.ModeRegisterDefinition = 0;
+
+  	/* Send the command */
+  	HAL_SDRAM_SendCommand(&hsdram1, &cmd, 0x1000);
+
+  	/* Configure an Auto-Refresh command */
+  	cmd.CommandMode            = FMC_SDRAM_CMD_AUTOREFRESH_MODE;
+  	cmd.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK2;
+  	cmd.AutoRefreshNumber      = 4;
+  	cmd.ModeRegisterDefinition = 0;
+
+  	/* Send the command */
+  	HAL_SDRAM_SendCommand(&hsdram1, &cmd, 0x1000);
+
+  	/* Program the external memory mode register */
+  	tmpmrd = (uint32_t)	SDRAM_MODEREG_BURST_LENGTH_2			|
+  						SDRAM_MODEREG_BURST_TYPE_SEQUENTIAL		|
+  						SDRAM_MODEREG_CAS_LATENCY_2           	|
+  						SDRAM_MODEREG_OPERATING_MODE_STANDARD 	|
+  						SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
+
+  	cmd.CommandMode            = FMC_SDRAM_CMD_LOAD_MODE;
+  	cmd.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK2;
+  	cmd.AutoRefreshNumber      = 1;
+  	cmd.ModeRegisterDefinition = tmpmrd;
+
+  	/* Send the command */
+  	HAL_SDRAM_SendCommand(&hsdram1, &cmd, 0x1000);
+
+  	/* refreshrate		= 64ms/8192 		=> 7.8125 uS/cyc
+  	 * refresh cycles	= 7.8125 * 100MHz	=> 781
+  	 * ref man:p1665	= 781-20			=> 761
+  	 */
+  	HAL_SDRAM_ProgramRefreshRate(&hsdram1, 761);
+	}
+
+/*****************************************************************************\
+|* Check we have access to all of the SDRAM, top to bottom
+\*****************************************************************************/
 void bootMemCheck(void)
 	{
 	uint8_t ok = TRUE;
@@ -32,5 +98,5 @@ void bootMemCheck(void)
 		}
 
 	if (ok)
-		printf("Memory ok at both BASE and LAST\n");
+		printf("SoS SDRAM Memory ok at both BASE and LAST\n");
 	}
