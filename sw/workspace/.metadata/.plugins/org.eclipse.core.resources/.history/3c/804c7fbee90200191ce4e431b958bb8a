@@ -1,0 +1,9 @@
+/*
+ * memtest.c
+ *
+ *  Created on: 18 Dec 2018
+ *      Author: simon
+ */
+
+
+void memTest()
