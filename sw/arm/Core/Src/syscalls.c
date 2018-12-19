@@ -111,8 +111,22 @@ int _write(int file, char *ptr, int len)
 	return len;
 }
 
+// Locate malloc() into AXI SRAM, have 512k. This
+// contrasts with pvPortMalloc() in SDRAM with 29MB
 caddr_t _sbrk(int incr)
 {
+	static char *heap_last 	= (char *)0x24000000;
+	static char *heap_end	= (char *)0x2407FFFF;
+
+	char *prev_heap_last		= heap_last;
+	if (heap_last + incr > heap_end)
+		{
+		errno = ENOMEM;
+		return (caddr_t) -1;
+		}
+	heap_last += incr;
+	return (caddr_t)prev_heap_last;
+#if 0
 	extern char end asm("end");
 	static char *heap_end;
 	char *prev_heap_end;
@@ -132,7 +146,8 @@ caddr_t _sbrk(int incr)
 	heap_end += incr;
 
 	return (caddr_t) prev_heap_end;
-}
+#endif
+	}
 
 int _close(int file)
 {

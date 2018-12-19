@@ -225,7 +225,9 @@ int main(void)
 
   bootMemCheck();
   char * data = pvPortMalloc(1024*1024*8);
-  printf("Data: %p", data);
+  printf("pvPortMalloc Data: %p\n", data);
+  data = malloc(100*1024);
+  printf("mallocData       : %p\n", data);
 
   /* Start scheduler */
   osKernelStart();
