@@ -1,0 +1,21 @@
+/*
+ * sdcard.c
+ *
+ *  Created on: 19 Dec 2018
+ *      Author: simon
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+#include "sdcard.h"
+
+static FATFS _fs;
+
+/*****************************************************************************\
+|* Initialise the SD card interface
+\*****************************************************************************/
+void sdcardInit(void)
+	{
+
+	}

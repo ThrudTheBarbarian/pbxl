@@ -52,10 +52,12 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "boot.h"
-#include "main.h"
 #include "cmsis_os.h"
 #include "fatfs.h"
+
+#include "boot.h"
+#include "main.h"
+#include "sdcard.h"
 
 
 /* Private includes ----------------------------------------------------------*/
@@ -224,10 +226,6 @@ int main(void)
   //sioPut("Test output to io2\n");
 
   bootMemCheck();
-  char * data = pvPortMalloc(1024*1024*8);
-  printf("pvPortMalloc Data: %p\n", data);
-  data = malloc(100*1024);
-  printf("mallocData       : %p\n", data);
 
   /* Start scheduler */
   osKernelStart();
@@ -460,8 +458,11 @@ static void MX_SDMMC1_SD_Init(void)
   hsd1.Init.ClockPowerSave = SDMMC_CLOCK_POWER_SAVE_DISABLE;
   hsd1.Init.BusWide = SDMMC_BUS_WIDE_4B;
   hsd1.Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_DISABLE;
-  hsd1.Init.ClockDiv = 0;
+  hsd1.Init.ClockDiv = 255;
+
   /* USER CODE BEGIN SDMMC1_Init 2 */
+  HAL_SD_Init(&hsd1);
+  HAL_Delay(200);
 
   /* USER CODE END SDMMC1_Init 2 */
 
@@ -905,6 +906,11 @@ void StartDefaultTask(void const * argument)
 
   /* init code for FATFS */
   MX_FATFS_Init();
+
+  sdCardInit();
+
+  char path[256] = "/";
+  sdCardScanFiles(path);
 
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
