@@ -176,10 +176,16 @@ int main(void)
   MX_JPEG_Init();
   /* USER CODE BEGIN 2 */
 
-  /* initialise the SDRAM */
+  /*****************************************************************************\
+  |* initialise the SDRAM. Note that this has to happen early on, certainly
+  |* before the OS gets a look-in because we're going to set up malloc() to
+  |* work with the SDRAM
+  \*****************************************************************************/
   bootMemInit();
 
-  /* we don't want stdout buffered */
+  /*****************************************************************************\
+  |* we don't want stdout buffered
+  \*****************************************************************************/
   setbuf(stdout, NULL);
 
   /* USER CODE END 2 */
@@ -218,6 +224,8 @@ int main(void)
   //sioPut("Test output to io2\n");
 
   bootMemCheck();
+  char * data = pvPortMalloc(1024*1024*8);
+  printf("Data: %p", data);
 
   /* Start scheduler */
   osKernelStart();

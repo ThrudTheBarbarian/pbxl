@@ -76,6 +76,7 @@
  * memory management pages of http://www.FreeRTOS.org for more information.
  */
 #include <stdlib.h>
+#include <stdio.h>
 
 /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
 all the API functions to use the MPU wrappers.  That should only be done when
@@ -101,7 +102,7 @@ task.h is included from an application file. */
 #if( configAPPLICATION_ALLOCATED_HEAP == 1 )
 	/* The application writer has already defined the array used for the RTOS
 	heap - probably so it can be placed in a special segment or address. */
-	extern uint8_t ucHeap[ configTOTAL_HEAP_SIZE ];
+	extern uint8_t *ucHeap;
 #else
 	static uint8_t ucHeap[ configTOTAL_HEAP_SIZE ];
 #endif /* configAPPLICATION_ALLOCATED_HEAP */
@@ -377,6 +378,8 @@ size_t xTotalHeapSize = configTOTAL_HEAP_SIZE;
 
 	/* Ensure the heap starts on a correctly aligned boundary. */
 	uxAddress = ( size_t ) ucHeap;
+
+	printf("ucHeap=%p, uxAddress=%x\n", ucHeap, uxAddress);
 
 	if( ( uxAddress & portBYTE_ALIGNMENT_MASK ) != 0 )
 	{

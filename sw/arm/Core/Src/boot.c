@@ -11,7 +11,7 @@
 #include "boot.h"
 
 extern SDRAM_HandleTypeDef hsdram1;
-
+uint8_t *ucHeap = (uint8_t *)0xD0180000;
 
 /*****************************************************************************\
 |* Initialise the SDRAM command interface
