@@ -461,8 +461,6 @@ static void MX_SDMMC1_SD_Init(void)
   hsd1.Init.ClockDiv = 255;
 
   /* USER CODE BEGIN SDMMC1_Init 2 */
-  HAL_SD_Init(&hsd1);
-  HAL_Delay(200);
 
   /* USER CODE END SDMMC1_Init 2 */
 
@@ -901,24 +899,25 @@ static void MX_GPIO_Init(void)
   */
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const * argument)
-{
+	{
+	/* USER CODE BEGIN 5 */
 	(void)argument;
 
-  /* init code for FATFS */
-  MX_FATFS_Init();
+	/* init code for FATFS */
+	MX_FATFS_Init();
 
-  sdCardInit();
+	sdCardInit();
 
-  char path[256] = "/";
-  sdCardScanFiles(path);
+	char path[256] = "/";
+	sdCardScanFiles(path);
 
-  /* USER CODE BEGIN 5 */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
-  /* USER CODE END 5 */ 
+
+	/* Infinite loop */
+	for(;;)
+	{
+	osDelay(1);
+	}
+	/* USER CODE END 5 */
 }
 
 /**

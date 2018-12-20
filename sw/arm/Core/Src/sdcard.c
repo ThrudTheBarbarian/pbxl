@@ -21,7 +21,7 @@ void sdCardInit(void)
 	{
 	if (BSP_PlatformIsDetected())
 		{
-		FRESULT res = f_mount(&_fs, "/", 0);
+		FRESULT res = f_mount(&_fs, "", 0);
 		if (res != FR_OK)
 			printf("[error] Failed to mount SD disk: %d\n", res);
 		else

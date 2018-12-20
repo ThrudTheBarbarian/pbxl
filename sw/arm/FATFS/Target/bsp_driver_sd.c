@@ -82,7 +82,7 @@ uint8_t BSP_SD_Init(void)
       sd_state = MSD_ERROR;
     }
   }
-
+  printf("sd_state=%x\n", sd_state);
   return sd_state;
 }
 /* USER CODE BEGIN AfterInitSection */

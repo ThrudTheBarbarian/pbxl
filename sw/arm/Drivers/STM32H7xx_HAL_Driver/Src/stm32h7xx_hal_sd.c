@@ -2246,6 +2246,8 @@ static uint32_t SD_PowerON(SD_HandleTypeDef *hsd)
   if(errorstate != HAL_SD_ERROR_NONE)
   {
     hsd->SdCard.CardVersion = CARD_V1_X;
+    errorstate = SDMMC_CmdAppCommand(hsd->Instance, 0);
+    HAL_Delay(1);
   }
   else
   {
