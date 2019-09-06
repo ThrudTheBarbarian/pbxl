@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12185,7 +12185,7 @@ RD5</text>
 <wire x1="17.78" y1="-27.94" x2="15.24" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="1">
+<net name="+5V" class="0">
 <segment>
 <pinref part="CARTRIDGE" gate="G$1" pin="VCC5@13"/>
 <pinref part="P+24" gate="1" pin="+5V"/>
@@ -13479,7 +13479,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <junction x="93.98" y="38.1"/>
 </segment>
 </net>
-<net name="+5V" class="1">
+<net name="+5V" class="0">
 <segment>
 <pinref part="LVL_ALO" gate="G$1" pin="VCCB@24"/>
 <pinref part="P+18" gate="1" pin="+5V"/>
@@ -14840,7 +14840,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <wire x1="-58.42" y1="-58.42" x2="-58.42" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="HDMI_CEC" class="3">
+<net name="HDMI_CEC" class="0">
 <segment>
 <pinref part="CN1" gate="G$1" pin="CEC"/>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -14849,14 +14849,14 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="116.84" y="60.198" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$2" class="3">
+<net name="N$2" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="76.2" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="3">
+<net name="N$1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="1Y"/>
 <wire x1="71.12" y1="-12.7" x2="78.74" y2="-12.7" width="0.1524" layer="91"/>
@@ -14870,7 +14870,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <junction x="106.68" y="-25.4"/>
 </segment>
 </net>
-<net name="N$3" class="3">
+<net name="N$3" class="0">
 <segment>
 <pinref part="CN1" gate="G$1" pin="DCLK"/>
 <wire x1="116.84" y1="0" x2="106.68" y2="0" width="0.1524" layer="91"/>
@@ -14884,7 +14884,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <junction x="106.68" y="0"/>
 </segment>
 </net>
-<net name="V+" class="3">
+<net name="V+" class="0">
 <segment>
 <pinref part="CN1" gate="G$1" pin="+5V"/>
 <wire x1="139.7" y1="68.58" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
@@ -14917,7 +14917,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <junction x="-58.42" y="-38.1"/>
 </segment>
 </net>
-<net name="HDMI_SCL" class="3">
+<net name="HDMI_SCL" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="1A"/>
 <wire x1="45.72" y1="-7.62" x2="38.1" y2="-7.62" width="0.1524" layer="91"/>
@@ -14930,7 +14930,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="2.032" y="5.588" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="HDMI_SDA" class="3">
+<net name="HDMI_SDA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="2A"/>
 <wire x1="45.72" y1="-12.7" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
@@ -14943,7 +14943,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="1.778" y="-24.892" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="HPD" class="3">
+<net name="HPD" class="0">
 <segment>
 <pinref part="CN1" gate="G$1" pin="HOTPLUG"/>
 <wire x1="116.84" y1="-30.48" x2="106.68" y2="-30.48" width="0.1524" layer="91"/>
@@ -14962,14 +14962,14 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="-185.928" y="64.008" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$5" class="3">
+<net name="N$5" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="G$1" pin="Y"/>
 <wire x1="27.94" y1="-38.1" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="HDMI_DET_IO" class="3">
+<net name="HDMI_DET_IO" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -14985,14 +14985,14 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="-111.252" y="60.452" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="3">
+<net name="N$6" class="0">
 <segment>
 <pinref part="R28" gate="G$1" pin="1"/>
 <pinref part="IC3" gate="G$1" pin="OUTY"/>
 <wire x1="-165.1" y1="63.5" x2="-144.78" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="3">
+<net name="N$4" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OE"/>
 <pinref part="R29" gate="G$1" pin="2"/>
@@ -15003,7 +15003,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <junction x="-88.9" y="63.5"/>
 </segment>
 </net>
-<net name="N$7" class="3">
+<net name="N$7" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="B"/>
 <pinref part="R30" gate="G$1" pin="2"/>
@@ -15014,7 +15014,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <junction x="-73.66" y="40.64"/>
 </segment>
 </net>
-<net name="HDMI_OUT_EN" class="3">
+<net name="HDMI_OUT_EN" class="0">
 <segment>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="-53.34" y1="40.64" x2="-48.26" y2="40.64" width="0.1524" layer="91"/>
@@ -15026,7 +15026,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="-170.688" y="-37.592" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="+5V" class="1">
+<net name="+5V" class="0">
 <segment>
 <wire x1="-121.92" y1="-40.64" x2="-127" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="-127" y1="-40.64" x2="-127" y2="-50.8" width="0.1524" layer="91"/>
@@ -15039,7 +15039,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <wire x1="-134.62" y1="-50.8" x2="-134.62" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="3">
+<net name="N$8" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="!EN"/>
 <pinref part="R32" gate="G$1" pin="1"/>
@@ -15050,7 +15050,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <junction x="-149.86" y="-38.1"/>
 </segment>
 </net>
-<net name="N$9" class="3">
+<net name="N$9" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="!OC"/>
 <wire x1="-96.52" y1="-43.18" x2="-88.9" y2="-43.18" width="0.1524" layer="91"/>
@@ -15058,7 +15058,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <pinref part="R33" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$10" class="3">
+<net name="N$10" class="0">
 <segment>
 <pinref part="R33" gate="G$1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="-"/>
@@ -15160,7 +15160,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <junction x="157.48" y="27.94"/>
 </segment>
 </net>
-<net name="+5V" class="1">
+<net name="+5V" class="0">
 <segment>
 <pinref part="P+27" gate="1" pin="+5V"/>
 <wire x1="157.48" y1="96.52" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
@@ -15370,28 +15370,28 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="-106.68" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_SCL" class="3">
+<net name="HDMI_SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO_B34_LN10(W15)"/>
 <wire x1="-86.36" y1="-73.66" x2="-93.98" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-94.488" y="-73.152" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="HDMI_SDA" class="3">
+<net name="HDMI_SDA" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO_B34_LP10(V15)"/>
 <wire x1="-86.36" y1="-71.12" x2="-93.98" y2="-71.12" width="0.1524" layer="91"/>
 <label x="-94.488" y="-70.612" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="HDMI_DET_IO" class="3">
+<net name="HDMI_DET_IO" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO_B34_LP7(Y16)"/>
 <wire x1="-86.36" y1="-76.2" x2="-93.98" y2="-76.2" width="0.1524" layer="91"/>
 <label x="-94.488" y="-75.692" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="HDMI_OUT_EN" class="3">
+<net name="HDMI_OUT_EN" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO_B34_LN7(Y17)"/>
 <wire x1="-86.36" y1="-78.74" x2="-93.98" y2="-78.74" width="0.1524" layer="91"/>
@@ -16448,7 +16448,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <label x="27.94" y="2.032" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="+5V" class="1">
+<net name="+5V" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="7.62" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
