@@ -127,7 +127,7 @@ for ($i=1; $i<$num; $i++)
 	{
 	$item 	= $csv[$i];
 	$mpart	= $item[$use];
-	if ($mpart != "")
+	if ($mpart != "" && $item[$nostuff] == "")
 		{
 		if (isSet($uparts[$mpart]))
 			{
