@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11693,9 +11693,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2051b.pdf"&gt; Datasheet
 </spice>
 <attribute name="USE" value="ERJ-1GNJ103C"/>
 </part>
-<part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="CN1" library="microbuilder" deviceset="HDMI_MOLEX_47151-0001" device="">
 <attribute name="USE" value="047150001"/>
 </part>
@@ -15079,14 +15077,8 @@ tPD_BA : 0.6 .. 6ns</text>
 <attribute name="LAST_DATE_TIME" x="151.13" y="-116.84" size="2.286" layer="94"/>
 <attribute name="SHEET" x="164.465" y="-121.92" size="2.54" layer="94"/>
 </instance>
-<instance part="+3V20" gate="G$1" x="157.48" y="35.56" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="160.02" y="35.56" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="P+27" gate="1" x="157.48" y="99.06" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="151.384" y="99.06" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="SUPPLY24" gate="GND" x="157.48" y="-48.26" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="159.385" y="-51.435" size="1.778" layer="96" rot="MR0"/>
+<instance part="P+27" gate="1" x="-104.14" y="127" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-110.236" y="127" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="VCC1" gate="G$1" x="-104.14" y="101.6" smashed="yes">
 <attribute name="VALUE" x="-106.68" y="99.06" size="1.778" layer="96" rot="R90"/>
@@ -15150,47 +15142,7 @@ tPD_BA : 0.6 .. 6ns</text>
 </bus>
 </busses>
 <nets>
-<net name="+3V3" class="9">
-<segment>
-<pinref part="+3V20" gate="G$1" pin="+3V3"/>
-<wire x1="152.4" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="27.94" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="25.4" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="25.4" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
-<junction x="157.48" y="27.94"/>
-</segment>
-</net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="P+27" gate="1" pin="+5V"/>
-<wire x1="157.48" y1="96.52" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="91.44" x2="157.48" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="88.9" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
-<junction x="157.48" y="91.44"/>
-</segment>
-</net>
 <net name="GND" class="0">
-<segment>
-<pinref part="SUPPLY24" gate="GND" pin="GND"/>
-<wire x1="157.48" y1="-45.72" x2="157.48" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-43.18" x2="152.4" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-43.18" x2="157.48" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-40.64" x2="152.4" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="157.48" y="-43.18"/>
-<wire x1="157.48" y1="-40.64" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="157.48" y="-40.64"/>
-<wire x1="157.48" y1="-38.1" x2="152.4" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-38.1" x2="157.48" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-35.56" x2="152.4" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="157.48" y="-38.1"/>
-<wire x1="157.48" y1="-35.56" x2="157.48" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-33.02" x2="152.4" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="157.48" y="-35.56"/>
-<wire x1="157.48" y1="-33.02" x2="157.48" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-30.48" x2="152.4" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="157.48" y="-33.02"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND@113"/>
 <pinref part="SUPPLY31" gate="GND" pin="GND"/>
@@ -15888,6 +15840,34 @@ tPD_BA : 0.6 .. 6ns</text>
 <pinref part="U$1" gate="G$1" pin="IO_B34_LN20(R18)"/>
 <wire x1="12.7" y1="-50.8" x2="10.16" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-53.34" x2="-10.16" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="P+27" gate="1" pin="+5V"/>
+<wire x1="-104.14" y1="124.46" x2="-104.14" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VDD5@120"/>
+<wire x1="-104.14" y1="119.38" x2="-104.14" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="116.84" x2="-104.14" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="114.3" x2="-104.14" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="111.76" x2="-104.14" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="109.22" x2="-104.14" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="106.68" x2="-86.36" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VDD5@119"/>
+<wire x1="-86.36" y1="109.22" x2="-104.14" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-104.14" y="109.22"/>
+<pinref part="U$1" gate="G$1" pin="VDD5@118"/>
+<wire x1="-86.36" y1="111.76" x2="-104.14" y2="111.76" width="0.1524" layer="91"/>
+<junction x="-104.14" y="111.76"/>
+<pinref part="U$1" gate="G$1" pin="VDD5@117"/>
+<wire x1="-86.36" y1="114.3" x2="-104.14" y2="114.3" width="0.1524" layer="91"/>
+<junction x="-104.14" y="114.3"/>
+<pinref part="U$1" gate="G$1" pin="VDD5@116"/>
+<wire x1="-86.36" y1="116.84" x2="-104.14" y2="116.84" width="0.1524" layer="91"/>
+<junction x="-104.14" y="116.84"/>
+<pinref part="U$1" gate="G$1" pin="VDD5@115"/>
+<wire x1="-86.36" y1="119.38" x2="-104.14" y2="119.38" width="0.1524" layer="91"/>
+<junction x="-104.14" y="119.38"/>
 </segment>
 </net>
 </nets>
