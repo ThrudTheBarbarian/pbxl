@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11695,36 +11695,146 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2051b.pdf"&gt; Datasheet
 </part>
 <part name="P+27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="CN1" library="microbuilder" deviceset="HDMI_MOLEX_47151-0001" device="">
-<attribute name="USE" value="047150001"/>
+<attribute name="USE" value="0471510001"/>
 </part>
-<part name="JP1" library="pinhead-2" deviceset="PINHD-2X15" device="_2.54-SMD"/>
-<part name="JP2" library="pinhead-2" deviceset="PINHD-2X15" device="_2.54-SMD"/>
+<part name="JP1" library="pinhead-2" deviceset="PINHD-2X15" device="_2.54-SMD">
+<attribute name="USE" value="NPTC152KFMS-RC"/>
+</part>
+<part name="JP2" library="pinhead-2" deviceset="PINHD-2X15" device="_2.54-SMD">
+<attribute name="USE" value="NPTC152KFMS-RC"/>
+</part>
 <part name="VCC1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9"/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9"/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9"/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9"/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9"/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0749R9L"/>
+</part>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0749R9L"/>
+</part>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0749R9L"/>
+</part>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0749R9L"/>
+</part>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0749R9L"/>
+</part>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0749R9L"/>
+</part>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0749R9L"/>
+</part>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="49R9">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0749R9L"/>
+</part>
 <part name="VCC2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D1" library="microbuilder" deviceset="DIODE" device="SOD-323" value="RB751V40,115">
 <attribute name="USE" value="RB751V40,115"/>
 </part>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="27K"/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="27K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-0727KL"/>
+</part>
 <part name="VCC3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
-<part name="IC1" library="samacsys" deviceset="SN74LVC2G07DCKR" device=""/>
+<part name="IC1" library="samacsys" deviceset="SN74LVC2G07DCKR" device="">
+<attribute name="USE" value="SN74LVC2G07DCKR"/>
+</part>
 <part name="VCC4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K5"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K5">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201JR-071K5L"/>
+</part>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K5"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K5">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201JR-071K5L"/>
+</part>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="4K7"/>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="4K7"/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="4K7">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-074K7L"/>
+</part>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="4K7">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-074K7L"/>
+</part>
 <part name="VCC5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -11736,9 +11846,19 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2051b.pdf"&gt; Datasheet
 <attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="100K"/>
+<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="100K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-07100KL"/>
+</part>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="IC2" library="samacsys" deviceset="SN74LVC1G07MDCKREP" device=""/>
+<part name="IC2" library="samacsys" deviceset="SN74LVC1G07MDCKREP" device="">
+<attribute name="USE" value="SN74LVC1G07MDCKREP"/>
+</part>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="VCC6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
@@ -11751,10 +11871,28 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2051b.pdf"&gt; Datasheet
 <attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K"/>
-<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="100K"/>
+<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-071KL"/>
+</part>
+<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="100K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-07100KL"/>
+</part>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="IC3" library="samacsys" deviceset="NL17SZ126XV5T2G" device=""/>
+<part name="IC3" library="samacsys" deviceset="NL17SZ126XV5T2G" device="">
+<attribute name="USE" value="NL17SZ126XV5T2G"/>
+</part>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
@@ -11766,15 +11904,51 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2051b.pdf"&gt; Datasheet
 </part>
 <part name="VCC7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K"/>
-<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="10K"/>
+<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-071KL"/>
+</part>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="10K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="ERJ-1GNJ103C"/>
+</part>
 <part name="VCC8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="Q1" library="samacsys" deviceset="SMMBT3904LT1G" device=""/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K"/>
-<part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="10K"/>
+<part name="Q1" library="samacsys" deviceset="SMMBT3904LT1G" device="">
+<attribute name="USE" value="SMMBT3904LT1G"/>
+</part>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="1K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201FR-071KL"/>
+</part>
+<part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="10K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="ERJ-1GNJ103C"/>
+</part>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="IC4" library="samacsys" deviceset="TPS2051BDBVR" device=""/>
+<part name="IC4" library="samacsys" deviceset="TPS2051BDBVR" device="">
+<attribute name="USE" value="TPS2051BDBVR"/>
+</part>
 <part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
@@ -11795,10 +11969,28 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2051b.pdf"&gt; Datasheet
 </spice>
 <attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
-<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="10K"/>
+<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="10K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="ERJ-1GNJ103C"/>
+</part>
 <part name="SUPPLY25" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="820R"/>
-<part name="D2" library="Seeed-LED" deviceset="SMD-LED-CLEAR-RED(0805)" device="" value="RED-0805"/>
+<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/2" value="820R">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="USE" value="RC0201JR-07820RL"/>
+</part>
+<part name="D2" library="Seeed-LED" deviceset="SMD-LED-CLEAR-RED(0805)" device="" value="RED-0805">
+<attribute name="USE" value="150080RS75000"/>
+</part>
 <part name="VCC9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -11811,10 +12003,14 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps2051b.pdf"&gt; Datasheet
 </part>
 <part name="SUPPLY29" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="U$1" library="pbxl" deviceset="BTH-060-01-F-D-A" device=""/>
+<part name="U$1" library="pbxl" deviceset="BTH-060-01-F-D-A" device="">
+<attribute name="USE" value="BTH-060-01-F-D-A"/>
+</part>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="JP3" library="pinhead-2" deviceset="PINHD-2X15" device="_2.54-SMD"/>
+<part name="JP3" library="pinhead-2" deviceset="PINHD-2X15" device="_2.54-SMD">
+<attribute name="USE" value="NPTC152KFMS-RC"/>
+</part>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -14319,34 +14515,42 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R1" gate="G$1" x="68.58" y="66.04" smashed="yes">
 <attribute name="NAME" x="70.358" y="67.5386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="63.246" y="67.564" size="1.778" layer="96"/>
+<attribute name="USE" x="68.58" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R6" gate="G$1" x="50.8" y="60.96" smashed="yes">
 <attribute name="NAME" x="52.578" y="62.4586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="45.466" y="62.484" size="1.778" layer="96"/>
+<attribute name="USE" x="50.8" y="60.96" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R7" gate="G$1" x="68.58" y="55.88" smashed="yes">
 <attribute name="NAME" x="70.358" y="57.3786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="63.246" y="57.404" size="1.778" layer="96"/>
+<attribute name="USE" x="68.58" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R8" gate="G$1" x="50.8" y="50.8" smashed="yes">
 <attribute name="NAME" x="55.118" y="52.2986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="45.466" y="52.324" size="1.778" layer="96"/>
+<attribute name="USE" x="50.8" y="50.8" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R9" gate="G$1" x="68.58" y="45.72" smashed="yes">
 <attribute name="NAME" x="70.358" y="47.2186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="63.246" y="47.244" size="1.778" layer="96"/>
+<attribute name="USE" x="68.58" y="45.72" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R11" gate="G$1" x="50.8" y="40.64" smashed="yes">
 <attribute name="NAME" x="52.578" y="42.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="45.466" y="42.164" size="1.778" layer="96"/>
+<attribute name="USE" x="50.8" y="40.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R12" gate="G$1" x="68.58" y="35.56" smashed="yes">
 <attribute name="NAME" x="70.358" y="37.0586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="63.246" y="37.084" size="1.778" layer="96"/>
+<attribute name="USE" x="68.58" y="35.56" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R14" gate="G$1" x="50.8" y="30.48" smashed="yes">
 <attribute name="NAME" x="52.578" y="31.9786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="45.466" y="32.004" size="1.778" layer="96"/>
+<attribute name="USE" x="50.8" y="30.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="VCC2" gate="G$1" x="30.48" y="73.66" smashed="yes">
 <attribute name="VALUE" x="27.94" y="71.12" size="1.778" layer="96" rot="R90"/>
@@ -14362,6 +14566,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R15" gate="G$1" x="106.68" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="105.1814" y="90.678" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="105.156" y="83.566" size="1.778" layer="96" rot="R90"/>
+<attribute name="USE" x="106.68" y="88.9" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="VCC3" gate="G$1" x="106.68" y="101.6" smashed="yes">
 <attribute name="VALUE" x="104.14" y="99.06" size="1.778" layer="96" rot="R90"/>
@@ -14369,6 +14574,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="IC1" gate="G$1" x="45.72" y="-7.62" smashed="yes">
 <attribute name="NAME" x="52.07" y="-2.54" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="52.07" y="-17.78" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="45.72" y="-7.62" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="VCC4" gate="G$1" x="83.82" y="-5.08" smashed="yes">
 <attribute name="VALUE" x="88.646" y="-1.524" size="1.778" layer="96" rot="R180"/>
@@ -14379,6 +14585,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R16" gate="G$1" x="96.52" y="7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="94.742" y="6.1214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="101.854" y="6.096" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="96.52" y="7.62" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="SUPPLY9" gate="1" x="88.9" y="15.24" smashed="yes">
 <attribute name="VALUE" x="87.63" y="16.51" size="1.778" layer="96"/>
@@ -14389,6 +14596,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R17" gate="G$1" x="96.52" y="-17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="94.742" y="-19.2786" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="101.854" y="-19.304" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="96.52" y="-17.78" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="SUPPLY11" gate="GND" x="30.48" y="-15.24" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="32.385" y="-18.415" size="1.778" layer="96" rot="MR0"/>
@@ -14396,10 +14604,12 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R18" gate="G$1" x="30.48" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.258" y="14.1986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="32.766" y="19.304" size="1.778" layer="96"/>
+<attribute name="USE" x="30.48" y="17.78" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R20" gate="G$1" x="17.78" y="-15.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.2786" y="-17.018" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="19.304" y="-9.906" size="1.778" layer="96" rot="R270"/>
+<attribute name="USE" x="17.78" y="-15.24" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="VCC5" gate="G$1" x="17.78" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="15.24" y="-5.08" size="1.778" layer="96" rot="R90"/>
@@ -14415,6 +14625,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R23" gate="G$1" x="106.68" y="-40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="104.902" y="-39.5986" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="104.394" y="-42.164" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="106.68" y="-40.64" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY13" gate="GND" x="106.68" y="-53.34" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="108.585" y="-56.515" size="1.778" layer="96" rot="MR0"/>
@@ -14422,6 +14633,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="IC2" gate="G$1" x="73.66" y="-38.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="57.658" y="-33.528" size="1.778" layer="95" rot="MR0" align="center-left"/>
 <attribute name="VALUE" x="74.93" y="-48.26" size="1.778" layer="96" rot="MR0" align="center-left"/>
+<attribute name="USE" x="73.66" y="-38.1" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="SUPPLY14" gate="GND" x="78.74" y="-50.8" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="80.645" y="-53.975" size="1.778" layer="96" rot="MR0"/>
@@ -14440,10 +14652,12 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R24" gate="G$1" x="22.86" y="-38.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.082" y="-39.5986" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="28.194" y="-39.624" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="22.86" y="-38.1" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R27" gate="G$1" x="7.62" y="-48.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.842" y="-47.2186" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="5.334" y="-49.784" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="7.62" y="-48.26" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY16" gate="GND" x="7.62" y="-71.12" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="9.525" y="-74.295" size="1.778" layer="96" rot="MR0"/>
@@ -14451,6 +14665,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="IC3" gate="G$1" x="-116.84" y="63.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-123.19" y="68.58" size="1.778" layer="95" rot="MR0" align="center-left"/>
 <attribute name="VALUE" x="-120.65" y="53.34" size="1.778" layer="96" rot="MR0" align="center-left"/>
+<attribute name="USE" x="-116.84" y="63.5" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="C19" gate="G$1" x="-157.48" y="45.72" smashed="yes">
 <attribute name="USE" x="-157.48" y="45.72" size="1.778" layer="96" display="off"/>
@@ -14466,10 +14681,12 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R28" gate="G$1" x="-170.18" y="63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-171.958" y="62.0014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-164.846" y="61.976" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="-170.18" y="63.5" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R29" gate="G$1" x="-76.2" y="63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-77.978" y="62.0014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-70.866" y="61.976" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="-76.2" y="63.5" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="VCC8" gate="G$1" x="-63.5" y="73.66" smashed="yes">
 <attribute name="VALUE" x="-66.04" y="71.12" size="1.778" layer="96" rot="R90"/>
@@ -14480,14 +14697,17 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="Q1" gate="G$1" x="-78.74" y="40.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-92.71" y="41.91" size="1.778" layer="95" rot="MR0" align="center-left"/>
 <attribute name="VALUE" x="-92.71" y="39.37" size="1.778" layer="96" rot="MR0" align="center-left"/>
+<attribute name="USE" x="-78.74" y="40.64" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="R30" gate="G$1" x="-58.42" y="40.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="-60.198" y="39.1414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-53.086" y="39.116" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="-58.42" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R31" gate="G$1" x="-73.66" y="30.48" smashed="yes" rot="R270">
 <attribute name="NAME" x="-71.882" y="31.9786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-71.374" y="29.464" size="1.778" layer="96"/>
+<attribute name="USE" x="-73.66" y="30.48" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="SUPPLY21" gate="GND" x="-88.9" y="15.24" smashed="yes">
 <attribute name="VALUE" x="-90.805" y="12.065" size="1.778" layer="96"/>
@@ -14495,6 +14715,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="IC4" gate="G$1" x="-96.52" y="-38.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-102.87" y="-33.02" size="1.778" layer="95" rot="MR0" align="center-left"/>
 <attribute name="VALUE" x="-100.33" y="-48.26" size="1.778" layer="96" rot="MR0" align="center-left"/>
+<attribute name="USE" x="-96.52" y="-38.1" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="C20" gate="G$1" x="-134.62" y="-55.88" smashed="yes">
 <attribute name="USE" x="-134.62" y="-55.88" size="1.778" layer="96" display="off"/>
@@ -14515,6 +14736,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R32" gate="G$1" x="-160.02" y="-38.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="-161.798" y="-39.5986" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-154.686" y="-39.624" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="-160.02" y="-38.1" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="SUPPLY25" gate="GND" x="-83.82" y="-48.26" smashed="yes">
 <attribute name="VALUE" x="-85.725" y="-51.435" size="1.778" layer="96"/>
@@ -14522,10 +14744,12 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="R33" gate="G$1" x="-88.9" y="-66.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="-87.4014" y="-67.818" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-87.376" y="-60.706" size="1.778" layer="96" rot="R270"/>
+<attribute name="USE" x="-88.9" y="-66.04" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="-78.74" y="-76.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-71.12" y="-74.93" size="1.27" layer="95" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="-73.66" y="-81.28" size="1.27" layer="96" ratio="10" rot="MR0"/>
+<attribute name="USE" x="-78.74" y="-76.2" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="VCC9" gate="G$1" x="-68.58" y="-66.04" smashed="yes">
 <attribute name="VALUE" x="-71.12" y="-63.5" size="1.778" layer="96"/>
@@ -15086,6 +15310,7 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="U$1" gate="G$1" x="-48.26" y="20.32" smashed="yes">
 <attribute name="NAME" x="-80.01" y="127" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-16.51" y="127" size="1.778" layer="96" rot="R180" align="center-left"/>
+<attribute name="USE" x="-48.26" y="20.32" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY31" gate="GND" x="-20.32" y="-116.84" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-18.415" y="-120.015" size="1.778" layer="96" rot="MR0"/>
@@ -15884,14 +16109,17 @@ tPD_BA : 0.6 .. 6ns</text>
 <instance part="JP1" gate="A" x="2.54" y="-15.24" smashed="yes">
 <attribute name="NAME" x="-3.81" y="5.715" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-3.81" y="-38.1" size="1.778" layer="96"/>
+<attribute name="USE" x="2.54" y="-15.24" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP2" gate="A" x="2.54" y="45.72" smashed="yes">
 <attribute name="NAME" x="-3.81" y="66.675" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-3.81" y="22.86" size="1.778" layer="96"/>
+<attribute name="USE" x="2.54" y="45.72" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP3" gate="A" x="5.08" y="-68.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="11.43" y="-89.535" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="11.43" y="-45.72" size="1.778" layer="96" rot="R180"/>
+<attribute name="USE" x="5.08" y="-68.58" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="P+6" gate="1" x="17.78" y="12.7" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="20.32" y="7.62" size="1.778" layer="96" rot="MR90"/>
