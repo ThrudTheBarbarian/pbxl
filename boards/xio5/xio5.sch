@@ -15778,10 +15778,18 @@ DDEController.pdf</description>
 <part name="U$5" library="sjg-logic" deviceset="74LVC1T45GW" device="SOT866">
 <attribute name="USE" value="74LVCH1T45GS,132"/>
 </part>
-<part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="4.1" package3d_urn="urn:adsk.eagle:package:14273/1"/>
-<part name="H6" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="4.1" package3d_urn="urn:adsk.eagle:package:14273/1"/>
-<part name="H7" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="4.1" package3d_urn="urn:adsk.eagle:package:14273/1"/>
-<part name="H8" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="4.1" package3d_urn="urn:adsk.eagle:package:14273/1"/>
+<part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="4.1" package3d_urn="urn:adsk.eagle:package:14273/1">
+<attribute name="NOSTUFF" value="1"/>
+</part>
+<part name="H6" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="4.1" package3d_urn="urn:adsk.eagle:package:14273/1">
+<attribute name="NOSTUFF" value="1"/>
+</part>
+<part name="H7" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="4.1" package3d_urn="urn:adsk.eagle:package:14273/1">
+<attribute name="NOSTUFF" value="1"/>
+</part>
+<part name="H8" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="4.1" package3d_urn="urn:adsk.eagle:package:14273/1">
+<attribute name="NOSTUFF" value="1"/>
+</part>
 <part name="U$3" library="sjg-con" deviceset="MINI-SAS" device="">
 <attribute name="USE" value="1888019-4"/>
 </part>
@@ -16177,14 +16185,20 @@ DDEController.pdf</description>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY38" library="supply2" deviceset="GND" device=""/>
-<part name="ZTURN" library="pbxl" deviceset="ZTURN" device=""/>
+<part name="ZTURN" library="pbxl" deviceset="ZTURN" device="">
+<attribute name="NOSTUFF" value="1"/>
+</part>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="J1" library="samacsys" deviceset="98424-G52-14ALF" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X7" device="" package3d_urn="urn:adsk.eagle:package:22477/2"/>
+<part name="J1" library="samacsys" deviceset="98424-G52-14ALF" device="">
+<attribute name="USE" value="98424-G52-14ALF"/>
+</part>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X7" device="" package3d_urn="urn:adsk.eagle:package:22477/2">
+<attribute name="NOSTUFF" value="1"/>
+</part>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
@@ -16192,7 +16206,9 @@ DDEController.pdf</description>
 <part name="SUPPLY32" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY33" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
-<part name="IC1" library="samacsys" deviceset="TC74LCX138FT" device=""/>
+<part name="IC1" library="samacsys" deviceset="TC74LCX138FT" device="" value="SN74LVC138APWR">
+<attribute name="USE" value="SN74LVC138APWR"/>
+</part>
 <part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -16205,7 +16221,9 @@ DDEController.pdf</description>
 </spice>
 <attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
-<part name="IC2" library="samacsys" deviceset="XRA1405IL24-F" device=""/>
+<part name="IC2" library="samacsys" deviceset="XRA1405IL24-F" device="">
+<attribute name="USE" value="XRA1405IL24-F"/>
+</part>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -16219,7 +16237,9 @@ DDEController.pdf</description>
 </spice>
 <attribute name="USE" value="GRM033C71C104KE14D"/>
 </part>
-<part name="JP2" library="pinhead-2" deviceset="PINHD-2X20" device="_2.00"/>
+<part name="JP2" library="pinhead-2" deviceset="PINHD-2X20" device="_2.00">
+<attribute name="USE" value="SBH21-NBPN-D20-ST-BK"/>
+</part>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
@@ -16229,8 +16249,12 @@ DDEController.pdf</description>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="JP4" library="pinhead-2" deviceset="PINHD-2X04" device="_2.00"/>
-<part name="JP5" library="pinhead-2" deviceset="PINHD-2X04" device="_2.00"/>
+<part name="JP4" library="pinhead-2" deviceset="PINHD-2X04" device="_2.00">
+<attribute name="NOSTUFF" value="1"/>
+</part>
+<part name="JP5" library="pinhead-2" deviceset="PINHD-2X04" device="_2.00">
+<attribute name="NOSTUFF" value="1"/>
+</part>
 <part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
 <part name="P+13" library="supply1" deviceset="+5V" device=""/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
@@ -19005,6 +19029,7 @@ Motherboard</text>
 SPI2 runs at ~21 MHz
 
 For 6 mil trace, 4" has ~59R impedance</text>
+<text x="96.52" y="-119.38" size="1.778" layer="94">Parts Verified</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-193.04" y="-127" smashed="yes">
@@ -19015,18 +19040,22 @@ For 6 mil trace, 4" has ~59R impedance</text>
 <instance part="H3" gate="G$1" x="144.78" y="124.46" smashed="yes">
 <attribute name="NAME" x="146.812" y="125.0442" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.812" y="121.9962" size="1.778" layer="96"/>
+<attribute name="NOSTUFF" x="144.78" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="H6" gate="G$1" x="144.78" y="119.38" smashed="yes">
 <attribute name="NAME" x="146.812" y="119.9642" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.812" y="116.9162" size="1.778" layer="96"/>
+<attribute name="NOSTUFF" x="144.78" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="H7" gate="G$1" x="144.78" y="114.3" smashed="yes">
 <attribute name="NAME" x="146.812" y="114.8842" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.812" y="111.8362" size="1.778" layer="96"/>
+<attribute name="NOSTUFF" x="144.78" y="114.3" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="H8" gate="G$1" x="144.78" y="109.22" smashed="yes">
 <attribute name="NAME" x="146.812" y="109.8042" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.812" y="106.7562" size="1.778" layer="96"/>
+<attribute name="NOSTUFF" x="144.78" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="ZTURN" gate="-CN1" x="-86.36" y="73.66" smashed="yes">
 <attribute name="NAME" x="-116.84" y="104.648" size="1.778" layer="94"/>
@@ -19039,6 +19068,7 @@ For 6 mil trace, 4" has ~59R impedance</text>
 <instance part="IC1" gate="G$1" x="-2.54" y="-68.58" smashed="yes">
 <attribute name="NAME" x="-10.16" y="-43.18" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-10.16" y="-91.44" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="-2.54" y="-68.58" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY24" gate="GND" x="-20.32" y="-93.98" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-18.415" y="-97.155" size="1.778" layer="96" rot="MR0"/>
@@ -19057,6 +19087,7 @@ For 6 mil trace, 4" has ~59R impedance</text>
 <instance part="IC2" gate="G$1" x="101.6" y="-33.02" smashed="yes">
 <attribute name="NAME" x="93.98" y="-9.398" size="1.778" layer="95"/>
 <attribute name="VALUE" x="93.98" y="-60.96" size="1.778" layer="96"/>
+<attribute name="USE" x="101.6" y="-33.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="+3V8" gate="G$1" x="83.82" y="-7.62" smashed="yes">
 <attribute name="VALUE" x="86.36" y="-5.08" size="1.778" layer="96" rot="R180"/>
@@ -19078,10 +19109,12 @@ For 6 mil trace, 4" has ~59R impedance</text>
 <instance part="JP4" gate="A" x="68.58" y="96.52" smashed="yes" grouprefs="SPI_EXPANSION">
 <attribute name="NAME" x="62.23" y="104.775" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.23" y="88.9" size="1.778" layer="96"/>
+<attribute name="NOSTUFF" x="68.58" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP5" gate="A" x="68.58" y="58.42" smashed="yes" grouprefs="SPI_EXPANSION">
 <attribute name="NAME" x="62.23" y="66.675" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.23" y="50.8" size="1.778" layer="96"/>
+<attribute name="NOSTUFF" x="68.58" y="58.42" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY39" gate="GND" x="83.82" y="88.9" smashed="yes" rot="MR0" grouprefs="SPI_EXPANSION">
 <attribute name="VALUE" x="85.725" y="85.725" size="1.778" layer="96" rot="MR0"/>
@@ -20193,6 +20226,7 @@ For 6 mil trace, 4" has ~59R impedance</text>
 <description>Power, JTAG, Unused pins</description>
 <plain>
 <text x="138.176" y="-101.6" size="2.54" layer="94">Power, JTAG, unused </text>
+<text x="83.82" y="-101.6" size="1.778" layer="94">Parts Verified</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="-205.74" y="-121.92" smashed="yes">
@@ -20224,6 +20258,7 @@ For 6 mil trace, 4" has ~59R impedance</text>
 <instance part="ZTURN" gate="-JTAG" x="-157.48" y="-30.48" smashed="yes" grouprefs="JTAG">
 <attribute name="NAME" x="-172.72" y="-19.812" size="1.778" layer="94"/>
 <attribute name="VALUE" x="-172.72" y="-43.18" size="1.778" layer="94"/>
+<attribute name="NOSTUFF" x="-157.48" y="-30.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY25" gate="GND" x="-104.14" y="-45.72" smashed="yes" rot="MR0" grouprefs="JTAG">
 <attribute name="VALUE" x="-102.235" y="-48.895" size="1.778" layer="96" rot="MR0"/>
@@ -20234,10 +20269,12 @@ For 6 mil trace, 4" has ~59R impedance</text>
 <instance part="J1" gate="G$1" x="-99.06" y="-22.86" smashed="yes" grouprefs="JTAG">
 <attribute name="NAME" x="-80.01" y="-15.24" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-80.01" y="-17.78" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="-99.06" y="-22.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP1" gate="A" x="-33.02" y="-33.02" smashed="yes" grouprefs="JTAG">
 <attribute name="NAME" x="-39.37" y="-22.225" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-39.37" y="-45.72" size="1.778" layer="96"/>
+<attribute name="NOSTUFF" x="-33.02" y="-33.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY30" gate="GND" x="-43.18" y="-48.26" smashed="yes" rot="MR0" grouprefs="JTAG">
 <attribute name="VALUE" x="-41.275" y="-51.435" size="1.778" layer="96" rot="MR0"/>
@@ -20571,6 +20608,7 @@ LED</text>
 <wire x1="91.44" y1="93.98" x2="91.44" y2="76.2" width="0.1524" layer="97"/>
 <wire x1="91.44" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="97"/>
 <wire x1="20.32" y1="76.2" x2="20.32" y2="93.98" width="0.1524" layer="97"/>
+<text x="157.48" y="-121.92" size="1.778" layer="94">Parts Verified</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="-132.08" y="-142.24" smashed="yes">
@@ -21741,6 +21779,7 @@ Slot ID</text>
 LED</text>
 <text x="12.7" y="134.62" size="1.778" layer="97">Orange
 LED</text>
+<text x="208.28" y="-60.96" size="1.778" layer="94">Parts Verified</text>
 </plain>
 <instances>
 <instance part="P+8" gate="1" x="27.94" y="116.84" smashed="yes" rot="MR0">
@@ -22850,6 +22889,7 @@ Slot ID</text>
 <wire x1="124.46" y1="33.02" x2="124.46" y2="48.26" width="0.1524" layer="97"/>
 <text x="66.04" y="73.66" size="1.778" layer="97">Orange
 LED</text>
+<text x="88.9" y="-106.68" size="1.778" layer="94">Parts Verified</text>
 </plain>
 <instances>
 <instance part="FRAME7" gate="G$1" x="-200.66" y="-127" smashed="yes">
@@ -22903,6 +22943,7 @@ LED</text>
 <instance part="JP2" gate="A" x="-101.6" y="-10.16" smashed="yes">
 <attribute name="NAME" x="-107.95" y="15.875" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-107.95" y="-40.64" size="1.778" layer="96"/>
+<attribute name="USE" x="-101.6" y="-10.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+11" gate="1" x="-88.9" y="20.32" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-87.122" y="20.828" size="1.778" layer="96" rot="MR0"/>
@@ -23747,6 +23788,7 @@ LED</text>
 <description>Audio Interface</description>
 <plain>
 <text x="129.54" y="-127" size="1.778" layer="94">Audio interface</text>
+<text x="76.2" y="-127" size="1.778" layer="94">Parts Verified</text>
 </plain>
 <instances>
 <instance part="ZTURN" gate="-I2S-I2C" x="53.34" y="-20.32" smashed="yes" rot="MR0">
