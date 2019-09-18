@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;arm/Core/Src/memtest.c&apos; to &apos;boot.c&apos;" description="Rename resource &apos;memtest.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/memtest.c" name="boot.c" stamp="1545153156853" updateReferences="true"/>
-</session>

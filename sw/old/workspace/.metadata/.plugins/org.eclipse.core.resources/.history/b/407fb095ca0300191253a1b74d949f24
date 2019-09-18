@@ -1,0 +1,28 @@
+/*
+ * sdcard.c
+ *
+ *  Created on: 19 Dec 2018
+ *      Author: simon
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+#include "sdcard.h"
+#include "fatfs_platform.h"
+
+static FATFS _fs;
+
+/*****************************************************************************\
+|* Initialise the SD card interface
+\*****************************************************************************/
+void sdcardInit(void)
+	{
+	if (BSP_PlatformIsDetected())
+		{
+		f_mount(&_fs, "", 0);
+		printf("SoS detected SD card\n")
+		}
+	else
+		printf("SoS no SD card detected\n");
+	}

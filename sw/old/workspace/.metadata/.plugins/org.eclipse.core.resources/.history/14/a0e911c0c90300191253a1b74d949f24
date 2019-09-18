@@ -1,0 +1,17 @@
+/*
+ * sdcard.h
+ *
+ *  Created on: 19 Dec 2018
+ *      Author: simon
+ */
+
+#ifndef INC_SDCARD_H_
+#define INC_SDCARD_H_
+
+/*****************************************************************************\
+|* Initialise the SDRAM command interface
+\*****************************************************************************/
+void sdcardInit(void);
+
+
+#endif /* INC_SDCARD_H_ */

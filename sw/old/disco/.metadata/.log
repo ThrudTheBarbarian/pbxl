@@ -1,0 +1,10 @@
+!SESSION 2018-09-14 17:34:18.054 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -pluginCustomization ../Eclipse/configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -keyring /Volumes/home/simon/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -pluginCustomization ../Eclipse/configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -keyring /Volumes/home/simon/.eclipse_keyring
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-09-14 17:34:56.673
+!MESSAGE Started RMI Server, listening on port 21112
