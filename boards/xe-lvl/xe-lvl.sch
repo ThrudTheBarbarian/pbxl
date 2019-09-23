@@ -3,11 +3,11 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13415,6 +13415,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <class number="1" name="Power" width="0.3048" drill="0.2032">
 <clearance class="1" value="0.2032"/>
 </class>
+<class number="2" name="DDR_DQ" width="0.1778" drill="0">
+</class>
+<class number="3" name="DDR_CK" width="0.2286" drill="0">
+<clearance class="3" value="0.4064"/>
+</class>
+<class number="4" name="DDR_CTRL" width="0.1778" drill="0">
+</class>
 </classes>
 <groups>
 <schematic_group name="VOLTAGES"/>
@@ -16103,7 +16110,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </bus>
 </busses>
 <nets>
-<net name="DDR_DQ0" class="0">
+<net name="DDR_DQ0" class="2">
 <segment>
 <wire x1="-147.32" y1="25.4" x2="-149.86" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="22.86" x2="-149.86" y2="22.86" width="0.1524" layer="91"/>
@@ -16117,7 +16124,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ0@E21"/>
 </segment>
 </net>
-<net name="DDR_DQ1" class="0">
+<net name="DDR_DQ1" class="2">
 <segment>
 <wire x1="-147.32" y1="22.86" x2="-149.86" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="20.32" x2="-149.86" y2="20.32" width="0.1524" layer="91"/>
@@ -16131,7 +16138,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ1@F21"/>
 </segment>
 </net>
-<net name="DDR_DQ2" class="0">
+<net name="DDR_DQ2" class="2">
 <segment>
 <wire x1="-147.32" y1="20.32" x2="-149.86" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="17.78" x2="-149.86" y2="17.78" width="0.1524" layer="91"/>
@@ -16145,7 +16152,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ2@H21"/>
 </segment>
 </net>
-<net name="DDR_DQ3" class="0">
+<net name="DDR_DQ3" class="2">
 <segment>
 <wire x1="-147.32" y1="17.78" x2="-149.86" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="15.24" x2="-149.86" y2="15.24" width="0.1524" layer="91"/>
@@ -16159,7 +16166,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ3@E20"/>
 </segment>
 </net>
-<net name="DDR_DQ4" class="0">
+<net name="DDR_DQ4" class="2">
 <segment>
 <wire x1="-147.32" y1="15.24" x2="-149.86" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="12.7" x2="-149.86" y2="12.7" width="0.1524" layer="91"/>
@@ -16173,7 +16180,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ4@J21"/>
 </segment>
 </net>
-<net name="DDR_DQ5" class="0">
+<net name="DDR_DQ5" class="2">
 <segment>
 <wire x1="-147.32" y1="12.7" x2="-149.86" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="10.16" x2="-149.86" y2="10.16" width="0.1524" layer="91"/>
@@ -16187,7 +16194,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ5@H20"/>
 </segment>
 </net>
-<net name="DDR_DQ6" class="0">
+<net name="DDR_DQ6" class="2">
 <segment>
 <wire x1="-147.32" y1="10.16" x2="-149.86" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="7.62" x2="-149.86" y2="7.62" width="0.1524" layer="91"/>
@@ -16201,7 +16208,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ6@H22"/>
 </segment>
 </net>
-<net name="DDR_DQ7" class="0">
+<net name="DDR_DQ7" class="2">
 <segment>
 <wire x1="-147.32" y1="7.62" x2="-149.86" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="5.08" x2="-149.86" y2="5.08" width="0.1524" layer="91"/>
@@ -16215,7 +16222,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ7@G19"/>
 </segment>
 </net>
-<net name="DDR_LDM" class="0">
+<net name="DDR_LDM" class="2">
 <segment>
 <pinref part="IC2" gate="G$1" pin="LDM"/>
 <wire x1="-147.32" y1="5.08" x2="-149.86" y2="2.54" width="0.1524" layer="91"/>
@@ -16229,7 +16236,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="-104.14" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DDR_LQDM_P" class="0">
+<net name="DDR_LQDM_P" class="2">
 <segment>
 <pinref part="IC2" gate="G$1" pin="LDQS"/>
 <wire x1="-147.32" y1="2.54" x2="-149.86" y2="0" width="0.1524" layer="91"/>
@@ -16243,7 +16250,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="-104.14" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DDR_LQDM_N" class="0">
+<net name="DDR_LQDM_N" class="2">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!LDQS!"/>
 <wire x1="-147.32" y1="0" x2="-149.86" y2="-2.54" width="0.1524" layer="91"/>
@@ -16257,7 +16264,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="-104.14" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DDR_DQ8" class="0">
+<net name="DDR_DQ8" class="2">
 <segment>
 <wire x1="-147.32" y1="-7.62" x2="-149.86" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-10.16" x2="-149.86" y2="-10.16" width="0.1524" layer="91"/>
@@ -16271,7 +16278,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ8@N22"/>
 </segment>
 </net>
-<net name="DDR_DQ9" class="0">
+<net name="DDR_DQ9" class="2">
 <segment>
 <wire x1="-147.32" y1="-10.16" x2="-149.86" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-12.7" x2="-149.86" y2="-12.7" width="0.1524" layer="91"/>
@@ -16285,7 +16292,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ9@R21"/>
 </segment>
 </net>
-<net name="DDR_DQ10" class="0">
+<net name="DDR_DQ10" class="2">
 <segment>
 <wire x1="-147.32" y1="-12.7" x2="-149.86" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-15.24" x2="-149.86" y2="-15.24" width="0.1524" layer="91"/>
@@ -16299,7 +16306,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ10@P21"/>
 </segment>
 </net>
-<net name="DDR_DQ11" class="0">
+<net name="DDR_DQ11" class="2">
 <segment>
 <wire x1="-147.32" y1="-15.24" x2="-149.86" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-17.78" x2="-149.86" y2="-17.78" width="0.1524" layer="91"/>
@@ -16313,7 +16320,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ11@T20"/>
 </segment>
 </net>
-<net name="DDR_DQ12" class="0">
+<net name="DDR_DQ12" class="2">
 <segment>
 <wire x1="-147.32" y1="-17.78" x2="-149.86" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-20.32" x2="-149.86" y2="-20.32" width="0.1524" layer="91"/>
@@ -16327,7 +16334,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ12@V20"/>
 </segment>
 </net>
-<net name="DDR_DQ13" class="0">
+<net name="DDR_DQ13" class="2">
 <segment>
 <wire x1="-147.32" y1="-20.32" x2="-149.86" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-22.86" x2="-149.86" y2="-22.86" width="0.1524" layer="91"/>
@@ -16341,7 +16348,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ13@R20"/>
 </segment>
 </net>
-<net name="DDR_DQ14" class="0">
+<net name="DDR_DQ14" class="2">
 <segment>
 <wire x1="-147.32" y1="-22.86" x2="-149.86" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-25.4" x2="-149.86" y2="-25.4" width="0.1524" layer="91"/>
@@ -16355,7 +16362,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ14@U21"/>
 </segment>
 </net>
-<net name="DDR_DQ15" class="0">
+<net name="DDR_DQ15" class="2">
 <segment>
 <wire x1="-147.32" y1="-25.4" x2="-149.86" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-27.94" x2="-149.86" y2="-27.94" width="0.1524" layer="91"/>
@@ -16369,7 +16376,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC1" gate="G$2" pin="DDR_DQ15@V21"/>
 </segment>
 </net>
-<net name="DDR_UDM" class="0">
+<net name="DDR_UDM" class="2">
 <segment>
 <pinref part="IC2" gate="G$1" pin="UDM"/>
 <wire x1="-147.32" y1="-27.94" x2="-149.86" y2="-30.48" width="0.1524" layer="91"/>
@@ -16382,7 +16389,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-106.68" y1="-50.8" x2="-76.2" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DDR_UQDM_P" class="0">
+<net name="DDR_UQDM_P" class="2">
 <segment>
 <pinref part="IC2" gate="G$1" pin="UDQS"/>
 <wire x1="-147.32" y1="-30.48" x2="-149.86" y2="-33.02" width="0.1524" layer="91"/>
@@ -16398,7 +16405,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="-104.14" y="-50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DDR_UQDM_N" class="0">
+<net name="DDR_UQDM_N" class="2">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!UDQS!"/>
 <wire x1="-147.32" y1="-33.02" x2="-149.86" y2="-35.56" width="0.1524" layer="91"/>
@@ -16411,7 +16418,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-106.68" y1="-45.72" x2="-76.2" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DDR_CK_P" class="0">
+<net name="DDR_CK_P" class="3">
 <segment>
 <pinref part="IC2" gate="G$1" pin="CK"/>
 <wire x1="-147.32" y1="-40.64" x2="-149.86" y2="-43.18" width="0.1524" layer="91"/>
@@ -16433,7 +16440,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="53.34" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DDR_CK_N" class="0">
+<net name="DDR_CK_N" class="3">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!CK!"/>
 <wire x1="-147.32" y1="-43.18" x2="-149.86" y2="-45.72" width="0.1524" layer="91"/>
@@ -16455,7 +16462,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="DDR_A0" class="0">
+<net name="DDR_A0" class="4">
 <segment>
 <wire x1="-147.32" y1="-50.8" x2="-149.86" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-53.34" x2="-149.86" y2="-53.34" width="0.1524" layer="91"/>
@@ -16475,7 +16482,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="116.84" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A1" class="0">
+<net name="DDR_A1" class="4">
 <segment>
 <wire x1="-147.32" y1="-53.34" x2="-149.86" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-55.88" x2="-149.86" y2="-55.88" width="0.1524" layer="91"/>
@@ -16495,7 +16502,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="106.68" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A2" class="0">
+<net name="DDR_A2" class="4">
 <segment>
 <wire x1="-147.32" y1="-55.88" x2="-149.86" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-58.42" x2="-149.86" y2="-58.42" width="0.1524" layer="91"/>
@@ -16515,7 +16522,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="96.52" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A3" class="0">
+<net name="DDR_A3" class="4">
 <segment>
 <wire x1="-147.32" y1="-58.42" x2="-149.86" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-60.96" x2="-149.86" y2="-60.96" width="0.1524" layer="91"/>
@@ -16535,7 +16542,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="86.36" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A4" class="0">
+<net name="DDR_A4" class="4">
 <segment>
 <wire x1="-147.32" y1="-60.96" x2="-149.86" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-63.5" x2="-149.86" y2="-63.5" width="0.1524" layer="91"/>
@@ -16555,7 +16562,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="76.2" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A5" class="0">
+<net name="DDR_A5" class="4">
 <segment>
 <wire x1="-147.32" y1="-63.5" x2="-149.86" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-66.04" x2="-149.86" y2="-66.04" width="0.1524" layer="91"/>
@@ -16575,7 +16582,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="66.04" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A6" class="0">
+<net name="DDR_A6" class="4">
 <segment>
 <wire x1="-147.32" y1="-66.04" x2="-149.86" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-68.58" x2="-149.86" y2="-68.58" width="0.1524" layer="91"/>
@@ -16595,7 +16602,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="55.88" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A7" class="0">
+<net name="DDR_A7" class="4">
 <segment>
 <wire x1="-147.32" y1="-68.58" x2="-149.86" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-71.12" x2="-149.86" y2="-71.12" width="0.1524" layer="91"/>
@@ -16615,7 +16622,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="45.72" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A8" class="0">
+<net name="DDR_A8" class="4">
 <segment>
 <wire x1="-147.32" y1="-71.12" x2="-149.86" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-73.66" x2="-149.86" y2="-73.66" width="0.1524" layer="91"/>
@@ -16635,7 +16642,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="35.56" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A9" class="0">
+<net name="DDR_A9" class="4">
 <segment>
 <wire x1="-147.32" y1="-73.66" x2="-149.86" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-76.2" x2="-149.86" y2="-76.2" width="0.1524" layer="91"/>
@@ -16655,7 +16662,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="25.4" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A10" class="0">
+<net name="DDR_A10" class="4">
 <segment>
 <wire x1="-147.32" y1="-76.2" x2="-149.86" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-78.74" x2="-149.86" y2="-78.74" width="0.1524" layer="91"/>
@@ -16675,7 +16682,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="15.24" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A11" class="0">
+<net name="DDR_A11" class="4">
 <segment>
 <wire x1="-147.32" y1="-78.74" x2="-149.86" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-81.28" x2="-149.86" y2="-81.28" width="0.1524" layer="91"/>
@@ -16695,7 +16702,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="5.08" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A12" class="0">
+<net name="DDR_A12" class="4">
 <segment>
 <wire x1="-147.32" y1="-81.28" x2="-149.86" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-83.82" x2="-149.86" y2="-83.82" width="0.1524" layer="91"/>
@@ -16715,7 +16722,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-5.08" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A13" class="0">
+<net name="DDR_A13" class="4">
 <segment>
 <wire x1="-147.32" y1="-83.82" x2="-149.86" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-86.36" x2="-149.86" y2="-86.36" width="0.1524" layer="91"/>
@@ -16735,7 +16742,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-15.24" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_A14" class="0">
+<net name="DDR_A14" class="4">
 <segment>
 <wire x1="-147.32" y1="-86.36" x2="-149.86" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-88.9" x2="-149.86" y2="-88.9" width="0.1524" layer="91"/>
@@ -16755,7 +16762,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-25.4" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_BA0" class="0">
+<net name="DDR_BA0" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="BA0"/>
 <wire x1="-147.32" y1="-91.44" x2="-149.86" y2="-93.98" width="0.1524" layer="91"/>
@@ -16775,7 +16782,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-35.56" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_BA1" class="0">
+<net name="DDR_BA1" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="BA1"/>
 <wire x1="-147.32" y1="-93.98" x2="-149.86" y2="-96.52" width="0.1524" layer="91"/>
@@ -16795,7 +16802,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-45.72" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_BA2" class="0">
+<net name="DDR_BA2" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="BA2"/>
 <wire x1="-147.32" y1="-96.52" x2="-149.86" y2="-99.06" width="0.1524" layer="91"/>
@@ -16815,7 +16822,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-55.88" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="!DDR_RAS!" class="0">
+<net name="!DDR_RAS!" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!RAS!"/>
 <wire x1="-147.32" y1="-101.6" x2="-149.86" y2="-104.14" width="0.1524" layer="91"/>
@@ -16834,7 +16841,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-66.04" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="!DDR_CAS!" class="0">
+<net name="!DDR_CAS!" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!CAS!"/>
 <wire x1="-147.32" y1="-104.14" x2="-149.86" y2="-106.68" width="0.1524" layer="91"/>
@@ -16853,7 +16860,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-76.2" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="!DDR_CS!" class="0">
+<net name="!DDR_CS!" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!CS!"/>
 <wire x1="-147.32" y1="-106.68" x2="-149.86" y2="-109.22" width="0.1524" layer="91"/>
@@ -16872,7 +16879,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-86.36" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_CKE" class="0">
+<net name="DDR_CKE" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="CKE"/>
 <wire x1="-147.32" y1="-109.22" x2="-149.86" y2="-111.76" width="0.1524" layer="91"/>
@@ -16898,7 +16905,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-96.52" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="!DDR_WE!" class="0">
+<net name="!DDR_WE!" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!WE!"/>
 <wire x1="-147.32" y1="-111.76" x2="-149.86" y2="-114.3" width="0.1524" layer="91"/>
@@ -16917,7 +16924,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="86.36" y="-106.68" size="2.1844" layer="95"/>
 </segment>
 </net>
-<net name="DDR_ODT" class="0">
+<net name="DDR_ODT" class="4">
 <segment>
 <pinref part="IC2" gate="G$1" pin="ODT"/>
 <wire x1="-147.32" y1="-114.3" x2="-149.86" y2="-116.84" width="0.1524" layer="91"/>
