@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7990,6 +7990,38 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="343.916" y="4.953" size="2.54" layer="94">Sheet:</text>
 <frame x1="0" y1="0" x2="387.35" y2="260.35" columns="8" rows="5" layer="94"/>
 </symbol>
+<symbol name="FRAME_C_L" urn="urn:adsk.eagle:symbol:13884/1" library_version="1">
+<frame x1="0" y1="0" x2="558.8" y2="431.8" columns="11" rows="9" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD" urn="urn:adsk.eagle:symbol:13864/1" library_version="1">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="A3L-LOC" urn="urn:adsk.eagle:component:13942/1" prefix="FRAME" uservalue="yes" library_version="1">
@@ -7997,6 +8029,20 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 DIN A3, landscape with location and doc. field</description>
 <gates>
 <gate name="G$1" symbol="A3L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FRAME_C_L" urn="urn:adsk.eagle:component:13947/1" prefix="FRAME" uservalue="yes" library_version="1">
+<description>&lt;b&gt;FRAME&lt;/b&gt; C Size , 17 x 22 INCH, Landscape&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FRAME_C_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="452.12" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
@@ -13467,133 +13513,91 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/RJMG2310228A0
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<library name="j_microsd_molex_5025700893">
 <packages>
-<package name="USD-SOCKET-PP">
-<description>OLD Production Socket. DO NOT USE for production boards.</description>
-<wire x1="-6.725" y1="5.5" x2="-6.725" y2="17" width="0.2032" layer="21"/>
-<wire x1="4" y1="17" x2="7.825" y2="17" width="0.2032" layer="21"/>
-<wire x1="7.825" y1="17" x2="7.825" y2="1.7" width="0.2032" layer="21"/>
-<wire x1="6" y1="0" x2="4" y2="0" width="0.2032" layer="21"/>
-<wire x1="4" y1="0" x2="4" y2="1.65" width="0.2032" layer="21"/>
-<wire x1="-4" y1="1.65" x2="-4" y2="1" width="0.2032" layer="21"/>
-<wire x1="-4" y1="1" x2="-5" y2="1" width="0.2032" layer="21"/>
-<wire x1="-4" y1="1.65" x2="4" y2="1.65" width="0.2032" layer="21" curve="-69.416099"/>
-<wire x1="4" y1="-0.7" x2="-4" y2="-0.7" width="0.127" layer="51"/>
-<wire x1="4" y1="-1.6" x2="-4" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="4" y1="-5.4" x2="-4" y2="-5.4" width="0.127" layer="51"/>
-<wire x1="-6.725" y1="3.6" x2="-6.725" y2="2.6" width="0.2032" layer="21"/>
-<smd name="GND1" x="-6.275" y="1.475" dx="1.5" dy="1.35" layer="1"/>
-<smd name="GND2" x="7.375" y="0.475" dx="1.5" dy="1.35" layer="1"/>
-<smd name="CD2" x="-6.425" y="4.5" dx="1.4" dy="1" layer="1"/>
-<smd name="CD1" x="-5.85" y="16.75" dx="1" dy="1.3" layer="1"/>
-<smd name="8" x="-4.5" y="16.8" dx="0.75" dy="1.5" layer="1"/>
-<smd name="7" x="-3.4" y="16.8" dx="0.75" dy="1.5" layer="1"/>
-<smd name="6" x="-2.3" y="16.8" dx="0.75" dy="1.5" layer="1"/>
-<smd name="5" x="-1.2" y="16.8" dx="0.75" dy="1.5" layer="1"/>
-<smd name="4" x="-0.1" y="16.8" dx="0.75" dy="1.5" layer="1"/>
-<smd name="3" x="1" y="16.8" dx="0.75" dy="1.5" layer="1"/>
-<smd name="2" x="2.1" y="16.8" dx="0.75" dy="1.5" layer="1"/>
-<smd name="1" x="3.2" y="16.8" dx="0.75" dy="1.5" layer="1"/>
-<text x="-5.08" y="7.62" size="0.4064" layer="25">&gt;Name</text>
-<text x="-5.08" y="6.35" size="0.4064" layer="27">&gt;Value</text>
-</package>
-<package name="MICRO-SD-SOCKET-PP">
-<wire x1="-14" y1="0" x2="-14" y2="13.2" width="0.2032" layer="21"/>
-<wire x1="0" y1="12.1" x2="0" y2="0" width="0.2032" layer="21"/>
-<wire x1="-11.7" y1="15.3" x2="-12.5" y2="15.3" width="0.2032" layer="21"/>
-<wire x1="-11" y1="16" x2="0" y2="16" width="0.2032" layer="51"/>
-<wire x1="-10" y1="13.6" x2="-1.6" y2="13.6" width="0.2032" layer="21"/>
-<wire x1="-14" y1="0" x2="-9.1" y2="0" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="0" x2="-6.4" y2="0" width="0.2032" layer="21"/>
-<wire x1="0" y1="0" x2="-0.7" y2="0" width="0.2032" layer="21"/>
-<wire x1="0" y1="17.6" x2="-11" y2="17.6" width="0.2032" layer="51"/>
-<wire x1="0" y1="20.7" x2="-11" y2="20.7" width="0.2032" layer="51"/>
-<wire x1="-11.7" y1="15.3" x2="-11" y2="14.6" width="0.2032" layer="21" curve="-98.797411"/>
-<wire x1="-11" y1="14.6" x2="-10" y2="13.6" width="0.2032" layer="21" curve="87.205638"/>
-<smd name="CD2" x="-7.75" y="0.4" dx="1.8" dy="1.4" layer="1"/>
-<smd name="CD1" x="-2.05" y="0.4" dx="1.8" dy="1.4" layer="1"/>
-<smd name="GND3" x="-0.45" y="13.55" dx="1.4" dy="1.9" layer="1"/>
-<smd name="GND1" x="-13.6" y="14.55" dx="1.4" dy="1.9" layer="1"/>
-<smd name="1" x="-8.94" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="2" x="-7.84" y="10.3" dx="0.8" dy="1.5" layer="1"/>
-<smd name="3" x="-6.74" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="4" x="-5.64" y="10.9" dx="0.8" dy="1.5" layer="1"/>
-<smd name="5" x="-4.54" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="6" x="-3.44" y="10.9" dx="0.8" dy="1.5" layer="1"/>
-<smd name="7" x="-2.34" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="8" x="-1.24" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<text x="-8.89" y="6.35" size="0.8128" layer="25">&gt;Name</text>
-<text x="-8.89" y="5.08" size="0.8128" layer="27">&gt;Value</text>
+<package name="5025700893">
+<wire x1="-7.15" y1="7.95" x2="7.15" y2="7.95" width="0.127" layer="39"/>
+<wire x1="7.15" y1="7.95" x2="7.15" y2="-7.95" width="0.127" layer="39"/>
+<wire x1="7.15" y1="-7.95" x2="-7.15" y2="-7.95" width="0.127" layer="39"/>
+<wire x1="-7.15" y1="-7.95" x2="-7.15" y2="7.95" width="0.127" layer="39"/>
+<wire x1="-6.9" y1="7.43" x2="-6.9" y2="-7.7" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-6.9" y1="-7.7" x2="6.9" y2="-7.7" width="0.127" layer="51" style="shortdash"/>
+<wire x1="6.9" y1="-7.7" x2="6.9" y2="7.43" width="0.127" layer="51" style="shortdash"/>
+<wire x1="6.9" y1="7.43" x2="-6.9" y2="7.43" width="0.127" layer="51" style="shortdash"/>
+<smd name="P$1" x="-2.7" y="4.2" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="-1.6" y="4.2" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$3" x="-0.5" y="4.2" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$4" x="0.6" y="4.2" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$5" x="1.7" y="4.2" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$6" x="2.8" y="4.2" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$7" x="3.9" y="4.2" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$8" x="5" y="4.2" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="GND1" x="6.15" y="-7.375" dx="1.5" dy="1.15" layer="1"/>
+<smd name="GND0" x="6.45" y="7.1" dx="1.4" dy="1.7" layer="1"/>
+<smd name="GND2" x="-6.45" y="7.1" dx="1.4" dy="1.7" layer="1"/>
+<smd name="GND3" x="-2.9" y="-7.375" dx="1.5" dy="1.15" layer="1"/>
+<smd name="GND4" x="6.575" y="-2.65" dx="1.15" dy="1.5" layer="1"/>
+<text x="-7" y="8.619" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-6.985" y="-9.525" size="1.016" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+<rectangle x1="6.2" y1="-1.7" x2="6.7" y2="-0.7" layer="41"/>
+<rectangle x1="4" y1="-6.6" x2="6.9" y2="-5.2" layer="41"/>
+<rectangle x1="0.35" y1="-7.5" x2="1.35" y2="-7" layer="41"/>
+<wire x1="7" y1="8.65" x2="2" y2="8.65" width="0.127" layer="21"/>
+<wire x1="2" y1="9.65" x2="7" y2="9.65" width="0.127" layer="21"/>
+<wire x1="2" y1="13.65" x2="7" y2="13.65" width="0.127" layer="21"/>
+<text x="1.778" y="13.97" size="0.5" layer="49" font="vector" rot="R180">Eject</text>
+<text x="1.778" y="10.033" size="0.5" layer="49" font="vector" rot="R180">Lock</text>
+<text x="1.778" y="9.017" size="0.5" layer="49" font="vector" rot="R180">Push</text>
+<smd name="DTCT" x="-0.6" y="-7.375" dx="1.5" dy="1.15" layer="1"/>
 </package>
 </packages>
 <symbols>
-<symbol name="USDCARD">
-<wire x1="-2.54" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-20.32" x2="-2.54" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-20.32" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
-<text x="-2.54" y="15.748" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="CS" x="-7.62" y="10.16" length="middle"/>
-<pin name="DI" x="-7.62" y="7.62" length="middle"/>
-<pin name="GND" x="-7.62" y="0" length="middle"/>
-<pin name="VCC" x="-7.62" y="5.08" length="middle"/>
-<pin name="SCK" x="-7.62" y="2.54" length="middle"/>
-<pin name="RSV" x="-7.62" y="-5.08" length="middle"/>
-<pin name="DO" x="-7.62" y="-2.54" length="middle"/>
-<pin name="NC" x="-7.62" y="12.7" length="middle"/>
-<pin name="SHIELD@3" x="-7.62" y="-15.24" length="middle"/>
-<pin name="SHIELD@1" x="-7.62" y="-10.16" length="middle"/>
-<pin name="SHIELD@2" x="-7.62" y="-12.7" length="middle"/>
-<pin name="SHIELD@4" x="-7.62" y="-17.78" length="middle"/>
+<symbol name="5025700893">
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="13.462" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DAT2" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="DAT3" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="CMD" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="-15.24" y="7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="CLK" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VSS" x="-15.24" y="2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="DAT0" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="DAT1" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="SH1" x="-15.24" y="-2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="SH2" x="-15.24" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="SH3" x="-15.24" y="-7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="SH4" x="-15.24" y="-10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="SH5" x="-15.24" y="-12.7" visible="pin" length="middle" direction="pwr"/>
+<pin name="CD" x="15.24" y="-17.78" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="USD-SOCKET" prefix="U">
-<description>&lt;b&gt;microSD Socket&lt;/b&gt;
-Push-push type uSD socket. Schematic element and footprint production proven. Spark Fun Electronics SKU : PRT-00127. tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed).</description>
+<deviceset name="MICROSD_MOLEX_5025700893" prefix="J">
+<description>Molex 5025700893 MicroSD Normal Mount SMT Connector</description>
 <gates>
-<gate name="G$1" symbol="USDCARD" x="0" y="0"/>
+<gate name="G$1" symbol="5025700893" x="0" y="0"/>
 </gates>
 <devices>
-<device name="USD" package="USD-SOCKET-PP">
+<device name="" package="5025700893">
 <connects>
-<connect gate="G$1" pin="CS" pad="2"/>
-<connect gate="G$1" pin="DI" pad="3"/>
-<connect gate="G$1" pin="DO" pad="7"/>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="NC" pad="1"/>
-<connect gate="G$1" pin="RSV" pad="8"/>
-<connect gate="G$1" pin="SCK" pad="5"/>
-<connect gate="G$1" pin="SHIELD@1" pad="CD1"/>
-<connect gate="G$1" pin="SHIELD@2" pad="CD2"/>
-<connect gate="G$1" pin="SHIELD@3" pad="GND1"/>
-<connect gate="G$1" pin="SHIELD@4" pad="GND2"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NEW" package="MICRO-SD-SOCKET-PP">
-<connects>
-<connect gate="G$1" pin="CS" pad="2"/>
-<connect gate="G$1" pin="DI" pad="3"/>
-<connect gate="G$1" pin="DO" pad="7"/>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="NC" pad="1"/>
-<connect gate="G$1" pin="RSV" pad="8"/>
-<connect gate="G$1" pin="SCK" pad="5"/>
-<connect gate="G$1" pin="SHIELD@1" pad="GND3"/>
-<connect gate="G$1" pin="SHIELD@2" pad="CD1"/>
-<connect gate="G$1" pin="SHIELD@3" pad="GND1"/>
-<connect gate="G$1" pin="SHIELD@4" pad="CD2"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="CD" pad="DTCT"/>
+<connect gate="G$1" pin="CLK" pad="P$5"/>
+<connect gate="G$1" pin="CMD" pad="P$3"/>
+<connect gate="G$1" pin="DAT0" pad="P$7"/>
+<connect gate="G$1" pin="DAT1" pad="P$8"/>
+<connect gate="G$1" pin="DAT2" pad="P$1"/>
+<connect gate="G$1" pin="DAT3" pad="P$2"/>
+<connect gate="G$1" pin="SH1" pad="GND0"/>
+<connect gate="G$1" pin="SH2" pad="GND1"/>
+<connect gate="G$1" pin="SH3" pad="GND2"/>
+<connect gate="G$1" pin="SH4" pad="GND3"/>
+<connect gate="G$1" pin="SH5" pad="GND4"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+<connect gate="G$1" pin="VSS" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13820,19 +13824,42 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 </part>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
-<part name="SLOT4" library="samacsys" deviceset="10018784-10210TLF" device=""/>
-<part name="SLOT2" library="samacsys" deviceset="10018784-10210TLF" device=""/>
-<part name="SLOT3" library="samacsys" deviceset="10018784-10210TLF" device=""/>
-<part name="SLOT1" library="samacsys" deviceset="10018784-10210TLF" device=""/>
-<part name="SLOT0" library="samacsys" deviceset="10018784-10210TLF" device=""/>
-<part name="IC1" library="samacsys" deviceset="STM32MP157AAA3" device=""/>
-<part name="IC2" library="samacsys" deviceset="IS43TR16256AL-125KBL" device=""/>
-<part name="IC3" library="samacsys" deviceset="TFP410PAP" device=""/>
-<part name="CN1" library="microbuilder" deviceset="HDMI_MOLEX_47151-0001" device=""/>
-<part name="IC4" library="samacsys" deviceset="STPMIC1APQR" device=""/>
-<part name="J1" library="Seeed-Connector" deviceset="CONN-POWER-JACK-2.1MM(DC-005)" device="" value="DC-005"/>
-<part name="J3" library="samacsys" deviceset="RJMG2310228A0ER" device=""/>
-<part name="U1" library="SparkFun" deviceset="USD-SOCKET" device="NEW"/>
+<part name="SLOT4" library="samacsys" deviceset="10018784-10210TLF" device="">
+<attribute name="USE" value="10018784-10210TLF"/>
+</part>
+<part name="SLOT2" library="samacsys" deviceset="10018784-10210TLF" device="">
+<attribute name="USE" value="10018784-10210TLF"/>
+</part>
+<part name="SLOT3" library="samacsys" deviceset="10018784-10210TLF" device="">
+<attribute name="USE" value="10018784-10210TLF"/>
+</part>
+<part name="SLOT1" library="samacsys" deviceset="10018784-10210TLF" device="">
+<attribute name="USE" value="10018784-10210TLF"/>
+</part>
+<part name="SLOT0" library="samacsys" deviceset="10018784-10210TLF" device="">
+<attribute name="USE" value="10018784-10210TLF"/>
+</part>
+<part name="IC1" library="samacsys" deviceset="STM32MP157AAA3" device="">
+<attribute name="USE" value="STM32MP157AAA3"/>
+</part>
+<part name="IC2" library="samacsys" deviceset="IS43TR16256AL-125KBL" device="">
+<attribute name="USE" value="IS43TR16256AL-125KBL"/>
+</part>
+<part name="IC3" library="samacsys" deviceset="TFP410PAP" device="">
+<attribute name="USE" value="TFP410PAP"/>
+</part>
+<part name="CN1" library="microbuilder" deviceset="HDMI_MOLEX_47151-0001" device="">
+<attribute name="USE" value="0471510001"/>
+</part>
+<part name="IC4" library="samacsys" deviceset="STPMIC1APQR" device="">
+<attribute name="USE" value="STPMIC1APQR"/>
+</part>
+<part name="J1" library="Seeed-Connector" deviceset="CONN-POWER-JACK-2.1MM(DC-005)" device="" value="DC-005">
+<attribute name="USE" value="dc-005"/>
+</part>
+<part name="J3" library="samacsys" deviceset="RJMG2310228A0ER" device="">
+<attribute name="USE" value="RJMG2310228A0ER"/>
+</part>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/2" value="0.1uF">
 <spice>
@@ -13894,6 +13921,15 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 </pinmapping>
 </spice>
 <attribute name="USE" value="ERJ-1GNJ103C"/>
+</part>
+<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_C_L" device=""/>
+<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="FRAME8" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="FRAME9" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="J2" library="j_microsd_molex_5025700893" deviceset="MICROSD_MOLEX_5025700893" device="">
+<attribute name="USE" value="5025700893"/>
 </part>
 </parts>
 <sheets>
@@ -14879,10 +14915,12 @@ LED</text>
 <instance part="SLOT1" gate="G$1" x="121.92" y="-5.08" smashed="yes">
 <attribute name="NAME" x="130.81" y="0" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="125.73" y="-53.34" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="121.92" y="-5.08" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SLOT0" gate="G$1" x="-50.8" y="-5.08" smashed="yes">
 <attribute name="NAME" x="-41.91" y="0" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-49.53" y="-53.34" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="-50.8" y="-5.08" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="-20.32" y="45.72" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="48.26" size="1.778" layer="96" rot="R180"/>
@@ -15625,10 +15663,12 @@ LED</text>
 <instance part="SLOT2" gate="G$1" x="-7.62" y="53.34" smashed="yes">
 <attribute name="NAME" x="1.27" y="58.42" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-6.35" y="2.54" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="-7.62" y="53.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SLOT3" gate="G$1" x="195.58" y="53.34" smashed="yes">
 <attribute name="NAME" x="204.47" y="58.42" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="196.85" y="2.54" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="195.58" y="53.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY5" gate="GND" x="-15.24" y="5.08" smashed="yes">
 <attribute name="VALUE" x="-17.145" y="1.905" size="1.778" layer="96"/>
@@ -16327,6 +16367,7 @@ LED</text>
 <instance part="SLOT4" gate="G$1" x="-33.02" y="-10.16" smashed="yes">
 <attribute name="NAME" x="-24.13" y="-5.08" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-31.75" y="-58.42" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="-33.02" y="-10.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY10" gate="GND" x="-38.1" y="-58.42" smashed="yes">
 <attribute name="VALUE" x="-40.005" y="-61.595" size="1.778" layer="96"/>
@@ -16340,18 +16381,16 @@ LED</text>
 <busses>
 <bus name="A8:A[0..15],!CCTL!,CLK,D[0..7],!EXTSEL!,!HALT!,!IRQ!,!MPD!,RD4,RD5,!RST!,R/!W!,!S4!,!S5!">
 <segment>
-<wire x1="-63.5" y1="-5.08" x2="-55.88" y2="-5.08" width="0.762" layer="92"/>
-<wire x1="-55.88" y1="-5.08" x2="-53.34" y2="-7.62" width="0.762" layer="92"/>
-<wire x1="-53.34" y1="-7.62" x2="-53.34" y2="-45.72" width="0.762" layer="92"/>
-<label x="-63.5" y="-7.62" size="1.778" layer="95"/>
-</segment>
-</bus>
-<bus name="A8:A[0..15],!CCTL!,CLK,D[0..7],!EXTSEL!,!HALT!,!IRQ!,!MPD!,RD4,RD5,!RST!,R/!W!,!S4!,!S5!">
-<segment>
 <wire x1="30.48" y1="-15.24" x2="22.86" y2="-15.24" width="0.762" layer="92"/>
 <wire x1="22.86" y1="-15.24" x2="20.32" y2="-17.78" width="0.762" layer="92"/>
 <wire x1="20.32" y1="-17.78" x2="20.32" y2="-35.56" width="0.762" layer="92"/>
 <label x="27.94" y="-17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-63.5" y1="-5.08" x2="-55.88" y2="-5.08" width="0.762" layer="92"/>
+<wire x1="-55.88" y1="-5.08" x2="-53.34" y2="-7.62" width="0.762" layer="92"/>
+<wire x1="-53.34" y1="-7.62" x2="-53.34" y2="-45.72" width="0.762" layer="92"/>
+<label x="-63.5" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="SPI4:SPI4_CLK,!SPI4_IRQ!,SPI4_MISO,SPI4_MOSI">
@@ -16694,6 +16733,7 @@ LED</text>
 <instance part="IC1" gate="G$2" x="33.02" y="91.44" smashed="yes">
 <attribute name="NAME" x="10.16" y="173.228" size="1.778" layer="94"/>
 <attribute name="VALUE" x="10.16" y="0" size="1.778" layer="94"/>
+<attribute name="USE" x="33.02" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC1" gate="G$3" x="-81.28" y="-78.74" smashed="yes">
 <attribute name="NAME" x="-101.6" y="-9.652" size="1.778" layer="94"/>
@@ -16715,6 +16755,12 @@ LED</text>
 <attribute name="NAME" x="101.6" y="173.228" size="1.778" layer="94"/>
 <attribute name="VALUE" x="101.6" y="-114.3" size="1.778" layer="94"/>
 </instance>
+<instance part="FRAME2" gate="G$1" x="-243.84" y="-175.26" smashed="yes"/>
+<instance part="FRAME2" gate="G$2" x="208.28" y="-175.26" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="220.98" y="-173.99" size="2.54" layer="94"/>
+<attribute name="SHEET" x="294.64" y="-173.99" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="226.06" y="-156.21" size="2.54" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16728,6 +16774,12 @@ LED</text>
 <instance part="IC2" gate="G$1" x="-15.24" y="53.34" smashed="yes">
 <attribute name="NAME" x="16.51" y="60.96" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="16.51" y="58.42" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="-15.24" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FRAME3" gate="G$1" x="-162.56" y="-152.4" smashed="yes">
+<attribute name="DRAWING_NAME" x="181.61" y="-137.16" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="181.61" y="-142.24" size="2.286" layer="94"/>
+<attribute name="SHEET" x="194.945" y="-147.32" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -16742,10 +16794,17 @@ LED</text>
 <instance part="IC3" gate="G$1" x="55.88" y="68.58" smashed="yes">
 <attribute name="NAME" x="107.95" y="86.36" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="107.95" y="83.82" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="55.88" y="68.58" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="CN1" gate="G$1" x="208.28" y="30.48" smashed="yes">
 <attribute name="NAME" x="205.74" y="60.96" size="1.778" layer="95"/>
 <attribute name="VALUE" x="205.74" y="55.88" size="1.778" layer="96"/>
+<attribute name="USE" x="208.28" y="30.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FRAME4" gate="G$1" x="-48.26" y="-73.66" smashed="yes">
+<attribute name="DRAWING_NAME" x="295.91" y="-58.42" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="295.91" y="-63.5" size="2.286" layer="94"/>
+<attribute name="SHEET" x="309.245" y="-68.58" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -16760,6 +16819,12 @@ LED</text>
 <instance part="J3" gate="G$1" x="124.46" y="81.28" smashed="yes">
 <attribute name="NAME" x="158.75" y="88.9" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="158.75" y="86.36" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="124.46" y="81.28" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FRAME5" gate="G$1" x="-124.46" y="-101.6" smashed="yes">
+<attribute name="DRAWING_NAME" x="219.71" y="-86.36" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="219.71" y="-91.44" size="2.286" layer="94"/>
+<attribute name="SHEET" x="233.045" y="-96.52" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -16774,6 +16839,12 @@ LED</text>
 <instance part="J1" gate="JACK" x="48.26" y="76.2" smashed="yes">
 <attribute name="NAME" x="43.18" y="81.28" size="1.27" layer="95" ratio="10"/>
 <attribute name="VALUE" x="49.53" y="81.28" size="1.27" layer="96" ratio="10"/>
+<attribute name="USE" x="48.26" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FRAME8" gate="G$1" x="-147.32" y="-78.74" smashed="yes">
+<attribute name="DRAWING_NAME" x="196.85" y="-63.5" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="196.85" y="-68.58" size="2.286" layer="94"/>
+<attribute name="SHEET" x="210.185" y="-73.66" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -16788,6 +16859,12 @@ LED</text>
 <instance part="IC4" gate="G$1" x="58.42" y="58.42" smashed="yes">
 <attribute name="NAME" x="95.25" y="78.74" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="95.25" y="76.2" size="1.778" layer="96" align="center-left"/>
+<attribute name="USE" x="58.42" y="58.42" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FRAME9" gate="G$1" x="-144.78" y="-93.98" smashed="yes">
+<attribute name="DRAWING_NAME" x="199.39" y="-78.74" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="199.39" y="-83.82" size="2.286" layer="94"/>
+<attribute name="SHEET" x="212.725" y="-88.9" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -16799,9 +16876,10 @@ LED</text>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="27.94" y="58.42" smashed="yes">
-<attribute name="NAME" x="25.4" y="74.168" size="1.778" layer="95"/>
-<attribute name="VALUE" x="25.4" y="35.56" size="1.778" layer="96"/>
+<instance part="J2" gate="G$1" x="88.9" y="63.5" smashed="yes">
+<attribute name="NAME" x="78.74" y="76.962" size="1.778" layer="95"/>
+<attribute name="VALUE" x="78.74" y="40.64" size="1.778" layer="96"/>
+<attribute name="USE" x="88.9" y="63.5" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
